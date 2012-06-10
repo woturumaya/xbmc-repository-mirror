@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.playit" name="PlayIt" version="0.1.1"
+	provider-name="AJ">
+	<requires>
+		<import addon="xbmc.python" version="2.0" />
+		<import addon="script.module.simplejson" version="2.0.10" />
+		<import addon="script.module.beautifulsoup" version="3.2.0" />
+		<import addon="script.module.turtle" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.service" library="TurtleMain.py"
+		start="login">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Play the request received from PlayIt service clients like
+			safari browser extension</summary>
+		<description>PlayIt will allow you to send hosted video url from
+			websites like YouTube, Dailymotion and many more. This addon is
+			created using Turtle framework designed to ease the development of
+			XBMC video addon.</description>
+		<disclaimer>This addon makes no warranties, expressed or implied, and
+			hereby disclaims and negates all other warranties, including without
+			limitation, implied warranties or conditions of merchantability,
+			fitness for a particular purpose, or non-infringement of intellectual
+			property or other violation of rights. Further, PlayIt addon does not
+			warrant or make any representations concerning the accuracy, likely
+			results, or reliability of the use of the materials on the Internet
+			web site where from data is retrieved or otherwise relating to such
+			materials or on any sites linked to this addon. Videos are soruced
+			from video-hosting websites that are having full rights to remove
+			such access to video if required.</disclaimer>
+		<license>GNU GPL v3</license>
+		<platform>all</platform>
+	</extension>
+</addon>

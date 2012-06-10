@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.ddlscraper"
+       name="DDLScraper"
+       version="0.1.1"
+       provider-name="pgoeri">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">A library for "plugin.download." add-ons</summary>
+    <description lang="en">This library provides base classes for presenting a posts from a web site and extract links from a specific post.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
