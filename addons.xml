@@ -502,4 +502,47 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 		<platform>all</platform>
 	</extension>
 </addon>
+
+<addon id="plugin.video.1channel" version="0.1.5" name="1Channel" provider-name="Bstrdsmkr">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+        <import addon="script.module.urlresolver" version="0.0.1"/>
+        <import addon="script.module.t0mm0.common" version="1.1.0"/>
+		<import addon="script.module.metahandler" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Browse 1channel.ch</summary>
+        <description>Play a wide selection of movies and TV shows from 1channel.ch</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.elementtree"
+       name="Elementtree XML parser"
+       version="1.2.7"
+       provider-name="http://effbot.org/zone/element-index.htm">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="urlresolver" version="0.0.1" provider-name="t0mm0 (inspired by unbehagan, anarchintosh)">
+  <requires>
+    <import addon="xbmc.python" version="1.0" />
+    <import addon="script.module.t0mm0.common" version="0.0.1"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
