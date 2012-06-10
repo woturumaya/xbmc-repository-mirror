@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="script.module.mechanize"
+       name="mechanize"
+       version="0.2.5"
+       provider-name="wwwsearch.sourceforge.net/mechanize/">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.ddlscraper"
+       name="DDLScraper"
+       version="0.1.1"
+       provider-name="pgoeri">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">A library for "plugin.download." add-ons</summary>
+    <description lang="en">This library provides base classes for presenting a posts from a web site and extract links from a specific post.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.icefilms"
+       name="Icefilms"
+       version="1.1.10"
+       provider-name="Eldorado (originator: anarchintosh)">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+        <import addon="script.module.simplejson"/>
+        <import addon="script.module.elementtree"/>
+        <import addon="script.module.beautifulsoup"/>
+        <import addon="script.module.metahandler" version="1.0.0"/>
+        <import addon="script.module.t0mm0.common" version="1.1.0"/>
+        <import addon="script.common.plugin.cache" version="0.9.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Stream and download scene releases from the links listed on Icefilms.info</summary>
+        <description>Visit www.xbmchub.com for support.
+
+Turns your XBMC into an instant free on-demand media-center. Stream and download to your library pure AVI scene releases, in DVD and HD720p quality. Browse and search the library of over 77,000 videos with metadata and posters. Never experience the frustration of dead video links!</description>
+    </extension>
+</addon>
+
+<addon id="plugin.video.hulu"
+       name="Hulu"
+       version="3.4.5"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.elementtree" version="1.2.7"/>
+    <import addon="script.module.cryptopy" version="1.2.6"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="default.py">
+	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Hulu video plugin</summary>
+    <description>Videos from Hulu.com</description>
+    <disclaimer>Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.module.cryptopy"
+       name="CryptoPy"
+       version="1.2.6"
+       provider-name="cryptopy.sourceforge.net">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.vevo"
+       name="VEVO"
+       version="0.7.1"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.demjson" version="1.4"/>
+    <import addon="script.module.mechanize" version="0.2.5"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+  <provides>video audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Music Videos from VEVO</summary>
+    <description>Music Videos from VEVO</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.demjson"
+       name="demjson"
+       version="1.4"
+       provider-name="deron.meranda.us">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.free.cable"
+       name="Free Cable"
+       version="0.3.0"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.demjson" version="1.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>US station aggregator</summary>
+    <description></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.espn3"
+       name="ESPN"
+       version="0.9.9"
+       provider-name="Ksosez,BlueCop">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.0.8"/>
+    	<import addon="script.module.mechanize" version="0.2.5"/>
+    	<import addon="script.module.elementtree" version="1.2.7"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en">ESPN</summary>
+        <description lang="en">Watch full live streaming sporting events online on ESPN, including football, baseball, cricket, soccer, and basketball events.</description>
+    </extension>
+</addon>
+
+<addon id="plugin.video.reddit.bc"
+       name="Reddit Videos"
+       version="0.0.3"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.demjson" version="1.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+  <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Videos from reddit.com</summary>
+    <description>Videos from reddit.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.mtv"
+       name="MTV Music Videos"
+       version="0.0.6"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.demjson" version="1.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+  <provides>video audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Music Videos from MTV</summary>
+    <description>Music Videos from MTV</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.amazon"
+       name="Amazon"
+       version="0.4.7"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.demjson" version="1.4"/>
+    <import addon="script.module.mechanize" version="0.2.5"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="default.py">
+	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Amazon Prime Video Streaming</summary>
+    <description>Free Movies and Television Shows for Prime Members</description>
+    <disclaimer>Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.yahoo.music.videos"
+       name="Yahoo Music Videos"
+       version="0.0.3"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Music Videos</summary>
+    <description>Music Videos</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.hululibraryautoupdate"
+    name="Hulu Library Auto Update" version="1.1.2" provider-name="robweber/pkscuot">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Update your XBMC Hulu Video Libraries on a timer.</summary>
+    <description lang="en">Requires the BlueCop Hulu plugin. </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.nba"
+       name="NBA League Pass"
+       version="0.0.8"
+       provider-name="robla">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.httplib2" version="0.7.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="leaguepass.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>NBA League Pass is an online service offering streaming video of NBA games.</summary>
+    <description>NBA League Pass is an online service offering streaming video of NBA games.</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.videolectures.net"
+       name="Video Lectures"
+       version="0.0.3"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.demjson" version="1.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+  <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary></summary>
+    <description></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.epix"
+       name="Epix HD"
+       version="0.1.0"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.demjson" version="1.4"/>
+    <import addon="script.module.mechanize" version="0.2.5"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="default.py">
+	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary></summary>
+    <description></description>
+    <disclaimer>Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.canada.on.demand"
+       name="Canada On Demand"
+       version="0.7.3"
+       provider-name="andre">
+  <requires>
+    <import addon="xbmc.python"
+    		version="1.0"/>
+    <import addon="script.module.beautifulsoup"
+    		version="3.0.8"/>
+    <import addon="script.module.simplejson"
+    		version="2.0.10"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Video On Demand From Canada</summary>
+    <description>Stream content from tons of Canadian providers including CTV, CBC, TSN, Global and MANY More!</description>
+    <platform>all</platform>
+	<disclaimer></disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.msnbc"
+       name="MSNBC"
+       version="0.0.4"
+       provider-name="andre">
+  <requires>
+    <import addon="xbmc.python"
+    		version="1.0"/>
+    <import addon="script.module.beautifulsoup"
+    		version="3.0.8"/>
+    <import addon="script.module.simplejson"
+    		version="2.0.10"/>
+    <import addon="script.module.elementtree"
+    		version="1.2.7"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>MSNBC</summary>
+    <description>stream msnbc.</description>
+    <platform>all</platform>
+	<disclaimer></disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.world.news.live"
+       name="World News Live"
+       version="1.2.3"
+       provider-name="andre">
+  <requires>
+    <import addon="xbmc.python"
+    		version="1.0"/>
+    <import addon="script.module.beautifulsoup"
+    		version="3.0.8"/>
+    <import addon="script.module.simplejson"
+    		version="2.0.10"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>World News</summary>
+    <description>Al-Jazeera Live Arabic/English, BBC, CNN, C-SPAN, and various new streams.</description>
+    <platform>all</platform>
+	<disclaimer></disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.stagevu"
+       name="StageVU"
+       version="1.3.6"
+       provider-name="AJ">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>stagevu: Watch video</summary>
+    <description>Watch what you have been searching on internet.</description>
+    <disclaimer>The video add-ons hosted by my XBMC add-ons repository(aj add-ons) makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, video add-ons don't warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on the Internet web site where from data is retrieved or otherwise relating to such materials or on any sites linked to this addon. Videos are streamed directly from video-hosting websites that are having full rights to remove such access to video if required.</disclaimer>
+	<platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="service.playit" name="PlayIt" version="0.1.1"
+	provider-name="AJ">
+	<requires>
+		<import addon="xbmc.python" version="2.0" />
+		<import addon="script.module.simplejson" version="2.0.10" />
+		<import addon="script.module.beautifulsoup" version="3.2.0" />
+		<import addon="script.module.turtle" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.service" library="TurtleMain.py"
+		start="login">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Play the request received from PlayIt service clients like
+			safari browser extension</summary>
+		<description>PlayIt will allow you to send hosted video url from
+			websites like YouTube, Dailymotion and many more. This addon is
+			created using Turtle framework designed to ease the development of
+			XBMC video addon.</description>
+		<disclaimer>This addon makes no warranties, expressed or implied, and
+			hereby disclaims and negates all other warranties, including without
+			limitation, implied warranties or conditions of merchantability,
+			fitness for a particular purpose, or non-infringement of intellectual
+			property or other violation of rights. Further, PlayIt addon does not
+			warrant or make any representations concerning the accuracy, likely
+			results, or reliability of the use of the materials on the Internet
+			web site where from data is retrieved or otherwise relating to such
+			materials or on any sites linked to this addon. Videos are soruced
+			from video-hosting websites that are having full rights to remove
+			such access to video if required.</disclaimer>
+		<license>GNU GPL v3</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.animecrazy"
+       name="Anime Crazy"
+       version="1.0.9"
+       provider-name="AJ">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>AnimeCrazy.net - Watch Asian Animation Online</summary>
+    <description>Top Animation, Most Popular Animation, Must Watch Animations</description>
+    <disclaimer>This addon makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further,  Anime Crazy addon does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on the Internet web site where from data is retrieved or otherwise relating to such materials or on any sites linked to this addon. Videos are soruced from video-hosting websites that are having full rights to remove such access to video if required.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.turtle" name="Turtle" version="1.0.7"
+	provider-name="AJ">
+	<requires>
+		<import addon="xbmc.python" version="2.0" />
+		<import addon="script.module.simplejson" version="2.0.10" />
+		<import addon="script.module.beautifulsoup" version="3.2.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>XBMC add-on framework</summary>
+		<description>XBMC add-on provides a simplest way to configure action
+			to be performed for each add-on request using XML.</description>
+		<disclaimer>This addon makes no warranties, expressed or implied, and
+			hereby disclaims and negates all other warranties, including without
+			limitation, implied warranties or conditions of merchantability,
+			fitness for a particular purpose, or non-infringement of intellectual
+			property or other violation of rights. Further, PlayIt addon does not
+			warrant or make any representations concerning the accuracy, likely
+			results, or reliability of the use of the materials on the Internet
+			web site where from data is retrieved or otherwise relating to such
+			materials or on any sites linked to this addon. Videos are soruced
+			from video-hosting websites that are having full rights to remove
+			such access to video if required.</disclaimer>
+		<license>GNU GPL v3</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
