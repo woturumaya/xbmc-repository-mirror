@@ -2,8 +2,8 @@
 <addons>
 <addon id="script.module.mechanize"
        name="mechanize"
-       version="0.2.5"
-       provider-name="wwwsearch.sourceforge.net/mechanize/">
+       version="0.2.4"
+       provider-name="John J. Lee">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
   </requires>
@@ -623,5 +623,651 @@ http://channel9.msdn.com/</description>
 		<summary>View comic strips from Comics.com</summary>
 		<description>View comic strips from Comics.com</description>
 	</extension>
+</addon>
+
+<addon id="plugin.video.nfl"
+       name="NFL.com"
+       version="0.0.3"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.simplejson"/>
+	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Videos from nfl.com.</summary>
+    <description>Video highlights from National Football League.com.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.pga.tour"
+       name="PGA-Tour.com"
+       version="0.0.1"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Videos from pgatour.com</summary>
+    <description>Plays videos from The Professionl Golfers Association Tour website.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.atk"
+       name="Americas Test Kitchen"
+       version="0.0.3"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Americas Test Kitchen.com</summary>
+    <description>Cooking shows from the Americas Test Kitchen.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.mlbmc.hls"
+       name="MLBMC(mlb-hls)"
+       version="0.0.4"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Videos from mlb.com, Live games for MLB.tv subscribers.</summary>
+    <description>Video highlights from MLB.com. MLb.tv subscribers can watch the live and archived games. Usually there is a free game of the day witch only requires a mlb.com account.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.racebuddy"
+       name="RaceBuddy"
+       version="0.0.3"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>RaceBuddy</summary>
+    <description>RaceBuddy, Live NASCAR Racing from the Speed Channel and Nascar.com      Note:  Some streams will immediately start buffering when the stream starts, when this happens, you will have to select play again. </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.fox.sports"
+       name="Fox Sports"
+       version="0.0.2"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>fox.sports.com/video</summary>
+    <description>With this add-on you can watch videos from msn.fox.sports.com/video</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.weather.channel"
+       name="The Weather Channel"
+       version="0.0.2"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+	<import addon="script.module.simplejson"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>TheWeatherChannel.com/videos</summary>
+    <description>Videos from The Weather Channel.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.alaska.hd"
+       name="Alaska HDTV"
+       version="0.0.1"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Alaska HD videos.</summary>
+    <description>Travelers and outdoor enthusiasts alike join ﬁfth generation Alaskan Scott Slone as he hikes, boats, climbs and travels throughout some of the most awe-inspiring locations in Alaska.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.jtv.archives"
+       name="Jtv"
+       version="0.2.8"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.common.plugin.cache" version="0.9.1"/>
+    <import addon="script.module.simplejson"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Justin.tv</summary>
+    <description>Watch live and archived videos from justin.tv</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.steam"
+       name="Steam"
+       version="0.0.1"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Game videos from Steam</summary>
+    <description>Videos from SteamPowered.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.espn.go"
+       name="ESPN Go"
+       version="0.0.1"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>espn.go.com/video</summary>
+    <description>With this add-on you can watch videos from ESPN.go.com/video</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.live.streams"
+       name="LiveStreams"
+       version="1.0.5"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>livestreams</summary>
+    <description>It's up to you ;-) As an alternative to .strm files this add-on lets you add streams by adding items to an xml file. Thus giving you a nice list with thumbnails, fanart, and media info if you like.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.projectfreetv"
+       name="Project Free TV"
+       version="0.0.8"
+       provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.urlresolver" version="0.0.1"/>
+    <import addon="script.module.t0mm0.common" version="0.0.3"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en">Visit www.xbmchub.com for support.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.redlettermedia"
+       name="Red Letter Media"
+       version="0.0.9"
+       provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.t0mm0.common" version="1.0.0"/>
+    <import addon="script.module.elementtree"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en">Visit www.xbmchub.com for support.
+
+Watch the infamous Harry Plinkett movie reviews as well as regular movie review show Half In The Bag</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.musicvideojukebox"
+       name="Music Video Jukebox"
+       version="2.0.1"
+       provider-name="iZE">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="plugin.video.youtube" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="Default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Search for an artist and it will play up to 150 music videos of that artist.</summary>
+    <description lang="en">This plugin uses Google Suggest API, Last.fm and YouTube to search for music videos of an artist, and plays up to 150 music videos of that artist.</description>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.shoutcastradio"
+       name="SHOUTcast Radio Directory"
+       version="1.1.1"
+       provider-name="iZE">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="Default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Listen to SHOUTcast Radio stations.</summary>
+    <description lang="en">Browse through genres and subgenres and choose the radio station of your interest to listen to.</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.crunchyroll"
+       name="Crunchyroll"
+       version="2.2.3">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.cryptopy" version="1.2.6"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="default.py">
+	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>29000</minversion>
+    <summary>Watch videos from Crunchyroll.com!</summary>
+    <description>Crunchyroll is an online video service and community that offers full-length episodes and movies of the very best in Japanese anime and Asian entertainment.</description>
+    <disclaimer>Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <supportedcontent>
+      <content>movies</content>
+      <content>tvshows</content>
+    </supportedcontent>
+  </extension>
+</addon>
+
+<addon id="plugin.video.animeftw"
+       name="AnimeFTW.tv"
+       version="1.7.0"
+       provider-name="maruchan">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>29000</minversion>
+    <summary>Watch high-quality, streaming anime from AnimeFTW.tv!</summary>
+    <description>AnimeFTW.tv provides high-quality, streaming anime using both DivX and H264 video codecs.  With over 251 series and 882 GB of video available, AnimeFTW aims to provide the best collection of anime series, OVAs, and movies to its users.
+    </description>
+    <disclaimer>You must have an account at www.animeftw.tv and be logged in for this addon to function!  Only the first two episodes are available to free members!</disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.cnn.video" name="CNN Video" version="2.0.5" provider-name="nuka1195">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.pysvn" version="2.4.0"/>
+        <import addon="script.module.xbmcaddon" version="1.0.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <nochangelog>true</nochangelog>
+        <summary lang="en">View videos of the latest news from CNN.</summary>
+        <disclaimer lang="en">CNN slants their views liberally. (Obama media)</disclaimer>
+        <description lang="en">View videos of the latest news from CNN.</description>
+    </extension>
+</addon>
+
+<addon id="script.cinema.experience" name="Cinema Experience" version="1.0.46" provider-name="nuka1195-giftie-ackbarr">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.pysqlite" version="2.5.6"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Re-create a full movie theater experience.</summary>
+        <disclaimer>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License *see license.txt</disclaimer>
+        <description>Play trailers, slideshows, intro videos, outro videos: To re-create a movie theater experience in the comfort of your home.</description>
+        <description lang="es">Reproduce Avances, presentaciones, videos de intro, videos de outro: Para recrear una experiencia como si estuvieses en una sala de Cine en la comodidad de tu casa.</description>
+    </extension>
+</addon>
+
+<addon id="script.module.xbmcaddon" name="xbmcaddon emulator" version="1.0.4" provider-name="nuka1195">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>xbox</platform>
+        <summary lang="en">Module emulates XBMC xbmcaddon module.</summary>
+        <description lang="en">Module emulates XBMC xbmcaddon module.</description>
+    </extension>
+</addon>
+
+<addon id="script.xbmc.lyrics" name="XBMC Lyrics" version="2.1.7" provider-name="nuka1195">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.pysvn" version="2.4.0"/>
+        <import addon="script.module.xbmcaddon" version="1.0.4"/>
+    </requires>
+    <extension point="xbmc.python.lyrics" library="addon.py"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <nofanart>true</nofanart>
+        <nochangelog>true</nochangelog>
+        <summary lang="en">Find and display song lyrics including LRC (simple format).</summary>
+        <disclaimer lang="en">This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License *see license.txt</disclaimer>
+        <description lang="en">Find and display song lyrics from the internet. Uses embedded lyrics if available. Abilty to play and tag LRC (simple format) lyrics. Can be set to autoscroll untagged lyrics.[CR][CR]Primary and fallback scrapers. Artist's song lists if no song match was found. Artist aliases if no artist match was found.[CR][CR]Can run as a stand alone script (gui mode) or in the background.[CR][CR]*See readme.txt for a full description (can be viewed from settings).</description>
+    </extension>
+</addon>
+
+<addon id="plugin.video.apple.movie.trailers.lite" name="Apple Movie Trailers - Lite" version="2.0.1" provider-name="nuka1195">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Watch current movie trailers from apple.com.</summary>
+        <disclaimer>Only the most recent 100 or so trailers are listed.</disclaimer>
+        <description>Watch current movie trailers from http://trailers.apple.com/.[CR][CR]Check movie showtimes for theaters in your area.</description>
+    </extension>
+</addon>
+
+<addon id="weather.weatherplus"
+       name="Weather Plus"
+       version="2.5.0"
+       provider-name="Brightsr">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+  </requires>
+  <extension point="xbmc.python.weather" library="default.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Current weather conditions and colorful forecasts.</summary>
+    <description lang="en">Originally by Nuka1195.[CR][CR]This is the advanced weather source.[CR][CR]It provides not only current weather conditions but also extended forecasts and information including forecast videos and weather alerts.[CR][CR]Default weather provider is Weather.com, and you can use alternative providers such as Accuweather.com or NOAA. </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.pydocs" name="PyDocs &amp; PyPredefs Printer" version="2.1.1" provider-name="nuka1195 &amp; jfcarroll">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <nochangelog>true</nochangelog>
+        <nofanart>false</nofanart>
+        <noicon>false</noicon>
+        <summary lang="en">Creates Python html help docs and PyDev Predefined Completions for XBMC Python modules.</summary>
+        <description lang="en">Creates Python html help docs and PyDev Predefined Completions for XBMC Python modules. (xbmc, xbmcaddon, xbmcgui, xbmcplugin and xbmcvfs)</description>
+        <disclaimer lang="en">Only accurate for the version of XBMC this add-on was run in.</disclaimer>
+    </extension>
+</addon>
+
+<addon id="plugin.video.karaokeplay"
+       name="KaraokePlay"
+       version="1.0"
+       provider-name="dagur">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="plugin.video.youtube" version="1.8.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>audio video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Play Karaoke videos from KaraokePlay.com</summary>
+    <description lang="en">KaraokePlay has thousands of karaoke videos from youtube indexed. This allows you to browse and play them from xbmc.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.apple.movie.trailers" name="Apple Movie Trailers" version="2.0.0" provider-name="nuka1195">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.pysqlite" version="2.5.6"/>
+        <import addon="script.module.elementtree" version="1.2.7"/>
+        <import addon="script.module.pil" version="1.1.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Watch movie trailers.</summary>
+        <disclaimer></disclaimer>
+        <description>Watch movie trailers from http://trailers.apple.com/. Check movie showtimes for theaters in your area.</description>
+    </extension>
+</addon>
+
+<addon id="plugin.video.theonly"
+       name="TheOnlyDevice"
+       version="1.3.2"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Hollywood, Bollywood and asian movies from theonlydevice.com</summary>
+    <description lang="en">Enjoy it!</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.sesame.street"
+       name="Sesame Street"
+       version="1.2.0"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch shows from Sesamestreet.org</summary>
+    <description lang="en">Kids can enjoy!</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kidswb"
+       name="KidsWB"
+       version="1.0.1"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch cartoon shows from Warner Bros</summary>
+    <description lang="en">Find Tom Jerry, Looney Tunes, The Flinstones and many more shows in KidsWB</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.topdoc"
+       name="TopDocumentaryFilms"
+       version="1.4.4"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch documentaries from topdocumentaryfilms.com</summary>
+    <description lang="en">Place where you want to watch documentary shows covering various topics.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.fpt"
+       name="Fastpasstv"
+       version="3.0.4"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch tv shows, movies and documentaries from fastpasstv.com</summary>
+    <description lang="en">Create your free account from the website and enjoy it!</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.nickelodeon"
+       name="Nickelodeon"
+       version="1.3.3"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch shows from Nickelodeon.com</summary>
+    <description lang="en">Favorite characters from Nickelodeon and Nickelodeon Jr. shows like Spongebob, iCarly, The Penguins of Madagascar and The Fairly OddParents and many more.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.mtvshows"
+       name="MTV Shows"
+       version="1.1.1"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch TV Shows from MTV</summary>
+    <description lang="en">Find all crazy tv shows here, new and old.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.veehd"
+       name="VeeHD"
+       version="1.3.1"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Search and stream good movies</summary>
+    <description>Search and stream good movies from veehd.com. Get user/pass from http://veehd.com</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 </addons>

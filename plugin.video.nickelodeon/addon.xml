@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.nickelodeon"
+       name="Nickelodeon"
+       version="1.3.3"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch shows from Nickelodeon.com</summary>
+    <description lang="en">Favorite characters from Nickelodeon and Nickelodeon Jr. shows like Spongebob, iCarly, The Penguins of Madagascar and The Fairly OddParents and many more.</description>
+     <platform>all</platform>
+  </extension>
+</addon>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.fpt"
+       name="Fastpasstv"
+       version="3.0.4"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch tv shows, movies and documentaries from fastpasstv.com</summary>
+    <description lang="en">Create your free account from the website and enjoy it!</description>
+     <platform>all</platform>
+  </extension>
+</addon>

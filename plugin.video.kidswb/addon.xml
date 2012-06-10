@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.kidswb"
+       name="KidsWB"
+       version="1.0.1"
+       provider-name="nixa">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch cartoon shows from Warner Bros</summary>
+    <description lang="en">Find Tom Jerry, Looney Tunes, The Flinstones and many more shows in KidsWB</description>
+     <platform>all</platform>
+  </extension>
+</addon>

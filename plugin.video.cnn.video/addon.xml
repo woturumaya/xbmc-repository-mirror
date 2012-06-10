@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.cnn.video" name="CNN Video" version="2.0.5" provider-name="nuka1195">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.pysvn" version="2.4.0"/>
+        <import addon="script.module.xbmcaddon" version="1.0.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <nochangelog>true</nochangelog>
+        <summary lang="en">View videos of the latest news from CNN.</summary>
+        <disclaimer lang="en">CNN slants their views liberally. (Obama media)</disclaimer>
+        <description lang="en">View videos of the latest news from CNN.</description>
+    </extension>
+</addon>
