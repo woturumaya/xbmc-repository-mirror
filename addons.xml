@@ -2153,6 +2153,23 @@ to the default for a freshly installed MCE remote.
   </extension>
 </addon>
 
+<addon id="skin.xeebo" version="1.4.4" name="XeeBo" provider-name="Hitcher">
+	<requires>
+		<import addon="xbmc.gui" version="2.11"/>
+		<import addon="script.randomitems" version="1.0.11"/>
+		<import addon="script.recentlyadded" version="2.0.5"/>
+		<import addon="script.tv.show.next.aired" version="2.1.2"/>
+	</requires>
+	<extension point="xbmc.gui.skin" defaultresolution="720p" defaultresolutionwide="720p" defaultthemename="Textures.xbt" effectslowdown="1.00" debugging="false"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<minversion app="xbmc">28000</minversion>
+		<summary>Boxee style skin</summary>
+		<description>Designed for use with simple remotes (ie ATV), mouse or touchscreens where everything is only a few clicks away</description>
+		<disclaimer>Built from the unfinished Boxee skin by Wir3d (part-coded by Jezz_X)</disclaimer>
+	</extension>
+</addon>
+
 <addon id="plugin.video.ccctv"
        name="Chaos Computer Club (CCC)-TV"
        version="1.0.1"
@@ -3497,6 +3514,1206 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
   <extension point="xbmc.python.module"
              library="lib" />
   <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.albums.allmusic.com"
+       name="AllMusic"
+       version="2.0.1"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.last.fm" version="1.1.0"/>
+    <import addon="metadata.common.allmusic.com" version="1.8.1"/>
+    <import addon="metadata.common.htbackdrops.com" version="1.0.7"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.albums"
+             language="en"
+             library="allmusic.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AllMusic album information</summary>
+    <summary lang="de">Alben Scraper für AllMusic.com</summary>
+    <summary lang="es">Scraper de Álbums de AllMusic</summary>
+    <summary lang="fr">Scraper d'albums musicaux AllMusic</summary>
+    <summary lang="hu">AllMusic.com album információk</summary>
+    <summary lang="nl">AllMusic-albuminfo</summary>
+    <summary lang="pl">Informacje o albumach z AllMusic</summary>
+    <summary lang="pt">Scraper de músicas AllMusic</summary>
+    <summary lang="ro">Catalog AllMusic pentru informații albume</summary>
+    <summary lang="ru">Информация об альбоме из AllMusic</summary>
+    <summary lang="se">AllMusic albuminformation</summary>
+    <summary lang="zh">AllMusic音乐专辑信息</summary>
+    <description lang="en">Use AllMusic.com to fill your library metadata information.
+The allmusic website was created in 1995 as a place for music fans to indulge their passion.
+The AMG editorial staff, along with hundreds of expert contributors (all music fanatics in their own right), has made allmusic the most comprehensive music reference source on the planet. They are all dedicated to creating and maintaining the knowledgeable, spirited content that music lovers and industry professionals have come to expect from AMG.
+All genres and styles of music are covered here, ranging from the most commercially popular to the most obscure. We critique albums and artists within the context of their own genres - from opera to garage rock to traditional country. This ensures that fans of any style of music can depend on us to keep them up-to-date with their favorite artists as well as introduce them to new sounds.</description>
+     <description lang="de">Benutze den AllMusic.com-Scraper um deine Musik-Bibliothek mit Metadaten zu füllen.
+AllMusic.com wurde 1995 gegründet, um Musikliebhabern einen Platz zu geben, Ihre Leidenschaft auszuleben.
+Die AMG Redaktion, zusammen mit hunderten Experten (alles Fachmänner auf Ihrem Gebiet) als Beitragende, machte AllMusic.com zur umfangreichsten Quelle für Musikinformationen auf dem Planeten. Sie sind alle engagiert, um den lebhaften Inhalt, welcher von Musikliebhabern und der Musikindustrie von AMG erwartet wird, zu Erstellen und Pflegen.
+Alle Genres und Stile der Musik werden hier abgedeckt, reichend von Mainstream bis zum Underground. Wir schreiben Kritiken zu Alben, im Kontext zu dem passenden Genre - von Oper über Garagen Rock bis hin zu traditioneller Country Musik. Das garantiert Fans jeglicher Musikrichtung, dass sie sich auf uns verlassen können, weil wir sie immer up-to-date über Ihre Liblingskünstler halten und Ihnen auch neue Sounds vorstellen</description>
+    <description lang="es">Este scraper utiliza Allmusic.com para rellenar la información de la librería musical.
+La página web allmusic fue creada en el 1995 cómo un sitio donde los fans podíaan compartir su pasión por la música.
+El equipo de AMG, junto con cuentos de colaboradores expertos (todos ellos fans de la música) han hecho de allmusic uno de los sitios más extensos del planeta. Todos ellos intentan crear y mantener unos contenidos que los amantes de la música y los profesionales del sector obtienen de AMG.
+Todos los géneros y estilos musicales tienen cabida, desde los más comerciales hasta los más oscuros. En allmusic se critican los álbumes y los artistas en el entorno que les corresponde - desde opera, pasando por rock hasta country tradicional. Así se asegura que los fans de cualquier estilo de música puedan depender de nosotros para mantenerse al día de las novedades de sus artistas favoritos y descubrir nuevos sonidos.</description>
+    <description lang="fr">Utiliser AllMusic.com pour la récupération des méta-données.
+Le site web AllMusic a été créé en 1995 afin que les fans de musique puissent assouvir leur passion.
+L'équipe rédactionnelle d'AMG, forte de ses centaines de contributeurs avisés (tous passionnés de musique à part entière), a fait de AllMusic la source de référence la plus complète de toute la planète. Chacun s'investissant dans la construction et la maintenance d'un contenu aussi passionné et judicieux que tout amoureux de musique ou tout professionnel de l'industrie serait en droit d'attendre d'AMG.
+Tous les styles et tous les genres y sont représentés, allant du plus commercial au plus confidentiel. Nous critiquons albums et artistes dans le cadre de leur propre style - de l'opéra à la country traditionnelle en passant par le rock garage. Pour les fans de chaque style musical, c'est l'assurance que nous les tenons informés sur leurs artistes préférés ou à l'apprentissage de nouvelles sonorités.</description>
+    <description lang="hu">Az AllMusic.com használata a médiatáradatok feltöltésére. Ez a webhely 1995-ben a zenerajongók szenvedélyének kiszolgálására jött létre.
+Az AMG szerkesztői csapata a szakértő közreműködőkkel együtt (mind zenei fanatikus a maga nemében), az allmusic-ot a legátfogóbb zenei információforrássá tették a világon.
+Minden létező stílus és zenei irányzat feldolgozásra kerül itt. Kezdve a legpopulárisabbtól a legismeretlenebbig. Mi kritikát mondunk a lemezekről és előadókról, az operától a garázs rock-on át a hagyományos country zenéig. Ez biztosítja, hogy bármely stílus rajongói napra készek legyenek a kedvenc előadóikkal, ugyanakkor az új hangzások is eljussanak hozzájuk.</description>
+    <description lang="nl">AllMusic.com gebruiken om de metadata van uw collectie op te halen.
+De AllMusic-website werd in 1995 opgericht om muziekfans een online thuis te bieden.
+De AMG-redactie heeft van AllMusic het meest complete muzieknaslagwerk gemaakt op deze planeet, mede dankzij de bijdragen van honderden experts. Het is hun missie om de hoogstaande inhoud te blijven aanbieden die muziekliefhebbers en professionals ondertussen van AMG verwachten.
+Alle genres en stijlen - of het nu de meest commerciële of de meest obscure zijn - krijgen hier een plaatsje. We bespreken albums en artiesten in de context van hun eigen genre, van opera over garagerock tot traditionele country. Hierdoor kunnen fans van elke muziekstijl bij ons terecht voor de laatste informatie over hun favoriete artiesten, of om nieuwe muziek te leren ontdekken.</description>
+    <description lang="pl">Używa AllMusic.com do pobierania informacji o albumach z Twojej muzycznej biblioteki.</description>
+    <description lang="pt">Use o AllMusic.com para obter a informação da sua Biblioteca de música. O site allmusic foi criado em 1995 para alimentar a paixão dos fans de música.
+O pessoal da redacção da AMG, em conjunto com centenas de especialistas (todos fanáticos por música à sua maneira), tornaram o allmusic o mais completo site de referência musical do planeta. Continuam dedicados a criar e manter o conhecimento, espírito e conteúdos que fans de música e profissionais da indústria se habituaram a obter da AMG.
+Todos os géneros e estilos de música podem ser encontrados aqui, desde o mais comercial e popular até à música mais rara. Nós revemos e criticamos álbuns e artistas dentro do contexto do seu género - the ópera a rock de garagem, de pop a música country. Isto assegura que fans de qualquer género podem depender de nós para os manter actualizados sobre os seus artistas favoritos bem como de novos sons.</description>
+     <description lang="ro">Folosiți AllMusic.com ca sursă pentru mediateca dumneavoastră.
+Site-ul allmusic a fost creat în 1995 ca un loc unde iubitorii de muzică să se răsfețe. Echipa editorială AMG, împreună cu sute de contribuitori experți (niște fanatici după muzică în felul lor), au făcut allmusic cea mai cuprinzătoare sursă de referințe muzicale de pe planetă. Toți sunt dedicați să creeze și să întrețină conținutul pe care iubitorii de muzică și profesioniștii din industrie îl așteaptă de la AMG.
+Toate genurile și stilurile de muzică sunt incluse aici, începând de la cele mai populare către cele mai obscure. Noi criticăm albumele și artiștii în contextul genurilor proprii. Toți fanii oricărui stil de muzică pot conta pe noi să îi ținem la curent cu artiștii lor favoriți, dar și să le prezentăm noi cântece.</description>
+    <description lang="ru">Используйте AllMusic.com для добавления мета-данных в вашу библиотеку.
+Сайт allmusic был создан в 1995 как место для фанатов музыки, где они могли бы удовлетворять свою страсть.
+Редакторский состав AMG, вместе с сотнями участников-экспертов (каждый по-своему фанат музыки), сделали allmusic самым полным источником информации о музыке на планете. Все они посвятили себя созданию и поддержке полезного, и познавательного, контента который любители музыки, и профессионалы индустрии, ожидают от AMG.
+Здесь представлены все стили и жанры музыки, от самых коммерчески популярных до наиболее неизвестных. Мы критикуем альбомы и исполнителей в контексте их собственного жанра - от оперы и гаражного рока до традиционного кантри. Это обеспечивает то, что фанат любого стиля музыки может полагаться на нас в поддержке актуальности своих познаний о любимом исполнителе и также расширять свои знания.</description>
+    <description lang="se">Låt AllMusic.com fylla dina mappar med metadatainformation.
+AllMusic's webbplats skapades 1995 som en plats för musikälskare där de kunde njuta av sin passion.
+AMG's redaktion har tillsammans med hundratals experter och bidragsgivare, alla musikfanatiker på sina egna sätt, gjort AllMusic till den mest omfattande källan inom musikreferens på den här planeten. De är alla kunniga och engagerade med att skapa och upprätthålla ett innehåll på webbplatsen, som musikälskare och branschfolk förväntar sig av AMG.
+Alla genrer och stilar av musik behandlas här, allt från det mest kommersiellt populära till det mest suspekta. De kritiserar album och artister inom ramen för sina egna genrer, allt från opera, garagerock till traditionell countrymusik. Detta säkerställer att alla fans oavsett musikstil kan lita på dem och hålla sig uppdaterade med sina favoritartister och bli introducerade till nya ljud.</description>
+    <description lang="zh">从AllMusic.com网站获取音乐资料。
+allmusic网站创建于1995年，它是音乐爱好者的乐园。
+AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmusic建成世界上最全面的音乐资料库。他们致力于创造和维护音乐爱好者和业内专业人士期望从AMG得到的知识和精神产品。
+这里涵盖了所有的音乐流派和风格，评价从最流行到晦涩和冷门的音乐，讨论不同风格的专辑和艺术家 - 从歌剧到摇滚乐到传统的乡村音乐。力求让所有音乐爱好者都能在这里了解他所喜爱的艺术家最新动态，并为他们介绍新的音乐。</description>
+    <platform>all</platform>
+    <broken>broken due to allmusic.com site layout changes</broken>
+  </extension>
+</addon>
+
+<addon id="metadata.albums.freebase.com"
+       name="FreeBase"
+       version="1.0.5"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.albums"
+             language="en"
+             library="freebase.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Freebase Album Scraper</summary>
+    <summary lang="hu">Freebase album információk</summary>
+    <summary lang="kr">Freebase 음악 스크래퍼</summary>
+    <summary lang="se">Freebase Musikskrapa</summary>
+    <summary lang="pl">Scraper albumów Freebase</summary>
+    <summary lang="pt">Scraper de filmes Freebase</summary>
+    <description lang="en">Download Music information</description>
+    <description lang="hu">Album információk letöltése a www.freebase.com webhelyről</description>
+    <description lang="kr">Freebase 에서 음악 정보 다운로드</description>
+    <description lang="se">Ladda ner musikinformation från Freebase</description>
+    <description lang="nl">Download muziek informatie van freebase</description>
+    <description lang="pl">Pobieraj informacje o albumach z www.freebase.com</description>
+    <description lang="pt">Descarregar informação de filmes de www.freebase.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.albums.last.fm"
+       name="Last.FM"
+       version="1.1.4"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.last.fm" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.albums"
+             language="en"
+             library="lastfm.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">LastFM Album Scraper</summary>
+    <summary lang="hu">LastFM album információk</summary>
+    <summary lang="kr">LastFM 음악 스크래퍼</summary>
+    <summary lang="se">LastFM Musikskrapa</summary>
+    <summary lang="nl">LastFM Muziek Scraper</summary>
+    <summary lang="pl">Scraper albumów LastFM</summary>
+    <summary lang="pt">Scraper de música de LastFM</summary>
+    <description lang="en">Download Music information from www.last.fm</description>
+    <description lang="hu">Album információk letöltése a www.last.fm webhelyről</description>
+    <description lang="kr">LastFM 에서 음악 정보 다운로드</description>
+    <description lang="se">Ladda ner musikinformation från Last.FM</description>
+    <description lang="nl">Download muziek informatie van Last.fm</description>
+    <description lang="pl">Pobieraj informacje o albumach z Last.fm</description>
+    <description lang="pt">Descarregue informação de música de Last.fm</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.albums.metal-archives.com"
+       name="Encyclopaedia Metallum"
+       version="1.0.4"
+       provider-name="spiff">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.htbackdrops.com" version="1.0.1"/>
+    <import addon="metadata.common.last.fm" version="1.0.1"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.albums"
+             language="en"
+             library="metal-archives.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Download information about your metal from Encyclopaedia Metallum</summary>
+    <summary lang="hu">Encyclopaedia Metallum album információk</summary>
+    <summary lang="pl">Pobieraj informacje z Encyklopedii Metallum</summary>
+    <description>Encyclopaedia Metallum: The Metal Archives is a website which lists bands from various forms of heavy metal music.
+
+Encyclopaedia Metallum attempts to provide comprehensive information on each band, such as a discography, logos, pictures, lyrics, line-ups, biography, trivia and user-submitted reviews.
+
+The site also provides a system for submitting bands to the archives, and users are encouraged to use it. The site has 73,000+ bands listed, 170,000+ releases, 1,196,000+ tracks, 52,000+ reviews and 227,000+ registered users. It is one of the top 500 most-visited websites in five countries.</description>
+    <description lang="hu">A Metal Archives egy weboldal ami a heavy metal zene különböző formáit listázza.
+Az oldal megpróbál átfogó információkat nyújtani minden egyes csapatról, mint a diszkográfia, logók, képek, dalszövegek, felállások, életrajzok és felhasználói vélemények.
+Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak, hogy együtteseket, információkat adjanak hozzá az adatbázishoz. Az oldalon 73,000+ együttes van listázva, 1,196,000+ szám, 52,000+ kritika és 227,000+ regisztrált felhasználó. A webhely benne van az 500 leglátogatottabb weboldal között öt országban.</description>
+    <description lang="pl">Encyklopedia Metallum: Metalowe Archiwa to strona skupiająca metalowe kapele. Serwis stara się zbierać wszystkie informacje o formacjach metalowych i ich twórczości (dyskografie, logotypy, zdjęcia, teksty, biografie, ciekawostki i recenzje użytkowników).</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.amazon.co.uk"
+       name="Amazon.co.uk"
+       version="1.0.3"
+       provider-name="C-Quel + John Lockwood">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="en"
+             library="amazonuk.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Amazon.co.uk Movie Scraper</summary>
+    <summary lang="hu">Amazon.co.uk filmadat leolvasó</summary>
+    <summary lang="kr">Amazon.co.uk 영화 스크래퍼</summary>
+    <summary lang="pl">Scraper filmów Amazon.co.uk</summary>
+    <summary lang="pt">Scraper de filmes Amazon.co.uk</summary>
+    <description lang="en">Download Movie information from www.amazon.co.uk</description>
+    <description lang="hu">Film információk letöltése a www.amazon.co.uk webhelyről</description>
+    <description lang="kr">www.amazon.co.uk 에서 영화 정보 다운로드</description>
+    <description lang="pl">Pobieraj informacje o filmach z www.amazon.co.uk</description>
+    <description lang="pt">Descarregar informação de filmes de www.amazon.co.uk</description>
+    <platform>all</platform>
+    <broken>Doesn't find any movie</broken>
+  </extension>
+</addon>
+
+<addon id="metadata.amazon.com"
+       name="Amazon.com"
+        version="1.0.4"
+       provider-name="C-Quel + John Lockwood">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="en"
+             library="amazonus.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Amazon Movie Scraper</summary>
+    <summary lang="hu">Amazon filmadat leolvasó</summary>
+    <summary lang="kr">Amazon 영화 스크래퍼</summary>
+    <summary lang="pl">Scraper filmów Amazon</summary>
+    <summary lang="pt">Scraper de filmes Amazon</summary>
+    <description lang="en">Download Movie information from www.amazon.com</description>
+    <description lang="hu">Film információk letöltése a www.amazon.com webhelyről</description>
+    <description lang="kr">www.amazon.com 에서 영화 정보 다운로드</description>
+    <description lang="pl">Pobieraj informacje o filmach z www.amazon.com</description>
+    <description lang="pt">Descarregar informação de filmes de www.amazon.com</description>
+    <platform>all</platform>
+    <broken>will not find any movies</broken>
+  </extension>
+</addon>
+
+<addon id="metadata.anidb.net"
+       name="AniDB.net"
+       version="1.3.1"
+       provider-name="bambi">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.tvshows"
+             language="en"
+             library="anidb.xml"
+             cachepersistence="48:00"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AniDB.net TV Show scraper</summary>
+    <description lang="en">Download anime show informations from AniDB.net</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.artists.allmusic.com"
+       name="AllMusic"
+       version="2.0.6"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.last.fm" version="1.1.0"/>
+    <import addon="metadata.common.allmusic.com" version="1.8.2"/>
+    <import addon="metadata.common.htbackdrops.com" version="1.0.7"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.artists"
+             language="en"
+             library="allmusic.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AllMusic artist information + HTBackdrops artist images</summary>
+    <summary lang="de">Scraper für Künstler-Informationen von AllMusic.com</summary>
+    <summary lang="es">Descarga información de Artistas de AllMusic</summary>
+    <summary lang="fr">Scraper d'artistes musicaux AllMusic</summary>
+    <summary lang="hu">AllMusic előadó információk</summary>
+    <summary lang="nl">AllMusic-artiestinfo</summary>
+    <summary lang="pl">Informacje o artystach AllMusic</summary>
+    <summary lang="pt">Scraper de músicas AllMusic</summary>
+    <summary lang="ro">Catalog AllMusic pentru informații artiști</summary>
+    <summary lang="ru">Информация об исполнителе из AllMusic</summary>
+    <summary lang="se">AllMusic artistinformation + HTBackdrops artistbilder</summary>
+    <summary lang="zh">AllMusic艺术家信息</summary>
+    <description lang="en">Use AllMusic.com to fill your libray metadata information.
+The allmusic website was created in 1995 as a place for music fans to indulge their passion. All genres and styles of music are covered here, ranging from the most commercially popular to the most obscure. We critique albums and artists within the context of their own genres - from opera to garage rock to traditional country.
+
+Home Theater Backdrops (HTBackdrops.com) is a community driven image database for high quality artist images like thumbs and fanarts. All images have been created or sourced by its members. Please consider uploading your own images of your favorite musician.</description>
+    <description lang="de">Benutze den AllMusic.com-Scraper um deine Musik-Bibliothek mit Metadaten zu füllen.
+AllMusic.com wurde 1995 gegründet, um Musikliebhabern einen Platz zu geben, Ihre Leidenschaft auszuleben.
+Die AMG Redaktion, zusammen mit hunderten Experten (alles Fachmänner auf Ihrem Gebiet) als Beitragende, machte AllMusic.com zur umfangreichsten Quelle für Musikinformationen auf dem Planeten. Sie sind alle engagiert, um den lebhaften Inhalt, welcher von Musikliebhabern und der Musikindustrie von AMG erwartet wird, zu Erstellen und Pflegen.
+Alle Genres und Stile der Musik werden hier abgedeckt, reichend von Mainstream bis zum Underground. Wir schreiben Kritiken zu Alben, im Kontext zu dem passenden Genre - von Oper über Garagen Rock bis hin zu traditioneller Country Musik. Das garantiert Fans jeglicher Musikrichtung, dass sie sich auf uns verlassen können, weil wir sie immer up-to-date über Ihre Liblingskünstler halten und Ihnen auch neue Sounds vorstellen</description>
+    <description lang="es">Este scraper utiliza Allmusic.com para rellenar la información de la librería musical.
+La página web allmusic fue creada en el 1995 cómo un sitio donde los fans podíaan compartir su pasión por la música.
+El equipo de AMG, junto con cuentos de colaboradores expertos (todos ellos fans de la música) han hecho de allmusic uno de los sitios más extensos del planeta. Todos ellos intentan crear y mantener unos contenidos que los amantes de la música y los profesionales del sector obtienen de AMG.
+Todos los géneros y estilos musicales tienen cabida, desde los más comerciales hasta los más oscuros. En allmusic se critican los álbumes y los artistas en el entorno que les corresponde - desde opera, pasando por rock hasta country tradicional. Así se asegura que los fans de cualquier estilo de música puedan depender de nosotros para mantenerse al día de las novedades de sus artistas favoritos y descubrir nuevos sonidos.</description>
+    <description lang="fr">Utiliser AllMusic.com pour la récupération des méta-données.
+Le site web AllMusic a été créé en 1995 afin que les fans de musique puissent assouvir leur passion.
+L'équipe rédactionnelle d'AMG, forte de ses centaines de contributeurs avisés (tous passionnés de musique à part entière), a fait de AllMusic la source de référence la plus complète de toute la planète. Chacun s'investissant dans la construction et la maintenance d'un contenu aussi passionné et judicieux que tout amoureux de musique ou tout professionnel de l'industrie serait en droit d'attendre d'AMG.
+Tous les styles et tous les genres y sont représentés, allant du plus commercial au plus confidentiel. Nous critiquons albums et artistes dans le cadre de leur propre style - de l'opéra à la country traditionnelle en passant par le rock garage. Pour les fans de chaque style musical, c'est l'assurance que nous les tenons informés sur leurs artistes préférés ou à l'apprentissage de nouvelles sonorités.</description>
+    <description lang="hu">Az AllMusic.com használata a médiatáradatok feltöltésére. Ez a webhely 1995-ben a zenerajongók szenvedélyének kiszolgálására jött létre.
+Az AMG szerkesztői csapata a szakértő közreműködőkkel együtt (mind zenei fanatikus a maga nemében), az allmusic-ot a legátfogóbb zenei információforrássá tették a világon.
+Minden létező stílus és zenei irányzat feldolgozásra kerül itt. Kezdve a legpopulárisabbtól a legismeretlenebbig. Mi kritikát mondunk a lemezekről és előadókról, az operától a garázs rock-on át a hagyományos country zenéig. Ez biztosítja, hogy bármely stílus rajongói napra készek legyenek a kedvenc előadóikkal, ugyanakkor az új hangzások is eljussanak hozzájuk.</description>
+    <description lang="nl">AllMusic.com gebruiken om de metadata van uw collectie op te halen.
+De AllMusic-website werd in 1995 opgericht om muziekfans een online thuis te bieden.
+De AMG-redactie heeft van AllMusic het meest complete muzieknaslagwerk gemaakt op deze planeet, mede dankzij de bijdragen van honderden experts. Het is hun missie om de hoogstaande inhoud te blijven aanbieden die muziekliefhebbers en professionals ondertussen van AMG verwachten.
+Alle genres en stijlen - of het nu de meest commerciële of de meest obscure zijn - krijgen hier een plaatsje. We bespreken albums en artiesten in de context van hun eigen genre, van opera over garagerock tot traditionele country. Hierdoor kunnen fans van elke muziekstijl bij ons terecht voor de laatste informatie over hun favoriete artiesten, of om nieuwe muziek te leren ontdekken.</description>
+    <description lang="pl">Używa AllMusic.com do pobierania informacji o zawartości Twojej muzycznej biblioteki.</description>
+    <description lang="pt">Use o AllMusic.com para obter a informação da sua Biblioteca de música. O site allmusic foi criado em 1995 para alimentar a paixão dos fans de música.
+O pessoal da redacção da AMG, em conjunto com centenas de especialistas (todos fanáticos por música à sua maneira), tornaram o allmusic o mais completo site de referência musical do planeta. Continuam dedicados a criar e manter o conhecimento, espírito e conteúdos que fans de música e profissionais da indústria se habituaram a obter da AMG.
+Todos os géneros e estilos de música podem ser encontrados aqui, desde o mais comercial e popular até à música mais rara. Nós revemos e criticamos álbuns e artistas dentro do contexto do seu género - the ópera a rock de garagem, de pop a música country. Isto assegura que fans de qualquer género podem depender de nós para os manter actualizados sobre os seus artistas favoritos bem como de novos sons.</description>
+    <description lang="ro">Folosiți AllMusic.com ca sursă pentru mediateca dumneavoastră.
+Site-ul allmusic a fost creat în 1995 ca un loc unde iubitorii de muzică să se răsfețe. Toate genurile și stilurile de muzică sunt incluse aici, începând de la cele mai populare către cele mai obscure. Noi criticăm albumele și artiștii în contextul genurilor proprii.
+
+Home Theater Backdrops (HTBackdrops.com) este o bază de date de imagini realizată de comunitate pentru imagini de înaltă calitate ale artiștiilor, cum ar fi miniaturi și imagini realizate de fani (fanarts). Toate imaginile au fost create sau au ca sursă membrii ei. Vă rugăm să luați în considerare că puteți încărca propriile imagini cu muzicianul preferat.</description>
+    <description lang="ru">Используйте AllMusic.com для добавления мета-данных в вашу библиотеку.
+Сайт allmusic был создан в 1995 как место для фанатов музыки, где они могли бы удовлетворять свою страсть.
+Редакторский состав AMG, вместе с сотнями участников-экспертов (каждый по-своему фанат музыки), сделали allmusic самым полным источником информации о музыке на планете. Все они посвятили себя созданию и поддержке полезного, и познавательного, контента который любители музыки, и профессионалы индустрии, ожидают от AMG.
+Здесь представлены все стили и жанры музыки, от самых коммерчески популярных до наиболее неизвестных. Мы критикуем альбомы и исполнителей в контексте их собственного жанра - от оперы и гаражного рока до традиционного кантри. Это обеспечивает то, что фанат любого стиля музыки может полагаться на нас в поддержке актуальности своих познаний о любимом исполнителе и также расширять свои знания.</description>
+    <description lang="se">Låt AllMusic.com fylla dina mappar med metadatainformation.
+AllMusic's webbplats skapades 1995 som en plats för musikälskare där de kunde njuta av sin passion. Alla genrer och stilar av musik behandlas här, allt från det mest kommersiellt populära till det mest suspekta. De kritiserar album och artister inom ramen för sina egna genrer, allt från opera, garagerock till traditionell countrymusik.
+
+Home Theater Backdrops (HTBackdrops.com) är en gemenskapsdriven bilddatabas för högkvalitativa miniatyrer och fanart på artister. Alla bilder har skapats eller bidragits från medlemmarna. Överväg att ladda upp dina egna bilder av dina favoritartister.</description>
+    <description lang="zh">从AllMusic.com网站获取音乐资料。
+allmusic网站创建于1995年，它是音乐爱好者的乐园。
+AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmusic建成世界上最全面的音乐资料库。他们致力于创造和维护音乐爱好者和业内专业人士期望从AMG得到的知识和精神产品。
+这里涵盖了所有的音乐流派和风格，评价从最流行到晦涩和冷门的音乐，讨论不同风格的专辑和艺术家 - 从歌剧到摇滚乐到传统的乡村音乐。力求让所有音乐爱好者都能在这里了解他所喜爱的艺术家最新动态，并为他们介绍新的音乐。</description>
+    <platform>all</platform>
+    <broken>broken due to allmusic.com site layout changes</broken>
+  </extension>
+</addon>
+
+<addon id="metadata.artists.freebase.com"
+       name="FreeBase"
+       version="1.0.6"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.htbackdrops.com" version="1.0.1"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.artists"
+             language="en"
+             library="freebase.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Freebase Artist Scraper</summary>
+    <summary lang="hu">Freebase előadó információk</summary>
+    <summary lang="kr">Freebase 음악 스크래퍼</summary>
+    <summary lang="se">Freebase Musikskrapa</summary>
+    <summary lang="pl">Scraper artystów Freebase</summary>
+    <summary lang="pt">Scraper de filmes Freebase</summary>
+    <description lang="en">Download Music information</description>
+    <description lang="hu">Előadó információk letöltése a www.freebase.com webhelyről</description>
+    <description lang="kr">Freebase 에서 음악 정보 다운로드</description>
+    <description lang="se">Ladda ner musikinformation från Freebase</description>
+    <description lang="nl">Download muziek informatie van freebase</description>
+    <description lang="pl">Pobieraj informacje o artystach z www.freebase.com</description>
+    <description lang="pt">Descarregar informação de filmes de www.freebase.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.artists.last.fm"
+       name="Last.FM"
+       version="1.2.0"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.last.fm" version="1.1.0"/>
+    <import addon="metadata.common.htbackdrops.com" version="1.0.1"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.artists"
+             language="en"
+             library="lastfm.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">LastFM Music Scraper</summary>
+    <summary lang="hu">LastFM előadó információk</summary>
+    <summary lang="kr">LastFM 음악 스크래퍼</summary>
+    <summary lang="nl">LastFM Muziek Scraper</summary>
+    <summary lang="pl">Scraper artystów LastFM</summary>
+    <summary lang="pt">Scraper de música LastFM</summary>
+    <summary lang="se">LastFM Musikskrapa</summary>
+    <description lang="en">Download Music information from www.last.fm</description>
+    <description lang="hu">Előadó információk letöltése a www.last.fm webhelyről</description>
+    <description lang="kr">LastFM 에서 음악 정보 다운로드</description>
+    <description lang="nl">Download muziek informatie van Last.fm</description>
+    <description lang="pl">Pobieraj informacje o artystach z Last.fm</description>
+    <description lang="pt">Descarregue informação de música de Last.fm</description>
+    <description lang="se">Ladda ner musikinformation från Last.FM</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.artists.metal-archives.com"
+       name="Encyclopaedia Metallum"
+       version="1.0.4"
+       provider-name="spiff">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.htbackdrops.com" version="1.0.1"/>
+    <import addon="metadata.common.last.fm" version="1.0.1"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.artists"
+             language="en"
+             library="metal-archives.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Download information about your metal from Encyclopaedia Metallum</summary>
+    <summary lang="hu">Encyclopaedia Metallum előadó információk</summary>
+    <summary lang="pl">Pobieraj informacje z Encyklopedii Metallum</summary>
+    <description lang="en">Encyclopaedia Metallum: The Metal Archives is a website which lists bands from various forms of heavy metal music.
+
+Encyclopaedia Metallum attempts to provide comprehensive information on each band, such as a discography, logos, pictures, lyrics, line-ups, biography, trivia and user-submitted reviews.
+
+The site also provides a system for submitting bands to the archives, and users are encouraged to use it. The site has 73,000+ bands listed, 170,000+ releases, 1,196,000+ tracks, 52,000+ reviews and 227,000+ registered users. It is one of the top 500 most-visited websites in five countries.</description>
+    <description lang="hu">A Metal Archives egy weboldal ami a heavy metal zene különböző formáit listázza.
+Az oldal megpróbál átfogó információkat nyújtani minden egyes csapatról, mint a diszkográfia, logók, képek, dalszövegek, felállások, életrajzok és felhasználói vélemények.
+Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak, hogy együtteseket, információkat adjanak hozzá az adatbázishoz. Az oldalon 73,000+ együttes van listázva, 1,196,000+ szám, 52,000+ kritika és 227,000+ regisztrált felhasználó. A webhely benne van az 500 leglátogatottabb weboldal között öt országban.</description>
+    <description lang="pl">Encyklopedia Metallum: Metalowe Archiwa to strona skupiająca metalowe kapele. Serwis stara się zbierać wszystkie informacje o formacjach metalowych i ich twórczości (dyskografie, logotypy, zdjęcia, teksty, biografie, ciekawostki i recenzje użytkowników).</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.asiandb.com"
+       name="AsianDB"
+       version="1.0.3"
+       provider-name="FIXME">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="en"
+             library="asiandb.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AsianDB Movie Scraper</summary>
+    <summary lang="hu">AsianDB filmadat leolvasó</summary>
+    <summary lang="kr">AsianDB 영화 스크래퍼</summary>
+    <summary lang="pl">Scraper filmów AsianDB</summary>
+    <summary lang="pt">Scraper de filmes AsianDB</summary>
+    <description lang="en">Download Movie information from www.asiandb.com</description>
+    <description lang="hu">Film információk letöltése a www.asiandb.com webhelyről</description>
+    <description lang="kr">www.asiandb.com 에서 영화 정보 다운로드</description>
+    <description lang="pl">Pobieraj informacje o filmach z www.asiandb.com</description>
+    <description lang="pt">Descarregar informação de filmes de www.asiandb.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.beyazperde.mynet.com"
+       name="Beyazperde"
+       version="1.0.2"
+       provider-name="drascom">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.themoviedb.org" version="1.0"/>
+    <import addon="metadata.common.movieposterdb.com" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="tr"
+             library="beyazperde.xml.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Beyazperde Movie Scraper</summary>
+    <summary lang="hu">Beyazperde filmadat leolvasó</summary>
+    <summary lang="pl">Scraper filmów Beyazperde</summary>
+    <summary lang="pt">Scraper de filmes Beyazperde</summary>
+    <description lang="en">Download Movie information from www.beyazperde.mynet.com</description>
+    <description lang="hu">Film információk letöltése a www.beyazperde.mynet.com-ról</description>
+    <description lang="pl">Pobieraj informacje o filmach z www.beyazperde.mynet.com</description>
+    <description lang="pt">Descarregar informação de filmes de www.beyazperde.mynet.com</description>
+    <platform>all</platform>
+    <broken>Borken scraper</broken>
+  </extension>
+</addon>
+
+<addon id="metadata.common.allmusic.com"
+       name="AllMusic"
+        version="1.8.2"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="allmusic.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>20000</minversion>
+    <summary lang="en">AllMusic Music Scraper Library</summary>
+    <summary lang="de">Musik-Scraper für AllMusic.com</summary>
+    <summary lang="es">Scraper de música de AllMusic</summary>
+    <summary lang="fr">Scraper AllMusic pour la musique</summary>
+    <summary lang="hu">AllMusic zenei adat leolvasó</summary>
+    <summary lang="nl">AllMusic-scraperfuncties</summary>
+    <summary lang="pl">Scraper muzyki AllMusic</summary>
+    <summary lang="pt">Scraper de música AllMusic</summary>
+    <summary lang="ro">Bibliotecă catalog de muzică AllMusic</summary>
+    <summary lang="ru">Музыкальная Информация AllMusic</summary>
+    <summary lang="se">Skrapa för AllMusic.com</summary>
+    <summary lang="zh">AllMusic音乐刮削器代码库</summary>
+    <description lang="en">Download Music information from www.allmusic.com</description>
+    <description lang="de">Downloade Musik Informationen von www.allmusic.com</description>
+    <description lang="es">Descarga información musical de www.allmusic.com</description>
+    <description lang="fr">Télécharger les infos musicales depuis www.allmusic.com</description>
+    <description lang="hu">Zene információk letöltése a www.allmusic.com webhelyről</description>
+    <description lang="nl">Muziekinformatie ophalen van www.allmusic.com</description>
+    <description lang="pl">Pobieraj informacje o muzyce z www.allmusic.com</description>
+    <description lang="pt">Descarregar informação de música de www.allmusic.com</description>
+    <description lang="ro">Descărcați informații muzică de pe www.allmusic.com</description>
+    <description lang="ru">Загружать информацию о Музыке с www.allmusic.com</description>
+    <description lang="se">Ladda ner musikinformation från www.allmusic.com</description>
+    <description lang="zh">从www.allmusic.com下载音乐信息</description>
+  </extension>
+</addon>
+
+<addon id="metadata.common.hdtrailers.net"
+       name="HD-Trailers common scraper functions"
+       version="1.0.7"
+       provider-name="Bence Nádas (olympia)">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="hdtrailers.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">HD-Trailers.net Scraper Library</summary>
+    <summary lang="de">Scraper für Trailer von HD-Trailers.net</summary>
+    <summary lang="es">Scraper de Trailers de HD-Trailers.net</summary>
+    <summary lang="fr">Scraper HD-Trailers.net pour les bande-annonces</summary>
+    <summary lang="hu">HD-Trailers.net leolvasó-könyvtár</summary>
+    <summary lang="nl">HD-Trailers.net Scraper Collectie</summary>
+    <summary lang="pl">Scraper zwiastunów HD-Trailers.net</summary>
+    <summary lang="pt">Scraper de trailers de HD-Trailers.net</summary>
+    <summary lang="ru">Обработчик для трейлеров с HD-Trailers.net</summary>
+    <summary lang="zh">HD-Trailers.net刮削器代码库</summary>
+    <description lang="en">Download Movie Trailers from www.hd-trailers.net</description>
+    <description lang="de">Downloade Trailer von www.hd-trailers.net</description>
+    <description lang="es">Descarga trailers de www.hd-trailers.net</description>
+    <description lang="fr">Télécharge les bande-annonces de films depuis www.hd-trailers.net</description>
+    <description lang="hu">Filmelőzetesek letöltése a www.hd-trailers.net-ről</description>
+    <description lang="nl">Download trailers van www.hd-trailers.net</description>
+    <description lang="pl">Pobieraj zwiastuny filmowe z www.hd-trailers.net</description>
+    <description lang="pt">Descarregar trailers de www.hd-trailers.net</description>
+    <description lang="ru">Загружать трейлеры с www.hd-trailers.net</description>
+    <description lang="zh">从www.hd-trailers.net下载电影预告片</description>
+    <minversion>20000</minversion>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.common.htbackdrops.com"
+       name="HTBackdrops"
+       version="1.0.7"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="htbackdrops.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>20000</minversion>
+    <summary lang="en">HTBackdrops Scraper Library</summary>
+    <summary lang="de">Scraper für Hintergründe von HTBackdrops</summary>
+    <summary lang="es">Scraper de HTBackdrops</summary>
+    <summary lang="fr">Scraper HTBackdrops</summary>
+    <summary lang="hu">HTBackdrops leolvasó-könyvtár</summary>
+    <summary lang="nl">HTBackdrops-scraperfuncties</summary>
+    <summary lang="pl">Scraper biblioteki HTBackdrops</summary>
+    <summary lang="pt">Biblioteca de fundos HTBackdrops</summary>
+    <summary lang="ru">Обработчик Фоновых изображений с HTBackdrops</summary>
+    <summary lang="zh">HTBackdrops刮削器代码库</summary>
+    <description lang="en">Download backdrops from www.htbackdrops.com</description>
+    <description lang="de">Downloade Hintergründe von www.htbackdrops.com</description>
+    <description lang="es">Descarga fanart y fotos de artistas de www.htbackdrops.com</description>
+    <description lang="fr">Télécharge les backdrops depuis www.htbackgrops.com</description>
+    <description lang="hu">Fanartképek letöltése www.htbackdrops.com webhelyről</description>
+    <description lang="nl">Achtergronden ophalen van www.htbackdrops.com</description>
+    <description lang="pl">Pobieraj tła z www.htbackdrops.com</description>
+    <description lang="pt">Descarregar fundos de www.htbackdrops.com</description>
+    <description lang="ru">Загружать фоновые изображения с www.htbackdrops.com</description>
+    <description lang="zh">从www.htbackdrops.com下载背景图</description>
+  </extension>
+</addon>
+
+<addon id="metadata.common.imdb.com"
+       name="IMDB common scraper functions"
+       version="2.1.9"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="imdb.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>20000</minversion>
+    <summary lang="bg">Библиотека за сваляне на инф. от IMDB</summary>
+    <summary lang="en">IMDB Scraper Library</summary>
+    <summary lang="fi">IMDB elokuvatietojen lataaja</summary>
+    <summary lang="hu">IMDB leolvasó-könyvtár</summary>
+    <summary lang="kr">IMDB 스크래퍼 라이브러리</summary>
+    <summary lang="nl">IMDB Scraper Bibliotheek</summary>
+    <summary lang="pl">Scraper IMDb</summary>
+    <summary lang="pt">Scraper de filmes IMDb</summary>
+    <summary lang="se">Skrapa för IMDB</summary>
+    <description lang="bg">Сваля информация за филми от www.imdb.com</description>
+    <description lang="en">Download Movie information from www.imdb.com</description>
+    <description lang="fi">Lataa elokuvatietoja osoitteesta www.imdb.com</description>
+    <description lang="hu">Film információk letöltése a www.imdb.com webhelyről</description>
+    <description lang="kr">www.imdb.com 에서 영화 정보 다운로드</description>
+    <description lang="nl">Download film informatie van www.imdb.com</description>
+    <description lang="pl">Pobieraj informacje o filmach z www.imdb.com</description>
+    <description lang="pt">Descarregar informação de filmes de www.imdb.com</description>
+    <description lang="se">Ladda ner filminformation från www.imdb.com</description>
+  </extension>
+</addon>
+
+<addon id="metadata.common.impa.com"
+       name="IMPA common scraper functions"
+       version="1.0.4"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="impa.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>20000</minversion>
+    <summary lang="en">IMPA Scraper Library</summary>
+    <summary lang="hu">IMPA leolvasó-könyvtár</summary>
+    <summary lang="kr">IMPA 스크래퍼 라이브러리</summary>
+    <summary lang="pl">Scraper IMPA</summary>
+    <summary lang="pt">Scraper de filmes IMPA</summary>
+    <summary lang="se">IMPA Skrapbibliotek</summary>
+    <description lang="en">Download Movie information from IMPA</description>
+    <description lang="hu">Film információk letöltése a IMPA webhelyről</description>
+    <description lang="kr">IMPA 에서 등급 정보 다운로드</description>
+    <description lang="pl">Pobieraj informacje o filmach z www.impawards.com</description>
+    <description lang="pt">Descarregar informação de filmes de www.impawards.com</description>
+    <description lang="se">Ladda ner filminformation från impa.</description>
+  </extension>
+</addon>
+
+<addon id="metadata.common.last.fm"
+       name="Last.FM"
+       version="1.1.0"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="lastfm.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>20000</minversion>
+    <summary lang="en">LastFM Scraper Library</summary>
+    <summary lang="de">Musik-Scraper für LastFM</summary>
+    <summary lang="es">Scraper de música de LastFM</summary>
+    <summary lang="fr">Scraper LastFM</summary>
+    <summary lang="hu">LastFM leolvasó-könyvtár</summary>
+    <summary lang="nl">LastFM-scraperfuncties</summary>
+    <summary lang="pl">Scraper biblioteki LastFM</summary>
+    <summary lang="pt">Scraper de música LastFM</summary>
+    <summary lang="ru">Обработчик для LastFM</summary>
+    <summary lang="se">Skrapebibliotek för LastFM</summary>
+    <summary lang="zh">LastFM刮削器代码库</summary>
+    <description lang="en">Download Music information from www.last.fm</description>
+    <description lang="de">Downloade Musik informationen von www.last.fm</description>
+    <description lang="es">Descargar información musical de www.last.fm</description>
+    <description lang="fr">Télécharge les infos musicales depuis www.last.fm</description>
+    <description lang="hu">Zene információk letöltése a www.last.fm webhelyről</description>
+    <description lang="nl">Muziekinfo ophalen van LastFM</description>
+    <description lang="pl">Pobieraj informacje o muzyce z www.last.fm</description>
+    <description lang="pt">Descarregar informação de música de www.last.fm</description>
+    <description lang="ru">Загружать информацию о Музыке с www.last.fm</description>
+    <description lang="se">Ladda ner musikinformation från www.last.fm</description>
+    <description lang="zh">从www.last.fm下载音乐信息</description>
+  </extension>
+</addon>
+
+<addon id="metadata.common.movieposterdb.com"
+       name="MoviePosterDB common scraper functions"
+       version="1.0.5"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="movieposterdb.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>20000</minversion>
+    <summary lang="en">MoviePosterDB Scraper Library</summary>
+    <summary lang="hu">MoviePosterDB leolvasó-könyvtár</summary>
+    <summary lang="kr">MoviePosterDB 스크래퍼 라이브러리</summary>
+    <summary lang="pl">Scraper plakatów MoviePosterDB</summary>
+    <summary lang="pt">Posters de filmes MoviePosterDB </summary>
+    <summary lang="se">MoviePosterDB Skrapbibliotek</summary>
+    <description lang="en">Download Movie Posters From MoviePosterDB</description>
+    <description lang="hu">Film információk letöltése a MoviePosterDB webhelyről</description>
+    <description lang="kr">MoviePosterDB 에서 포스터 다운로드</description>
+    <description lang="pl">Pobieraj plakaty filmów z www.movieposterdb.com</description>
+    <description lang="pt">Descarregar posters de filmes de www.movieposterdb.com</description>
+    <description lang="se">Ladda ner filminformation från MoviePostersDB.</description>
+  </extension>
+</addon>
+
+<addon id="metadata.common.rottentomatoes.com"
+       name="Rottentomatoes common scraper functions"
+       version="1.0.0"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="rt.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>20000</minversion>
+    <summary lang="en">RT Scraper Library</summary>
+    <summary lang="hu">RT leolvasó-könyvtár</summary>
+    <summary lang="kr">RT 스크래퍼 라이브러리</summary>
+    <summary lang="pl">Scraper RT</summary>
+    <summary lang="pt">Scraper de filmes RT</summary>
+    <summary lang="se">RT Skrapbibliotek</summary>
+    <description lang="en">Download Movie information from RT</description>
+    <description lang="hu">Film információk letöltése a RT webhelyről</description>
+    <description lang="kr">RT 에서 등급 정보 다운로드</description>
+    <description lang="pl">Pobieraj informacje o filmach z RT</description>
+    <description lang="pt">Descarregar informação de filmes de RT</description>
+    <description lang="se">Ladda ner filminformation från RT.</description>
+  </extension>
+</addon>
+
+<addon id="metadata.common.themoviedb.org"
+       name="The MovieDB common scraper functions"
+       version="1.1.0"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="tmdb.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>20000</minversion>
+    <summary lang="en">TMDb Scraper Library</summary>
+    <summary lang="es">Scraper de peliculas de TMDb</summary>
+    <summary lang="fr">Scraper TMDb</summary>
+    <summary lang="hu">TMDb leolvasó-könyvtár</summary>
+    <summary lang="nl">TMDb-scraperfuncties</summary> 			<!--Dit gaat over de functies, niet over de mediabibliotheek!-->
+    <summary lang="pl">Scraper biblioteki TMDb</summary>
+    <summary lang="pt">Scraper de filmes TMDb</summary>
+    <summary lang="ro">Bibliotecă catalog TMDb</summary>
+    <summary lang="ru">Обработчик для TMDb</summary>
+    <summary lang="se">Skrapebibliotek för TMDb</summary>
+    <summary lang="zh">TMDb刮削器代码库</summary>
+    <description lang="en">Download thumbs and fanarts from www.themoviedb.org</description>
+    <description lang="es">Descarga posters y fanart de www.themoviedb.org</description>
+    <description lang="fr">Télécharge vignettes et backdrops depuis www.themoviedb.org</description>
+    <description lang="hu">Bélyeg- és fanartképek letöltése a www.themoviedb.org webhelyről</description>
+    <description lang="nl">Miniaturen en fanart ophalen van www.themoviedb.org</description>
+    <description lang="pl">Pobieraj ikony i fanarty z www.themoviedb.org</description>
+    <description lang="pt">Descarregar informação de filmes de www.themoviedb.org</description>
+    <description lang="ro">Descărcați miniaturi și imagini realizate de fani de pe www.themoviedb.org</description>
+    <description lang="ru">Загружать миниатюры и фанарт с www.themoviedb.org</description>
+    <description lang="se">Ladda ner miniatyrer och fanart från www.themoviedb.org</description>
+    <description lang="zh">从www.themoviedb.org下载海报和同人画</description>
+  </extension>
+</addon>
+
+<addon id="metadata.common.youtubetrailers"
+       name="Youtube trailers common scraper functions"
+       version="1.0.4"
+       provider-name="ZackDepp">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library" library="youtube.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Youtube Trailers Scraper Library</summary>
+    <summary lang="de">Scraper für Trailer von Youtube</summary>
+    <summary lang="es">Scraper de Trailers de Youtube</summary>
+    <summary lang="fr">Scraper Youtube pour les bande-annonces</summary>
+    <summary lang="hu">Youtube leolvasó-könyvtár</summary>
+    <summary lang="nl">Youtube Scraper Collectie</summary>
+    <summary lang="pl">Scraper zwiastunów Youtube</summary>
+    <summary lang="pt">Scraper de trailers de Youtube</summary>
+    <summary lang="ru">?????????? ??? ????????? ? Youtube</summary>
+    <summary lang="zh">Youtube??????</summary>
+    <description lang="en">Download SD Movie Trailers from youtube</description>
+    <description lang="de">Downloade Trailer von www.Youtube</description>
+    <description lang="es">Descarga trailers de www.Youtube</description>
+    <description lang="fr">Télécharge les bande-annonces de films depuis www.Youtube</description>
+    <description lang="hu">Filmel?zetesek letöltése a www.Youtube-r?l</description>
+    <description lang="nl">Download trailers van www.Youtube</description>
+    <description lang="pl">Pobieraj zwiastuny filmowe z www.Youtube</description>
+    <description lang="pt">Descarregar trailers de www.Youtube</description>
+    <description lang="ru">????????? ???????? ? www.Youtube</description>
+    <description lang="zh">?www.Youtube???????</description>
+    <minversion>20000</minversion>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.fdb.pl"
+       name="FDB.pl"
+        version="1.1.0"
+       provider-name="smuto">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.themoviedb.org" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="pl"
+             library="fdbpl.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">FDB Movie Scraper</summary>
+    <summary lang="hu">FDB filmadat leolvasó</summary>
+    <summary lang="kr">FDB 영화 스크래퍼</summary>
+    <summary lang="pt">Scraper de filmes FDB</summary>
+    <description lang="en">Download Movie information from www.fdb.pl</description>
+    <description lang="hu">Film információk letöltése a www.fdb.pl webhelyről</description>
+    <description lang="kr">www.fdb.pl 에서 영화 정보 다운로드</description>
+    <description lang="pt">Descarregar informação de filmes de www.fdb.pl</description>
+    <platform>all</platform>
+    <broken>will not fetch most of the details, nor artwork</broken>
+  </extension>
+</addon>
+
+<addon id="metadata.filmaffinity.com"
+       name="FilmAffinity"
+       version="1.4.5"
+       provider-name="hectorZiN + MaDDoGo + agjacome + Lechu">
+<requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.themoviedb.org" version="1.0"/>
+    <import addon="metadata.common.movieposterdb.com" version="1.0"/>
+    <import addon="metadata.common.impa.com" version="1.0"/>
+    <import addon="metadata.common.imdb.com" version="1.0"/>
+    <import addon="metadata.common.hdtrailers.net" version="1.0"/>
+    <import addon="plugin.video.youtube" version="1.0"/>
+</requires>
+<extension point="xbmc.metadata.scraper.movies"
+             language="es"
+             library="filmaffinity.xml"/>
+<extension point="xbmc.addon.metadata">
+	<summary lang="en">FilmAffinity Movie Scraper</summary>
+    <summary lang="hu">FilmAffinity filmadat leolvasó</summary>
+    <summary lang="kr">FilmAffinity 영화 스크래퍼</summary>
+    <summary lang="pl">Scraper filmów FilmAffinity</summary>
+    <summary lang="pt">Scraper de filmes FilmAffinity</summary>
+    <summary lang="es">Scraper de Películas de Filmaffinity</summary>
+    <description lang="en">Download Movie information from www.filmaffinity.com</description>
+    <description lang="hu">Film információk letöltése a www.filmaffinity.com-ról</description>
+    <description lang="kr">www.filmaffinity.com 에서 영화 정보 다운로드</description>
+    <description lang="pl">Pobieraj informacje o filmach z www.filmaffinity.com</description>
+    <description lang="pt">Descarregar informação de filmes de www.filmaffinity.com</description>
+    <description lang="es">Scraper que usa la versión española de Filmaffinity para descargar información de películas en español, ayudándose de varias páginas para ampliar la información.</description>
+	<disclaimer lang="es">Se recomienda configurar antes de usar.</disclaimer>
+    <platform>all</platform>
+</extension>
+</addon>
+
+<addon id="metadata.getlib.com"
+       name="GetLib"
+        version="1.0.4"
+       provider-name="Taxigps">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.themoviedb.org" version="1.0"/>
+    <import addon="metadata.common.movieposterdb.com" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="zh"
+             library="getlib.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Getlib Movie Scraper</summary>
+    <summary lang="hu">Getlib filmadat leolvasó</summary>
+    <summary lang="kr">Getlib 영화 스크래퍼</summary>
+    <summary lang="nl">Getlib Film Scraper</summary>
+    <summary lang="pl">Scraper filmów Getlib</summary>
+    <summary lang="pt">Scraper de filmes Getlib</summary>
+    <summary lang="se">Getlib Filmskrapa</summary>
+    <summary lang="zh">Getlib电影刮削器</summary>
+    <description lang="en">Download Movie information from www.getlib.com</description>
+    <description lang="hu">Film információk letöltése a www.getlib.com webhelyről</description>
+    <description lang="kr">www.getlib.com 에서 영화 정보 다운로드</description>
+    <description lang="nl">Download film informatie van www.getlib.com</description>
+    <description lang="pl">Pobieraj informacje o filmach z www.getlib.com</description>
+    <description lang="pt">Descarregar informação de filmes de www.getlib.com</description>
+    <description lang="se">Ladda ner filminformation från www.getlib.com</description>
+    <description lang="zh">从www.getlib.com下载电影资料。</description>
+    <platform>all</platform>
+    <broken>will not download most of the details, nor artwork</broken>
+  </extension>
+</addon>
+
+<addon id="metadata.imdb.com"
+       name="IMDb"
+        version="2.3.5"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.themoviedb.org" version="1.0.7"/>
+    <import addon="metadata.common.movieposterdb.com" version="1.0.5"/>
+    <import addon="metadata.common.imdb.com" version="2.1.5"/>
+    <import addon="metadata.common.impa.com" version="1.0.3"/>
+    <import addon="metadata.common.hdtrailers.net" version="1.0.7"/>
+    <import addon="metadata.common.youtubetrailers" version="1.0.4"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="en"
+             library="imdb.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">IMDB Movie Scraper</summary>
+    <summary lang="hu">IMDB filmadat leolvasó</summary>
+    <summary lang="kr">IMDB ?? ????</summary>
+    <summary lang="nl">IMDB film Scraper</summary>
+    <summary lang="pl">Scraper filmów IMDb</summary>
+    <summary lang="pt">Scraper de filmes IMDb</summary>
+    <summary lang="se">IMDB Filmskrapa</summary>
+    <description lang="en">Download Movie information from www.imdb.com
+The Internet Movie Database (IMDb) is a HUGE collection of movie information. They try to catalog every pertinent detail about a movie, from who was in it, to who made it, to trivia about it, to filming locations, and even where you can find reviews and fan sites on the web. They then do their best to present this information in a manner that is easy to search and access.</description>
+    <description lang="hu">Film információk letöltése a www.imdb.com webhelyr?l.
+Az Internet Film Adatbázis (IMDb) egy hatalmas film információ gyüjtemény. Itt megpróbálják katalogizálni a filmek minden egyes apró részletét a szerepl?kt?l a készít?kön át, a forgatási helyszínekig, még azt is, hogy hol találsz leírásokat fan oldalakat a web-en az adott filmr?l. Mindezt úgy téve, hogy az információ egyszer?en elérhet? és könnyen kereshet? legyen.</description>
+    <description lang="kr">www.imdb.com ?? ?? ??? ????
+The Internet Movie Database (IMDb) ? ??? ?? ??? ??? ????. IMDB? ?? ?? ???, ?? ?????, ????, ??? ?? ?, ???? ?? ?? ???? ??? ???? ????. ??? ??? ??? ????? ??? ???? ????.</description>
+    <description lang="nl">Download film informatie van www.imdb.com
+De Internet Movie Database (IMDB) bevat een GIGANTISCHE collectie aan filminformatie. Ze proberen elk pertinent detail van elke film te catalogeren: wie er meespeelde, de makers, weetjes rond de film, film locatie en zelf waar je extra reviews en fansites kunt vinden. Ze doen hun best om al deze gegevens weer te geven in een zeer toegankelijke manier.</description>
+    <description lang="pl">Pobieraj informacje o filmach z www.imdb.com
+IMDb jest POT??N? kolekcj? informacji o filmach. Serwis zajmuje si? gromadzeniem ka?dych (nawet najdrobniejszych) informacji o filmach.</description>
+    <description lang="pt">Descarregar informação de filmes de www.imdb.com
+A Internet Movie Database (IMDb) é uma coleccção enorme de informação de filmes. Tentam catalogar cada detalhe pertinente sobre um filme, quem actuou nele, quem o produziu, curiosidades sobre o filme, locais de filmagem e até mesmo onde pode encontrar críticas e clubes de fans na Internet. A organização de todos os dados é de procura fácil, permitindo um rápido acesso a todos os detalhes.</description>
+    <description lang="se">Ladda ner filminformation från www.imdb.com
+Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom försöker att katalogisera varenda detalj om en film, från vem som var i den, till vem som gjorde den, inspelningsplatser och även var du kan hitta recensioner och fan-sidor på webben. De gör sedan sitt bästa för att presentera denna information på ett sätt som är lätt att söka och komma åt.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.movie.animenewsnetwork.com"
+       name="Anime News Nework"
+       version="1.0.3"
+       provider-name="volforto">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.themoviedb.org" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="en"
+             library="ann-movies.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Anime News Network Movie Scraper</summary>
+    <summary lang="hu">Anime News Network filmadat leolvasó</summary>
+    <summary lang="pl">Scraper filmów Anime News Network</summary>
+    <description lang="en">Download Movie information from www.animenewsnetwork.com</description>
+    <description lang="hu">Film információk letöltése a www.animenewsnetwork.com webhelyrõl</description>
+    <description lang="pl">Pobieraj informacje o filmach z www.animenewsnetwork.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.movie.naver.com"
+       name="Naver Movie"
+        version="1.0.4"
+       provider-name="XBMC-Korea">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.movie.daum.net" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="ko"
+             library="naver-movie.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">NAVER Movie Scraper</summary>
+    <summary lang="hu">NAVER Film scraper</summary>
+    <summary lang="ko">네이버 영화 스크래퍼</summary>
+    <summary lang="pt">Scraper de filmes NAVER</summary>
+    <description lang="en">Download movie information from movie.naver.com</description>
+    <description lang="hu">Film információk letöltése a movie.naver.com webhelyről</description>
+    <description lang="kr">movie.naver.com 에서 영화 정보 다운로드</description>
+    <description lang="pt">Descarregar informação de filmes de movie.naver.com</description>
+    <platform>all</platform>
+    <broken>won't fetch movie title and plot</broken>
+  </extension>
+</addon>
+
+<addon id="metadata.rottentomatoes.com"
+       name="Rotten Tomatoes"
+       version="1.0.0"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.themoviedb.org" version="1.1.0"/>
+    <import addon="metadata.common.hdtrailers.net" version="1.0.6"/>
+    <import addon="metadata.common.imdb.com" version="2.1.3"/>
+    <import addon="metadata.common.rottentomatoes.com" version="1.0.0"/>
+    <import addon="plugin.video.youtube" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="en"
+             library="rt.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">RT Movie Scraper</summary>
+    <summary lang="de">Film-Scraper für RT</summary>
+    <summary lang="es">Scraper de películas de RT</summary>
+    <summary lang="hu">RT filmadat leolvasó</summary>
+    <summary lang="nl">RT-filmscraper</summary>
+    <summary lang="pl">Scraper filmowy RT</summary>
+    <summary lang="pt">Scraper de filmes RT</summary>
+    <summary lang="ro">Scraper de filme RT</summary>
+    <summary lang="ru">Обработчик Фильмов для RT</summary>
+    <summary lang="zh">RT电影刮削器</summary>
+    <description lang="en">Rotten Tomatoes is a website devoted to reviews, information, and news of films—widely known as a film review aggregator. Its name derives from the cliché of audiences throwing tomatoes and other vegetables at a poor stage performance.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.themoviedb.org"
+       name="The MovieDB"
+       version="1.4.5"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.themoviedb.org" version="1.1.0"/>
+    <import addon="metadata.common.hdtrailers.net" version="1.0.6"/>
+    <import addon="metadata.common.imdb.com" version="2.1.3"/>
+    <import addon="plugin.video.youtube" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             language="en"
+             library="tmdb.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TMDB Movie Scraper</summary>
+    <summary lang="de">Film-Scraper für TheMovieDB</summary>
+    <summary lang="es">Scraper de películas de TheMovieDB</summary>
+    <summary lang="hu">TMDB filmadat leolvasó</summary>
+    <summary lang="nl">TMDb-filmscraper</summary>       <!--Themoviedb.org gebruikt zelf als afkorting TMDb en niet TMDB.-->
+    <summary lang="pl">Scraper filmowy TMDB</summary>
+    <summary lang="pt">Scraper de filmes TMDb</summary>
+    <summary lang="ro">Scraper de filme TMDb</summary>
+    <summary lang="ru">Обработчик Фильмов для TMDB</summary>
+    <summary lang="zh">TMDB电影刮削器</summary>
+    <description lang="en">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like XBMC to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
+    <description lang="de">TheMovieDB.org ist eine freie und offene Film-Datenbank. Sie wird nur User wie dir betrieben. TheMovieDB wird zur Zeit monatlich von Millionen genutzt. Mit der mächtigen API wird sie auch von vielen Media-Center, wie z.B. XBMC, genutzt um Filme-Meta-Daten, Poster und Fanrts zu beziehen, damit der User sein Media-Center verschönern kann</description>
+    <description lang="es">themovieDB.org es una base de datos de películas gratuita y abierta. Es una página web que se basa en contenido subido por los usuarios. TMDb es usada diariamente por mucha gente gracias a su API, que es usada por más programas aparte de XBMC para descargar información de películas así como Posters o Fanart (Fondos de escritorio basados en películas usados en distintos skins) para enriquecer la experiencia de usar XBMC.</description>
+    <description lang="hu">A themoviedb.org egy ingyenes és nyílt filmadatbázis. Teljes egészében olyan felhasználók töltik fel, mint például Te. A TMDb-t havonta emberek milliói használják és a hatékony API-n keresztül számos népszerű média center is, mint például az XBMC a filmadatok, poszterek, fanartképek letöltésére.</description>
+    <description lang="nl">Themoviedb.org is een vrije en open filmdatabank. Gebruikers zoals jij vormen de motor van deze site. Op dit moment gebruiken elke maand miljoenen mensen TMDb. De krachtige API van de site laat mediacenters zoals XBMC toe om metadata, posters en fanart op te halen en zo de gebruikerservaring te verrijken.</description>
+    <description lang="pl">themoviedb.org jest wolną i otwartą filmową bazą danych. Jest zarządzana całkowicie przez osoby takie jak Ty. Obecnie odwiedzają ją miliony osób miesięcznie, a dzięki dostępności API jest używana w wielu media center, takich jak XBMC, do pobierania informacji o filmach, plakatów i fanartów.</description>
+    <description lang="pt">O themoviedb.org é uma base de dados de filmes livre e aberta. É completamente actualizado por pessoas como você e usado por milhões todos os meses. Com o poderoso motor de busca disponível, também se tornou no favorito de muitos softwares média center, como o popular XBMC, para obter informação, posters e fanart que enriquecem a experiência do utilizador.</description>
+    <description lang="ro">themoviedb.org este o bază de date de filme gratuită și deschisă. Este actualizată de oameni ca și tine. TMDb este curent folosită de milioane de oameni în fiecare lună și datorită API-ului puternic, este de asemena folosită de multe centre media populare ca XBMC pentru a obține informații despre filme, afișe și imagini produse de fani (Fanart) care îmbogățesc experiența utilizatorului.</description>
+    <description lang="ru">themoviedb.org это бесплатная и открытая база данных фильмов. Она полностью поддерживается такими же людьми как и ты. В данный момент TMDb используется миллионами людей каждый месяц, и, с его мощным API, используется различными популярными медиа-центрами, такими как XBMC, для получения к Фильмам мета-данных, постеров и фанарта в целях улучшения пользовательского опыта.</description>
+    <description lang="zh">themoviedb.org是一个开放和自由的电影数据库。它完全由象你一样的用户来掌控。TMDb每月为上百万用户提供服务，并通过强大的API界面为许多流行的媒体中心系统如XBMC提供电影资料、封面海报和同人画以丰富用户的体验。</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.tvdb.com"
+       name="The TVDB"
+       version="1.2.3"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.tvshows"
+             language="multi"
+             library="tvdb.xml"
+             cachepersistence="00:15"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Fetch TV show metadata from TheTVDB.com</summary>
+    <summary lang="de">Scraper für Fernsehserien von TheTVDB.com</summary>
+    <summary lang="es">Descarga información de Series de TV desde TVDB.com</summary>
+    <summary lang="fr">Scraper TheTVDB.com pour les séries TV</summary>
+    <summary lang="hu">TV műsor információk a TheTVDB.com-ról</summary>
+    <summary lang="nl">Seriemetadata ophalen van TheTVDB.com</summary>
+    <summary lang="pl">Pobieraj dane o serialach TV z TheTVDB.com</summary>
+    <summary lang="pt">Scraper de séries de TV TVDB.com</summary>
+    <summary lang="ru">Загрузка информации о ТВ-шоу с TheTVDB.com</summary>
+    <summary lang="zh">从TheTVDB.com获取电视剧集信息</summary>
+    <description lang="en">TheTVDB.com is a TV Scraper. The site is a massive open database that can be modified by anybody and contains full meta data for many shows in different languages. All content and images on the site have been contributed by their users for users and have a high standard or quality. The database schema and website are open source under the GPL.</description>
+    <description lang="de">TheTVDB.com ist ein Scraper für TV-Serien. Die Seite hat eine riesige offene Datenbank, welche von jedem geändert werden kann. Sie enthält weitreichende Meta-Daten für viele TV-Serien in verschiedenen Sprachen. Alle Inhalte und Bilder dieser Seite stammen von User für User und haben eine hohe Qualität. Das Datenbankschema und die Webseite sind OpenSource unter dem GPL-Recht</description>
+    <description lang="es">TheTVDB.com es un scraper para series de televisión. Esta pagina web es una base de datos immensa que puede ser modificada por cualquiera y contiene informaciós de series y capítulos en distintos idiomas. Todo el contenido y las imágenes de este sitio han sido creadas y enviadas por sus usuarios bajo unas estrictas normas de tamaño y calidad. El esquema de la base de datos y la página web són consultables y de código abierto bajo licencia GPL.</description>
+    <description lang="fr">TheTVDB.com est un scraper TV. Le site est une immense base de données libre qui peut être modifiée par n'importe qui et qui contient toutes les infos pour beaucoup de séries en différentes langues. Toutes les infos et images du site proviennent de contributions d'utilisateurs pour les utilisateurs et sont d'excellente qualité. Le schéma de la base de données et le site Web sont en open source sous licence GPL.</description>
+    <description lang="hu">A TheTVDB.com egy TV műsor leolvasó. Az oldal egy hatalmas adatbázis amit bárki szabadon módosíthat és rengeteg TV műsor adatait tartalmazza különböző nyelveken. A minőségi tartalom és képanyag ezen az oldalon felhasználóktól származik más felhasználók számára. Az adatbázisstruktúra és a weblap nyílt forráskódú a GPL licenc alatt.</description>
+    <description lang="nl">TheTVDB.com is een seriescraper. De site is een gigantische open databank die iedereen kan aanpassen en uitbreiden, en biedt metadata aan voor TV-series in verschillende talen. Alle inhoud en afbeeldingen zijn afkomstig van gebruikers en moeten een grondige kwaliteitscontrole doorstaan. Het databankschema en de websitecode zijn vrijgegeven onder de open source GPL-licentie.</description>
+    <description lang="pl">TheTVDB.com jest scraperem TV. Ten serwis jest ogromną, wielojęzykową i otwartą bazą danych o serialach, którą może edytować każdy. Zawartość tego serwisu została dostarczona przez użytkowników, dla użytkowników. Dostępne materiały mają wysoki standard lub jakość.</description>
+    <description lang="pt"> O TheTVDB.com é um motor de busca para séries de TV. O site é uma gigantesca base de dados aberta que pode ser alterada por qualquer pessoa e contém informação em várias línguas. Todos os conteúdos do site foram enviados por utilizadores com um elevado padrão de qualidade. A base de dados e site funcionam sob uma licença GPL de software livre.</description>
+    <description lang="ru">TheTVDB.com это обработчик для ТВ-шоу. Сайт представляет собой массивную открытую базу данных, которая может быть изменене кем угодно и содержит полные мета-данные для многих шоу и сериалов на различных языках. Все содержанимое и изображения на сайте были выложены его пользователями для пользователей, и имеют высокий уровень или качество. Схемы базы данных и веб-сайт выполнены под открытым исходным кодом и доступны по лицензии GPL.</description>
+    <description lang="zh">TheTVDB.com是一个电视刮削器。该网站是一个巨大的开放式数据库，任何人都可以修改，包含多语言的许多电视剧集资料。网站设定了高品质标准，所有图片和内容都由用户提供。数据库结构和网站均在GPL许可下开源。</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.tvshows.animenewsnetwork.com"
+       name="Anime News Network"
+       version="1.0.6"
+       provider-name="volforto">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.tvshows"
+             language="en"
+             library="ann.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Anime News Network Tv Shows Scraper</summary>
+    <summary lang="hu">Anime News Network TV műsor leolvasó</summary>
+    <summary lang="pl">Scraper Anime News Network TV</summary>
+    <description lang="en">Download TV show information from www.animenewsnetwork.com</description>
+    <description lang="hu">TV műsor információk letöltése a www.animenewsnetwork.com-ról</description>
+    <description lang="pl">Pobieraj informacje o serialach anime z z www.animenewsnetwork.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.yahoomusic.com"
+       name="Yahoo Music Videos"
+       version="1.0.4"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.musicvideos"
+             language="en"
+             library="yahoomusic.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Yahoo! Music Video Scraper</summary>
+    <summary lang="hu">Yahoo! videóklip leolvasó</summary>
+    <summary lang="kr">야후! 뮤직 비디오 스크래퍼</summary>
+    <summary lang="pl">Scraper teledysków Yahoo!</summary>
+    <summary lang="pt">Scraper de música Yahoo!</summary>
+    <description lang="en">Download Music Video information</description>
+    <description lang="hu">Videóklip információk letöltése a Yahoo! webhelyről</description>
+    <description lang="kr">뮤직 비디오 정보 다운로드</description>
+    <description lang="pl">Pobieraj informacje o teledyskach z music.yahoo.com</description>
+    <description lang="pt">Descarregar informação de filmes de music.yahoo.com</description>
+  </extension>
+</addon>
+
+<addon
+  id="webinterface.XWMM"
+  version="1.9.3"
+  name="XWMM"
+  provider-name="slash">
+  <requires>
+    <import addon="xbmc.gui" version="2.11"/>
+  </requires>
+  <extension
+    point="xbmc.gui.webinterface"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Web Interface to manage media library</summary>
+    <description>XWMM allows you to customize and change metadata for movies, tvshows and music from a standard browser</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="webinterface.awx"
+  version="0.3.2"
+  name="AWX"
+  provider-name="MKay">
+  <requires>
+    <import addon="xbmc.gui" version="2.11"/>
+  </requires>
+  <extension
+    point="xbmc.gui.webinterface"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AWX - Ajax based Webinterface for XBMC</summary>
+    <description lang="en">You can use this webinterface to control the Audio/Video-Section of XBMC: play/pause/stop/skip, show artists/albums/movies/tv shows and play them or add them to the playlist. It's designed for use on PCs or laptops with a browser like FireFox which supports JavaScript.
+
+Minimum requirements: XBMC 10.0-beta3 (tested on Ubuntu Karmic Koala)
+Tested Browsers:
+   - FireFox 3.6 (on Ubuntu Lucid Lynx and Windows XP)
+   - Chromium 6.0.472.62 (on Ubuntu Lucid Lynx)
+   - Opera 10.62 (on Ubuntu Lucid Lynx and Windows XP)
+   - Safari 5.02 (on Windows XP)
+   - Internet Explorer 8 (does not support round edges)
+Not supported: Internet Explorer 6
+
+Hint: You may need to clear your browser-cache before you open the new installed/updated webinterface in your browser.</description>
+    <summary lang="de">AWX - Ajax basiertes Webinterface fuer XBMC</summary>
+    <description lang="de">Mit diesem Webinterface laesst sich die Audio- und Video-Sektion von XBMC steuern: play/pause/stop/skip, sowie Anzeigen/Abspielen von Interpreten/Alben/Filmen/Serien. Es wurde fuer den Einsatz an einem PC oder Laptop mit einem JavaScript-faehigen Browser wie FireFox entwickelt.
+
+Mindestvoraussetzung: XBMC 10.0-beta3 (getestet mit Ubuntu Karmic Koala)
+Getestete Browser:
+   - FireFox 3.6 (Ubuntu Lucid Lynx and Windows XP)
+   - Chromium 6.0.472.62 (Ubuntu Lucid Lynx)
+   - Opera 10.62 (Ubuntu Lucid Lynx and Windows XP)
+   - Safari 5.02 (Windows XP)
+   - Internet Explorer 8 (does not support round edges)
+Nicht unterstuetzt: Internet Explorer 6
+
+Hinweis: Sie muessen Ihren Browser-Cache leeren bevor Sie das neu installierte/aktualisierte Webinterface in Ihrem Browser laden.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="webinterface.home-row"
+  version="0.1.3"
+  name="Home Row"
+  provider-name="Soljin">
+  <requires>
+    <import addon="xbmc.gui" version="2.11"/>
+  </requires>
+  <extension
+    point="xbmc.gui.webinterface"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Home Row - Fast keystroke based web interface for XBMC</summary>
+    <description lang="en">Home Row focuses on speed by using a quick refine text field to filter items and then select them by hitting enter. You can use the up and down arrows to select items while focused on the field. It is also touch and mobile friendly. It has a hash based history system but doesn't support deep linking. It's entirely HTTP based so, it's easy to route and proxy pass. It should work with any browser that supports JS. If it looks funny or runs slow, get a better browser.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="webinterface.wtouch"
+  version="0.3"
+  name="wTouch"
+  provider-name="peprasetya">
+  <requires>
+    <import addon="xbmc.gui" version="2.11"/>
+  </requires>
+  <extension
+    point="xbmc.gui.webinterface"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Gesture Remote Control for touch based webkit browser.</summary>
+    <description>wTouch give you to remote XBMC with your touch based webkit browser, like iOS and Android devices. It use your gestures by swiping fingers on your devices, so you will keep focus on your TV/Display rather than going back and forward between your TV/Display and your devices to find the exact buttons to be pressed/touch.</description>
     <platform>all</platform>
   </extension>
 </addon>
