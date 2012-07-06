@@ -7,7 +7,7 @@
         </extension>
         <extension point="xbmc.addon.metadata">
                 <summary>Install add-ons from DaleDude's repository mirror</summary>
-                <description>download and install add-ons from DaleDude's repository mirror.</description>
+                <description>DaleDude's repository of addons scraped from the net. Only stuff I am interested in and only english.</description>
                 <disclaimer></disclaimer>
                 <platform>all</platform>
         </extension>
