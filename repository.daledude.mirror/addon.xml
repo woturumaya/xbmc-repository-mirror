@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.daledude.mirror" name="DaleDude's add-ons" version="1.0.0" provider-name="DaleDude">
+        <extension point="xbmc.addon.repository" name="DaleDude's add-on repository mirror">
+                <info compressed="false">https://raw.github.com/daledude/xbmc-repository-mirror/master/addons.xml</info>
+                <checksum>https://raw.github.com/daledude/xbmc-repository-mirror/master/addons.xml.md5</checksum>
+                <datadir zip="true">https://github.com/daledude/xbmc-repository-mirror/raw/master/repo/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Install add-ons from DaleDude's repository mirror</summary>
+                <description>download and install add-ons from DaleDude's repository mirror.</description>
+                <disclaimer></disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
