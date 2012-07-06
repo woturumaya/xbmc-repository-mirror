@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.eurogamer" name="Eurogamer" version="1.3.0" provider-name="Dan Dar3 &lt;dan.dar33@gmail.com&gt;">
+<addon id="plugin.video.eurogamer" name="Eurogamer" version="1.4.0" provider-name="Dan Dar3 &lt;dan.dar33@gmail.com&gt;">
 	<requires>
 		<import addon="xbmc.python"                 version="1.0"    />
 		<import addon="script.module.simplejson"    version="2.0.10" />

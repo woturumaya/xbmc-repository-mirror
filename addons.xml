@@ -16,10 +16,12 @@
 
 <addon id="script.module.ddlscraper"
        name="DDLScraper"
-       version="0.1.1"
+       version="0.1.2"
        provider-name="pgoeri">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
+    <import addon="plugin.program.jdownloader" version="1.3.0"/>
+    <import addon="script.module.mechanize" version="0.2.5"/>
   </requires>
   <extension point="xbmc.python.module"
              library="lib" />
@@ -211,7 +213,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="plugin.video.amazon"
        name="Amazon"
-       version="0.5.6"
+       version="0.6.4"
        provider-name="BlueCop">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -595,7 +597,7 @@ http://channel9.msdn.com/</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.eurogamer" name="Eurogamer" version="1.3.0" provider-name="Dan Dar3 &lt;dan.dar33@gmail.com&gt;">
+<addon id="plugin.video.eurogamer" name="Eurogamer" version="1.4.0" provider-name="Dan Dar3 &lt;dan.dar33@gmail.com&gt;">
 	<requires>
 		<import addon="xbmc.python"                 version="1.0"    />
 		<import addon="script.module.simplejson"    version="2.0.10" />
@@ -875,7 +877,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.redlettermedia"
        name="Red Letter Media"
-       version="0.0.9"
+       version="0.1.0"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -888,9 +890,7 @@ http://channel9.msdn.com/</description>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en"></summary>
-    <description lang="en">Visit www.xbmchub.com for support.
-
-Watch the infamous Harry Plinkett movie reviews as well as regular movie review show Half In The Bag</description>
+    <description lang="en">Watch the infamous Harry Plinkett movie reviews as well as regular movie review show Half In The Bag</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -3432,7 +3432,7 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
 
 <addon id="plugin.video.yahoo.trailershd"
        name="Yahoo Movie Trailers"
-       version="1.0.0"
+       version="1.1.0"
        provider-name="EbiL">
     <requires>
         <import addon="xbmc.python" version="1.0"/>
@@ -4715,6 +4715,25 @@ Hinweis: Sie muessen Ihren Browser-Cache leeren bevor Sie das neu installierte/a
     <summary>Gesture Remote Control for touch based webkit browser.</summary>
     <description>wTouch give you to remote XBMC with your touch based webkit browser, like iOS and Android devices. It use your gestures by swiping fingers on your devices, so you will keep focus on your TV/Display rather than going back and forward between your TV/Display and your devices to find the exact buttons to be pressed/touch.</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.download.rlsbb"
+       name="RlsBB.me"
+       version="0.1.1"
+       provider-name="pgoeri">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.ddlscraper" version="0.1.2"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Browse releases on rlsbb.me and add links to JDownloader</summary>
+    <description lang="en">This plugin scrapes posts from rlsbb.me and presents them as directory items. By selecting a post the link gets added to JDownloader.</description>
   </extension>
 </addon>
 </addons>
