@@ -3,7 +3,7 @@
         <extension point="xbmc.addon.repository" name="DaleDude's add-on repository mirror">
                 <info compressed="false">https://raw.github.com/daledude/xbmc-repository-mirror/master/addons.xml</info>
                 <checksum>https://raw.github.com/daledude/xbmc-repository-mirror/master/addons.xml.md5</checksum>
-                <datadir zip="true">https://github.com/daledude/xbmc-repository-mirror/raw/master/repo/</datadir>
+                <datadir zip="true">https://github.com/daledude/xbmc-repository-mirror/raw/master/</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
                 <summary>Install add-ons from DaleDude's repository mirror</summary>
