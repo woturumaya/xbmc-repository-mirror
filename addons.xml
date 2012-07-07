@@ -4763,4 +4763,32 @@ Hinweis: Sie muessen Ihren Browser-Cache leeren bevor Sie das neu installierte/a
     <platform>all</platform>
   </extension>
 </addon>
+
+<addon id="repository.daledude.mirror" name="DaleDude's add-ons" version="1.0.0" provider-name="DaleDude">
+        <extension point="xbmc.addon.repository" name="DaleDude's add-on repository mirror">
+                <info compressed="false">https://raw.github.com/daledude/xbmc-repository-mirror/master/addons.xml</info>
+                <checksum>https://raw.github.com/daledude/xbmc-repository-mirror/master/addons.xml.md5</checksum>
+                <datadir zip="true">https://github.com/daledude/xbmc-repository-mirror/raw/master/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Install add-ons from DaleDude's repository mirror</summary>
+                <description>DaleDude's repository of addons scraped from the net. Only stuff I am interested in and only english.</description>
+                <disclaimer></disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
+
+<addon id="script.module.httplib2"
+       name="httplib2"
+       version="0.7.1"
+       provider-name="Joe Gregario">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
