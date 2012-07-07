@@ -133,6 +133,24 @@ my %REPOS = (
 			'metadata.mymovies.it' => 1,
 		}
 	},
+	xbmcscreensavers => {
+		type => 'git',
+		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/screensavers',
+		ignore => {
+		}
+	},
+	xbmcvisualizations => {
+		type => 'git',
+		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/visualizations',
+		ignore => {
+		}
+	},
+	xbmcscripts => {
+		type => 'git',
+		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/scripts',
+		ignore => {
+		}
+	},
 	xbmcwebinterfaces => {
 		type => 'git',
 		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/webinterfaces',
