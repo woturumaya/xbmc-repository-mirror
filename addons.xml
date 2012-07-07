@@ -4791,4 +4791,1133 @@ Hinweis: Sie muessen Ihren Browser-Cache leeren bevor Sie das neu installierte/a
     <platform>all</platform>
   </extension>
 </addon>
+
+<addon id="script.artistslideshow" name="Artist Slideshow" version="0.1.0" provider-name="ronie">
+	<requires>
+		<import addon="xbmc.python" version="1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.0.8"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Download images of the currently playing artist from Last.FM</summary>
+		<description>Addon to downloads images from Last.FM of the currently playing artist. These images can be used by the skin to create a slideshow for the artist being listened to.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.audio.grooveshark"
+       name="GrooveShark"
+       version="0.4.4"
+       provider-name="Solver">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.simplejson" version="2.0.10"/>
+    <import addon="script.module.pysqlite" version="2.5.6"/>
+  </requires>
+  <extension point="xbmc.python.script"
+            library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+	<minversion>33778</minversion>
+    <summary lang="en">Grooveshark client</summary>
+    <summary lang="da">Klient til Grooveshark</summary>
+    <summary lang="hu">Grooveshark.com zenék, rádiók</summary>
+    <summary lang="ko">그루브샤크 클라이언트</summary>
+    <description lang="en">The script gives you access to Grooveshark and almost all of its contents. Access your playlist, manipulate them and create new ones. Enjoy.</description>
+    <description lang="da">Få adgang til næsten alt hvad Grooveshark har at byde på. Brug dine playlist, ændr og lav nye. God fornøjelse.</description>
+    <description lang="hu">A program elérést biztosít a Grooveshark.com-hoz és majdnem minden tartalmához. Elérheted vele a lejátszási listáid, szerkesztheted őket, újakat hozhatsz létre. Élvezd!</description>
+    <description lang="sv">Få tillgång till nästan allt som Grooveshark har att erbjuda. Tillgång till dina spellistor, ändra och lägg till nya. Mycket nöje.</description>
+    <description lang="ko">이 스크립트는 Grooveshark의 거의 모든 컨텐츠를 사용할수 있게 해줍니다. 플레이리스트를 이용하고 수정하고 만들수 있습니다. </description>
+  </extension>
+</addon>
+
+<addon id="script.bootable.disk.wizard"
+       name="Bootable Disk Wizard"
+       version="0.9.9"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>linux</platform>
+    <summary lang="en">This script addon automates the creation of an XBMC Live bootable removable disk.</summary>
+    <summary lang="hu">XBMC-LIVE lemez varázsló</summary>
+    <description lang="en">Bootable Disk Wizard (BDW) is designed to be executed from the live CD/live removable disk, but can also run out of a traditional disk installation provided that its addon settings are properly set.</description>
+    <description lang="hu">XBMC-LIVE indítható lemezt tudsz készíteni ezzel a kiegészítővel</description>
+  </extension>
+</addon>
+
+<addon id="script.cdart"
+       name="cdART Single Shot script"
+       version="1.0.0"
+       provider-name="giftie">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.pysqlite" version="2.5.6"/>
+  </requires>
+  <extension point="xbmc.python.library"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary>cdART Single Shot Script</summary>
+    <description>Searches for a match to a single album cdART</description>
+    <disclaimer>Needs skin support for it to be used properly</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.cdartmanager"
+       name="cdART Manager"
+       version="1.5.3"
+       provider-name="Giftie">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.pysqlite" version="2.5.6"/>
+    <import addon="script.module.pil" version="1.1.7"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+	  <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>cdART Manager</summary>
+    <summary lang="hu">CD-kép kezelő</summary>
+    <description>With this script you are able to manage your cdARTs.  You can download cdARTs from fanart.tv, Backup your cdARTs, View and even delete your local cdARTs </description>
+    <description lang="hu">A programmal könnyen kezelheted a CD lemez képeidet (CDArts). Letöltheted vele őket az fanart.tv, biztonsági másolatot készíthetsz róluk, megnézheted és még törölheted is a gépeden lévő lemezképeket.</description>
+    <description lang="de">Mit diesem Programm verwaltet man seine cdARTs. Man kann cdARTs von fanart.tv herunterladen, ein Backup von seinen cdARTs erstellen, cdARTS anzeigen und lokale cdARTs löschen.</description>
+    <description lang="nl">Met dit script kun je je cdARTs beheren. Je kunt cdARTs downloaden van fanart.tv, een backup maken, cdARTs bekijken en je eigen cdARTS verwijderen.</description>
+    <description lang="it">Con questo script puoi gestire le tue cdART. Potrai scaricare le cdART dal sito fanart.tv, fare un backup delle tue cdART, visualizzare ed anche cancellare le cdART memorizzate in locale</description>
+    <description lang="pt">Este script permite que você gerencie seus cdARTs. Você poderá baixar cdARTs do site fanart.tv, efetuar backup, Visualizar e até apagar seus cdARTs armazenados localmente.</description>
+    <description lang="es">Con este script serás capaz de administrar tus cdARTs. Puedes descargar cdARTs desde fanart.tv, Respaldar tus cdARTs, Ver e incluso Borrar tus cdARTs locales.</description>
+  </extension>
+</addon>
+
+<addon id="script.cu.lyrics"
+       name="CU Lyrics"
+       version="1.0.2"
+       provider-name="Amet">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.lyrics"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">CU Lyrics</summary>
+    <summary lang="hu">CU Lyrics dalszöveg</summary>
+    <summary lang="de">CU Lyrics</summary>
+    <description lang="en">Search, download and display lyrics from LyricWIKI.org. Downloaded lyrics will be saved in userdata/addon_data.Lyrics button on OSD needs to be activated and path set to CU Lyrics under Settings-> Skin-> Scripts </description>
+    <description lang="hu">Dalszövegek keresése letöltése, megjelenítése a LyricWIKI.org webhelyről. A letöltött dalszövegek a userdata/addon_data mappába kerülnek. A dalszöveg OSD gombot aktiválni kell az elérési út megadásával a Beállítások -> Skin -> Szkriptek alatt.</description>
+    <description lang="de">Suche, downloade und zeige Lyrics von LyricWIKI.org. Heruntergeladene Lyrics werden in userdata/addon_data gespeichert. Der Lyrics-Button muss im OSD aktiviert werden und der Pfad zu CU Lyrics muss in den Einstellungen spezifiziert werden.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+	id="script.extrafanartdownloader"
+	name="Extrafanart Downloader"
+	version="0.2.1"
+	provider-name="paddycarey, putneyj, Machine-Sanctum">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.elementtree"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows and Movies in your library</summary>
+    <description lang="en">
+	Downloads Extrafanart, Extrathumbs for TV shows and Movies in your library.[CR]
+    For this to work your skins needs to support these features.[CR]
+	Remark:[CR]Each TV Show / Movie must have its own folder where an 'extrafanart' or 'extrathumbs' subfolder will be created.[CR]
+	Artwork sources:[CR]TV Shows (thetvdb.com)[CR]Movies (themoviedb.org)[CR]
+	Skin integration:[CR]See readme file
+	</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.favourites"
+       name="Favourites script"
+       version="1.0.6"
+       provider-name="CF2009">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.library"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Favourites script</summary>
+    <description>Fetches item from your xbmc favourites to populate Home menu/submenu with custom buttons.</description>
+    <disclaimer>Needs skin support for it to be used properly</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.filecleaner"
+    name="XBMC File Cleaner" version="1.3.5" provider-name="drewzh">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Regularly deletes old movie and tv files</summary>
+    <description lang="en">DANGER WILL ROBINSON!!!
+=====================================
+This script has the potential to wipe your entire video collection!  Please make sure you understand exactly what this script is designed to do before running.  I will not be held responsible for loss of data due to user error.
+
+DESCRIPTION
+=====================================
+This plugin will automatically scan your library for watched TV shows and Movies and delete them from the file system based on numerous critia such as age, rating, disk free space etc.  All these options and more can be configured via add-on settings (right click addon or press C for context menu and select 'Add-on Settings').  Also make sure you set the disk usage path before enabling if you store your videos on a secondary drive (e.g, /media/external or D:\ etc).
+
+QUESTIONS/COMMENTS/SUGGESTIONS
+=====================================
+web: http://drewzh.com
+email: me@drewzh.com
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.forum.browser"
+       name="Forum Browser"
+       version="0.8.2"
+       provider-name="Rick Phillips (ruuk)">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.simplejson" version="2.0.9"/>
+    <import addon="script.web.viewer" />
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Browse forums within XBMC</summary>
+    <description lang="en">Browse Forums in XBMC. View forums, threads, posts, subscriptions and private messages. Follow links in Web Viewer. Post replies, send private messages, delete posts, quote posts. View images in posts, follow post forum links and download post links. Translate post messages via Google Translate. Currently supports Forums: xbmc.org,boxee.tv,xbmc4xbox.org,dvhk.pl</description>
+  </extension>
+</addon>
+
+<addon id="script.game.whatthemovie"
+       name="WhatTheMovie"
+       version="0.9.3"
+       provider-name="sphere, tadi, skiller2k1">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    </requires>
+    <extension point="xbmc.python.script"
+               library="default.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="de">Ein Filmquiz - Zu Snapshots Filmtitel erraten</summary>
+        <summary lang="en">A Movie Quiz - Guess Movies by snapshots</summary>
+        <description lang="de">Löse Snapshots um Punkte für die Hall of Fame zu bekommen - powered by the website whatthemovie.com [CR][CR]Aktuelle Haupt-Features:[CR]- Login mit deinem whatthemovie.com Account[CR]- Löse, favorisiere, bookmarke und bewerte Shots[CR]- Snapshot Zoom[CR]- Zufalls- und Navigations-Einstellungen[CR]- Automatischer Sprung zum nächsten Shot</description>
+        <description lang="en">Solve snapshots to gain points for the Hall of Fame - powered by the website whatthemovie.com [CR][CR]Currently Main Features are:[CR]- Login with your whatthemovie.com account[CR]- Solve, favourite, bookmark and rate shots[CR]- Zoom the snapshot[CR]- Set random and navigation options[CR]- Jump automatically to the next or random next shot</description>
+    </extension>
+</addon>
+
+<addon
+  id="script.games.rom.collection.browser"
+  version="0.9.9"
+  name="Rom Collection Browser"
+  provider-name="carabalb, jimyx17, malte">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.elementtree" version="1.2.7"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Browse and launch games in XBMC</summary>
+    <summary  lang="hu">Konzol játék ROM-ok böngészése</summary>
+    <description>With this Addon you can browse and launch emulator roms and standalone games in XBMC. See the wiki page for more information: http://code.google.com/p/romcollectionbrowser/wiki/Welcome.
+
+Import games:
+  * scan your rom folders and import games to local database
+  * scrape artwork and meta data from various online sources
+  * import local available descriptions, artwork and videos
+  * mix results from all scrapers
+  * supports background scraping at XBMC startup
+  * three scraping modes: accurate, guess matches, select matches
+  * configurable description file parser
+Browse games:
+  * browse games by console, genre, year and publisher
+  * mark games as favorites
+  * search games by name
+  * automatic video playback in video window
+  * fullscreen video browser
+  * game details page
+  * dedicated MAME views to display cabinets and marquees
+Launch games:
+  * launch roms and standalone games in solo or non-solo mode
+  * detect games in zip and 7z archives and ask user which game to load
+  * direct launching of savestate files
+</description>
+
+    <description lang="hu">Jelenlegi funkciók:
+  * játékok szűrése konzoltípus, műfaj, év és kiadó alapján
+  * rom-ok indítása külső emulátorral
+  * a program beállítása egy xml fájl segítségével
+  * egyszerű de testreszabható leírófájl-feldolgozó
+  * játékonként különböző képek és videók megjelenítése
+  * játéktartalom és kiegészítő információk megjelenítése
+</description>
+        <license>GPL 2.0</license>
+        <platform>all</platform>
+  </extension>
+</addon>
+
+
+<!--
+# The contents of this file are subject to the Mozilla Public License
+# Version 1.1 (the "License"); you may not use this file except in
+# compliance with the License. You may obtain a copy of the License at
+# http://www.mozilla.org/MPL/
+#
+# Software distributed under the License is distributed on an "AS IS"
+# basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+# License for the specific language governing rights and limitations
+# under the License.
+#
+# The Original Code is plugin.games.xbmame.
+#
+# The Initial Developer of the Original Code is Olivier LODY aka Akira76.
+# Portions created by the XBMC team are Copyright (C) 2003-2010 XBMC.
+# All Rights Reserved.
+-->
+
+<addon id="script.games.xbmame" name="MAME Frontend" version="2.0.3" provider-name="Akira76">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.pysqlite" version="2.5.6"/>
+    </requires>
+    <extension point="xbmc.python.script" library="xbmame.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Allows to use XBMC as a frontend to mame</summary>
+        <summary lang="fr">Permet d'utiliser XBMC comme frontend pour M.A.M.E.</summary>
+        <description lang="en">XBMC MAME Frontend (XBMame) :
+        - Supports listing by Year, Bios, Manufacturer, Name, etc.
+        - Supports romset filtering on certain criteria.
+        - Supports BIOS selection for some drivers.
+        - Supports Video and Dipswitch settings from XBMC.
+        - Includes a basic name search engine.
+
+Support for OSX and Linux is work in progress.
+Please send comments and requests to xbmame@otaku-realm.net
+        </description>
+		<description lang="fr">XBMC MAME Frontend (XBMame) :
+        - Tri par Année, Bios, Fabricant, Nom, etc.
+        - Filtrage des romsets selon certains critères.
+        - Choix du BIOS pour certains pilotes.
+        - Paramétrage de la vidéo et des commutateurs depuis XBMC.
+        - Inclut un moteur de recherche basique de nom.
+
+Support pour OSX et Linux en cours de réalisation.
+Merci d'envoyer vos commentaires et demandes à xbmame@otaku-realm.net
+        </description>
+    </extension>
+</addon>
+
+<addon id="script.gmail.checker"
+       name="Gmail Checker"
+       version="1.0.4"
+       provider-name="Amet">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Gmail Checker</summary>
+    <summary lang="hu">Gmail ellenörző</summary>
+    <description lang="en">View Gmail e-mails</description>
+    <description lang="hu">Gmail leveleid olvasása</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.gomiso"
+       name="gomiso"
+       version="1.3.0"
+       provider-name="metabaron">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+	<import addon="script.module.simplejson" version="2.0.10"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Miso is a social TV platform that makes watching TV more fun. The Miso team is located in San Francisco at 901 Mission Street in the San Francisco Chronicle Building.</summary>
+    <description lang="en">
+		The XMBC plugin for gomiso updates it with what you've been watching in XBMC. For best results, make sure you are in library mode.
+
+		Installation instructions:
+		After installing this plugin, sign up for an account at http://gomiso.com.  Then..
+
+		1. Navigate to Home > Programs and activate gomiso (location of gomiso activation is skin dependent and may be in other places labeled Addons, Scripts, etc.)
+		2. Enter in username and password that you have set up on the gomiso website and any other configuration you would like
+
+		Note: if you do not configure gomiso to autostart, you will need to repeat step 1 any time you would like to submit tv shows or movies
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.image.bigpictures" name="The Big Picture" version="1.5.3" provider-name="sphere">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.script" library="runscript.py">
+    <provides>image</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="de">Zeigt Alben/Bilder von Photojournalismus-Seiten wie Boston.com's "The Big Pictures"</summary>
+    <summary lang="en">Shows Albums/Photos from photojournalism site's like Boston.com's 'The Big Picture'</summary>
+    <summary lang="fr">Affichage d'albums/photos de sites photojournalistiques comme Boston.com "The big picture"</summary>
+    <summary lang="nl">Bladen door fotojournalistiek albums en afbeeldingen zoals Boston.com's 'The Big Picture'</summary>
+    <description lang="de">Die Quelle kann mit hoch und runter gewechselt werden - das album mit links und rechts[CR]Mit select wird das Album geöffnet.[CR]Herunterladen der Bilder ist mit der Kontext-Menu Taste möglich.[CR]Aktuell sind die folgenden Quellen verfügbar:[CR] - Boston.com: The Big Picture[CR] - The Atlantic: In Focus[CR] - Sacramento Bee: The Frame[CR] - Wallstreetjournal: The Photo Journal</description>
+    <description lang="en">You can switch the source with up and down, switch the album with left and right[CR]With select-key you can enter an album to view its content.[CR]Picture Downloading is possible with the context menu key.[CR]Currently the following Sources are included:[CR] - Boston.com: The Big Picture[CR] - The Atlantic: In Focus[CR] - Sacramento Bee: The Frame[CR] - Wallstreetjournal: The Photo Journal</description>
+    <description lang="fr">Vous pouvez changer la source avec haut et bas, changer l'album avec gauche et droite.[CR]Avec la touche entrée vous pouvez ouvrir et visualiser un album.[CR]Le téléchargement de photos est possible grâce au menu contextuel[CR]Actuellement les sources suivantes sont incluses:[CR] - Boston.com: The Big Picture[CR] - The Atlantic: In Focus[CR] - Sacramento Bee: The Frame[CR] - Wallstreetjournal: The Photo Journal</description>
+    <description lang="nl">U kunt de bron veranderen door de Boven en Beneden toets te gebruiken; wisselen van album door de Links en Rechts toets te gebruiken [CR]Met de Enter toets bekijkt u de inhoud van het album.[CR]Afbeeldingen downloaden is mogelijk door gebruik te maken van het Context menu.[CR]De volgende bronnen zijn aanwezig:[CR] - Boston.com: The Big Picture[CR] - The Atlantic: In Focus[CR] - Sacramento Bee: The Frame[CR] - Wallstreetjournal: The Photo Journal</description>
+  </extension>
+</addon>
+
+<addon id="script.image.lastfm.slideshow"
+       name="Last.FM - SlideShow"
+       version="0.0.3"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+
+  <extension point="xbmc.python.script"
+            library="default.py">
+        <provides>image</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Plays a slide show of the currently playing artist.</summary>
+    <description>While playing music, this addon will start a slideshow of images from Last.FM, of the current artist. Tip: Pressing "i" during a slideshow will show the music player info.</description>
+	<platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.libraryautoupdate"
+    name="XBMC Library Auto Update" version="0.3.2" provider-name="robweber">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Update your XBMC Video and Music Libraries on a timer.</summary>
+    <description lang="en">Using built-in XBMC functions you can set your Video and/or Music libraries to update on specified timer intervals. You must start the timer manually when you launch XBMC (or move the included autoexec.py script to your user data directory) but it will run automatically from there. If you are playing an audio or video file when the timer starts it will skip the library update process so that you're media experience is not interrupted. </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.logo-downloader"
+       name="Logo Downloader"
+       version="2.3.0"
+       provider-name="ppic">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.library"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>30369</minversion>
+    <summary lang="en">Download Logos / posters / banners / cleararts /showthumbs for your favorites Tvshows</summary>
+    <summary lang="fr">téléchargez les Logos / posters / banners / cleararts /showthumbs de vos séries préférées</summary>
+    <description lang="en">Download logos from www.lockstockmods.net
+    cleararts and showthumbs from www.xbmcstuff.com
+    Banners and posters from www.tvdb.com</description>
+    <description lang="fr">Téléchargez les logos depuis www.lockstockmods.net
+    les cleararts et les showthumbs depuis www.xbmcstuff.com
+    les Banners et les posters depuis www.tvdb.com</description>
+    <disclaimer lang="en">Please contribute on www.xbmcstuff.com www.tvdb.com www.lockstockmods.net</disclaimer>
+    <disclaimer lang="fr">Contribuez sur www.xbmcstuff.com www.tvdb.com www.lockstockmods.net</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.lrclyrics"
+       name="LRC Lyrics"
+       version="1.3.5"
+       provider-name="Taxigps">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.lyrics"
+             library="default.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>LRC Lyrics</summary>
+    <summary lang="zh">LRC同步歌词</summary>
+    <description>LRC Lyrics is a lyrics script for XBMC. It support lrc lyrics synchronized scroll when the song playing. You should save the lrc file with mp3(or other type of music) at the same path and same file name, or scrape lrc from some site. In default, lrc lyrics scrape from a site design for chinese language. And the site also support some english songs, you can try it. LRC Lyrics support additional scraper to get lrc file from other site for the language you use, Hope you write for this.</description>
+    <description lang="zh">LRC同步歌词脚本，实现播放音乐时歌词同步滚动显示功能。显示歌词时先读取与音乐文件存放在一起的同名LRC文件，没找到的情况下到指定目录读取或从网站获取。</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.brightcove" name="Brightcove" version="0.1.1" provider-name="Jonathan Beluch (jbel)">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.danishaddons"
+       name="Library module for Danish addons"
+       version="1.1.0"
+       provider-name="twinther [tommy@winther.nu]">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Library module for Danish addons</summary>
+    <description>Library with reusable utility functions used by the Danish addons</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<!-- $Revision: 896 $ -->
+<addon id="script.module.dialogaddonscan" name="Dialog Addon Scan"
+       version="1.0.6" date="27.10.2010"
+       provider-name="Frost (passion-xbmc.org)">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Dialog Scan for Add-on</summary>
+    <description>Dialog Scan for Add-on</description>
+    <license>GPL</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.myconnpy"
+       name="MySQL Connector/Python"
+       version="0.3.2"
+       provider-name="http://forge.mysql.com/projects/project.php?id=302">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>MySQL Connector/Python</summary>
+        <description>MySQL Connector/Python is implementing the MySQL Client/Server protocol completely in Python. This means you don't have to compile anything or MySQL (client library) doesn't even have to be installed on the machine.</description>
+        <license>GPLv2</license>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.t0mm0.common"
+	     name="t0mm0's common stuff"
+	     version="1.0.0"
+	     provider-name="t0mm0">
+  <requires>
+    <import addon="xbmc.python" version="1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Collection of commonly used addon routines</summary>
+    <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
+  </extension>
+</addon>
+
+<addon id="script.module.xbmcswift" name="xbmcswift" version="0.1.3" provider-name="Jonathan Beluch (jbel)">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.moviequiz"
+       name="Movie Quiz"
+       version="0.4.5"
+       provider-name="twinther [tommy@winther.nu]">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.elementtree" version="1.2.7"/>
+        <import addon="script.module.myconnpy" version="0.3.2"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Movie and TV Shows Quiz</summary>
+        <summary lang="da">Film og TV-serie Quiz</summary>
+        <description lang="en">Test your wit and skill against all the information on your movie and TV-shows stored inside XBMC.
+* Can you tell which movie is playing from a ten seconds clip?
+* Do you know the actors by appearance?
+* Any idea when your favorite TV show was first aired?
+You will get these questions, and a lot more, all presented nicely with movie clips, actor photos, cover art, etc.
+
+More information, comments, support on the forums:
+http://forum.xbmc.org/showthread.php?t=92540</description>
+        <description lang="da">Test din viden og dygtighed om al informationen om film og TV-serier gemt i XBMC.
+* Kan du se hvilken film der er tale om ud fra et ti sekunders klip?
+* Kender du skuespillerne på udseende?
+* Nogen ide om hvornår din favorit TV-serier blev sendt første gang?
+Du vil få stillet disse spørgsmål og mange flere, præsenteret pænt med film klip, billeder af skuespillere, covers, mv.
+
+Mere information, kommentarer og hjælp på forummet:
+http://forum.xbmc.org/showthread.php?t=92540</description>
+        <license>GPL 2.0</license>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.mpdc"
+       name="MPD Client"
+       version="1.0.4"
+       provider-name="lzoubek">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+	<provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">An MPD client</summary>
+    <summary lang="cs">MPD klient</summary>
+    <summary lang="pl">Klient MPD</summary>
+    <description lang="en">MPDClient allows you to drive your MPD server directly from XBMC. Currently supports 3 server profiles, player commands, queue navigation, file browser, artist browser, playlist browser. Please visit http://github.com/lzoubek/xbmc-plugin-mpdc for any issues or suggestions</description>
+    <description lang="cs">MPD klient umožňuje ovládat MPD server přímo z XBMC. Momentálně podporuje 3 profily, ovládání přehrávání, navigaci ve frontě, procházení souborů, umělců a playlistů. Pokud máte jakékoliv náměty nebo potíže, navštivte http://github.com/lzoubek/xbmc-plugin-mpdc</description>
+    <description lang="pl">MPDClient umożliwia sterowanie serwerem MPD bezpośrednio z XBMC. Obecnie udostępnia 3 profile serwera, polecenia odtwarzania, nawigację kolejki, przeglądarkę plików, przeglądarkę wykonawców, przeglądarkę list odtwarzania. W celu zgłaszania problemów lub sugestii odwiedź : http://github.com/lzoubek/xbmc-plugin-mpdc</description>
+  </extension>
+</addon>
+
+<addon
+  id="script.mymediadb"
+  version="0.1.5"
+  name="MyMediaDB"
+  provider-name="mmdb"
+  >
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.simplejson" version="2.0.9"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.service"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Sync your media collection with MyMediaDB.org</summary>
+    <description>Sync your acquired and watched state of your videolibrary to and from MyMediaDB.org Share your entertainment endavours with your friends and family! Bugs can be reported at http://mmbd-xbmc-addon.googlecode.com</description>
+    <disclaimer>An account at www.mymediadb.org is required!</disclaimer>
+  </extension>
+</addon>
+
+<addon
+    id="script.mythbox"
+    name="MythBox"
+    version="1.0.4"
+    provider-name="analogue@yahoo.com">
+    <requires>
+        <import addon="xbmc.python" version="1.0" />
+        <import addon="script.module.beautifulsoup"/>
+        <import addon="script.module.elementtree"/>
+        <import addon="script.module.simplejson"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">MythBox for XBMC</summary>
+        <summary lang="fr">MythBox pour XBMC</summary>
+        <description lang="en">[B]MythBox is a MythTV frontend for XBMC[/B]
+
+        - Watch recordings with commercial skipping
+        - Watch live tv
+        - Create and edit recording schedules
+        - Fan art from tvdb, tvrage, tmdb, imdb, and google image search
+        - Enhanced program guide
+        - Show upcoming recordings
+        - Tuner and job status
+        - Supports MythTV 0.23 and 0.24 (no live tv with 0.24)
+        </description>
+        <description lang="fr">[B]MythBox est un frontal MythTV pour XBMC[/B]
+
+        - Regarder les enregistrements avec saut de la publicité
+        - Regarder la tv en direct
+        - Créer et éditer des planifications d'enregistrements
+        - Fanart à partir de tvdb, tvrage, tmdb, imdb, et de la recherche d'image google
+        - Guide de programme amélioré
+        - Afficher les enregistrements à venir
+        - Statut du syntoniseur et des travaux
+        - Support de MythTV 0.23 et 0.24 (pas de tv en direct en 0.24)
+        </description>
+    </extension>
+</addon>
+
+<addon id="script.onmytv"
+       name="On-My.TV Listings"
+       version="0.0.3"
+       provider-name="Andre LeBlanc &lt;andrepleblanc@gmail.com&gt;">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.simplejson" version="2.0.9"/>
+    <import addon="script.module.pil" version="1.1.7"/>
+    <import addon="script.module.elementtree" version="1.2.7" />
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TV Listings from On-My.TV</summary>
+    <description>Displays TV Listings from On-My.TV.  Be sure to configure the plugin and enter your On-My.TV UserID to allow filtering only the shows you want to see.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+    id="script.pseudotv"
+	version="2.0.0"
+	name="PseudoTV"
+	provider-name="Jason Anderson">
+
+	<requires>
+		<import addon="xbmc.python" version="1.0"/>
+	</requires>
+
+	<extension point="xbmc.python.script"
+        defaultresolution="720p"
+        defaultresolutionwide="720p"
+		library="default.py"/>
+
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<minversion>35647</minversion>
+		<summary lang="en">Channel surfing for your video library</summary>
+		<summary lang="nl">Zenderlijst voor jouw video bibliotheek</summary>
+		<description lang="en">PseudoTV acts similar to normal broadcast or cable TV, complete with multiple preset and user-defined channels and an EPG.</description>
+		<description lang="nl">PseudoTV gedraagt zich vergelijkbaar als een normale TV zender, compleet met standaard en instelbare kanalen en EPG (TV gids).</description>
+	</extension>
+</addon>
+
+<!-- ==================================================================== -->
+<!--  PyDev Predefined Completions Creator -->
+<!--  Copyright (C) 2010 James F. Carroll -->
+
+<!--  This program is free software; you can redistribute it and/or modify -->
+<!--  it under the terms of the GNU General Public License as published by -->
+<!--  the Free Software Foundation; either version 2 of the License, or -->
+<!--  (at your option) any later version. -->
+
+<!--  This program is distributed in the hope that it will be useful, -->
+<!--  but WITHOUT ANY WARRANTY; without even the implied warranty of -->
+<!--  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the -->
+<!--  GNU General Public License for more details. -->
+<!-- -->
+<!--  You should have received a copy of the GNU General Public License -->
+<!--  along with this program; if not, write to the Free Software -->
+<!--  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA -->
+<!--==================================================================== -->
+<addon id="script.pypredefcom" name="PyDev Predefined Completions Creator" version="2.0" provider-name="jiminger.com">
+    <requires>
+       <import addon="xbmc.python" version="2.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31123</minversion>
+        <summary>Creates PyDev Predefined Completions. Based on Pydoc by nuka1195</summary>
+        <description>Creates PyDev Predefined Completions for xbmc, xbmcgui, xbmcplugin and xbmcaddon modules. Based on Pydoc by nuka1195. For those that are developing Xbmc addons using Eclipse, these will provide the ability for Eclipse to auto complete xbmc builtin modules and provide the in-IDE usage documentation. Please see http://pydev.org/manual_101_interpreter.html#id2 .</description>
+        <disclaimer>Only potentially accurate for the version of xbmc this script was run in.</disclaimer>
+    </extension>
+</addon>
+
+<addon id="script.qlock"
+       name="Qlock"
+       version="0.1.2"
+       provider-name="Amet">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.library"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Qlock script</summary>
+    <description lang="en">Script to display current time in words, needs skin support. so far only Transparency! is supporting this in SVN</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.randomitems" name="Random Items script" version="1.0.11" provider-name="Hitcher">
+	<requires>
+		<import addon="xbmc.python" version="1.0"/>
+	</requires>
+	<extension point="xbmc.python.library" library="RandomItems.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Random Items script</summary>
+		<description lang="en">Script to get Random Videos and Music from the database.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.recentlyadded"
+       name="Recently Added XBMC Script"
+       version="2.0.5"
+       provider-name="alex">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.library"
+             library="RecentlyAdded.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.rss.editor"
+       name="RSS Editor"
+       version="1.6.1"
+       provider-name="rwparris2">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>28764</minversion>
+    <summary lang="en">A Script for editing XBMC's built in RSS Ticker</summary>
+    <summary lang="hu">RSS forrás szerkesztő</summary>
+    <summary lang="de">Skript zum Bearbeiten des XBMC internen RSS Tickers</summary>
+    <description lang="en">A Script for editing XBMC's built in RSS Ticker</description>
+    <description lang="hu">A szkript képes szerkeszteni az XBMC beépített RSS forrás készletét</description>
+    <description lang="de">Skript zum Bearbeiten des XBMC internen RSS Tickers</description>
+  </extension>
+</addon>
+
+<addon id="script.sharethetv"
+       name="ShareThe.TV"
+       version="1.1.0"
+       provider-name="nmunson">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Easily share your movie collection online</summary>
+	<description lang="en">Show off your entire movie collection online with your ShareThe.TV profile!  By enabling this addon, you can keep your XBMC movie collection in sync with your ShareThe.TV profile so that others can check out your collection.  You can also follow other users who share similar tastes, with the goal of getting ideas on more movies you can add to your collection.</description>
+    <disclaimer lang="en">New users will need to create an account at sharethe.tv before using.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.skin.news"
+       name="Skin news script"
+       version="1.0.0"
+       provider-name="Hitcher">
+	<requires>
+		<import addon="xbmc.python" version="1.0"/>
+	</requires>
+	<extension point="xbmc.python.script"
+			   library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin news script</summary>
+		<description lang="en">Fetches news for your Skin[CR]Originally created by EqUiNoX[CR]Updated by ppic/Hitcher</description>
+		<disclaimer lang="en">Start your news item with [NEWS]</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.trakt"
+       name="trakt"
+       version="0.1.5"
+       provider-name="rudf0rd">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">trakt helps keep a record of what TV shows and movies you are watching. Based on your favorites, trakt recommends additional shows and movies you'll enjoy!</summary>
+    <description lang="en">
+		The XMBC plugin for trakt automatically fills your library and updates it with what you've been watching in XBMC. For best results, make sure you are in library mode.
+
+		Installation instructions:
+		After installing this plugin, sign up for an account at http://trakt.tv.  Then..
+
+		1. Press c (or rightclick if using a mouse) and select configure
+		2. Enter in username and password that you have set up on the trakt website and any other configuration you would like
+		3. Navigate to Home > Programs and activate trakt* (location of trakt activation is skin dependent and may be in other places labeled Addons, Scripts, etc.)
+
+		Note: if you do not configure trakt to autostart, you will need to repeat step 3 any time you would like to submit tv shows
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.transmission"
+       name="Transmission"
+       version="0.6.3"
+       provider-name="Correl Roush">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.simplejson" version="2.0.9"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8" />
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">A client for the popular Transmission BitTorrent application</summary>
+    <summary lang="hu">A népszerű Transmission Bittorrent alkalmazás vezérlése</summary>
+    <summary lang="ca">Un client de Transmission, la popular aplicació de Bittorrent</summary>
+    <description lang="en">Currently, Transmission-XBMC supports viewing, adding, removing, starting and stopping torrents. More advanced features may be added in future releases.</description>
+    <description lang="hu">Jelenleg a Transmission-XBMC képes megnézni, hozzáadni, elkezdeni, és megállítani a torrenteket. További fejlesztések várhatók a jövőben.</description>
+    <description lang="ca">Actualment, Transmission-XBMC permet veure, afegir, eliminar, iniciar i parar torrents. En futures versions de l'aplicació s'haniran afegint opcions més avançades.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.tv.show.next.aired"
+       name="TV Show - Next Aired"
+       version="2.1.2"
+       provider-name="Ppic, Frost (passion-xbmc.org)">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Grab infos of next TV Shows Aired.</summary>
+    <summary lang="fr">Récupère les dates de diffusions de vos séries</summary>
+    <description lang="en">Grab infos of next TV Shows Aired. You'll never miss them</description>
+    <description lang="fr">Ce script interroge votre médiathèque puis vas récupérer les infos sur les prochaines diffusions de vos séries.
+    vous n'en manquerez plus aucune </description>
+  </extension>
+</addon>
+
+<addon id="script.tvguide"
+       name="TV Guide"
+       version="0.4.0"
+       provider-name="twinther [tommy@winther.nu]">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+        <import addon="script.module.elementtree" version="1.2.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Danish TV Guide</summary>
+        <summary lang="da">Dansk TV Guide</summary>
+        <description lang="en">The TV guide gives you an overview on whats on TV right now, so you don't have to change the channel away from XBMC![CR]EOG data can be retrieved from YouSee.tv, DR.dk, TvTid.dk or an XMLTV file[CR][CR]Navigate using the arrow keys and change page using channel + / -.</description>
+        <description lang="da">TV guiden giver dig et overblik over hvad der er på TV lige nu, så slipper du for at zappe væk fra XBMC![CR]EPG data kan indlæses fra YouSee.tv, DR.dk, TvTid.dk eller en XMLTV fil.[CR][CR]Naviger med piletasterne og skift side med kanal + og -</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.tvrage.com"
+       name="TVRage-Eps"
+       version="1.0.5"
+       provider-name="Rick Phillips (ruuk)">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.elementtree" version="1.2.7"/>
+    <import addon="script.module.simplejson" version="2.0.9"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+    <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Quickly see which of your favorite shows are on next, and browse episode lists.</summary>
+    <description lang="en">Search and save a list of your favorite shows to be automatically updated and sorted by what's on next and highlighted for what's on today and tomorrow. Shows next and previous episode details. Select a show to browse an episode list. Select an episode for a summary.</description>
+  </extension>
+</addon>
+
+<addon id="script.tvtunes"
+       name="TvTunes"
+       version="0.9.0"
+       provider-name="Ppic (passion-xbmc.org)">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Get and play your Tv shows sound Theme</summary>
+    <summary lang="fr">Récupérez et écoutez les génériques des séries de votre bibliothèque</summary>
+	<summary lang="es">Descarga y reproduce las bandas sonoras de las series de tu biblioteca</summary>
+    <description lang="en">This script will help you to get theme of your tvshow library from www.televisiontunes.com
+    it will save them in theme.mp3 file in each of your tvshow folder then they will be play while browsing your tvshow library when you enter the tvshow folder (need your skin to be compatible for this feature)</description>
+    <description lang="fr">Ce script vous aidera à télécharger vos génériques de série depuis www.televisiontunes.com
+    Il les enregistrera dans un fichier theme.mp3 dans vos répertoires de série, ils seront ensuite joué lorsque vous entrerez dans la série correspondante (cette fonctionalité requiert une skin compatible</description>
+	<description lang="es">Este script te ayudará a buscar la banda sonora de tus series en www.televisiontunes.com
+se guardará un fichero theme.mp3 en el directorio de tu serie y será reproducido mientras navegas por dentro de la carpeta de la serie. (Necesitas una skin compatible para esta funcionalidad)</description>
+    <disclaimer lang="en">Skinners, please see changelog.txt to know how to integrate it in your skin</disclaimer>
+    <disclaimer lang="fr">Skinneurs, lisez le changelog.txt pour obtenir les infos pour l'intégrer à votre skin</disclaimer>
+	<disclaimer lang="es">Skinners, por favor, revisad changelog.txt para saber como integrarlo en vuestras skins</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.web.viewer"
+       name="Web Viewer"
+       version="0.7.8"
+       provider-name="Rick Phillips (ruuk)">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8.1"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="lib/webviewer/webviewer.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Simple web browser</summary>
+    <description lang="en">
+Web Viewer is a linear text web browser. It is linear because it doesn't render pages, it filters them and displays text in the order it is found in the original HTML.
+
+Web viewer also allows addon developers to process application authorization (ie. facebook,flickr etc.) with little programming and without violating terms of use.
+
+What it does:
+    *You can follow links, fill out forms, view images
+    *Stream video/audio links
+    *It has back/forward history
+    *Bookmarks
+
+What it doesn't do:
+    *Handle style sheets, javascript, flash, etc.
+    *Make web pages look good :)
+    *Lots of other stuff
+    </description>
+  </extension>
+</addon>
+
+<addon id="script.wol"
+       name="Wake On Lan"
+       version="1.0.0"
+       provider-name="AT">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Wake up a sleeping computer using Wake-On-Lan</summary>
+    <description lang="en">Sends a WOL magic packet to a remote computer using its ethernet MAC address</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.xbmc-pbx-addon"
+    name="XBMC PBX Addon"
+    version="0.0.9"
+    provider-name="hmronline">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="bgservice.py" start="login">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en">XBMC PBX Addon aims to provide a completely new Home Telephony Experience by integrating Asterisk into XBMC.</summary>
+        <description lang="en">By integratating Asterisk into XBMC you can use it as a front-end for certain functionality (like playing voicemail) and to automate some tasks (like pausing video on incoming calls), among other features.</description>
+        <disclaimer lang="en">You have to have a properly set-up and running Asterisk server.</disclaimer>
+    </extension>
+</addon>
+
+<addon id="script.xbmc.audio.mixer"
+       name="Audio Mixer"
+       version="1.0.6"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>osx linux</platform>
+    <summary lang="en">Used to configure sound settings and adjust the volume</summary>
+    <description lang="en">Used to configure sound settings and adjust the volume</description>
+  </extension>
+</addon>
+
+<addon id="script.xbmc.debug.log"
+       name="Debug Log"
+       version="0.5.8"
+       provider-name="Team-XBMC">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Copy or Pastebin your debug log</summary>
+    <description lang="en">This script will either copy your selected debug logs to a desired location or upload it to pastebin.com website for easy linking on the forum</description>
+<platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.xbmc.subtitles"
+       name="XBMC Subtitles"
+       version="2.5.16"
+       provider-name="Amet, mr_blobby">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.subtitles"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">XBMC Subtitles</summary>
+    <summary lang="es">Subtítulos XBMC</summary>
+    <summary lang="hu">XBMC feliratok</summary>
+    <summary lang="sr">XBMC Преводи</summary>
+    <summary lang="nl">XBMC Ondertitels</summary>
+    <summary lang="bg">XBMC Субтитри</summary>
+    <summary lang="pt">Legendas XBMC</summary>
+    <summary lang="pl">Napisy XBMC</summary>
+    <description lang="en">Search and download subtitles from 20 websites:Bierdopje.com, Italiansubs.net, Legendas-Zone.org, LegendasDivx.com, Legendas.tv, Napiprojekt.pl, OmniSubs.net, Ondertitel.com, OpenSubtitles.org, Podnapisi.net, PT-SUBS.NET, theSubDB.com, Subdivx.com, Sublight.si, Subscene.com, Swesub.nu, Subscenter.org, Titlovi.com, Titulky.com and Undertexter.se.Subtitle button on OSD needs to be activated and path set to XBMC Subtitles under System-> Skin-> Addon Scripts</description>
+    <description lang="es">Busca y descarga subtítulos de:Bierdopje.com, Italiansubs.net, Legendas-Zone.org, LegendasDivx.com, Legendas.tv, Napiprojekt.pl, OmniSubs.net, Ondertitel.com, OpenSubtitles.org, Podnapisi.net, PT-SUBS.NET, theSubDB.com, Subdivx.com, Sublight.si, Subscene.com, Swesub.nu, Subscenter.org, Titlovi.com, Titulky.com y Undertexter.se.El botón de subtitulos en el OSD debe ser añadido, y la ruta al addon debe ponerse en Sistema-> Skin-> Addons de Scripts</description>
+    <description lang="hu">Film feliratok keresése letöltése az:Bierdopje.com, Italiansubs.net, Legendas.tv, Napiprojekt.pl, OmniSubs.net, Ondertitel.com, OpenSubtitles.org, Podnapisi.net, theSubDB.com, Subdivx.com, Sublight.si, Subscene.com, Swesub.nu, Subscenter.org, Titlovi.com, Titulky.com és Undertexter.se webhelyekról.A dalszöveg OSD gombot aktiválni kell az elérési út megadásával a Beállítások -> Skin -> Szkriptek alatt.</description>
+    <description lang="sr">Претражи и скини преводе са 19 веб страница:Bierdopje.com, Italiansubs.net, Legendas.tv, Napiprojekt.pl, OmniSubs.net, Ondertitel.com, OpenSubtitles.org, Podnapisi.net, theSubDB.com, Subdivx.com, Sublight.si, Subscene.com, Subscenter.org, Swesub.nu, Titlovi.com, Titulky.com и Undertexter.se.Дугме за преводе на OSD треба да се активира и изабере XBMC Subtitles у Систем-> Маска-> Скрипт додаци</description>
+    <description lang="nl">Zoek en download ondertitels van 19 websites:Bierdopje.com, Italiansubs.net, Legendas.tv, Napiprojekt.pl, OmniSubs.net, Ondertitel.com, OpenSubtitles.org, Podnapisi.net, theSubDB.com, Subdivx.com, Sublight.si, Subscene.com, Swesub.nu, Subscenter.org, Titlovi.com, Titulky.com en Undertexter.se.De ondertitel knop in het OSD scherm moet zijn geactiveerd met het pad naar XBMC Subtitles via Systeem-> Skin-> Addon Scripts.</description>
+    <description lang="bg"> Търси и сваляй субтитри от 19 уебсайта: Bierdopje.com, Italiansubs.net, Legendas.tv, Napiprojekt.pl, OmniSubs.net, Ondertitel.com, OpenSubtitles.org, Podnapisi.net, theSubDB.com, Subdivx.com, Sublight.si, Subscene.com, Swesub.nu, Subscenter.org, Titlovi.com, Titulky.com и Undertexter.se. Бутонът за субтитри в OSD менюто над филма трябва да бъде активиран и пътя към приложението трябва да бъде указан, като и за двете отивате в менюто на Система(System)-> Кожа(Skin)-> Добавка(Addon Scripts)</description>
+    <description lang="pt">Procura e download de legendas em 20 websites: Bierdopje.com, Italiansubs.net, Legendas-Zone.org, LegendasDivx.com, Legendas.tv, Napiprojekt.pl, OmniSubs.net, Ondertitel.com, OpenSubtitles.org, Podnapisi.net, PT-SUBS.NET, theSubDB.com, Subdivx.com, Sublight.si, Subscene.com, Swesub.nu, Subscenter.org, Titlovi.com, Titulky.com e Undertexter.se. O botão das legendas deve ser adicionado no OSD e o caminho põe-se em Sistema-> Skin-> Addons de Scripts</description>
+    <description lang="pl">Szukaj i pobieraj napisy z ponad 20 serwisów: Argenteam.net, Asia-team.net, Bierdopje.com, Italiansubs.net, Legendas-Zone.org, LegendasDivx.com, Legendas.tv, Napiprojekt.pl, Napisy24.pl, OmniSubs.net, Ondertitel.com, OpenSubtitles.org, Podnapisi.net, PT-SUBS.NET, Sratim.co.il, theSubDB.com, Subdivx.com, Sublight.si, Subscene.com, Subscenter.org, Supersubtitlies, Swesub.nu, Titlovi.com, Titulky.com and Undertexter.se. Aby przycisk napisów w OSD był aktywny trzeba ustawić scieżkę do skryptu w System-> Skóra-> Wytyczka: skróty</description>
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
