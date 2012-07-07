@@ -398,13 +398,14 @@ foreach my $name (keys %REPOS) {
 	print "=======\n";
 }
 
-exit unless $GIT_ENABLED;
-
 chdir $MYGIT;
 print "\n\n\n";
 print "Running addons_xml_generator.py...";
 `python addons_xml_generator.py`;
 print "DONE.\n";
+
+exit unless $GIT_ENABLED;
+
 print "Adding files to git...";
 `git add . -A`;
 print "DONE.\n";
