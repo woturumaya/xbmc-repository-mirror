@@ -2,3 +2,4 @@ Mirror of xbmc official repo, unofficial repos and addons that are not in any re
 Contains addons that only iterest me or my friends/family.
 I remove xbmc official repo and just use this one mainly to only see English addons.
 sync.pl is the perl script that maintains all this.
+addons_xml_generator.py is my version that doesn't use regex to get proper addon versions.
