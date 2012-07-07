@@ -328,31 +328,6 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
   </extension>
 </addon>
 
-<addon id="plugin.video.canada.on.demand"
-       name="Canada On Demand"
-       version="0.7.3"
-       provider-name="andre">
-  <requires>
-    <import addon="xbmc.python"
-    		version="1.0"/>
-    <import addon="script.module.beautifulsoup"
-    		version="3.0.8"/>
-    <import addon="script.module.simplejson"
-    		version="2.0.10"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Video On Demand From Canada</summary>
-    <description>Stream content from tons of Canadian providers including CTV, CBC, TSN, Global and MANY More!</description>
-    <platform>all</platform>
-	<disclaimer></disclaimer>
-  </extension>
-</addon>
-
 <addon id="plugin.video.msnbc"
        name="MSNBC"
        version="0.0.4"
@@ -2398,26 +2373,6 @@ to the default for a freshly installed MCE remote.
 		<disclaimer>Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
 		<broken>The Escapist may have altered their browser detection - if this is the case, trying to use the plugin will result in being blocked from watching videos on The Escapist website.  Please be patient while we work on a fix.</broken>
 	</extension>
-</addon>
-
-<addon id="plugin.video.eyetv.parser"
-       name="EyeTV parser"
-       version="1.0.1"
-       provider-name="beenje">
-  <requires>
-    <import addon="xbmc.python" version="1.0"/>
-    <import addon="script.module.elementtree" version="1.2.7"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-             library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Access video from your EyeTV library</summary>
-    <description lang="en">EyeTV parser is a video addon that let you browse all the recordings from your EyeTV Library. Recordings are listed with their description and icon (if any).</description>
-    <disclaimer lang="en">EyeTV is a registered trademark of Elgato Systems GmbH</disclaimer>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.flw.outdoors"
