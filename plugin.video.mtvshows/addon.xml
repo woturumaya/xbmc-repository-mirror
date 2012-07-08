@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.mtvshows"
        name="MTV Shows"
-       version="1.1.1"
+       version="1.2.0"
        provider-name="nixa">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -12,7 +12,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Watch TV Shows from MTV</summary>
-    <description lang="en">Find all crazy tv shows here, new and old.</description>
+    <description lang="en">Find all crazy TV shows here, new and old.</description>
      <platform>all</platform>
   </extension>
 </addon>

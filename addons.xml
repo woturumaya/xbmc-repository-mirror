@@ -2,8 +2,8 @@
 <addons>
 <addon id="script.module.mechanize"
        name="mechanize"
-       version="0.2.4"
-       provider-name="John J. Lee">
+       version="0.2.5"
+       provider-name="wwwsearch.sourceforge.net/mechanize/">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
   </requires>
@@ -1225,7 +1225,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.mtvshows"
        name="MTV Shows"
-       version="1.1.1"
+       version="1.2.0"
        provider-name="nixa">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -1236,7 +1236,7 @@ http://channel9.msdn.com/</description>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Watch TV Shows from MTV</summary>
-    <description lang="en">Find all crazy tv shows here, new and old.</description>
+    <description lang="en">Find all crazy TV shows here, new and old.</description>
      <platform>all</platform>
   </extension>
 </addon>
@@ -3186,6 +3186,13 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
     <description lang="pt">TED é uma organização sem fins lucrativos dedicada a 'Ideias com Valor'. Foi iniciada em 1984 como uma conferência que pretendia juntar pessoas de três mundos: Tecnologia, Entretenimento e Design. Desde ai tornou-se muito mais abrangente.</description>
     <platform>all</platform>
   </extension>
+
+  	<extension point="xbmc.addon.repository" name="Official XBMC.org Add-on Repository">
+		<info compressed="true">http://mirrors.xbmc.org/addons/eden/addons.xml</info>
+		<checksum>http://mirrors.xbmc.org/addons/eden/addons.xml.md5</checksum>
+		<datadir zip="true">http://mirrors.xbmc.org/addons/eden</datadir>
+		<hashes>true</hashes>
+	</extension>
 </addon>
 
 <addon id="plugin.video.tested"
