@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.mechanize"
-       name="mechanize"
-       version="0.2.4"
-       provider-name="John J. Lee">
+<addon id="script.module.coveapi"
+       name="Cove API"
+       version="0.2"
+       provider-name="github.com/pbs/python-coveapi">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
   </requires>

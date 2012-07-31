@@ -2,8 +2,8 @@
 <addons>
 <addon id="script.module.mechanize"
        name="mechanize"
-       version="0.2.5"
-       provider-name="wwwsearch.sourceforge.net/mechanize/">
+       version="0.2.4"
+       provider-name="John J. Lee">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
   </requires>
@@ -96,7 +96,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="plugin.video.vevo"
        name="VEVO"
-       version="0.7.1"
+       version="0.7.3"
        provider-name="BlueCop">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -131,12 +131,14 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="plugin.video.free.cable"
        name="Free Cable"
-       version="0.3.0"
+       version="0.5.0"
        provider-name="BlueCop">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
     <import addon="script.module.beautifulsoup" version="3.0.8"/>
     <import addon="script.module.demjson" version="1.4"/>
+    <import addon="script.module.free.cable.database" version="0.0.3"/>
+    <import addon="script.module.coveapi" version="0.2"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -144,7 +146,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>US station aggregator</summary>
-    <description></description>
+    <description>\"Free Cable is the ultimate aphrodisiac\" - The Cable Guy</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -731,20 +733,21 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.weather.channel"
        name="The Weather Channel"
-       version="0.0.2"
+       version="0.0.4"
        provider-name="divingmule">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
+    <import addon="xbmc.python" version="2.0"/>
 	<import addon="script.module.beautifulsoup" version="3.0.8"/>
 	<import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache" version="0.9.2"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>TheWeatherChannel.com/videos</summary>
-    <description>Videos from The Weather Channel.com</description>
+    <summary>TheWeatherChannel.com</summary>
+    <description>Videos and weather maps from The Weather Channel.com</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -807,10 +810,10 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.espn.go"
        name="ESPN Go"
-       version="0.0.1"
+       version="0.0.3"
        provider-name="divingmule">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
+    <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.beautifulsoup" version="3.0.8"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
@@ -1225,7 +1228,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.mtvshows"
        name="MTV Shows"
-       version="1.2.0"
+       version="1.1.1"
        provider-name="nixa">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -1236,7 +1239,7 @@ http://channel9.msdn.com/</description>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Watch TV Shows from MTV</summary>
-    <description lang="en">Find all crazy TV shows here, new and old.</description>
+    <description lang="en">Find all crazy tv shows here, new and old.</description>
      <platform>all</platform>
   </extension>
 </addon>
@@ -2196,7 +2199,7 @@ to the default for a freshly installed MCE remote.
 
 <addon id="plugin.video.cnet.podcasts"
        name="cnet Podcasts"
-       version="0.0.6"
+       version="0.0.7"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -2660,7 +2663,7 @@ http://www.gfqlive.tv</description>
 
 <addon id="plugin.video.jupiterbroadcasting"
        name="Jupiter Broadcasting"
-       version="1.6.0"
+       version="1.8.0"
        provider-name="Rob Loach">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -3186,13 +3189,6 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
     <description lang="pt">TED é uma organização sem fins lucrativos dedicada a 'Ideias com Valor'. Foi iniciada em 1984 como uma conferência que pretendia juntar pessoas de três mundos: Tecnologia, Entretenimento e Design. Desde ai tornou-se muito mais abrangente.</description>
     <platform>all</platform>
   </extension>
-
-  	<extension point="xbmc.addon.repository" name="Official XBMC.org Add-on Repository">
-		<info compressed="true">http://mirrors.xbmc.org/addons/eden/addons.xml</info>
-		<checksum>http://mirrors.xbmc.org/addons/eden/addons.xml.md5</checksum>
-		<datadir zip="true">http://mirrors.xbmc.org/addons/eden</datadir>
-		<hashes>true</hashes>
-	</extension>
 </addon>
 
 <addon id="plugin.video.tested"
@@ -4713,7 +4709,7 @@ Hinweis: Sie muessen Ihren Browser-Cache leeren bevor Sie das neu installierte/a
 
 <addon
   id="plugin.video.SportsDevil"
-  version="1.7.4.3.1"
+  version="1.7.5"
   name="SportsDevil"
   provider-name="MaxMustermann">
   <requires>
@@ -5564,12 +5560,15 @@ http://forum.xbmc.org/showthread.php?t=92540</description>
   </extension>
 </addon>
 
-<addon id="script.randomitems" name="Random Items script" version="1.0.11" provider-name="Hitcher">
+<addon id="script.randomitems" name="Random Items script" version="3.1.2" provider-name="Hitcher, ronie, phil65">
 	<requires>
-		<import addon="xbmc.python" version="1.0"/>
+		<import addon="xbmc.python" version="2.0"/>
+		<import addon="script.module.elementtree" version="1.2.7"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
 	</requires>
 	<extension point="xbmc.python.library" library="RandomItems.py" />
 	<extension point="xbmc.addon.metadata">
+		<language/>
 		<summary lang="en">Random Items script</summary>
 		<description lang="en">Script to get Random Videos and Music from the database.</description>
 		<platform>all</platform>
@@ -6047,6 +6046,93 @@ What it doesn't do:
     <summary lang="en">Update library info</summary>
     <description lang="en">Update library info</description>
     <disclaimer lang="en">For bugs, requests or general questions visit the XBMC forum.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.nolife"
+       name="Nolife Online"
+       version="0.9.8"
+       provider-name="gormux">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>fr</language>
+    <summary>Nolife Online XBMC Plugin</summary>
+    <description>Un plugin pour accéder au contenu de Nolife Online.
+Nécéssite un compte payant sur le site http://www.nolife-tv.com
+Abonnez-vous :)
+Pour toute question : julien@gormotte.info
+    </description>
+    <disclaimer>Ce plugin n'est ni publié ni maintenu par Nolife, et donc non officiel.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.module.free.cable.database"
+       name="Free Cable Database"
+       version="0.0.3"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.coveapi"
+       name="Cove API"
+       version="0.2"
+       provider-name="github.com/pbs/python-coveapi">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.watchlist" name="Watchlist" version="0.1.15" provider-name="ronie, `Black">
+	<requires>
+		<import addon="xbmc.python" version="2.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Addon to display recommended items from your library.</summary>
+		<description lang="en">This addon will create a list of partially watched movies, a list containing the first unwatched episode of tv shows you're watching and a list of most played albums.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.mdc"
+       name="My Damn Channel"
+       version="0.0.2"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.common.plugin.cache" version="0.9.2"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>MyDamnChannel.com</summary>
+    <description>Videos from mydamnchannel.com</description>
     <platform>all</platform>
   </extension>
 </addon>
