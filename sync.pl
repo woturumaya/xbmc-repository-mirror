@@ -21,6 +21,7 @@ my %REPOS = (
 	},
 	xbmcplugins => {
 		type => 'git',
+		branch => 'eden',
 		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/plugins',
 		ignore => {
 			'plugin.video.eyetv.parser' => 1,
@@ -92,6 +93,7 @@ my %REPOS = (
 	},
 	xbmcscrapers => {
 		type => 'git',
+		branch => 'eden',
 		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/scrapers',
 		ignore => {
 			'metadata.douban.com' => 1,
@@ -145,49 +147,29 @@ my %REPOS = (
 	},
 	xbmcscreensavers => {
 		type => 'git',
+		branch => 'eden',
 		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/screensavers',
 		ignore => {
 		}
 	},
 	xbmcvisualizations => {
 		type => 'git',
+		branch => 'eden',
 		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/visualizations',
 		ignore => {
 		}
 	},
 	xbmcscripts => {
 		type => 'git',
+		branch => 'eden',
 		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/scripts',
 		ignore => {
 		}
 	},
 	xbmcwebinterfaces => {
 		type => 'git',
+		branch => 'eden',
 		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/webinterfaces',
-		ignore => {
-		}
-	},
-	moreginger => {
-		type => 'git',
-		url => 'https://github.com/moreginger/xbmc-plugin.video.ted.talks.git',
-		ignore => {
-		}
-	},
-	dethfeet => {
-		type => 'git',
-		url => 'https://github.com/dethfeet/plugin.video.kidsplace.git',
-		ignore => {
-		}
-	},
-	xbmcvisualizations => {
-		type => 'git',
-		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/visualizations',
-		ignore => {
-		}
-	},
-	xbmcscreensavers => {
-		type => 'git',
-		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/screensavers',
 		ignore => {
 		}
 	},
@@ -213,6 +195,18 @@ my %REPOS = (
 			'skin.xperience' => 1,
 			'skin.xperience-more' => 1,
 			'skin.xtv-saf' => 1,
+		}
+	},
+	moreginger => {
+		type => 'git',
+		url => 'https://github.com/moreginger/xbmc-plugin.video.ted.talks.git',
+		ignore => {
+		}
+	},
+	dethfeet => {
+		type => 'git',
+		url => 'https://github.com/dethfeet/plugin.video.kidsplace.git',
+		ignore => {
 		}
 	},
 	eldorado => {
@@ -337,16 +331,16 @@ foreach my $name (keys %REPOS) {
 
 	switch ($REPOS{$name}{type}) {
 		case 'git' {
-			do_git( $REPOS{$name}{url}, $repo_path );
+			do_git( $name, $repo_path );
 		}
 		case 'githubrepo' {
-			do_githubrepo( $REPOS{$name}{url}, $repo_path, $name );
+			do_githubrepo( $name, $repo_path, $name );
 		}
 		case 'svn' {
-			do_svn( $REPOS{$name}{url}, $repo_path );
+			do_svn( $name, $repo_path );
 		}
 		case 'http' {
-			do_http( $REPOS{$name}{url}, $repo_path );
+			do_http( $name, $repo_path );
 		}
 	}
 
@@ -396,7 +390,7 @@ foreach my $name (keys %REPOS) {
 			no autodie; mkdir "$MYGIT/$plugin_name"; use autodie;
 			my $olddir = cwd();
 			chdir $repo_path;
-			#no autodie; unlink( "$MYGIT/$plugin_name/$plugin_name-$version.zip" ); use autodie;
+			no autodie; unlink( "$MYGIT/$plugin_name/$plugin_name-$version.zip" ); use autodie;
 			if ( ! -f "$MYGIT/$plugin_name/$plugin_name-$version.zip" ) {
 				print "...zip $repo_path/$plugin_name to $MYGIT/$plugin_name";
 				`zip -r $MYGIT/$plugin_name/$plugin_name-$version.zip $plugin_name --exclude=*.svn* --exclude=*.git*`;
@@ -435,9 +429,11 @@ print "DONE.\n";
 
 # clone all repos for a user from github
 sub do_githubrepo {
-        my $url = shift;
+        my $name = shift;
         my $repo_path = shift;
 	my $repo_name = shift;
+
+	my $url = $REPOS{$name}{url};
 
         # If directory doesnt exist then create it
         if ( ! -d $repo_path ) {
@@ -462,22 +458,24 @@ sub do_githubrepo {
 
 
 sub do_git {
-        my $url = shift;
+        my $name = shift;
         my $repo_path = shift;
 
+	my $url = $REPOS{$name}{url};
+	my $branch = $REPOS{$name}{branch} ? " -b " . $REPOS{$name}{branch} : "";
         my $cmd = 'pull';
         # If directory doesnt exist then create it and checkout
         if ( ! -d $repo_path ) {
-                print '...creating directory';
+                print "...creating directory $repo_path";
                 mkdir $repo_path;
                 print "...DONE.\n";
                 $cmd = 'clone';
         }
 
-        print "...git $cmd $url\n";
+        print "...git $cmd $branch $url\n";
         my $ret;
         if ( $cmd eq 'clone' ) {
-                $ret = `git $cmd $url $repo_path` or die "git $cmd error: $ret\n";
+                $ret = `git $cmd $branch $url $repo_path` or die "git $cmd error: $ret\n";
         } else {
                 my $olddir = cwd();
                 chdir $repo_path;
@@ -488,9 +486,10 @@ sub do_git {
 }
 
 sub do_svn {
-	my $url = shift;
+	my $name = shift;
 	my $repo_path = shift;
 
+	my $url = $REPOS{$name}{url};
 	my $cmd = 'update';
 	# If directory doesnt exist then create it and checkout
 	if ( ! -d $repo_path ) {
@@ -507,9 +506,10 @@ sub do_svn {
 }
 
 sub do_http {
-	my $url = shift;
+	my $name = shift;
 	my $repo_path = shift;
 
+	my $url = $REPOS{$name}{url};
 	my $cmd = 'update';
 	# If directory doesnt exist then create it and checkout
 	if ( ! -d $repo_path ) {
