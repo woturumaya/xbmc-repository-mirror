@@ -4,16 +4,26 @@ use strict;
 use Cwd;
 use Switch;
 use XML::Simple;
+use JSON;
+use LWP::Simple;
 use File::Copy;
 use URI;
 
 my $GIT_ENABLED = 1;
 
 my %REPOS = (
+	githubxbmcaddons => {
+		type => 'githubrepo',
+		url => 'https://api.github.com/users/XBMC-Addons/repos',
+		ignore => {
+			'media.backgrounds.weather' => 1,
+		}
+	},
 	xbmcplugins => {
 		type => 'git',
 		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/plugins',
 		ignore => {
+			'plugin.video.eyetv.parser' => 1,
 			'plugin.video.furk' => 1,
 			'plugin.video.drnu' => 1,
 			'plugin.video.rbk.no' => 1,
@@ -184,13 +194,11 @@ my %REPOS = (
 	xbmcskins => {
 		type => 'git',
 		url => 'git://xbmc.git.sourceforge.net/gitroot/xbmc/skins',
+		branch => 'eden',
 		ignore => {
 			'skin.aeon.nox' => 1,
-			'skin.alaska.revisited.mod' => 1,
-			'skin.alaska' => 1,
 			'skin.back-row' => 1,
-			'skin.carmichael' => 1,
-			'skin.ellipsis' => 1,
+			'skin.confluence-vertical' => 1,
 			'skin.jx720' => 1,
 			'skin.mediastream_redux' => 1,
 			'skin.neon' => 1,
@@ -203,6 +211,8 @@ my %REPOS = (
 			'skin.slik' => 1,
 			'skin.transparency' => 1,
 			'skin.xperience' => 1,
+			'skin.xperience-more' => 1,
+			'skin.xtv-saf' => 1,
 		}
 	},
 	eldorado => {
@@ -297,6 +307,7 @@ my %REPOS = (
 		type => 'http',
 		url => 'http://brosemer.org/~odin/xbmc-addons/',
 		ignore => {
+			'plugin.video.canada.on.demand' => 1,
 			'repository.andrepl' => 1,
 		}
 	},
@@ -327,6 +338,9 @@ foreach my $name (keys %REPOS) {
 	switch ($REPOS{$name}{type}) {
 		case 'git' {
 			do_git( $REPOS{$name}{url}, $repo_path );
+		}
+		case 'githubrepo' {
+			do_githubrepo( $REPOS{$name}{url}, $repo_path, $name );
 		}
 		case 'svn' {
 			do_svn( $REPOS{$name}{url}, $repo_path );
@@ -379,18 +393,20 @@ foreach my $name (keys %REPOS) {
 			`rsync -a $repo_path/$plugin_name $MYGIT/`;
 			print "...DONE.\n";
 		} else {
-			print "...zip $repo_path/$plugin_name to $MYGIT/$plugin_name";
 			no autodie; mkdir "$MYGIT/$plugin_name"; use autodie;
 			my $olddir = cwd();
 			chdir $repo_path;
-			no autodie; unlink( "$MYGIT/$plugin_name/$plugin_name-$version.zip" ); use autodie;
-			`zip -r $MYGIT/$plugin_name/$plugin_name-$version.zip $plugin_name --exclude=*.svn* --exclude=*.git*`;
+			#no autodie; unlink( "$MYGIT/$plugin_name/$plugin_name-$version.zip" ); use autodie;
+			if ( ! -f "$MYGIT/$plugin_name/$plugin_name-$version.zip" ) {
+				print "...zip $repo_path/$plugin_name to $MYGIT/$plugin_name";
+				`zip -r $MYGIT/$plugin_name/$plugin_name-$version.zip $plugin_name --exclude=*.svn* --exclude=*.git*`;
+				print "...DONE.\n";
+			}
 			chdir $olddir;
 			copy( "$repo_path/$plugin_name/addon.xml", "$MYGIT/$plugin_name/addon.xml" );
 			if ( -f "$repo_path/$plugin_name/icon.png" ) {
 				copy( "$repo_path/$plugin_name/icon.png", "$MYGIT/$plugin_name/icon.png" );
 			}
-			print "...DONE.\n";
 		}
 	}
 	closedir $dhandle;
@@ -416,30 +432,59 @@ print "Pushing to git...";
 `git push`;
 print "DONE.\n";
 
+
+# clone all repos for a user from github
+sub do_githubrepo {
+        my $url = shift;
+        my $repo_path = shift;
+	my $repo_name = shift;
+
+        # If directory doesnt exist then create it
+        if ( ! -d $repo_path ) {
+                print "...creating directory for $repo_path";
+                mkdir $repo_path;
+                print "...DONE.\n";
+        }
+
+        # get all users repos
+        my $json = get( $url ) or die "$!: could not download $url!\n"; 
+
+	my $github_repos = decode_json $json;
+	foreach my $github_repo ( @{$github_repos} ) {
+		my $github_repo_name = $github_repo->{name};
+		my $github_repo_url = $github_repo->{git_url};
+
+		next if $REPOS{$repo_name}{ignore}{$github_repo_name};
+
+		do_git($github_repo_url, "$repo_path/$github_repo_name");
+	}
+}
+
+
 sub do_git {
-	my $url = shift;
-	my $repo_path = shift;
+        my $url = shift;
+        my $repo_path = shift;
 
-	my $cmd = 'pull';
-	# If directory doesnt exist then create it and checkout
-	if ( ! -d $repo_path ) {
-		print '...creating directory';
-		mkdir $repo_path;
-		print "...DONE.\n";
-		$cmd = 'clone';
-	}
+        my $cmd = 'pull';
+        # If directory doesnt exist then create it and checkout
+        if ( ! -d $repo_path ) {
+                print '...creating directory';
+                mkdir $repo_path;
+                print "...DONE.\n";
+                $cmd = 'clone';
+        }
 
-	print "...git $cmd";
-	my $ret;
-	if ( $cmd eq 'clone' ) {
-		$ret = `git $cmd $url $repo_path` or die "git $cmd error: $ret\n";
-	} else {
-		my $olddir = cwd();
-		chdir $repo_path;
-		$ret = `git $cmd` or die "git $cmd error: $ret\n";
-		chdir $olddir;
-	}
-	print "...DONE.\n";
+        print "...git $cmd $url\n";
+        my $ret;
+        if ( $cmd eq 'clone' ) {
+                $ret = `git $cmd $url $repo_path` or die "git $cmd error: $ret\n";
+        } else {
+                my $olddir = cwd();
+                chdir $repo_path;
+                $ret = `git $cmd` or die "git $cmd error: $ret\n";
+                chdir $olddir;
+        }
+        print "...DONE.\n";
 }
 
 sub do_svn {
