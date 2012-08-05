@@ -1702,7 +1702,7 @@ stations from DJs and broadcasters around the world</description>
     </extension>
 </addon>
 
-<addon id="plugin.image.iphoto" name="iPhoto" version="1.9.0" provider-name="jingai">
+<addon id="plugin.image.iphoto" name="iPhoto" version="1.9.1" provider-name="jingai">
     <requires>
 	<import addon="xbmc.python" version="2.0"/>
 	<import addon="script.module.simplejson" version="2.0.10"/>
@@ -1743,14 +1743,12 @@ stations from DJs and broadcasters around the world</description>
 </addon>
 
 <addon
-  id="plugin.image.mypicsdb"
-  version="0.5.1"
-  name="My Pictures Database"
-  provider-name="alexsolex®">
+  id="plugin.image.mypicsdb" version="1.0.0" name="My Pictures Database" provider-name="Alexsolex, Xycl, MikeBZH44">
   <requires>
-        <import addon="xbmc.python" version="1.0"/>
-        <import addon="script.module.pysqlite" version="2.5.6"/>
-        <import addon="script.module.dialogaddonscan" version="1.0.6"/>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.dialogaddonscan" version="1.1.0"/>
+    <import addon="script.module.simplejson"    version="2.0.10" optional="true"/>
+    <import addon="script.common.plugin.cache"  version="0.9.1"/>
   </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>image</provides>
@@ -1759,15 +1757,11 @@ stations from DJs and broadcasters around the world</description>
     <platform>all</platform>
     <summary lang="en">Advanced Pictures manager</summary>
     <summary lang="fr">Gestion avancée de votre photothèque</summary>
-    <summary lang="nl">Advanced Pictures manager</summary>
+    <summary lang="de">Datenbank gestützter Bildermanager</summary>
     <description lang="en">Manage your pictures as you do for musics and videos[CR]Then you'll be able to sort your pictures by day/month/year, keywords and much more</description>
     <description lang="fr">Gérez vos photos sous forme d'une base de donnée de la même manière que les médiathèques musique ou vidéos[CR]A vous le tri de vos photos par dates, par mots clés, et bien plus encore !!</description>
-    <description lang="de">Manage deine Bilder, genau wie deine Musik oder Videos[CR] Dann lassen sich Bilder nach Tag/Monat/Jahr, Keywords und mehr sortieren</description>
+    <description lang="de">Verwalte deine Bilder, genau wie deine Musik oder Videos in einer Datenbank[CR]Dadurch lassen sich Bilder nach Tag/Monat/Jahr, Schlüsselwörtern und mehr sortieren</description>
     <description lang="nl">Beheer uw afbeeldingen zoals u doet voor muziek en videos.[CR]U bent zelf in staan om afbeeldingen te soteren op jaar/maand/dag of op trefwoorden.</description>
-    <disclaimer lang="en">This addon is not fully tested yet. Need more testers, so please feel free to contact me alexsolex@gmail.com or http://forum.xbmc.org/showthread.php?p=671783 to give me your feedbacks</disclaimer>
-    <disclaimer lang="fr">Cet addon n'a pas été testé pour toutes les plateformes. J'ai besoin de retours de testeurs, alors n'hésitez pas à me donner vos retours sur alexsolex@gmail.com (ou sur le topic officiel http://forum.xbmc.org/showthread.php?p=671783 )</disclaimer>
-    <disclaimer lang="de">Dieses Add-On ist noch nicht vollkommen getestet. Weitere Tester sind erwünscht. Für Fragen oder Anregungen schreibt eine Mail an alexsolex@gmail.com (oder http://forum.xbmc.org/showthread.php?p=671783 )</disclaimer>
-    <disclaimer lang="nl">Deze addon is nog in beta-fase en nog niet geheel getest. We zoeken meer beta-testers, dus meldt u aan via alexsolex@gmail.com ( http://forum.xbmc.org/showthread.php?p=671783 ) en signaleer fouten en mogelijke verbeteringen!x</disclaimer>
   </extension>
 </addon>
 
@@ -2759,7 +2753,7 @@ http://www.gfqlive.tv</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.nasa" name="Nasa Videos, TV and Vodcasts" version="1.0.1" provider-name="Tristan Fischer (sphere@dersphere.de)">
+<addon id="plugin.video.nasa" name="Nasa Videos, TV and Vodcasts" version="1.0.2" provider-name="Tristan Fischer (sphere@dersphere.de)">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.xbmcswift" version="0.2.0"/>
@@ -2770,6 +2764,7 @@ http://www.gfqlive.tv</description>
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <language>en</language>
     <platform>all</platform>
     <summary lang="en">Video plugin to access content from nasa.gov</summary>
     <description lang="en">This video plugin provides access to more than 1800 videos, 8 vodcasts and 4 nasa-tv livestreams[CR]All content is dynamic and should be always up to date.</description>
@@ -3298,15 +3293,17 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
 
 <addon id="plugin.video.twit"
        name="TWiT"
-       version="1.0.8"
+       version="1.0.9"
        provider-name="divingmule,thanks to Adam B.">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
-	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.common.plugin.cache" version="1.0.0"/>
+    <import addon="script.module.simplejson" version="2.0.10"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
-        <provides>video audio</provides>
+        <provides>audio video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>TWiT</summary>
@@ -4203,7 +4200,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.common.movieposterdb.com"
        name="MoviePosterDB common scraper functions"
-       version="1.0.5"
+        version="1.0.6"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -4257,7 +4254,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.common.themoviedb.org"
        name="The MovieDB common scraper functions"
-       version="2.3.0"
+       version="2.3.1"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -4798,7 +4795,7 @@ With Gyroscope enabled devices and supported by it's browser, you can tap and ho
 
 <addon
   id="plugin.video.SportsDevil"
-  version="1.7.5"
+  version="1.7.6"
   name="SportsDevil"
   provider-name="MaxMustermann">
   <requires>
@@ -5383,12 +5380,9 @@ Merci d'envoyer vos commentaires et demandes à xbmame@otaku-realm.net
   </extension>
 </addon>
 
-<!-- $Revision: 896 $ -->
-<addon id="script.module.dialogaddonscan" name="Dialog Addon Scan"
-       version="1.0.6" date="27.10.2010"
-       provider-name="Frost (passion-xbmc.org)">
+<addon id="script.module.dialogaddonscan" name="Dialog Addon Scan" version="1.1.0" provider-name="Frost (passion-xbmc.org),Xycl">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
+    <import addon="xbmc.python" version="2.0"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -5396,6 +5390,8 @@ Merci d'envoyer vos commentaires et demandes à xbmame@otaku-realm.net
     <description>Dialog Scan for Add-on</description>
     <license>GPL</license>
     <platform>all</platform>
+    <nofanart>true</nofanart>
+    <noicon>true</noicon>
   </extension>
 </addon>
 
@@ -5655,7 +5651,7 @@ http://forum.xbmc.org/showthread.php?t=92540</description>
   </extension>
 </addon>
 
-<addon id="script.randomitems" name="Random Items script" version="3.1.2" provider-name="Hitcher, ronie, phil65">
+<addon id="script.randomitems" name="Random Items script" version="3.1.3" provider-name="Hitcher, ronie, phil65">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
 		<import addon="script.module.elementtree" version="1.2.7"/>
@@ -6449,7 +6445,7 @@ Pour toute question : julien@gormotte.info
   </extension>
 </addon>
 
-<addon id="plugin.video.cbsnews_com" name="CBSnews.com" version="1.0.1" provider-name="AddonScriptorDE">
+<addon id="plugin.video.cbsnews_com" name="CBSnews.com" version="1.0.2" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -8133,6 +8129,56 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
     <description>Manoto TV Addon for XBMC</description>
     <platform>all</platform>
     <language>fa</language>
+  </extension>
+</addon>
+
+<addon
+    id="plugin.video.pyvideo"
+    version="1.0.1"
+    name="PyVideo"
+    provider-name="nevermore">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="plugin.video.youtube" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="pyvideo.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language></language>
+    <platform>all</platform>
+    <summary lang="de">
+      Aufzeichnungen internationaler Python Konferenzen (gelistet bei pyvideo.org).
+    </summary>
+    <summary lang="en">
+      Recordings of international conferences related to the Python
+      programming language (as listed at pyvideo.org)
+    </summary>
+  </extension>
+</addon>
+
+<addon id="plugin.video.roosterteeth"
+       name="Rooster Teeth"
+       version="0.0.3"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.0"/>
+    <import addon="script.common.plugin.cache" version="1.0.0"/>
+    <import addon="script.module.simplejson" version="2.0.10"/>
+    <import addon="plugin.video.youtube" version="3.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Videos from RoosterTeeth.com</summary>
+    <description>Videos for gamers, including the popular "Red vs Blue" series.</description>
+    <platform>all</platform>
+    <language>en</language>
   </extension>
 </addon>
 </addons>
