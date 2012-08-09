@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.jtv.archives"
        name="Jtv"
-       version="0.2.8"
+       version="0.3.0"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
-    <import addon="script.common.plugin.cache" version="0.9.1"/>
+    <import addon="script.common.plugin.cache" version="1.0.0"/>
     <import addon="script.module.simplejson"/>
   </requires>
   <extension point="xbmc.python.pluginsource"

@@ -34,7 +34,7 @@
 
 <addon id="plugin.video.icefilms"
        name="Icefilms"
-       version="1.1.12"
+       version="1.1.13"
        provider-name="Eldorado (originator: anarchintosh)">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -131,7 +131,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="plugin.video.free.cable"
        name="Free Cable"
-       version="0.5.0"
+       version="0.5.1"
        provider-name="BlueCop">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -146,7 +146,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>US station aggregator</summary>
-    <description>\"Free Cable is the ultimate aphrodisiac\" - The Cable Guy</description>
+    <description>"Free Cable is the ultimate aphrodisiac" - The Cable Guy</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -467,7 +467,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
   </extension>
 </addon>
 
-<addon id="script.module.turtle" name="Turtle" version="1.0.7"
+<addon id="script.module.turtle" name="Turtle" version="1.0.8"
 	provider-name="AJ">
 	<requires>
 		<import addon="xbmc.python" version="2.0" />
@@ -777,11 +777,11 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.jtv.archives"
        name="Jtv"
-       version="0.2.8"
+       version="0.3.0"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
-    <import addon="script.common.plugin.cache" version="0.9.1"/>
+    <import addon="script.common.plugin.cache" version="1.0.0"/>
     <import addon="script.module.simplejson"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
@@ -3155,17 +3155,19 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
 
 <addon id="plugin.video.tas"
        name="Tool-assisted Superplays"
-       version="1.0.3"
+       version="1.1.1"
        provider-name="Insayne, HannaK, Nach">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
+    <import addon="xbmc.python" version="2.0"/>
+	<import addon="script.module.dialogaddonscan" version="1.0.6"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
-            library="default.py">
+            library="addon.py">
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+	<language>en</language>
     <summary>http://tasvideos.org on your Media Center</summary>
     <description>If you’ve ever wanted to see how a superhuman would beat your favorite video games, you’ve come to the right place. We have videos of all the popular franchises from Super Mario Brothers and Sonic the Hedgehog down to Pokémon and Final Fantasy. No matter what genre of game you prefer, be it sports, puzzle, adventure, shooter, or popular game shows, we have it all.</description>
   </extension>
@@ -4254,7 +4256,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.common.themoviedb.org"
        name="The MovieDB common scraper functions"
-       version="2.3.1"
+       version="2.3.2"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -5355,11 +5357,11 @@ Merci d'envoyer vos commentaires et demandes à xbmame@otaku-realm.net
   </extension>
 </addon>
 
-<addon id="script.module.brightcove" name="Brightcove" version="0.1" provider-name="Jonathan Beluch (jbel)">
+<addon id="script.module.brightcove" name="Brightcove" provider-name="Jonathan Beluch (jbel)" version="1.1.1">
   <requires>
-    <import addon="xbmc.python" version="2.0"/>
+    <import addon="xbmc.python" version="2.0" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension library="lib" point="xbmc.python.module" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
   </extension>
@@ -6285,10 +6287,11 @@ Pour toute question : julien@gormotte.info
 
 <addon id="plugin.audio.mp3search"
        name="MP3 Search"
-       version="0.1.0"
+       version="0.2.2"
        provider-name="ghua@seznam.cz">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.simple.downloader" version="0.9.2"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
              provides="audio"
@@ -6297,8 +6300,8 @@ Pour toute question : julien@gormotte.info
   </extension>
   <extension point="xbmc.addon.metadata">
     <language></language>
-    <summary lang="en">Search and play mp3's </summary>
-    <description lang="en">Search and play mp3's</description>
+    <summary lang="en">Search,play and download mp3's </summary>
+    <description lang="en">With this addon you can search for mp3's, listen and download them.</description>
     <disclaimer></disclaimer>
     <platform>all</platform>
   </extension>
@@ -7763,7 +7766,7 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 	</extension>
 </addon>
 
-<addon id="script.randomandlastitems" name="Random and Last items script" version="1.2.4" provider-name="MikeBZH44">
+<addon id="script.randomandlastitems" name="Random and Last items script" version="1.2.5" provider-name="MikeBZH44">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
@@ -7941,7 +7944,7 @@ XBMC.RunScript(script.xbmc.blindplayer, "video")
 
 <addon id="service.watchdog"
        name="Library watchdog"
-       version="0.6.0"
+       version="0.6.1"
        provider-name="takoi">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8180,5 +8183,22 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
     <platform>all</platform>
     <language>en</language>
   </extension>
+</addon>
+
+<addon id="plugin.video.thenewboston" version="1.0.3" name="TheNewBoston" provider-name="lextoumbourou">
+    <requires>
+        <import addon="xbmc.python" version="2.0" />
+        <import addon="script.module.beautifulsoup" version="3.2" />
+        <import addon="plugin.video.youtube" version="3.1.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language>en</language>
+        <platform>all</platform>
+        <summary lang="en">Browse and watch videos from The New Boston</summary>
+        <description lang="en">Free Educational Video Tutorials on Computer Programming, Adobe Software, Computer Science and More!</description>
+    </extension>
 </addon>
 </addons>
