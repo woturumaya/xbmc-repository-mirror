@@ -34,7 +34,7 @@
 
 <addon id="plugin.video.icefilms"
        name="Icefilms"
-       version="1.1.13"
+       version="1.1.14"
        provider-name="Eldorado (originator: anarchintosh)">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -624,7 +624,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.nfl"
        name="NFL.com"
-       version="0.0.3"
+       version="0.0.4"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -777,7 +777,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.jtv.archives"
        name="Jtv"
-       version="0.3.0"
+       version="0.3.1"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -4256,7 +4256,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.common.themoviedb.org"
        name="The MovieDB common scraper functions"
-       version="2.3.2"
+       version="2.5.0"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -4544,11 +4544,11 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
 
 <addon id="metadata.themoviedb.org"
        name="The MovieDB"
-       version="3.3.0"
+       version="3.4.0"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
-    <import addon="metadata.common.themoviedb.org" version="2.1.6"/>
+    <import addon="metadata.common.themoviedb.org" version="2.4.0"/>
     <import addon="metadata.common.hdtrailers.net" version="1.0.7"/>
     <import addon="metadata.common.imdb.com" version="2.1.9"/>
     <import addon="plugin.video.youtube" version="2.9.1" optional="true"/>
@@ -6836,7 +6836,7 @@ Pour toute question : julien@gormotte.info
 
 <addon
 	id="plugin.video.retrowaretv"
-	version="1.1.4"
+	version="1.1.5"
 	name="Retroware TV"
 	provider-name="dethfeet">
 <requires>
@@ -7379,11 +7379,11 @@ The initial search is always done on MusicBrainz. In case allmusic link is not a
 
 <addon id="metadata.universal"
        name="Universal Scraper"
-       version="1.3.0"
+       version="1.5.0"
        provider-name="Olympia, Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
-    <import addon="metadata.common.themoviedb.org" version="2.3.0"/>
+    <import addon="metadata.common.themoviedb.org" version="2.4.0"/>
     <import addon="metadata.common.movieposterdb.com" version="1.0.5"/>
     <import addon="metadata.common.imdb.com" version="2.2.3"/>
     <import addon="metadata.common.impa.com" version="1.0.3"/>
@@ -7392,6 +7392,7 @@ The initial search is always done on MusicBrainz. In case allmusic link is not a
     <import addon="metadata.common.rt.com" version="1.3.0"/>
     <import addon="metadata.common.ofdb.de" version="1.0.0"/>
     <import addon="metadata.common.trakt.tv" version="1.0.0"/>
+    <import addon="metadata.common.port.hu" version="1.0.0"/>
   </requires>
   <extension point="xbmc.metadata.scraper.movies"
              language="en"
@@ -8200,5 +8201,46 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
         <summary lang="en">Browse and watch videos from The New Boston</summary>
         <description lang="en">Free Educational Video Tutorials on Computer Programming, Adobe Software, Computer Science and More!</description>
     </extension>
+</addon>
+
+<addon id="metadata.common.port.hu"
+       name="port.hu common scraper functions"
+       version="1.0.0"
+       provider-name="olympia">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="porthu.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>20000</minversion>
+    <summary lang="bg">Библиотека за сваляне на инф. от port.hu</summary>
+    <summary lang="en">port.hu Scraper Library</summary>
+    <summary lang="es">Scraper de peliculas de port.hu</summary>
+    <summary lang="fi">port.hu elokuvatietojen lataajan kirjasto</summary>
+    <summary lang="fr">Scraper port.hu</summary>
+    <summary lang="hu">port.hu leolvasó-könyvtár</summary>
+    <summary lang="nl">port.hu-scraperfuncties</summary>
+    <summary lang="pl">Scraper biblioteki port.hu</summary>
+    <summary lang="pt">Scraper de filmes port.hu</summary>
+    <summary lang="ro">Bibliotecă catalog port.hu</summary>
+    <summary lang="ru">Обработчик для port.hu</summary>
+    <summary lang="se">Skrapebibliotek för port.hu</summary>
+    <summary lang="zh">port.hu刮削器代码库</summary>
+    <description lang="bg">Сваля миниатюри и fanarts от www.port.hu</description>
+    <description lang="en">Download thumbs and fanarts from www.port.hu</description>
+    <description lang="es">Descarga posters y fanart de www.port.hu</description>
+    <description lang="fi">Lataa pienoiskuvia ja fanitaidetta www.port.hu -sivustolta</description>
+    <description lang="fr">Télécharge vignettes et backdrops depuis www.port.hu</description>
+    <description lang="hu">Bélyeg- és fanartképek letöltése a www.port.hu webhelyről</description>
+    <description lang="nl">Miniaturen en fanart ophalen van www.port.hu</description>
+    <description lang="pl">Pobieraj ikony i fanarty z www.port.hu</description>
+    <description lang="pt">Descarregar informação de filmes de www.port.hu</description>
+    <description lang="ro">Descărcați miniaturi și imagini realizate de fani de pe www.port.hu</description>
+    <description lang="ru">Загружать миниатюры и фанарт с www.port.hu</description>
+    <description lang="se">Ladda ner miniatyrer och fanart från www.port.hu</description>
+    <description lang="zh">从www.port.hu下载海报和同人画</description>
+  </extension>
 </addon>
 </addons>
