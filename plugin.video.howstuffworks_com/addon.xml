@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.cbsnews_com" name="CBSnews.com" version="1.0.4" provider-name="AddonScriptorDE">
+<addon id="plugin.video.howstuffworks_com" name="HowStuffWorks.com" version="1.0.1" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -8,9 +8,9 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary lang="en">Various news and shows</summary>
+        <summary lang="en">Learn How Everything Works!</summary>
         <language>en</language>
-        <description lang="en">Various news and shows</description>
+        <description lang="en">Learn How Everything Works!</description>
     <platform>all</platform>
     </extension>
 </addon>

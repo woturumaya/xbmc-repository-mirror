@@ -2403,7 +2403,7 @@ Limitations:
 <addon
     id="plugin.video.the.trailers"
     name="The Trailers"
-    version="0.9.0"
+    version="0.9.1"
     provider-name="Martijn, Sphere">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -4797,7 +4797,7 @@ With Gyroscope enabled devices and supported by it's browser, you can tap and ho
 
 <addon
   id="plugin.video.SportsDevil"
-  version="1.7.6"
+  version="1.8.2.1"
   name="SportsDevil"
   provider-name="MaxMustermann">
   <requires>
@@ -5653,9 +5653,10 @@ http://forum.xbmc.org/showthread.php?t=92540</description>
   </extension>
 </addon>
 
-<addon id="script.randomitems" name="Random Items script" version="3.1.3" provider-name="Hitcher, ronie, phil65">
+<addon id="script.randomitems" name="Random Items script" version="12.0.0" provider-name="Hitcher, ronie, phil65, Martijn">
 	<requires>
-		<import addon="xbmc.python" version="2.0"/>
+        <import addon="xbmc.addon" version="11.9.5"/>
+		<import addon="xbmc.python" version="2.1"/>
 		<import addon="script.module.elementtree" version="1.2.7"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
 	</requires>
@@ -6209,9 +6210,10 @@ Pour toute question : julien@gormotte.info
   </extension>
 </addon>
 
-<addon id="script.watchlist" name="Watchlist" version="0.1.15" provider-name="ronie, `Black">
+<addon id="script.watchlist" name="Watchlist" version="12.0.1" provider-name="ronie, `Black, Martijn">
 	<requires>
-		<import addon="xbmc.python" version="2.0"/>
+        <import addon="xbmc.addon" version="11.9.5"/>
+		<import addon="xbmc.python" version="2.1"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
 	</requires>
 	<extension point="xbmc.python.library" library="default.py"/>
@@ -6409,10 +6411,10 @@ Pour toute question : julien@gormotte.info
     </extension>
 </addon>
 
-<addon id="plugin.video.bestofyoutube_com" name="BestOfYoutube.com" version="1.0.5" provider-name="AddonScriptorDE">
+<addon id="plugin.video.bestofyoutube_com" name="BestOfYoutube.com" version="1.0.6" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
-        <import addon="plugin.video.youtube" version="2.9.1"/>
+        <import addon="plugin.video.youtube" version="3.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -6448,7 +6450,7 @@ Pour toute question : julien@gormotte.info
   </extension>
 </addon>
 
-<addon id="plugin.video.cbsnews_com" name="CBSnews.com" version="1.0.2" provider-name="AddonScriptorDE">
+<addon id="plugin.video.cbsnews_com" name="CBSnews.com" version="1.0.4" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -6740,7 +6742,7 @@ Pour toute question : julien@gormotte.info
   </extension>
 </addon>
 
-<addon id="plugin.video.mpora_com" name="Mpora.com" version="1.0.3" provider-name="AddonScriptorDE">
+<addon id="plugin.video.mpora_com" name="Mpora.com" version="1.0.4" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -8118,7 +8120,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.manoto"
        name="Manoto TV"
-       version="0.0.2"
+       version="0.0.3"
        provider-name="babak">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8242,5 +8244,55 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
     <description lang="se">Ladda ner miniatyrer och fanart från www.port.hu</description>
     <description lang="zh">从www.port.hu下载海报和同人画</description>
   </extension>
+</addon>
+
+<addon id="plugin.video.howstuffworks_com" name="HowStuffWorks.com" version="1.0.1" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Learn How Everything Works!</summary>
+        <language>en</language>
+        <description lang="en">Learn How Everything Works!</description>
+    <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.myspass_de" name="MySpass.de" version="1.0.0" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="de">Schlag den Raab/Star, TV total, Elton vs. Simon, Pastewka, Dr. Psycho, Stromberg, South Park, Spongebob und vieles mehr...</summary>
+        <summary lang="en">Schlag den Raab/Star, TV total, Elton vs. Simon, Pastewka, Dr. Psycho, Stromberg, South Park, Spongebob and much more...</summary>
+        <language>de</language>
+        <description lang="de">Schlag den Raab/Star, TV total, Elton vs. Simon, Pastewka, Dr. Psycho, Stromberg, South Park, Spongebob und vieles mehr...</description>
+        <description lang="en">Schlag den Raab/Star, TV total, Elton vs. Simon, Pastewka, Dr. Psycho, Stromberg, South Park, Spongebob and much more...</description>
+    <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.theonion_com" name="TheOnion.com" version="1.0.0" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">America's Finest News Source</summary>
+        <language>en</language>
+        <description lang="en">America's Finest News Source</description>
+    <platform>all</platform>
+    </extension>
 </addon>
 </addons>
