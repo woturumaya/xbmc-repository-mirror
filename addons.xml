@@ -34,7 +34,7 @@
 
 <addon id="plugin.video.icefilms"
        name="Icefilms"
-       version="1.1.14"
+       version="1.1.15"
        provider-name="Eldorado (originator: anarchintosh)">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -131,7 +131,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="plugin.video.free.cable"
        name="Free Cable"
-       version="0.5.1"
+       version="0.5.2"
        provider-name="BlueCop">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -624,7 +624,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.nfl"
        name="NFL.com"
-       version="0.0.4"
+       version="0.0.5"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -777,7 +777,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.jtv.archives"
        name="Jtv"
-       version="0.3.1"
+       version="0.3.2"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -4874,7 +4874,7 @@ With Gyroscope enabled devices and supported by it's browser, you can tap and ho
   </extension>
 </addon>
 
-<addon id="script.artistslideshow" name="Artist Slideshow" version="1.4.1" provider-name="ronie/kyleejohnson (pkscuot)">
+<addon id="script.artistslideshow" name="Artist Slideshow" version="1.4.2" provider-name="ronie/kyleejohnson (pkscuot)">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
 		<import addon="script.module.elementtree" version="1.2.7"/>
@@ -4885,6 +4885,8 @@ With Gyroscope enabled devices and supported by it's browser, you can tap and ho
 	<extension point="xbmc.addon.metadata">
 		<summary>Download images and additional info of the currently playing artist</summary>
 		<description>Addon to download images and additional information from Last.FM and htbackdrops.com of the currently playing artist. The images, along with local artists' images, and info can be used by the skin to create a slideshow for the artist being listened to.</description>
+		<summary lang="fr">Télécharger les images et les informations additionnelles de l'artiste en cours de lecture</summary>
+		<description lang="fr">Cett addon permet de télécharger les images et les informations additionnelles depuis Last.FM et htbackdrops.com de l'artiste en cours de lecture. Les images, ainsi que les images locales, et les informations peuvent être utilisées par le thème pour créer un diaporama pour l'artiste que vous êtes en train d'écouter.</description>
 		<platform>all</platform>
 		<language>sq ar be bg ca zh hr cs da nl en et fi fr de el iw hi hu is in it ja ko lv lt mk no pl pt ro ru sr sk sl es sv th tr uk vi</language>
 	</extension>
@@ -8294,5 +8296,40 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
         <description lang="en">America's Finest News Source</description>
     <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="plugin.video.vidstatsx_com" name="VidStatsX.com" version="1.0.1" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+        <import addon="plugin.video.youtube" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Various YouTube Channel and Video Charts</summary>
+        <language></language>
+        <description lang="en">Various YouTube Channel and Video Charts</description>
+    <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.tgun"
+       name="The GiddyUp Network"
+       version="0.0.2"
+       provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.t0mm0.common" version="1.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
 </addon>
 </addons>
