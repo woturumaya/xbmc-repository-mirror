@@ -2046,8 +2046,8 @@ Limitations:
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.beautifulsoup" version="3.0.8"/>
-    <import addon="script.module.xbmcswift" version="0.2.0"/>
-    <import addon="plugin.video.youtube" version="2.9.1"/>
+    <import addon="script.module.xbmcswift2" version="1.1.1"/>
+    <import addon="plugin.video.youtube" version="3.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -2470,11 +2470,12 @@ Limitations:
 
 <addon id="plugin.video.funny.or.die"
        name="Funny or Die"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
 	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.common.plugin.cache" version="1.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -2484,6 +2485,7 @@ Limitations:
     <summary>funnyordie.com Videos</summary>
     <description>Funny Or Die is a comedy video website that combines user-generated content with original, exclusive content. The site is a place where celebrities, established and up-and-coming comedians and regular users can all put up stuff they think is funny.</description>
     <platform>all</platform>
+    <language>en</language>
   </extension>
 </addon>
 
@@ -4564,7 +4566,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
   <extension point="xbmc.addon.metadata">
     <summary lang="bg">Сваля инф. за филми от TMDB</summary>
     <summary lang="en">TMDB Movie Scraper</summary>
-    <summary lang="de">Film-Scraper für TheMovieDB</summary>
+    <summary lang="de">Film Scraper für TheMovieDB</summary>
     <summary lang="es">Scraper de películas de TheMovieDB</summary>
     <summary lang="fi">TMDB elokuvatietojen lataaja</summary>
     <summary lang="hu">TMDB filmadat leolvasó</summary>
@@ -4577,7 +4579,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <summary lang="zh">TMDB电影刮削器</summary>
     <description lang="bg">themoviedb.org е безплатна и отворена база от данни за филми. Задвижва се изцяло от потребителите си - хора като вас. Милиони хора по света всеки месец ползват TMDb, благодарение на многофункционалното API. Едновременно с това е и източник на информация за медийни центрове, като XBMC, които извличат метаинформация за филми, постери и Fanart.</description>
     <description lang="en">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like XBMC to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
-    <description lang="de">TheMovieDB.org ist eine freie und offene Film-Datenbank. Sie wird nur User wie dir betrieben. TheMovieDB wird zur Zeit monatlich von Millionen genutzt. Mit der mächtigen API wird sie auch von vielen Media-Center, wie z.B. XBMC, genutzt um Filme-Meta-Daten, Poster und Fanrts zu beziehen, damit der User sein Media-Center verschönern kann</description>
+    <description lang="de">TheMovieDB.org ist eine freie und offene Filmdatenbank. Sie wird von Benutzern wie Dir betrieben. TheMovieDB wird zur Zeit monatlich von Millionen genutzt. Mit der mächtigen API wird sie auch von vielen Media-Center, wie z.B. XBMC, genutzt um Film Metadaten, Poster und Fanarts zu beziehen, damit der Benutzer sein Media-Center verschönern kann.</description>
     <description lang="es">themovieDB.org es una base de datos de películas gratuita y abierta. Es una página web que se basa en contenido subido por los usuarios. TMDb es usada diariamente por mucha gente gracias a su API, que es usada por más programas aparte de XBMC para descargar información de películas así como Posters o Fanart (Fondos de escritorio basados en películas usados en distintos skins) para enriquecer la experiencia de usar XBMC.</description>
     <description lang="fi">themoviedb.org on vapaa ja avoin elokuvatietokanta. Se on täysin käyttäjien ylläpitämä. TMDb:a käyttää miljoonat ihmiset joka kuukausi, sitä käytetään käyttäjäkokemuksen rikastuttamiseen monissa muissakin suosituissa XBMC:n kaltaisissa ohjelmissa lataamalla elokuvien tietoja, julisteita ja fanitaidetta.</description>
     <description lang="hu">A themoviedb.org egy ingyenes és nyílt filmadatbázis. Teljes egészében olyan felhasználók töltik fel, mint például Te. A TMDb-t havonta emberek milliói használják és a hatékony API-n keresztül számos népszerű média center is, mint például az XBMC a filmadatok, poszterek, fanartképek letöltésére.</description>
@@ -5660,7 +5662,7 @@ http://forum.xbmc.org/showthread.php?t=92540</description>
   </extension>
 </addon>
 
-<addon id="script.randomitems" name="Random Items script" version="12.0.1" provider-name="Hitcher, ronie, phil65, Martijn">
+<addon id="script.randomitems" name="Random Items script" version="12.0.2" provider-name="Hitcher, ronie, phil65, Martijn">
 	<requires>
         <import addon="xbmc.addon" version="11.9.5"/>
 		<import addon="xbmc.python" version="2.1"/>
@@ -5861,8 +5863,8 @@ Special thanks to the trakt utilities team! This plugin is essentially their cod
 
 <addon id="script.tvtunes"
        name="TvTunes"
-       version="1.0.18"
-       provider-name="Ppic, ronie">
+       version="2.0.0"
+       provider-name="Ppic, Frost, ronie">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.simplejson" version="2.0.10"/>
@@ -5872,6 +5874,7 @@ Special thanks to the trakt utilities team! This plugin is essentially their cod
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <language/>
     <platform>all</platform>
     <summary lang="en">Get and play your Tv shows sound Theme</summary>
     <summary lang="fr">Récupérez et écoutez les génériques des séries de votre bibliothèque</summary>
@@ -6049,7 +6052,7 @@ What it doesn't do:
 <addon
 	id="script.artwork.downloader"
 	name="Artwork Downloader"
-	version="1.0.15"
+	version="1.0.17"
 	provider-name="paddycarey, putneyj, Martijn"
     >
   <requires>
@@ -6218,7 +6221,7 @@ Pour toute question : julien@gormotte.info
   </extension>
 </addon>
 
-<addon id="script.watchlist" name="Watchlist" version="12.0.1" provider-name="ronie, `Black, Martijn">
+<addon id="script.watchlist" name="Watchlist" version="12.0.2" provider-name="ronie, `Black, Martijn">
 	<requires>
         <import addon="xbmc.addon" version="11.9.5"/>
 		<import addon="xbmc.python" version="2.1"/>
@@ -8330,7 +8333,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.tgun"
        name="The GiddyUp Network"
-       version="0.0.3"
+       version="0.0.4"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8404,6 +8407,35 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Fetch TV show metadata from epguides.com</summary>
     <description lang="en">Epguides.com contains episode lists for over 6000 TV shows. Episode data are provided by TVRage.com, series data and fanart by TheTVDB.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.hollywoodreporter" name="TheHollywoodReporter" version="0.0.4" provider-name="Tristan Fischer (sphere@dersphere.de)">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.xbmcswift" version="0.2.0"/>
+    <import addon="script.module.pyamf" version="0.6.1"/>
+    <import addon="plugin.video.youtube" version="3.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>all</platform>
+    <summary lang="en">Videos from www.hollywoodreporter.com</summary>
+    <description lang="en">The premier destination and most-widely trusted resource for entertainment news, reviews, videos and analysis.</description>
+  </extension>
+</addon>
+
+<addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="1.1.1">
+  <requires>
+    <import addon="xbmc.python" version="2.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
     <platform>all</platform>
   </extension>
 </addon>
