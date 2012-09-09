@@ -8,6 +8,7 @@ use JSON;
 use LWP::Simple;
 use File::Copy;
 use URI;
+use File::Path qw(make_path remove_tree);
 
 my $GIT_ENABLED = 1;
 
@@ -268,6 +269,12 @@ my %REPOS = (
 			'plugin.video.willowtv' => 1,
 		}
 	},
+	xbmcfocus => {
+		type => 'svn',
+		url => 'http://xbmc-focus.googlecode.com/svn/trunk/',
+		ignore => {
+		}
+	},
 	dandar3 => {
 		type => 'svn',
 		url => 'http://dandar3-xbmc-addons.googlecode.com/svn/trunk/addons/',
@@ -316,16 +323,16 @@ my %REPOS = (
 );
 
 my $MYGIT = cwd() . '/xbmc-repository-mirror';
-mkdir $MYGIT unless -e $MYGIT;
+make_path $MYGIT unless -e $MYGIT;
 my $LOCAL_REPOS = cwd() . '/repos';
-mkdir $LOCAL_REPOS unless -e $LOCAL_REPOS;
+make_path $LOCAL_REPOS unless -e $LOCAL_REPOS;
 
 my $svn   = `which svn`   or die "svn COMMAND NOT FOUND! EXITING.\n";
 my $git   = `which git`   or die "git COMMAND NOT FOUND! EXITING.\n";
 my $zip   = `which zip`   or die "zip COMMAND NOT FOUND! EXITING.\n";
 my $wget  = `which wget`  or die "wget COMMAND NOT FOUND! EXITING.\n";
 
-foreach my $name (keys %REPOS) {
+foreach my $name (sort keys %REPOS) {
 	print "$name - $REPOS{$name}{url}\n";
 	my $repo_path = $LOCAL_REPOS . '/' . $name;
 
@@ -387,7 +394,7 @@ foreach my $name (keys %REPOS) {
 			`rsync -a $repo_path/$plugin_name $MYGIT/`;
 			print "...DONE.\n";
 		} else {
-			no autodie; mkdir "$MYGIT/$plugin_name"; use autodie;
+			no autodie; make_path "$MYGIT/$plugin_name"; use autodie;
 			my $olddir = cwd();
 			chdir $repo_path;
 			no autodie; unlink( "$MYGIT/$plugin_name/$plugin_name-$version.zip" ); use autodie;
@@ -438,7 +445,7 @@ sub do_githubrepo {
         # If directory doesnt exist then create it
         if ( ! -d $repo_path ) {
                 print "...creating directory for $repo_path";
-                mkdir $repo_path;
+                make_path $repo_path;
                 print "...DONE.\n";
         }
 
@@ -467,7 +474,7 @@ sub do_git {
         # If directory doesnt exist then create it and checkout
         if ( ! -d $repo_path ) {
                 print "...creating directory $repo_path";
-                mkdir $repo_path;
+                make_path $repo_path;
                 print "...DONE.\n";
                 $cmd = 'clone';
         }
@@ -494,7 +501,7 @@ sub do_svn {
 	# If directory doesnt exist then create it and checkout
 	if ( ! -d $repo_path ) {
 		print '...creating directory';
-		mkdir $repo_path;
+		make_path $repo_path;
 		print "...DONE.\n";
 		$cmd = 'checkout';
 	}
@@ -514,7 +521,7 @@ sub do_http {
 	# If directory doesnt exist then create it and checkout
 	if ( ! -d $repo_path ) {
 		print '...creating directory';
-		mkdir $repo_path;
+		make_path $repo_path;
 		print "...DONE.\n";
 		$cmd = 'initial mirror';
 	}

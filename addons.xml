@@ -2,8 +2,8 @@
 <addons>
 <addon id="script.module.mechanize"
        name="mechanize"
-       version="0.2.4"
-       provider-name="John J. Lee">
+       version="0.2.5"
+       provider-name="wwwsearch.sourceforge.net/mechanize/">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
   </requires>
@@ -526,20 +526,15 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver"
-	     name="urlresolver"
-	     version="1.0.3"
-	     provider-name="XBMCHub.com">
+<addon id="script.module.urlresolver" name="urlresolver" version="0.0.1" provider-name="t0mm0 (inspired by unbehagan, anarchintosh)">
   <requires>
-    <import addon="xbmc.python" version="2.0" />
-    <import addon="script.module.t0mm0.common" version="1.0.0"/>
+    <import addon="xbmc.python" version="1.0" />
+    <import addon="script.module.t0mm0.common" version="0.0.1"/>
     <import addon="plugin.video.youtube"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Resolve common video host URL's to be playable in XBMC.</summary>
-    <description lang="en">Resolve common video host URL's to be playable in XBMC, simplify addon development of video plugins requiring multi video hosts.</description>
   </extension>
 </addon>
 
@@ -4840,7 +4835,7 @@ With Gyroscope enabled devices and supported by it's browser, you can tap and ho
 
 <addon id="script.module.metahandler"
 	     name="metahandler"
-	     version="1.0.1"
+	     version="1.0.0"
 	     provider-name="Eldorado (inspired by anarchintosh, westcoast, daledude, t0mm0)">
   <requires>
     <import addon="xbmc.python" version="2.0" />
@@ -8468,5 +8463,38 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
         <disclaimer lang="de"></disclaimer>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon
+	id="skin.metrolpolis.2rc2"
+	version="1.9.2"
+	name="Metropolis"
+	provider-name="Amra">
+	<requires>
+		<import addon="xbmc.gui" version="3.00"/>
+		<import addon="script.artwork.downloader" version="1.0.8"/>
+		<import addon="script.favourites" version="2.0.0"/>
+		<import addon="script.randomitems" version="2.0.0"/>
+		<import addon="script.watchlist" version="0.1.7"/>
+		<import addon="script.tv.show.next.aired" version="3.0.0"/>
+	</requires>
+	<extension
+		point="xbmc.gui.skin"
+		defaultthemename="textures.xbt"
+		debugging="false"
+		effectslowdown="0.75">
+		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+	</extension>
+
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<minversion app="xbmc">33035</minversion>
+		<summary>Updated for Eden, a Mix of Retro and Modern. Original Metropolis skin by Amra - continued by Stoli</summary>
+		<summary lang="es">Actualización para Eden, una mezcla de Retro y Moderno. Amra, autor original de Metrópolis - continuado por Stoli</summary>
+		<summary lang="fr">Mise à jour pour Eden, un mélange de Rétro et de Moderne. Thème originel de Metropolis par Amra - continué par Stoli</summary>
+		<description>Metropolis is designed to show as much media info as possible with easy to read text and icons. All while trying to keep the skin smooth and simple to use for all family members with multiple themes and customizable menus and views. Credit to Hitcher for Alaska Revisited which was used as a base for Metropolis.</description>
+		<description lang="es">Metrópolis está diseñada para mostrar en lo posible toda la información multimedia y facilitar la lectura de textos e iconos. Todo ello procurando mantener una piel suave y de fácil uso para todos los miembros de la familia, con múltiples temas, vistas y menús personalizables. Agradecimientos a Hitcher autor de la piel Alaska Revisited, la cual se uso como base para Metrópolis.</description>
+		<description lang="fr">Metropolis est conçu pour afficher le plus d'informations multimédia possible avec des icônes et du texte facile à lire. Tout en essayant de conserver douceur et simplicité afin de pouvoir être utilisé par tous les membres de la famille. Intègre de multiples thèmes, des vues et menus personnalisables. Les crédits vont à Hitcher pour Alaska Revisited utilisé comme base pour Metropolis.</description>
+	</extension>
 </addon>
 </addons>
