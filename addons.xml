@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="script.module.mechanize"
-       name="mechanize"
+       name="Mechanize"
        version="0.2.5"
-       provider-name="wwwsearch.sourceforge.net/mechanize/">
+       provider-name="Tristan Fischer (sphere)">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
+    <import addon="xbmc.python"
+            version="2.0"/>
   </requires>
   <extension point="xbmc.python.module"
              library="lib" />
   <extension point="xbmc.addon.metadata">
+    <summary>Stateful programmatic web browsing in Python, after Andy Lester’s Perl module WWW::Mechanize.</summary>
+    <description>packed for xbmc from https://github.com/jjlee/mechanize</description>
+    <license>BSD</license>
     <platform>all</platform>
   </extension>
 </addon>
@@ -34,7 +38,7 @@
 
 <addon id="plugin.video.icefilms"
        name="Icefilms"
-       version="1.1.15"
+       version="1.1.16"
        provider-name="Eldorado (originator: anarchintosh)">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -526,15 +530,20 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="urlresolver" version="0.0.1" provider-name="t0mm0 (inspired by unbehagan, anarchintosh)">
+<addon id="script.module.urlresolver"
+	     name="urlresolver"
+	     version="1.0.3"
+	     provider-name="XBMCHub.com">
   <requires>
-    <import addon="xbmc.python" version="1.0" />
-    <import addon="script.module.t0mm0.common" version="0.0.1"/>
+    <import addon="xbmc.python" version="2.0" />
+    <import addon="script.module.t0mm0.common" version="1.0.0"/>
     <import addon="plugin.video.youtube"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+    <summary lang="en">Resolve common video host URL's to be playable in XBMC.</summary>
+    <description lang="en">Resolve common video host URL's to be playable in XBMC, simplify addon development of video plugins requiring multi video hosts.</description>
   </extension>
 </addon>
 
@@ -949,23 +958,20 @@ http://channel9.msdn.com/</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.animeftw"
-       name="AnimeFTW.tv"
-       version="1.7.0"
-       provider-name="maruchan">
+<addon id="plugin.video.animeftw" name="AnimeFTW.tv" version="1.7.2" provider-name="robotman321">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
+    <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.beautifulsoup" version="3.0.8"/>
   </requires>
-  <extension point="xbmc.python.pluginsource"
-             library="default.py">
+  <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <language>en jp</language>
     <platform>all</platform>
     <minversion>29000</minversion>
     <summary>Watch high-quality, streaming anime from AnimeFTW.tv!</summary>
-    <description>AnimeFTW.tv provides high-quality, streaming anime using both DivX and H264 video codecs.  With over 251 series and 882 GB of video available, AnimeFTW aims to provide the best collection of anime series, OVAs, and movies to its users.
+    <description>AnimeFTW.tv provides high-quality, streaming anime using both DivX and H264 video codecs.  With over 650 series and 1.5TB of video available, AnimeFTW aims to provide the best collection of anime series, OVAs, and movies to its users.
     </description>
     <disclaimer>You must have an account at www.animeftw.tv and be logged in for this addon to function!  Only the first two episodes are available to free members!</disclaimer>
   </extension>
@@ -1050,7 +1056,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="weather.weatherplus"
        name="Weather Plus"
-       version="2.5.0"
+       version="3.0.1"
        provider-name="Brightsr">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -1058,7 +1064,7 @@ http://channel9.msdn.com/</description>
   <extension point="xbmc.python.weather" library="default.py"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Current weather conditions and colorful forecasts.</summary>
-    <description lang="en">Originally by Nuka1195.[CR][CR]This is the advanced weather source.[CR][CR]It provides not only current weather conditions but also extended forecasts and information including forecast videos and weather alerts.[CR][CR]Default weather provider is Weather.com, and you can use alternative providers such as Accuweather.com or NOAA. </description>
+    <description lang="en">(Originally by Nuka1195)[CR][CR]This is the advanced weather source.[CR]It provides not only current weather conditions but also extended forecasts and information including forecast videos and weather alerts.[CR]Default weather provider is Weather.com, and you can use alternative providers such as Accuweather.com or NOAA. [CR][CR]For any information, http://forum.xbmc.org/showthread.php?t=95329</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -2404,7 +2410,7 @@ Limitations:
 <addon
     id="plugin.video.the.trailers"
     name="The Trailers"
-    version="0.9.2"
+    version="0.9.0"
     provider-name="Martijn, Sphere">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -4835,7 +4841,7 @@ With Gyroscope enabled devices and supported by it's browser, you can tap and ho
 
 <addon id="script.module.metahandler"
 	     name="metahandler"
-	     version="1.0.0"
+	     version="1.0.1"
 	     provider-name="Eldorado (inspired by anarchintosh, westcoast, daledude, t0mm0)">
   <requires>
     <import addon="xbmc.python" version="2.0" />
@@ -5657,10 +5663,9 @@ http://forum.xbmc.org/showthread.php?t=92540</description>
   </extension>
 </addon>
 
-<addon id="script.randomitems" name="Random Items script" version="12.0.2" provider-name="Hitcher, ronie, phil65, Martijn">
+<addon id="script.randomitems" name="Random Items script" version="3.1.6" provider-name="Hitcher, ronie, phil65, Martijn">
 	<requires>
-        <import addon="xbmc.addon" version="11.9.5"/>
-		<import addon="xbmc.python" version="2.1"/>
+		<import addon="xbmc.python" version="2.0"/>
 		<import addon="script.module.elementtree" version="1.2.7"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
 	</requires>
@@ -6216,10 +6221,9 @@ Pour toute question : julien@gormotte.info
   </extension>
 </addon>
 
-<addon id="script.watchlist" name="Watchlist" version="12.0.2" provider-name="ronie, `Black, Martijn">
+<addon id="script.watchlist" name="Watchlist" version="0.1.17" provider-name="ronie, `Black, Martijn">
 	<requires>
-        <import addon="xbmc.addon" version="11.9.5"/>
-		<import addon="xbmc.python" version="2.1"/>
+		<import addon="xbmc.python" version="2.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
 	</requires>
 	<extension point="xbmc.python.library" library="default.py"/>
@@ -6295,7 +6299,7 @@ Pour toute question : julien@gormotte.info
 
 <addon id="plugin.audio.mp3search"
        name="MP3 Search"
-       version="0.2.2"
+       version="0.2.3"
        provider-name="ghua@seznam.cz">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -6783,7 +6787,7 @@ Pour toute question : julien@gormotte.info
     </extension>
 </addon>
 
-<addon id="plugin.video.myvideo_de" name="MyVideo.de" version="0.1.8" provider-name="Tristan Fischer (sphere@dersphere.de)">
+<addon id="plugin.video.myvideo_de" name="MyVideo.de" version="0.1.9" provider-name="Tristan Fischer (sphere@dersphere.de)">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.xbmcswift" version="0.2.0"/>
@@ -6975,7 +6979,7 @@ Pour toute question : julien@gormotte.info
     </extension>
 </addon>
 
-<addon id='plugin.video.twitch' version='0.1.8' name='TwitchTV' provider-name='StateOfTheArt'>
+<addon id='plugin.video.twitch' version='0.2.1' name='TwitchTV' provider-name='StateOfTheArt'>
   <requires>
     <import addon='xbmc.python' version='2.0'/>
     <import addon='script.module.simplejson' version='2.0.10'/>
@@ -7960,7 +7964,7 @@ XBMC.RunScript(script.xbmc.blindplayer, "video")
 
 <addon id="service.watchdog"
        name="Library watchdog"
-       version="0.6.2"
+       version="0.6.3"
        provider-name="takoi">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -7974,10 +7978,10 @@ XBMC.RunScript(script.xbmc.blindplayer, "video")
   </extension>
 </addon>
 
-<addon id="weather.ozweather" name="Oz Weather" version="0.3.8" provider-name="Bossanova808">
+<addon id="weather.ozweather" name="Oz Weather" version="0.4.0" provider-name="Bossanova808">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
-    <import addon="script.module.parsedom" version="0.9.1"/>
+    <import addon="script.module.parsedom" version="1.0.0"/>
 	</requires>
 	<extension point="xbmc.python.weather" library="default.py"/>
 	<extension point="xbmc.addon.metadata">
@@ -8328,7 +8332,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.tgun"
        name="The GiddyUp Network"
-       version="0.0.6"
+       version="0.0.7"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8496,5 +8500,24 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 		<description lang="es">Metrópolis está diseñada para mostrar en lo posible toda la información multimedia y facilitar la lectura de textos e iconos. Todo ello procurando mantener una piel suave y de fácil uso para todos los miembros de la familia, con múltiples temas, vistas y menús personalizables. Agradecimientos a Hitcher autor de la piel Alaska Revisited, la cual se uso como base para Metrópolis.</description>
 		<description lang="fr">Metropolis est conçu pour afficher le plus d'informations multimédia possible avec des icônes et du texte facile à lire. Tout en essayant de conserver douceur et simplicité afin de pouvoir être utilisé par tous les membres de la famille. Intègre de multiples thèmes, des vues et menus personnalisables. Les crédits vont à Hitcher pour Alaska Revisited utilisé comme base pour Metropolis.</description>
 	</extension>
+</addon>
+
+<addon id="plugin.video.documentary.net" name="Documentary.net" provider-name="Jonathan Beluch (jbel)" version="1.1">
+  <requires>
+    <import addon="xbmc.python" version="2.0" />
+    <import addon="script.module.beautifulsoup" version="3.0.8" />
+    <import addon="script.module.xbmcswift2" version="1.1.1" />
+    <import addon="plugin.video.youtube" version="3.1.0" />
+    <import addon="plugin.video.vimeo" version="2.3.0" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language />
+    <summary>Documentary Network - Watch free documentaries online</summary>
+    <description>Documentary.net offers free and legal streaming of documentary films from all around the world. We crawl the web and curate the best documentaries from various sources like YouTube, Vimeo etc. Most films are available worldwide.[CR][CR]The content on Documentary.net is generated by thousands of professional content producers and TV-stations who provide their films on the internet for free. You can browse the films by category, topic or film length.</description>
+  </extension>
 </addon>
 </addons>
