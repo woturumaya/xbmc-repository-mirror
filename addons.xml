@@ -38,7 +38,7 @@
 
 <addon id="plugin.video.icefilms"
        name="Icefilms"
-       version="1.1.16"
+       version="1.1.17"
        provider-name="Eldorado (originator: anarchintosh)">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -2190,20 +2190,21 @@ Limitations:
   </extension>
 </addon>
 
-<addon id="plugin.video.classiccinema" name="Classic Cinema" version="0.8.1" provider-name="jbel">
+<addon id="plugin.video.classiccinema" name="Classic Cinema" provider-name="Jonathan Beluch (jbel)" version="1.0.1">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.0.8"/>
-    <import addon="script.module.simplejson" version="2.0.10"/>
+    <import addon="xbmc.python" version="2.0" />
+    <import addon="plugin.video.youtube" version="3.1.0" />
+    <import addon="script.module.beautifulsoup" version="3.2.0" />
   </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
+  <extension library="addon.py" point="xbmc.python.pluginsource">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+    <language />
     <summary>Classic Cinema Video Addon</summary>
     <description>Watch online video movies found at http://www.classiccinemaonline.com.  The site aggregates old movies and tv shows found on google video and archive.org.</description>
-    <disclaimer/>
+    <disclaimer />
   </extension>
 </addon>
 
@@ -2968,19 +2969,19 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
 </addon>
 
 <addon id="plugin.video.pinkbike"
-       name="PinkBike"
-       version="0.0.5"
+       name="Pinkbike.com"
+       version="0.2.0"
        provider-name="Popeye">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary>Watch videos from PinkBike</summary>
+    <summary>Watch videos from Pinkbike.com</summary>
     <description>Browse and play videos from mountain bike community pinkbike.com</description>
   </extension>
 </addon>
@@ -6172,11 +6173,11 @@ What it doesn't do:
 
 <addon id="plugin.video.nolife"
        name="Nolife Online"
-       version="1.9.8"
+       version="1.9.9"
        provider-name="gormux">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
              library="default.py">
@@ -6184,6 +6185,7 @@ What it doesn't do:
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+    <minversion>29000</minversion>
     <language>fr</language>
     <summary>Nolife Online XBMC Plugin</summary>
     <description>Un plugin pour accéder au contenu de Nolife Online.
@@ -8334,7 +8336,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.tgun"
        name="The GiddyUp Network"
-       version="0.0.7"
+       version="0.0.8"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
