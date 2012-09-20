@@ -8336,7 +8336,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.tgun"
        name="The GiddyUp Network"
-       version="0.0.8"
+       version="0.0.9"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
