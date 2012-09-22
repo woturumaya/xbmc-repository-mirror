@@ -1347,7 +1347,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.audio.icecast"
        name="Icecast"
-       version="11.0.1"
+       version="11.0.2"
        provider-name="Assen Totin">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -1973,17 +1973,17 @@ Limitations:
 
 <addon id="plugin.program.mceremote"
        name="MCERemote"
-       version="2.0.1"
+       version="2.0.4"
        provider-name="John Rennie">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
-    <import addon="xbmc.gui" version="2.11"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>windx</platform>
+    <language></language>
     <summary>MCE Remote configuration</summary>
     <description>This addon allows you to configure a Microsoft MCE remote, or any compatible remote using the eHome driver. The addon appears under the Programs heading on the Home page as "MCERemote".</description>
   </extension>
@@ -6640,7 +6640,7 @@ Pour toute question : julien@gormotte.info
 
 <addon id="plugin.video.glwiz"
        name="GLWiZ"
-       version="0.0.7"
+       version="0.0.8"
        provider-name="babak">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
