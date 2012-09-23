@@ -275,7 +275,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="plugin.video.nba"
        name="NBA League Pass"
-       version="0.0.8"
+       version="0.1.1"
        provider-name="robla">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
