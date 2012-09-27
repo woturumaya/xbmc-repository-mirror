@@ -686,7 +686,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.mlbmc.hls"
        name="MLBMC(mlb-hls)"
-       version="0.0.4"
+       version="0.0.7"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -699,6 +699,7 @@ http://channel9.msdn.com/</description>
   <extension point="xbmc.addon.metadata">
     <summary>Videos from mlb.com, Live games for MLB.tv subscribers.</summary>
     <description>Video highlights from MLB.com. MLb.tv subscribers can watch the live and archived games. Usually there is a free game of the day witch only requires a mlb.com account.</description>
+    <disclaimer>This add-on will only work on Linux.</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
@@ -2723,7 +2724,7 @@ http://www.gfqlive.tv</description>
 
 <addon id="plugin.video.mlbmc"
        name="MLBMC"
-       version="1.0.8"
+       version="1.0.9"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -6175,7 +6176,7 @@ What it doesn't do:
 
 <addon id="plugin.video.nolife"
        name="Nolife Online"
-       version="1.9.9"
+       version="1.10"
        provider-name="gormux">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -8571,6 +8572,34 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
     <platform>all</platform>
     <summary lang="en">The well-being channel</summary>
     <description lang="en">Watch the Free Exercises from the well-being website www.myzen.tv</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.sagetv"
+       name="SageTV"
+       version="1.2.4"
+       provider-name="kricker,lehighbri,aaronb">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon='script.module.parsedom' version='1.1.0'/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>SageTV: Browse and manage airings and recordings</summary>
+    <description>Allows you to connect to your SageTV server where you can browse and view recordings, view and manage your upcoming recordings, browse channel listings, and search for airings and recordings.
+
+Dependencies:
+SageTV with:
+    Jetty Web Server 2.3.0.14 or newer
+    Sagex-api vs 7.1.9.10 or newer
+    Batch Metadata Tools 4.10.1
+    xbmc.js (Copy xbmc.js from "plugin.video.sagetv\extras\sagex\services" to your "SageTV\SageTV\sagex\services" directory)
+
+</description>
   </extension>
 </addon>
 </addons>
