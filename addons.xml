@@ -6058,7 +6058,7 @@ What it doesn't do:
 <addon
 	id="script.artwork.downloader"
 	name="Artwork Downloader"
-	version="1.0.17"
+	version="1.0.18"
 	provider-name="paddycarey, putneyj, Martijn"
     >
   <requires>
