@@ -7532,7 +7532,7 @@ In the advanced settings you can set the addon to continue sending WOL packets w
   </extension>
 </addon>
 
-<addon id="script.globalsearch" name="Global Search" version="0.2.5" provider-name="ronie">
+<addon id="script.globalsearch" name="Global Search" version="0.2.8" provider-name="ronie">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
