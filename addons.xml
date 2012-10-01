@@ -686,7 +686,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.mlbmc.hls"
        name="MLBMC(mlb-hls)"
-       version="0.0.7"
+       version="0.0.8"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
