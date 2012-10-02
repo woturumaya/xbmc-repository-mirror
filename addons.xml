@@ -2211,7 +2211,7 @@ Limitations:
 
 <addon id="plugin.video.cnet.podcasts"
        name="cnet Podcasts"
-       version="1.0.5"
+       version="1.0.6"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -2724,7 +2724,7 @@ http://www.gfqlive.tv</description>
 
 <addon id="plugin.video.mlbmc"
        name="MLBMC"
-       version="1.0.9"
+       version="1.1.0"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -3094,7 +3094,7 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
 
 <addon id="plugin.video.revision3"
        name="Revision3"
-       version="2.0.9"
+       version="2.0.10"
        provider-name="stacked">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -4998,8 +4998,8 @@ With Gyroscope enabled devices and supported by it's browser, you can tap and ho
 
 <addon id="script.cu.lyrics"
        name="CU Lyrics"
-       version="2.0.6"
-       provider-name="Amet">
+       version="2.1.0"
+       provider-name="Nuka1195,amet,ronie">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
   </requires>
@@ -5669,7 +5669,7 @@ http://forum.xbmc.org/showthread.php?t=92540</description>
   </extension>
 </addon>
 
-<addon id="script.randomitems" name="Random Items script" version="3.1.6" provider-name="Hitcher, ronie, phil65, Martijn">
+<addon id="script.randomitems" name="Random Items script" version="3.1.7" provider-name="Hitcher, ronie, phil65, Martijn">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
 		<import addon="script.module.elementtree" version="1.2.7"/>
@@ -6176,7 +6176,7 @@ What it doesn't do:
 
 <addon id="plugin.video.nolife"
        name="Nolife Online"
-       version="1.10"
+       version="1.11"
        provider-name="gormux">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -6191,12 +6191,17 @@ What it doesn't do:
     <minversion>29000</minversion>
     <language>fr</language>
     <summary>Nolife Online XBMC Plugin</summary>
-    <description>Un plugin pour accéder au contenu de Nolife Online.
+    <description lang="fr">Un plugin pour accéder au contenu de Nolife Online.
 Nécéssite un compte payant sur le site http://www.nolife-tv.com
 Abonnez-vous :)
 Pour toute question : julien@gormotte.info
     </description>
-    <disclaimer>Ce plugin n'est ni publié ni maintenu par Nolife, et donc non officiel.</disclaimer>
+    <description lang="en">A plugin to access Nolife Online content.
+A paid account is necessary. Register on http://www.nolife-tv.com.
+Any question ? Ask julien@gormotte.info.
+    </description>
+    <disclaimer lang="fr">Ce plugin n'est ni publié ni maintenu par Nolife, et donc non officiel.</disclaimer>
+    <disclaimer lang="en">This plugin is not official. Any questions are for me and not Nolife stafff.</disclaimer>
   </extension>
 </addon>
 
@@ -8145,7 +8150,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.manoto"
        name="Manoto TV"
-       version="0.0.4"
+       version="0.0.5"
        provider-name="babak">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
