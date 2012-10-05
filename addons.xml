@@ -5106,7 +5106,7 @@ email: me@drewzh.com
 
 <addon id="script.game.whatthemovie"
        name="WhatTheMovie"
-       version="1.0.3"
+       version="1.0.4"
        provider-name="sphere, tadi, skiller2k1">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -6010,7 +6010,7 @@ What it doesn't do:
 
 <addon id="script.xbmc.subtitles"
        name="XBMC Subtitles"
-       version="3.3.3"
+       version="3.3.4"
        provider-name="amet, mr_blobby">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8349,7 +8349,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.tgun"
        name="The GiddyUp Network"
-       version="0.0.9"
+       version="0.0.12"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
