@@ -2839,7 +2839,7 @@ http://www.gfqlive.tv</description>
 </addon>
 
 <addon id="plugin.video.nz.ondemand"
-       version="2.2.1"
+       version="2.3.0"
        name="NZ OnDemand"
        provider-name="Mark Honeychurch (markhoney)">
   <requires>
@@ -2852,7 +2852,7 @@ http://www.gfqlive.tv</description>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">NZ OnDemand</summary>
-    <description lang="en">New Zealand TV3/FOUR, TVNZ, Prime News, Ziln and NZOnScreen OnDemand videos, along with Parliament TV and Shine live streams.</description>
+    <description lang="en">New Zealand TV3/FOUR, TVNZ, Prime News, ChoiceTV, Ziln and NZOnScreen OnDemand videos, along with Parliament TV and Shine live streams.</description>
     <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws.</disclaimer>
     <platform>all</platform>
   </extension>
@@ -6010,7 +6010,7 @@ What it doesn't do:
 
 <addon id="script.xbmc.subtitles"
        name="XBMC Subtitles"
-       version="3.3.4"
+       version="3.3.5"
        provider-name="amet, mr_blobby">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -6180,7 +6180,7 @@ What it doesn't do:
 
 <addon id="plugin.video.nolife"
        name="Nolife Online"
-       version="1.11"
+       version="1.12"
        provider-name="gormux">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -8349,7 +8349,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.tgun"
        name="The GiddyUp Network"
-       version="0.0.12"
+       version="0.0.13"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8586,7 +8586,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.sagetv"
        name="SageTV"
-       version="1.2.4"
+       version="1.2.6"
        provider-name="kricker,lehighbri,aaronb">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8609,6 +8609,49 @@ SageTV with:
     xbmc.js (Copy xbmc.js from "plugin.video.sagetv\extras\sagex\services" to your "SageTV\SageTV\sagex\services" directory)
 
 </description>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.mixcloud"
+       name="MixCloud"
+       version="1.0.1"
+       provider-name="jackyNIX/Bochi">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.simplejson" version="2.0.10"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="default.py">
+     <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">XBMC Plugin for MixCloud</summary>
+    <summary lang="nl">XBMC Plugin voor MixCloud</summary>
+    <summary lang="fr">XBMC Plugin pour MixCloud</summary>
+    <description lang="en">Mixcloud is re-thinking radio. Listen to great radio shows, Podcasts and DJ mix sets on-demand.</description>
+    <description lang="nl">Mixcloud herdefinieerd radio. Luister naar uitstekende radioshows, podcasts en dj sets on demand.</description>
+    <description lang="fr">Mixcloud redéfinit la radio. Écoutez les émissions radio, podcasts et mixes DJ sur demande.</description>
+    <platform>all</platform>
+    <language>en nl fr</language>
+  </extension>
+</addon>
+
+<addon id="plugin.video.rofl_to" name="Rofl.to" version="0.0.1" provider-name="Tristan Fischer (sphere@dersphere.de)">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.xbmcswift2" version="1.1.1" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en de</language>
+    <platform>all</platform>
+    <summary lang="de">Luste Videos</summary>
+    <summary lang="en">Funny Videos</summary>
+    <description lang="de">Hier gibt es täglich neue Lustige Videos + Clips.</description>
+    <description lang="en">Daily updated funny videos + clips. Your #1 resource for fun videos.</description>
   </extension>
 </addon>
 </addons>
