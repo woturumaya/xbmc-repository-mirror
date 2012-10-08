@@ -6010,7 +6010,7 @@ What it doesn't do:
 
 <addon id="script.xbmc.subtitles"
        name="XBMC Subtitles"
-       version="3.3.5"
+       version="3.4.0"
        provider-name="amet, mr_blobby">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8446,7 +8446,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
   </extension>
 </addon>
 
-<addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="1.1.1">
+<addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="1.2.0">
   <requires>
     <import addon="xbmc.python" version="2.0" />
   </requires>
