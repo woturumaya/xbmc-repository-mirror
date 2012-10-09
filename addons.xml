@@ -840,7 +840,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.live.streams"
        name="LiveStreams"
-       version="1.0.6"
+       version="1.0.7"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -1272,7 +1272,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.audio.noagenda"
        name="No Agenda"
-       version="0.0.1"
+       version="0.0.2"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -1750,7 +1750,7 @@ stations from DJs and broadcasters around the world</description>
 </addon>
 
 <addon
-  id="plugin.image.mypicsdb" version="1.1.0" name="My Pictures Database" provider-name="Alexsolex, Xycl, MikeBZH44">
+  id="plugin.image.mypicsdb" version="1.1.1" name="My Pictures Database" provider-name="Alexsolex, Xycl, MikeBZH44">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.dialogaddonscan" version="1.1.0"/>
@@ -2229,16 +2229,18 @@ Limitations:
   </extension>
 </addon>
 
-<addon id="plugin.video.collegehumor" name="CollegeHumor" version="1.0.2" provider-name="Tristan Fischer (sphere)">
+<addon id="plugin.video.collegehumor" name="CollegeHumor" version="2.0.0" provider-name="Tristan Fischer (sphere@dersphere.de)">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.beautifulsoup" version="3.0.8"/>
     <import addon="script.module.xbmcswift" version="0.2.0"/>
+    <import addon="plugin.video.youtube" version="3.1.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <language>en</language>
     <platform>all</platform>
     <summary lang="en">Watch videos from www.collegehumor.com</summary>
     <description lang="en">CollegeHumor finds funny videos from all over the internet plus some original videos that they made themself.</description>
@@ -3254,7 +3256,7 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
 
 <addon id="plugin.video.tmz"
        name="TMZ"
-       version="2.0.4"
+       version="2.0.5"
        provider-name="stacked">
   <requires>
 	<import addon="xbmc.python" version="2.0"/>
@@ -6010,7 +6012,7 @@ What it doesn't do:
 
 <addon id="script.xbmc.subtitles"
        name="XBMC Subtitles"
-       version="3.4.0"
+       version="3.4.1"
        provider-name="amet, mr_blobby">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8652,6 +8654,44 @@ SageTV with:
     <summary lang="en">Funny Videos</summary>
     <description lang="de">Hier gibt es täglich neue Lustige Videos + Clips.</description>
     <description lang="en">Daily updated funny videos + clips. Your #1 resource for fun videos.</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.offene_kanaele" name="Offene Kanaele" version="1.0"
+provider-name="OK Fan">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.xbmcswift" version="0.2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>de</language>
+    <platform>all</platform>
+    <summary lang="en">Watch livestreams from German public-access TV stations</summary>
+    <description lang="en">"Public-access television is a form of non-commercial mass media where ordinary people can create content television programming which is cablecast through cable TV specialty channels." (Source: http://en.wikipedia.org/wiki/Public-access_television). This add-on delivers video content from public-access channels in German language.</description>
+    <summary lang="de">Livestreams deutschsprachiger Offener Kanaele</summary>
+    <description lang="de">Offene Kanäle sind nicht-kommerzielle TV-Sender, deren Programm von normalen Bürgern (bzw. Zuschauern) gestaltet wird. Sie sind in der Regel regional ausgerichtet und im Kabelnetz einzelner Städte empfangbar. Mit diesem Add-On können die Livestreams deutschsprachiger Sender betrachtet werden.</description>
+  </extension>
+</addon>
+
+<addon id="script.module.xmltodict"
+       name="xmltodict"
+       version="0.2.0"
+       provider-name="Tristan Fischer (sphere@dersphere.de)">
+  <requires>
+    <import addon="xbmc.python"
+            version="2.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <language></language>
+    <summary lang="en">Python helper module</summary>
+    <description lang="en">xmltodict is a Python module that makes working with XML feel like you are working with JSON, as in this "spec".[CR]Original: https://github.com/martinblech/xmltodict[CR]Author: martinblech@gmail.com</description>
+    <license>MIT</license>
+    <platform>all</platform>
   </extension>
 </addon>
 </addons>
