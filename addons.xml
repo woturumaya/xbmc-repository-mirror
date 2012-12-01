@@ -2418,7 +2418,7 @@ Limitations:
 <addon
     id="plugin.video.the.trailers"
     name="The Trailers"
-    version="0.9.0"
+    version="0.9.3"
     provider-name="Martijn, Sphere">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -7442,7 +7442,7 @@ The initial search is always done on MusicBrainz. In case allmusic link is not a
 
 <addon id="metadata.universal"
        name="Universal Scraper"
-       version="1.7.0"
+       version="1.8.0"
        provider-name="Olympia, Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
