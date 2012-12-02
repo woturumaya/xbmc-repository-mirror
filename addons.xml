@@ -4123,7 +4123,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.common.imdb.com"
        name="IMDB common scraper functions"
-       version="2.5.0"
+       version="2.6.0"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -4278,7 +4278,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.common.themoviedb.org"
        name="The MovieDB common scraper functions"
-       version="2.7.0"
+       version="2.8.0"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -4568,13 +4568,13 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
 
 <addon id="metadata.themoviedb.org"
        name="The Movie Database"
-       version="3.6.1"
+       version="3.7.0"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
-    <import addon="metadata.common.themoviedb.org" version="2.7.0"/>
+    <import addon="metadata.common.themoviedb.org" version="2.8.0"/>
     <import addon="metadata.common.hdtrailers.net" version="1.0.7"/>
-    <import addon="metadata.common.imdb.com" version="2.1.9"/>
+    <import addon="metadata.common.imdb.com" version="2.6.0"/>
     <import addon="plugin.video.youtube" version="2.9.1" optional="true"/>
   </requires>
   <extension point="xbmc.metadata.scraper.movies"
@@ -7442,7 +7442,7 @@ The initial search is always done on MusicBrainz. In case allmusic link is not a
 
 <addon id="metadata.universal"
        name="Universal Scraper"
-       version="1.8.0"
+       version="1.9.0"
        provider-name="Olympia, Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -7462,7 +7462,7 @@ The initial search is always done on MusicBrainz. In case allmusic link is not a
              library="universal.xml"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Universal Movie Scraper</summary>
-    <description lang="en">This scraper collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. It always does the initial search on IMDb, but following that it can be set field by field that from which site you want that specific information.</description>
+    <description lang="en">This scraper collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. It always does the initial search on TMDb, but following that it can be set field by field that from which site you want that specific information.</description>
     <platform>all</platform>
   </extension>
 </addon>
