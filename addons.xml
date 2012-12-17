@@ -2193,11 +2193,12 @@ Limitations:
   </extension>
 </addon>
 
-<addon id="plugin.video.classiccinema" name="Classic Cinema" provider-name="Jonathan Beluch (jbel)" version="1.0.1">
+<addon id="plugin.video.classiccinema" name="Classic Cinema" provider-name="Jonathan Beluch (jbel)" version="1.1.0">
   <requires>
     <import addon="xbmc.python" version="2.0" />
-    <import addon="plugin.video.youtube" version="3.1.0" />
+    <import addon="plugin.video.youtube" version="3.3.0" />
     <import addon="script.module.beautifulsoup" version="3.2.0" />
+    <import addon="script.module.xbmcswift2" version="1.3.0" />
   </requires>
   <extension library="addon.py" point="xbmc.python.pluginsource">
     <provides>video</provides>
@@ -2458,21 +2459,22 @@ Limitations:
 
 <addon id="plugin.video.foodnetwork"
        name="Food Network"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.common.plugin.cache" version="1.3.0"/>
   </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>FoodNetwork.com</summary>
+    <summary>Food Network</summary>
     <description>Videos from foodnetwork.com.</description>
-    <disclaimer>Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <disclaimer>Videos seem to be restricted to the US.</disclaimer>
     <platform>all</platform>
+    <language>en</language>
   </extension>
 </addon>
 
@@ -2857,17 +2859,19 @@ http://www.gfqlive.tv</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.newyorktimes" name="New York Times" version="0.1" provider-name="Jonathan Beluch (jbel)">
+<addon id="plugin.video.newyorktimes" name="New York Times" provider-name="Jonathan Beluch (jbel)" version="0.2.0">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.0.8"/>
-    <import addon="script.module.xbmcswift" version="0.1"/>
-    <import addon="script.module.brightcove" version="0.1.1"/>
+    <import addon="xbmc.python" version="2.0" />
+    <import addon="script.module.beautifulsoup" version="3.2.0" />
+    <import addon="script.module.xbmcswift2" version="1.3.0" />
+    <import addon="script.module.requests" version="0.13.2" />
+    <import addon="script.module.brightcove" version="1.1.1" />
   </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
+  <extension library="addon.py" point="xbmc.python.pluginsource">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <language />
     <platform>all</platform>
     <summary>Watch video from the New York Times.</summary>
     <description>News and opinion video from The NYTimes including breaking news, investigative reporting, national and international coverage. Style and celebrity video.</description>
@@ -4252,7 +4256,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.common.imdb.com"
        name="IMDB common scraper functions"
-       version="2.6.0"
+       version="2.6.1"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -5078,7 +5082,7 @@ With Gyroscope enabled devices and supported by it's browser, you can tap and ho
 
 <addon
   id="plugin.video.SportsDevil"
-  version="1.8.5"
+  version="1.8.5.1"
   name="SportsDevil"
   provider-name="MaxMustermann">
   <requires>
@@ -9842,5 +9846,25 @@ provider-name="OK Fan">
     <summary>Watch or listen to music sourced from various music themed subreddits such as 'listentothis', 'hiphopheads', 'metal', etc.</summary>
     <description>Watch or listen to music posted to various music themed subreddits. Create your own named playlists in the addon. Then, from the context menu of a playable item, add to your playlist. Or simply, check out the "hot" view for a given subreddit and play the entire list.</description>
   </extension>
+</addon>
+
+<addon id="plugin.video.dokumonster" name="dokumonster.de" version="0.1.0" provider-name="Tristan Fischer (sphere@dersphere.de)">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+        <import addon="script.module.xbmcswift2" version="1.2.0"/>
+        <import addon="plugin.video.youtube" version="3.2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language>en de</language>
+        <platform>all</platform>
+        <summary lang="de">Deutsche Dokus</summary>
+        <summary lang="en">German documentaries</summary>
+        <description lang="de">Dein Online Doku Stream Archiv. Die besten deutschen Dokumentationen einfach online anschauen. Tägliche Updates!</description>
+        <description lang="en">German online documentary stream archive. The best german documentaries online. Daily updates!</description>
+    </extension>
 </addon>
 </addons>
