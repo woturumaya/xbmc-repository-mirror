@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.download.rlsbb"
-       name="RlsBB.me"
-       version="0.1.1"
+       name="RlsBB.com"
+       version="0.1.2"
        provider-name="pgoeri">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -13,7 +13,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Browse releases on rlsbb.me and add links to JDownloader</summary>
-    <description lang="en">This plugin scrapes posts from rlsbb.me and presents them as directory items. By selecting a post the link gets added to JDownloader.</description>
+    <summary lang="en">Browse releases on rlsbb.com and add links to JDownloader</summary>
+    <description lang="en">This plugin scrapes posts from rlsbb.com and presents them as directory items. By selecting a post the link gets added to JDownloader.</description>
   </extension>
 </addon>
