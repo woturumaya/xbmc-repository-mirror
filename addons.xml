@@ -2482,16 +2482,15 @@ Limitations:
 
 <addon id="plugin.video.funny.or.die"
        name="Funny or Die"
-       version="1.0.2"
+       version="1.0.3"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
-	<import addon="script.module.beautifulsoup" version="3.0.8"/>
-    <import addon="script.common.plugin.cache" version="1.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.0"/>
+    <import addon="script.common.plugin.cache" version="1.3.0"/>
   </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>funnyordie.com Videos</summary>
@@ -6483,7 +6482,7 @@ What it doesn't do:
 
 <addon id="plugin.video.nolife"
        name="Nolife Online"
-       version="1.15.0"
+       version="1.15.1"
        provider-name="gormux">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8010,11 +8009,11 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.universal"
        name="Universal Scraper"
-       version="2.0.0"
+       version="2.1.1"
        provider-name="Olympia, Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
-    <import addon="metadata.common.themoviedb.org" version="2.4.0"/>
+    <import addon="metadata.common.themoviedb.org" version="2.9.0"/>
     <import addon="metadata.common.movieposterdb.com" version="1.0.5"/>
     <import addon="metadata.common.imdb.com" version="2.2.3"/>
     <import addon="metadata.common.impa.com" version="1.0.3"/>
@@ -9080,7 +9079,7 @@ Watch all your favorite TV Shows and Movies streamed on constant repeat 24/7 fro
   </extension>
 </addon>
 
-<addon id="plugin.video.wdrrockpalast" name="WDR Rockpalast" version="1.0.7" provider-name="xycl">
+<addon id="plugin.video.wdrrockpalast" name="WDR Rockpalast" version="1.1.0" provider-name="xycl">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
