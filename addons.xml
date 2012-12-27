@@ -4258,7 +4258,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.common.imdb.com"
        name="IMDB common scraper functions"
-       version="2.6.1"
+       version="2.6.2"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -9037,7 +9037,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.tgun"
        name="The GiddyUp Network"
-       version="0.0.21"
+       version="0.0.22"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
