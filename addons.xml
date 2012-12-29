@@ -38,7 +38,7 @@
 
 <addon id="plugin.video.icefilms"
        name="Icefilms"
-       version="1.1.22"
+       version="1.1.23"
        provider-name="Eldorado (originator: anarchintosh)">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -6575,7 +6575,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="plugin.audio.di.fm"
        name="Digitally Imported"
-       version="2.1.0"
+       version="2.1.1"
        provider-name="qualisoft.dk - Tim C. Steinmetz">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
@@ -8160,7 +8160,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id='script.common.plugin.cache' version='1.3.0' name='Common plugin cache' provider-name='TheCollective'>
+<addon id='script.common.plugin.cache' version='1.4.0' name='Common plugin cache' provider-name='TheCollective'>
   <requires>
     <import addon='xbmc.python' version='2.0'/>
   </requires>
@@ -8311,7 +8311,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id='script.module.parsedom' version='1.4.0' name='Parsedom for xbmc plugins' provider-name='TheCollective'>
+<addon id='script.module.parsedom' version='1.5.0' name='Parsedom for xbmc plugins' provider-name='TheCollective'>
   <requires>
     <import addon='xbmc.python' version='2.0'/>
   </requires>
@@ -9037,7 +9037,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.tgun"
        name="The GiddyUp Network"
-       version="0.0.22"
+       version="0.0.23"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -9438,7 +9438,7 @@ provider-name="OK Fan">
 
 <addon id="plugin.audio.jazzradio.com"
        name="JazzRadio.com"
-       version="1.1.0"
+       version="1.1.1"
        provider-name="qualisoft.dk - Tim C. Steinmetz">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
@@ -9815,7 +9815,7 @@ provider-name="OK Fan">
   </extension>
 </addon>
 
-<addon id="plugin.video.m6groupe" name="M6 groupe" version="1.0.2" provider-name="beenje">
+<addon id="plugin.video.m6groupe" name="M6 groupe" version="1.0.3" provider-name="beenje">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.xbmcswift2" version="1.3"/>
@@ -9827,10 +9827,10 @@ provider-name="OK Fan">
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <language>fr</language>
-    <summary lang="en">M6 and W9 Replay</summary>
-    <summary lang="fr">M6 et W9 Replay</summary>
-    <description lang="en">Watch videos from french channels M6 and W9</description>
-    <description lang="fr">Accéder aux vidéos des chaînes M6 et W9</description>
+    <summary lang="en">M6 group channels replay</summary>
+    <summary lang="fr">Replay des chaînes du groupe M6</summary>
+    <description lang="en">Watch videos from M6 group french channels (M6, W9 and 6ter)</description>
+    <description lang="fr">Accéder aux vidéos des chaînes du groupe M6 (M6, W9 et 6ter)</description>
   </extension>
 </addon>
 
@@ -9929,5 +9929,65 @@ provider-name="OK Fan">
     <description lang="de">Dieses Plugin bietet Zugriff auf verschiedene Film Trailer und Clips der folgenden Quellen:[CR]- apple.com[CR]- yahoo.com[CR]- youtube.com[CR]- moviefone.com[CR]- ign.com[CR]- hd-trailers.net[CR]- aol.com[CR]Die meisten sind verfügbar in 480p, 720p und 1080p</description>
     <description lang="en">This Plugin provides access to Movie Trailers and Clips from the following sources:[CR]- apple.com[CR]- yahoo.com[CR]- youtube.com[CR]- moviefone.com[CR]- ign.com[CR]- hd-trailers.net[CR]- aol.com[CR]Most of them are available in 480p, 720p and 1080p</description>
   </extension>
+</addon>
+
+<addon id="plugin.video.medi1tv" name="Medi1TV" version="0.1.1"
+	provider-name="Ayoub DARDORY (Apolikamixitos)">
+	<requires>
+		<import addon="xbmc.python" version="2.0" />
+		<import addon="script.module.beautifulsoup" version="3.0.8" />
+		<import addon="script.module.simplejson" version="2.0.10" />
+		<import addon="script.module.xbmcswift" version="0.2.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language>ar fr</language>
+		<platform>all</platform>
+		<summary lang="en">Watch videos and programs replays of the
+			Moroccan tv station Medi1TV.
+		</summary>
+		<description lang="en">Bilingual Arabic / French, the channel
+			broadcasts news programs, magazines, debates (talk shows), reports
+			and documentaries covering varied topics. Medi1TV channel is
+			particularly interested in regional news Maghreb. It broadcasts 24
+			hours on 24, seven days a week.
+		</description>
+		<summary lang="fr">Regarder les videos la rediffusion des
+			programmes de la chaine Marocaine Medi1TV.
+		</summary>
+		<description lang="fr">Medi 1 TV est une
+			chaîne de télévision
+			généraliste privée marocaine créée le 1er
+			décembre 2006, elle émet ses
+			programmes depuis Tanger.
+			Bilingue arabe/français, la chaîne diffuse
+			des journaux télévisés, des magazines, des débats (talk-shows), des
+			reportages et des documentaires touchant des sujets divers et variés.
+			La chaîne Medi 1 TV s'intéresse en particulier à l’actualité
+			régionale du Maghreb. Elle émet 24 heures sur 24, sept jours sur
+			sept.
+		</description>
+		<summary lang="ar">شاهد فيديوهات قناة ميدي1تي في المغربية و البرامج
+			المعادة
+		</summary>
+		<description lang="ar">تقدم "مدي 1 سات" 25 نشرة وموجز إخباري
+			بشكل متواصل يوميا، باللغتين العربية والفرنسية، نقاش، حوارات،
+			ريبورتاجات، وثائقي، عبر تغطية واسعة جهويا وعالميا. غنى ومواكبة
+			للمواضيع المقترحة، مهنية وروح المسؤولية لفريق عمل من حوالي 200 شخص
+			ينتمون إلى أكثر من 10 بلدان.
+
+			فضاء للتحليل والتنوع، والرأي الحر، يوفر
+			للمشاهد انفتاحا على العالم، وفق
+			رؤية القرب والمواكبة، والاستقلالية في
+			تغطية الأحداث السياسية،
+			الاقتصادية، الثقافية، الفنية، والرياضية.
+
+			قناة
+			"مدي 1 سات" تؤكد باستمرار اختياراتها كقناة إخبارية للمغرب العربي
+			الكبير، وكقناة مرجعية بمنطقة حوض البحر الأبيض المتوسط.
+		</description>
+	</extension>
 </addon>
 </addons>
