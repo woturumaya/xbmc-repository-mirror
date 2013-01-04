@@ -219,7 +219,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="plugin.video.amazon"
        name="Amazon"
-       version="0.6.4"
+       version="0.6.5"
        provider-name="BlueCop">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -1315,7 +1315,7 @@ http://channel9.msdn.com/</description>
 </addon>
 
 <addon id="plugin.audio.groove" name="Grooveshark XBMC"
-	version="1.0.6" provider-name="Stephen Denham">
+	version="1.0.7" provider-name="Stephen Denham">
 	<requires>
 		<import addon="xbmc.python" version="2.0" />
 		<import addon="script.module.simplejson"/>
@@ -1324,6 +1324,7 @@ http://channel9.msdn.com/</description>
 	<provides>audio</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
+		<language>en</language>
 		<platform>all</platform>
 		<summary lang="en">Grooveshark addon for XBMC.</summary>
 		<description lang="en">
@@ -2193,12 +2194,12 @@ Limitations:
   </extension>
 </addon>
 
-<addon id="plugin.video.classiccinema" name="Classic Cinema" provider-name="Jonathan Beluch (jbel)" version="1.1.1">
+<addon id="plugin.video.classiccinema" name="Classic Cinema" provider-name="Jonathan Beluch (jbel)" version="1.1.2">
   <requires>
     <import addon="xbmc.python" version="2.0" />
     <import addon="plugin.video.youtube" version="3.3.0" />
     <import addon="script.module.beautifulsoup" version="3.2.0" />
-    <import addon="script.module.xbmcswift2" version="1.3.0" />
+    <import addon="script.module.xbmcswift2" version="1.3.1" />
     <import addon="script.module.requests" version="0.13.2" />
   </requires>
   <extension library="addon.py" point="xbmc.python.pluginsource">
@@ -2860,11 +2861,11 @@ http://www.gfqlive.tv</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.newyorktimes" name="New York Times" provider-name="Jonathan Beluch (jbel)" version="0.2.0">
+<addon id="plugin.video.newyorktimes" name="New York Times" provider-name="Jonathan Beluch (jbel)" version="0.2.1">
   <requires>
     <import addon="xbmc.python" version="2.0" />
     <import addon="script.module.beautifulsoup" version="3.2.0" />
-    <import addon="script.module.xbmcswift2" version="1.3.0" />
+    <import addon="script.module.xbmcswift2" version="1.3.1" />
     <import addon="script.module.requests" version="0.13.2" />
     <import addon="script.module.brightcove" version="1.1.1" />
   </requires>
@@ -3138,7 +3139,7 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
 
 <addon id="plugin.video.revision3"
        name="Revision3"
-       version="2.0.11"
+       version="2.0.12"
        provider-name="stacked">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -3438,22 +3439,22 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
     </extension>
 </addon>
 
-<addon id='plugin.video.vimeo' version='2.4.0' name='Vimeo' provider-name='TheCollective'>
+<addon id="plugin.video.vimeo" name="Vimeo" provider-name="TheCollective" version="2.5.1">
   <requires>
-    <import addon='xbmc.python' version='2.0'/>
-    <import addon='script.common.plugin.cache' version='1.3.0'/>
-    <import addon='script.module.parsedom' version='1.3.0'/>
-    <import addon='script.module.simple.downloader' version='0.9.3'/>
+    <import addon="xbmc.python" version="2.0" />
+    <import addon="script.common.plugin.cache" version="1.5.0" />
+    <import addon="script.module.parsedom" version="1.5.1" />
+    <import addon="script.module.simple.downloader" version="0.9.4" />
   </requires>
-  <extension point='xbmc.python.pluginsource' library='default.py'>
+  <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
   </extension>
-  <extension point='xbmc.addon.metadata'>
+  <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang='en'>Vimeo video plugin</summary>
-    <description lang='en'>Plugin that allows you to browse and view videos from everybodys favorite alternative video site!</description>
-    <summary lang='bg'>Видео добавка за Vimeo</summary>
-    <description lang='bg'>Добавката ви позволява да разглеждате и гледате видео клипове от любимия на всички алтернативен видео сайт!</description>
+    <summary lang="en">Vimeo video plugin</summary>
+    <description lang="en">Plugin that allows you to browse and view videos from everybodys favorite alternative video site!</description>
+    <summary lang="bg">Видео добавка за Vimeo</summary>
+    <description lang="bg">Добавката ви позволява да разглеждате и гледате видео клипове от любимия на всички алтернативен видео сайт!</description>
   </extension>
 </addon>
 
@@ -3511,25 +3512,125 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
     </extension>
 </addon>
 
-<addon id='plugin.video.youtube' version='3.3.0' name='YouTube' provider-name='TheCollective'>
+<addon id="plugin.video.youtube" name="YouTube" provider-name="TheCollective" version="3.4.1">
   <requires>
-    <import addon='xbmc.python' version='2.0'/>
-    <import addon='script.module.simplejson' version='2.0.10'/>
-    <import addon='script.common.plugin.cache' version='1.3.0'/>
-    <import addon='script.module.parsedom' version='1.3.0'/>
-    <import addon='script.module.simple.downloader' version='0.9.3'/>
+    <import addon="xbmc.python" version="2.0" />
+    <import addon="script.module.simplejson" version="2.0.10" />
+    <import addon="script.common.plugin.cache" version="1.5.0" />
+    <import addon="script.module.parsedom" version="1.5.1" />
+    <import addon="script.module.simple.downloader" version="0.9.4" />
   </requires>
-  <extension point='xbmc.python.pluginsource' library='default.py'>
+  <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
   </extension>
-  <extension point='xbmc.addon.metadata'>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="af">YouTube video byvoegsel</summary>
+    <summary lang="be">YouTube video plugin</summary>
+    <summary lang="bg">Видео добавка за YouTube</summary>
+    <summary lang="cs">Modul videa YouTube</summary>
+    <summary lang="da">YouTube videoplugin</summary>
+    <summary lang="de">YouTube Video Plugin</summary>
+    <summary lang="el">Plugin για το YouTube</summary>
+    <summary lang="en">YouTube video plugin</summary>
+    <summary lang="es">Plugin de video de YouTube</summary>
+    <summary lang="es_AR">Plugin de video de YouTube</summary>
+    <summary lang="es_MX">Plugin de vídeo de Youtube</summary>
+    <summary lang="eu">YouTube bideo gehigarria</summary>
+    <summary lang="fa">پلاگین You Tube</summary>
+    <summary lang="fi">YouTube-videoliitännäinen</summary>
+    <summary lang="fr">Extension vidéo YouTube</summary>
+    <summary lang="gl">Extensión de vídeo de YouTube</summary>
+    <summary lang="he">תוסף וידאו YouTube </summary>
+    <summary lang="hu">YouTube video kiegészítő</summary>
+    <summary lang="it">Plugin video YouTube</summary>
+    <summary lang="ja">YouTube ビデオプラグイン</summary>
+    <summary lang="ko">YouTube 비디오 플러그인</summary>
+    <summary lang="lt">YouTube vaizdo įskiepis</summary>
+    <summary lang="mk">YouTube видео додаток</summary>
+    <summary lang="nl">YoutTube video plugin</summary>
+    <summary lang="no">YouTube video tillegg</summary>
+    <summary lang="pl">Wtyczka YouTube</summary>
+    <summary lang="pt">Plugin de vídeo YouTube</summary>
+    <summary lang="pt_BR">Plugin de vídeo YouTube</summary>
+    <summary lang="ro">Plugin video YouTube</summary>
+    <summary lang="ru">Дополнение видео YouTube</summary>
+    <summary lang="sk">Zásuvný modul pre video z YouTube</summary>
+    <summary lang="sl">Video vtičnik YouTube</summary>
+    <summary lang="sv">YouTube videotillägg</summary>
+    <summary lang="th">ส่วนเสริมวิดีโอ YouTube</summary>
+    <summary lang="uk">Відео додаток YouTube</summary>
+    <summary lang="zh">YouTube视频插件</summary>
+    <summary lang="zh_TW">YouTube 影片外掛</summary>
+    <description lang="af">Byvoegsel wat jou toelaat om videos te blaai en speel vanaf almal se gunsteling video werf!</description>
+    <description lang="be">Plugin that lets you browse and play videos from everybody's favorite video site!</description>
+    <description lang="bg">Добавката Ви позволява да разглеждате и гледате видео клипове от любимия на на всички видео сайт!</description>
+    <description lang="cs">Modul, který vám umožní procházet a přehrávat videa z nejoblíbenější stránky s videi.</description>
+    <description lang="da">Plugin som lader dig browse og afspille videoer fra alles yndlings videoside!</description>
+    <description lang="de">Ein Plugin, welches Ihnen erlaubt Videos von Youtube abzuspielen.</description>
+    <description lang="el">Plugin το οποίο σας επιτρέπει να περιηγηθείτε και να δείτε βίντεο από την πιο αγαπητή ιστοσελίδα βίντεο!</description>
+    <description lang="en">Plugin that lets you browse and play videos from everybody's favorite video site!</description>
+    <description lang="es">Este plugin te permite buscar y reproducir vídeos desde el sitio de vídeos favorito de todos!</description>
+    <description lang="es_AR">¡Este plugin te permite buscar y reproducir videos desde el sitio de videos favorito de todos!</description>
+    <description lang="es_MX">¡El Plugin que te permite explorar y reproducir vídeos del sitio favorito de todos!</description>
+    <description lang="fa">این پلاگین امکان مرور و پخش ویدئو از سایت های ورد علاقه تان را به شما میدهد.</description>
+    <description lang="fi">Plugin jolla voi selata ja katsoa videoita kaikkien suosikkivideosivustolta!</description>
+    <description lang="fr">Programme permettant parcours et visualisation des chaînes du meilleur site vidéo !</description>
+    <description lang="gl">Extensión que permite explorar e reproducir vídeos do sitio favorito de todos!</description>
+    <description lang="he">תוסף שמאפשר לך לדפדף ולנגן מתוך אתר הוידאו האהוב על כולם!</description>
+    <description lang="hu">A kiegészítő lehetővé teszi mindenkinek, hogy böngésszen, és lejátsszon videókat, mindenki kedvenc videómegosztójáról!</description>
+    <description lang="it">Plugin the ti permette di cercare e riprodurre video dal sito di video preferito da tutti!</description>
+    <description lang="ja">みんなが大好き、あの有名なサイト上の動画をブラウズ・再生するプラグイン！</description>
+    <description lang="ko">YouTube 동영상을 탐색하고 재생할 수 있는 플러그인</description>
+    <description lang="lt">Įskiepis, kuris leidžia jums naršyti ir leisti vaizdo įrašus YouTube svetainėje!</description>
+    <description lang="mk">Дополнување кое ви овозможува пребарување и пуштање на видеа од омилени видео страни!</description>
+    <description lang="nl">Plugin waarmee u kunt bladeren en video's af te spelen vanaf een ieders favoriete video site!</description>
+    <description lang="no">Et tillegg som lar deg bla gjennom og spille av videoer fra alles favoritt video nettsted!</description>
+    <description lang="pl">Ten plugin pozwala na przeszukiwanie i odtwarzanie wideo z powszechnie lubianej strony!</description>
+    <description lang="pt">Plugin que permite procurar e reproduzir vídeos do site favorito de todos!</description>
+    <description lang="pt_BR">Plugin que permite navegar e reproduzir vídeos do site favorito de vídeos de todo mundo!</description>
+    <description lang="ro">Plugin ce va permita sa gasiti şi să vizualizaţi videoclipuri de pe site-ul favorit al tuturora.</description>
+    <description lang="ru">Данное дополнение позволяет находить и смотреть видео на всеми любимом сайте.</description>
+    <description lang="sk">Tento zásuvný modul umožňuje prehliadať a prehrávať videá z najobľúbenejšej videostránky na svete!</description>
+    <description lang="sl">Vtičnik, ki omogoča predvajanje posnetkov z vaše najljubše video strani!</description>
+    <description lang="sv">Tillägget låter dig bläddra och spela videor från allas favoritvideosajt!</description>
+    <description lang="th">ส่วนเสริมที่ช่วยให้คุณสามารถเรียกดูและเล่นวิดีโอจากเว็บไซต์วิดีโอที่ทุกคนชื่นชอบ!</description>
+    <description lang="zh">让你能浏览和播放最受欢迎的视频网站内容的插件！</description>
+    <disclaimer lang="af">Sommige dele van hierdie byvoegsel mag dalk nie wettig wees in jou land van verblyf nie - gaan die plaaslike wette na voor installering.</disclaimer>
+    <disclaimer lang="be">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <disclaimer lang="bg">Някои части от добавката може да са незаконни в държавата, в която се намирате - моля, проверете местните закони, преди да я инсталирате.</disclaimer>
+    <disclaimer lang="ca">Algunes parts d'aquest complement poden no ser legals al vostre país de residència - si us plau verificau les lleis locals abans d'instal·lar-lo.</disclaimer>
+    <disclaimer lang="cs">Některé části tohoto doplňku nemusí být legální ve vašem státě - prosím ověřte vaše zákony před instalací.</disclaimer>
+    <disclaimer lang="da">Nogle dele af dette add-on er muligvis ikke lovlige i dit hjemland - Kontroller venligst dette ved de lokale myndigheder inden du installerer.</disclaimer>
+    <disclaimer lang="de">Einige Teile dieses Addons könnten in deinem Land verboten sein - bitte stelle vor der installation sicher, dass du keine Gesetze verletzt.</disclaimer>
+    <disclaimer lang="el">Κάποια τμήματα αυτού του πρόσθετου ενδέχεται να μην είναι νόμιμα στη χώρα σας - ελέγξετε τη νομοθεσία πριν την εγκατάσταση.</disclaimer>
+    <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <disclaimer lang="es">Algunas partes de este addon pueden no ser legales en tu país de residencia - verifica tus leyes locales antes de instalar.</disclaimer>
+    <disclaimer lang="es_AR">Algunas partes de este add-on pueden no ser legales en tu país de residencia - verifica tus leyes locales antes de instalar.</disclaimer>
+    <disclaimer lang="es_MX">Algunas partes de este addon pueden no ser legales en tu país de residencia - por favor consulta tus leyes locales antes de instalar</disclaimer>
+    <disclaimer lang="fi">Jotkin tämän lisäosan osat eivät ehkä ole laillisia maassasi - tarkista paikalliset lait ennen asentamista.</disclaimer>
+    <disclaimer lang="fr">Certaines options de cette extension ne sont peut-être pas autorisées dans votre pays - Merci de le vérifier avant son installation.</disclaimer>
+    <disclaimer lang="gl">Algunhas partes deste engadido poden non ser legais no teu país - por favor verifica as leis locais antes de instalalo.</disclaimer>
+    <disclaimer lang="he">חלקים מתוסף זה עלולים להיות לא חוקיים במקום מגורייך-אנא בדוק את החוקים החלים עלייך לפני התקנת התוסף.</disclaimer>
+    <disclaimer lang="hu">A kiegészítő egyes részei lehet, hogy nem legálisak az Ön hazájában - kérjük ellenőrizze a helyi törvényeket a telepítés elött. </disclaimer>
+    <disclaimer lang="it">Alcune parti di questo addon potrebbero non essere legali nel tuo paese di residenza - Ti preghiamo di controllare la tua normativa locale prima di installarlo.</disclaimer>
+    <disclaimer lang="ja">本アドオンの一部は、お住まいの国によっては違法となる可能性があります。インストール前にお住まいの国の法律をご確認ください。</disclaimer>
+    <disclaimer lang="ko">이 추가기능의 일부분은 사용자의 국가나 거주지역에 따라 합법적이지 않을 수도 있습니다 - 설치하기 전에 관련 법률을 확인하세요.</disclaimer>
+    <disclaimer lang="lt">Kai kurios šio priedo dalys gali būti Nerodomos/Nepaleidžiamos jūsų Šalyje - prašome patikrinti savo vietinius įstatymus prieš įdiegiant priedą.</disclaimer>
+    <disclaimer lang="mk">Некои делови од дополнувањето може да не се легални во вашата држава - провери пред да инсталираш.</disclaimer>
+    <disclaimer lang="nl">Sommige onderdelen van deze plugin kunnen illegaal zijn in uw land.
+Raadpleeg de lokale wetgeving voordat u deze plugin installeert.</disclaimer>
+    <disclaimer lang="no">Noen deler av dette tillegget kan hende ikke er lovlig i landet du bor i - vennligst sjekk med dine lokale lover før du installerer.</disclaimer>
+    <disclaimer lang="pl">Niektóre części tego dodatku mogą być nielegalne w twoim kraju - przed instalacją sprawdź zgodność ze swoim lokalnym prawem.</disclaimer>
+    <disclaimer lang="pt">Algumas partes deste addon podem não ser legais no seu país de residência - por favor confira as leis regionais antes de instalar.</disclaimer>
+    <disclaimer lang="pt_BR">Algumas partes deste addon podem não ser legais em seu país de residência - por favor, verifique as leis locais antes de instalar.</disclaimer>
+    <disclaimer lang="ro">Unele părți ale acestui addon ar putea fi ilegale în țara ta - verifică legislația locală înainte de a-l instala.</disclaimer>
+    <disclaimer lang="ru">Некоторые элементы этого дополнения могут являться незаконными в вашей стране проживания. Перед установкой ознакомьтесь с местным законодательством.</disclaimer>
+    <disclaimer lang="sk">Niektoré časti tohto doplnku nemusia byť vo vašej krajine legálne - pred inštaláciou si prosím overte, či je to v súlade s vašim lokálnym právom.</disclaimer>
+    <disclaimer lang="sl">Deli tega dodatka mogoče niso legalni v kraju vašega bivanja - preverite pred namestitvijo.</disclaimer>
+    <disclaimer lang="sv">Någon del av detta tillägg kanske är olagligt i ditt land - kontrollera dina lokala lagar innan installation.</disclaimer>
+    <disclaimer lang="th">บางส่วนจากส่วนขยายนี้อาจไม่ถูกต้องตามกฏหมายในประเทศของคุณ กรุณาตรวจสอบกฏหมายในประเทศของคุณก่อนทำการติดตั้ง</disclaimer>
+    <disclaimer lang="zh">这个插件的某些内容可能不符合你所在国家的法律规定 - 请在在安装前确认符合当地法律。</disclaimer>
     <platform>all</platform>
-    <summary lang='en'>YouTube video plugin</summary>
-    <description lang='en'>Plugin that lets you browse and play videos from everybody's favorite video site!</description>
-    <disclaimer lang='en'>Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
-    <summary lang='bg'>Видео добавка за YouTube</summary>
-    <description lang='bg'>Добавката ви позволява да разглеждате и гледате видео клипове от любимия на на всички видео сайт!</description>
-    <disclaimer lang='bg'>Някои части от добавката може да са незаконни в държавата, в която се намирате - моля, проверете местните закони, преди да я инсталирате.</disclaimer>
   </extension>
 </addon>
 
@@ -3695,7 +3796,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
 
 <addon id="metadata.albums.last.fm"
        name="Last.FM"
-       version="1.2.3"
+       version="1.2.4"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -3709,7 +3810,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <summary lang="be">LastFM Album Scraper</summary>
     <summary lang="bg">Сваля инф. за албуми от LastFM</summary>
     <summary lang="cs">Zdroj dat o albech LastFM</summary>
-    <summary lang="da">LastFM album-scraper</summary>
+    <summary lang="da">LastFM Album-scraper</summary>
     <summary lang="de">LastFM Album Scraper</summary>
     <summary lang="el">Scraper Άλμπουμ του LastFM</summary>
     <summary lang="en">LastFM Album Scraper</summary>
@@ -3717,6 +3818,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <summary lang="es_AR">Scraper de Álbumes de LastFM</summary>
     <summary lang="es_MX">LastFM Album Scraper</summary>
     <summary lang="fr">Scraper Album LastFM</summary>
+    <summary lang="gl">Scraper de Álbum de LastFM</summary>
     <summary lang="he">LastFM סקרייפר אלבומים</summary>
     <summary lang="hu">LastFM albuminformáció leolvasó</summary>
     <summary lang="it">Scraper degli album LastFM</summary>
@@ -3731,11 +3833,13 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <summary lang="ro">Colector informaţii album LastFM</summary>
     <summary lang="ru">Инфоресурс альбомов LastFM</summary>
     <summary lang="se">LastFM Musikskrapa</summary>
+    <summary lang="sk">Zdroj získavania dát o albumoch zo stránky LastFM</summary>
     <summary lang="sl">Ponudnik informacij o albumih LastFM</summary>
     <summary lang="sv">LastFM Album skrapa</summary>
     <summary lang="th">ตัวดึงข้อมูลอัลบั้ม LastFM</summary>
     <summary lang="zh">LastFM专辑资料</summary>
     <description lang="af">Laai Musiek inligting af van www.last.fm</description>
+    <description lang="am">ከ  www.last.fm የሙዚቃ መረጃ ማውረጃ </description>
     <description lang="be">Download Music information from www.last.fm</description>
     <description lang="bg">Сваля информация за музикални албуми от www.last.fm</description>
     <description lang="cs">Stáhnout informace o hudbě z www.last.fm</description>
@@ -3748,6 +3852,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <description lang="es_MX">Descargar Información de www.last.fm</description>
     <description lang="fa">بارگیری اطلاعات موسیقی از www.last.fm</description>
     <description lang="fr">Télécharger les informations Musique depuis www.last.fr</description>
+    <description lang="gl">Descargar información da música  dende www.last.fm</description>
     <description lang="he">הורד פרטי מוזיקה מ- www.last.fm</description>
     <description lang="hu">Albuminformációk letöltése a www.last.fm webhelyről</description>
     <description lang="it">Scarica informazioni musicali da www.last.fm</description>
@@ -3756,12 +3861,13 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <description lang="lt">Atsisiųsti muzikos informaciją iš www.last.fm</description>
     <description lang="mk">Превземи информации за музиката од www.last.fm</description>
     <description lang="nl">Download muziek informatie van Last.fm</description>
-    <description lang="pl">Pobieraj informacje o albumach z Last.fm</description>
+    <description lang="pl">Pobieraj informacje o muzyce z Last.fm</description>
     <description lang="pt">Descarregue informação de música de Last.fm</description>
     <description lang="pt_BR">Download informações Música de www.lastfm</description>
     <description lang="ro">Descarcă informaţii despre muzică de la www.last.fm</description>
     <description lang="ru">Загружать сведения о музыке с www.last.fm</description>
     <description lang="se">Ladda ner musikinformation från Last.FM</description>
+    <description lang="sk">Získajte informácie o hudbe zo stránky www.last.fm</description>
     <description lang="sl">Prenesite informacije o glasbi z www.last.fm</description>
     <description lang="sv">Ladda ned Musik information från www.last.fm</description>
     <description lang="th">ดาวน์โหลดข้อมูลเพลง จาก www.last.fm</description>
@@ -3982,7 +4088,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
 
 <addon id="metadata.artists.last.fm"
        name="Last.FM"
-       version="1.3.4"
+       version="1.3.5"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -3997,7 +4103,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <summary lang="be">LastFM Music Scraper</summary>
     <summary lang="bg">Сваля инф. за артисти от LastFM</summary>
     <summary lang="cs">Zdroj dat k hudbě LastFM</summary>
-    <summary lang="da">LastFM musik-scraper</summary>
+    <summary lang="da">LastFM Musik-scraper</summary>
     <summary lang="de">LastFM Musik Scraper</summary>
     <summary lang="el">Scraper Μουσικής του LastFM</summary>
     <summary lang="en">LastFM Music Scraper</summary>
@@ -4005,6 +4111,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <summary lang="es_AR">Scraper de música de LastFM</summary>
     <summary lang="fa">کپی کننده موسیقی از LastFM</summary>
     <summary lang="fr">Scraper Musique LastFM</summary>
+    <summary lang="gl">Scraper de musica de LastFM</summary>
     <summary lang="he">LastFM סקרייפר מוזיקה</summary>
     <summary lang="hu">LastFM előadóinformáció leolvasó</summary>
     <summary lang="it">Scraper di musica LastFM</summary>
@@ -4019,11 +4126,13 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <summary lang="ro">Colector muzică LastFM</summary>
     <summary lang="ru">Инфоресурс музыки LastFM</summary>
     <summary lang="se">LastFM Musikskrapa</summary>
+    <summary lang="sk">Zdroj získavania o hudbe zo stránky LastFM</summary>
     <summary lang="sl">Ponudnik informacije o glasbi LastFM</summary>
     <summary lang="sv">LastFM Musikskrapa</summary>
     <summary lang="th">ตัวดึงข้อมูลเพลง LastFM</summary>
     <summary lang="zh">LastFM艺人资料</summary>
     <description lang="af">Laai Musiek inligting af vanaf www.last.fm</description>
+    <description lang="am">ከ  www.last.fm የሙዚቃ መረጃ ማውረጃ </description>
     <description lang="be">Download Music information from www.last.fm</description>
     <description lang="bg">Сваля информация за музикални артисти от www.last.fm</description>
     <description lang="cs">Stáhnout informace o hudbě z www.last.fm</description>
@@ -4035,6 +4144,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <description lang="es_AR">Descargar Información de Música de www.last.fm</description>
     <description lang="fa">دانلود اطلاعات موسیقی از www.last.fm</description>
     <description lang="fr">Télécharger les informations Musique depuis www.last.fm</description>
+    <description lang="gl">Descargar información da música dende www.last.fm</description>
     <description lang="he">הורד פרטי מוזיקה מ-LastFM</description>
     <description lang="hu">Előadóinformációk letöltése a www.last.fm webhelyről</description>
     <description lang="it">Scarica informazioni sulla musica da www.last.fm</description>
@@ -4049,6 +4159,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <description lang="ro">Descarcă informaţii despre muzică de la www.last.fm</description>
     <description lang="ru">Загружать сведения о музыке с www.last.fm</description>
     <description lang="se">Ladda ner musikinformation från Last.FM</description>
+    <description lang="sk">Získajte informácie o hudbe zo stránky www.last.fm</description>
     <description lang="sl">Prenesi informacije o glasbi z www.last.fm</description>
     <description lang="sv">Ladda ned Musik information från Last.fm</description>
     <description lang="th">ดาวน์โหลดข้อมูลเพลง จาก www.last.fm</description>
@@ -4750,7 +4861,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
 
 <addon id="metadata.themoviedb.org"
        name="The Movie Database"
-       version="3.7.1"
+       version="3.7.2"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -4768,7 +4879,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <summary lang="bg">Сваля инф. за филми от TMDB</summary>
     <summary lang="ca">Arreplegador de pel·lícules TMDB</summary>
     <summary lang="cs">Zdroj zisku dat k filmům TMDB</summary>
-    <summary lang="da">TMDB film-scraper</summary>
+    <summary lang="da">TMDB Scraper til Film</summary>
     <summary lang="de">Film Scraper für TheMovieDB</summary>
     <summary lang="el">Scraper Ταινιών του TMDb</summary>
     <summary lang="en">TMDB Movie Scraper</summary>
@@ -4778,6 +4889,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <summary lang="et">TMDB Filmi kaabits</summary>
     <summary lang="fi">TMDB elokuvatietojen lataaja</summary>
     <summary lang="fr">Collecteur de Films TMDB</summary>
+    <summary lang="gl">Scraper de Filme de TMDB</summary>
     <summary lang="he">TMDB סקרייפר סרטים</summary>
     <summary lang="hu">TMDB filmadat leolvasó</summary>
     <summary lang="it">Ricercatore per TMDB Movie</summary>
@@ -4789,7 +4901,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <summary lang="nl">TMDb-filmscraper</summary>
     <summary lang="pl">Scraper filmowy TMDB</summary>
     <summary lang="pt">Scraper de filmes TMDb</summary>
-    <summary lang="pt_BR">Scraper Filmes TMDB</summary>
+    <summary lang="pt_BR">Scraper de Filmes TMDb</summary>
     <summary lang="ro">Scraper de filme TMDb</summary>
     <summary lang="ru">Инфоресурс на базе TMDB</summary>
     <summary lang="se">Skrapa för TMDb</summary>
@@ -4803,7 +4915,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <description lang="bg">themoviedb.org е безплатна и отворена база от данни за филми. Задвижва се изцяло от потребителите си - хора като вас. Милиони хора по света всеки месец ползват TMDb, благодарение на многофункционалното API. Едновременно с това е и източник на информация за медийни центрове, като XBMC, които извличат метаинформация за филми, постери и Fanart.</description>
     <description lang="ca">themoviedb.org és una base de dades oberta i lliure. Es manté completament per usuaris, per gent com tu. TMDb s'utilitza actualment per milions de persones cada mes i amb la seva potent API també és utilitzada per molts centre media populas com l'XBMC per obtenir les meta-dades de pel·lícules, pósters i fanart per enriquir l'experiència d'usuari.</description>
     <description lang="cs">themoviedb.org je otevřená a svobodná databáze filmů. Je řízena uživateli, tedy lidmi jako vy. TMDB je každý měsíc používána milióny lidí a se svým výborným API je také používano mnoha populárními mediálními centry jako je XBMC, k získávání metadat, plagátů a fanartu filmů pro obohacení uživatelského zážitku.</description>
-    <description lang="da">themoviedb.org er en fri og åben filmdatabase. Den er helt og aldeles brugerdrevet af folk som dig. TMDb bruges i øjeblikket af millioner af mennesker hver måned, og med deres kraftfulde API er den også brugt af mange populære mediecentre som XBMC til at hente metadata, plakater og fankunst til film, for at berige brugerens oplevelse.</description>
+    <description lang="da">themoviedb.org er en fri og åben filmdatabase. Den er helt og aldeles brugerdrevet af folk som dig. TMDb bruges i dag af millioner af mennesker hver måned, og med deres kraftfulde API er den også brugt af mange populære mediecentre såsom XBMC til at hente metadata, plakater og fankunst til film, for at berige brugerens oplevelse.</description>
     <description lang="de">TheMovieDB.org ist eine freie und offene Filmdatenbank. Sie wird von Benutzern wie Dir betrieben. TheMovieDB wird zur Zeit monatlich von Millionen genutzt. Mit der mächtigen API wird sie auch von vielen Media-Center, wie z.B. XBMC, genutzt um Film Metadaten, Poster und Fanarts zu beziehen, damit der Benutzer sein Media-Center verschönern kann.</description>
     <description lang="el">Το themoviedb.org είναι μία δωρεάν και ανοικτή βάση δεδομένων ταινιών. Διαχειρίζεται πλήρως από ανθρώπους σαν και εσάς. Το TMDb χρησιμοποιείται από εκατομμύρια ανθρώπους κάθε μήνα, και με το πανίσχυρο API τους, χρησιμοποιείται και από πολλά δημοφιλή κέντρα πολυμέσων όπως το XBMC για να λαμβάνουν μετα-δεδομένα Ταινιών, Αφίσες και Fanart για εμπλουτισμό της εμπειρίας του χρήστη.</description>
     <description lang="en">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like XBMC to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
@@ -4813,9 +4925,11 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <description lang="et">themoviedb.org on tasuta ja vaba juurdepääsuga filmide andmebaas.See on täielikult koostatud sinu sarnaste inimeste poolt. TMDb on hetkel igapäevaselt kasutuses miljonite inimeste poolt ja seda kasutavad paljud populaarsed meediakeskused, nagu ka XBMC, filmiandmete, fännikunsti ja posterite leidmiseks.</description>
     <description lang="fi">themoviedb.org on vapaa ja avoin elokuvatietokanta. Se on täysin käyttäjien ylläpitämä. TMDb:a käyttää miljoonat ihmiset joka kuukausi, sitä käytetään käyttäjäkokemuksen rikastuttamiseen monissa muissakin suosituissa XBMC:n kaltaisissa ohjelmissa lataamalla elokuvien tietoja, julisteita ja fanitaidetta.</description>
     <description lang="fr">themoviedb.org est une base de données gratuite et libre d'accès de films. Elle est totalement gérée par les utilisateurs. TMDb est actuellement utilisée par des millions de personnes chaque mois et, grâce à ses puissantes fonctions et routines, elle est également utilisée par de nombreux Media Centers populaires comme XBMC aux fins de récupération des Métadonnées, Posters et Fanarts des films en vue d'améliorer l'expérience de l'utilisateur.</description>
+    <description lang="gl">themoviedb.org é una base de datos sobre filmes libre e aberta, impulsada por xente coma ti. Na actualidade TMDb é usada por millóns de persoas todos os meses, e grazas ó seu potente API, usado por algúns dos centros multimedia máis populares como XBMC para obter a información dos filmes, Posters e Fanart e así mellorar a experiencia do usuario.</description>
     <description lang="he">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like XBMC to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
     <description lang="hu">A themoviedb.org egy ingyenes és nyílt filmadatbázis. Teljes egészében olyan felhasználók töltik fel, mint például Te. A TMDb-t havonta emberek milliói használják és a hatékony API-n keresztül számos népszerű média center is, mint például az XBMC a filmadatok, poszterek, fanartképek letöltésére.</description>
     <description lang="it">themoviedb.org è un database libero e aperto. E' gestito da utenti e persone come te. Viene usato correntemente da millioni di persone ogni mese e con le sue potenti API, è anche utilizzato da molti popolari media centers come XBMC per ottenere Metadati, Posters e Fanart di film per arricchire la loro esperienza utente.</description>
+    <description lang="ja">themoviedb.org は自由でオープンな映画データベースです。その運営は、完全にユーザ主導で行われています。TMDb は現在毎月何百万人もの人に利用されているほか、XBMC のようなメディアセンターも、TMDb のパワフルな API を介して映画メタデータ、ポスター、ファンアートを取得し、使い勝手を向上させるなどして使っています。</description>
     <description lang="ko">themoviedb.org 는 전적으로 여러분 같은 이용자가 주도하는 무료 공개 영화 데이터베이스입니다. TMDb 는 현재 매월 수백만의 사람들이 강력한 API와 함께 사용하고 있을 뿐만 아니라 XBMC 같은 많은 미디어 센터가 영화 정보, 포스터, 팬아트를 가져와 풍성한 사용자 경험을 제공하는데 이용되고 있습니다.</description>
     <description lang="lt">themoviedb.org yra nemokama ir atvira Filmų duomenų bazė. Jis remiamas ir skaitinamas tokių pat vartotojų kaip ir jūs. TMDb šiuo metu naudoja milijonai žmonių kiekvieną mėnesį, ir turi galingą API (informacinį centrą), taip pat naudojamas daug populiarių žiniasklaidos centrų. Pavyzdžiui XBMC gauti filmo(-ų) metaduomenis, plakatus ir FanArt siekiant praturtinti vartotojo patirtį.</description>
     <description lang="mk">themoviedb.org is a free and open movie database. It's completely user driven by people like you. TMDb is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like XBMC to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
@@ -4823,13 +4937,13 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <description lang="nl">Themoviedb.org is een vrije en open filmdatabank. Gebruikers zoals jij vormen de motor van deze site. Op dit moment gebruiken elke maand miljoenen mensen TMDb. De krachtige API van de site laat mediacenters zoals XBMC toe om metadata, posters en fanart op te halen en zo de gebruikerservaring te verrijken.</description>
     <description lang="pl">themoviedb.org jest wolną i otwartą filmową bazą danych. Jest zarządzana całkowicie przez osoby takie jak Ty. Obecnie odwiedzają ją miliony osób miesięcznie, a dzięki dostępności API jest używana w wielu media center, takich jak XBMC, do pobierania informacji o filmach, plakatów i fanartów.</description>
     <description lang="pt">O themoviedb.org é uma base de dados de filmes livre e aberta. É actualizado inteiramente por pessoas como você e usado por milhões todos os meses. Com o poderoso motor de busca disponível, também se tornou no favorito para muitos programas de centro de média, como o popular XBMC, para obter informação, posters e fanart que enriquecem a experiência do utilizador.</description>
-    <description lang="pt_BR">themoviedb.org é um banco de dados aberto e gratuito. É completamente operacionalizado por pessoas como você. TMDb é usado atualmente por milhares de pessoas a cada mês e com sua poderosa API, é usado por muitos media centers como XBMC para buscar Metadados de Filtes, Posters e Fanart para enriquecer a experiência de uso.</description>
+    <description lang="pt_BR">O themoviedb.org é um banco de dados aberto e gratuito. É completamente operado por pessoas como você. O TMDb é atualmente usado por milhares de pessoas a cada mês e com sua poderosa API, é usado por muitas centrais de mídia populares como o XBMC para buscar metadados, cartazes e fanart de filmes para enriquecer a experiência do usuário.</description>
     <description lang="ro">themoviedb.org este o bază de date de filme gratuită și deschisă. Este actualizată de oameni ca și tine. TMDb este curent folosită de milioane de oameni în fiecare lună și datorită API-ului puternic, este de asemena folosită de multe centre media populare ca XBMC pentru a obține informații despre filme, afișe și imagini produse de fani (Fanart) care îmbogățesc experiența utilizatorului.</description>
     <description lang="ru">themoviedb.org — это бесплатная и открытая база данных фильмов. Она полностью поддерживается обычными людьми. В данный момент сайт TMDb используют миллионы людей каждый месяц, и благодаря мощному API его могут использовать различные популярные медиацентры, такие как XBMC, чтобы получать метаданные, постеры и фанарт для фильмов с целью красивого оформления интерфейса.</description>
     <description lang="se">themoviedb.org är en fri och öppen filmdatabas. Det drivs helt av människor som dig. TMDb används av miljontals människor varje månad och med deras kraftfulla API, är det också använt av många populära mediacenter som XBMC för att hämta filmmetadata, omslag och fanart för att förgylla användarens upplevelse.</description>
     <description lang="sk">themoviedb.org je voľná a otvorená databáza filmov. Je výlučne vedená užívateľmi ako si ty. TMDb je každý mesiac používaná miliónmi ľudí, a vďaka svojmu výkonnému API je veľmi populárna medzi 'media centrami' ako XBMC pre sťahovanie filmových metadát, plagátov a fanartov pre obohatenie  zážitkov.</description>
     <description lang="sl">themoviedb.org je brezplačna in prosta baza filmov. Je v celoti ustvarjena s strani uporabnikov kot ste vi. TMDB uporablja miljone ljudi in z njihovo močno API, jo lahko uporabljate tudi v multimedijskih centrih kot XBMC, s tem prenesete informacije o filmih, plakate in ozadja ter s tem popestrite uporabniško izkušnjo.</description>
-    <description lang="sv">themoviedb.org är en gratis och öppen filmdatabas. Den drivs helt av människor som du. TMDb används för närvarande av miljoner människor varje månad och med deras kraftfulla API används den även av många populära mediacenter som t.ex. XBMC för att hämta metadata om filmen, affischer och fanart för att berika användarens upplevelse.</description>
+    <description lang="sv">themoviedb.org är en gratis och öppen filmdatabas. Den drivs helt av människor som du. TMDb används för närvarande av miljoner människor varje månad och med deras kraftfulla API används den även av många populära mediacenter som t.ex. XBMC för att hämta metadata om filmer, affischer och fanart för att berika användarens upplevelse.</description>
     <description lang="th">themoviedb.org เป็นฐานข้อมูลภาพยนตร์ที่ฟรีและเปิดกว้าง. มันถูกขับเคลื่อนจากผู้ใช้ โดยคนเช่นคุณ. TMDb ปัจจุบันมีการใช้โดยคนนับล้านในแต่ละเดือน และมีประสิทธิภาพด้วย API ของพวกเขา , มันยังถูกใช้โดยหลายศูนย์สื่อที่นิยมเช่น XBMC เพื่อดึง อธิบายข้อมูลภาพยนตร์, โปสเตอร์และ แฟนอาร์ต เพื่อเพิ่มประสบการณ์ของผู้ใช้</description>
     <description lang="zh">themoviedb.org是一个开放和自由的电影数据库。它完全由象你一样的用户来掌控。TMDb每月为上百万用户提供服务，并通过强大的API界面为许多流行的媒体中心系统如XBMC提供电影资料、封面海报和同人画以丰富用户的体验。</description>
     <platform>all</platform>
@@ -4838,7 +4952,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
 
 <addon id="metadata.tvdb.com"
        name="The TVDB"
-       version="1.4.3"
+       version="1.4.4"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -4852,7 +4966,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <summary lang="be">Fetch TV show metadata from TheTVDB.com</summary>
     <summary lang="bg">Изтегля информация за ТВ Сериали от TheTVDB.com</summary>
     <summary lang="cs">Získat metadata televizního pořadu z TheTVDB.com</summary>
-    <summary lang="da">Hent TV serie metadata fra TheTVDB.com</summary>
+    <summary lang="da">Hent metadata til TV-serier fra TheTVDB.com</summary>
     <summary lang="de">Scraper für Fernsehserien von TheTVDB.com</summary>
     <summary lang="el">Λήψη μετα-δεδομένων σειρών από το TVDB.com</summary>
     <summary lang="en">Fetch TV show metadata from TheTVDB.com</summary>
@@ -4861,17 +4975,19 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <summary lang="es_MX">Obtener metadata de Series desde TheTVDB.com</summary>
     <summary lang="fi">Nouda TV-ohjelmien tietoja TheTVDB.com -sivustolta</summary>
     <summary lang="fr">Collecter les métadonnées des séries TV depuis TheTVDB.com</summary>
+    <summary lang="gl">Obter os metadatos das series de TV dende TheTVDB.com</summary>
     <summary lang="he">הבא מידע </summary>
     <summary lang="hu">TV műsor információk a TheTVDB.com-ról</summary>
     <summary lang="is">Sækja Sjónvarpsþátta lýsigögn frá TheTVDB.com</summary>
     <summary lang="it">Scarica informazioni programma TV da TheTVDB.com</summary>
+    <summary lang="ja">TheTVDB.com からTV番組メタデータを取得</summary>
     <summary lang="ko">TheTVDB.com 에서 TV 쇼 정보 가져오기</summary>
     <summary lang="lt">Parsiųsti TV šou (serialo) metaduomenis iš TheTVDB.com</summary>
     <summary lang="mk">Превземи ТВ шоу метаподаток од TVDB.com</summary>
     <summary lang="nl">Seriemetadata ophalen van TheTVDB.com</summary>
     <summary lang="pl">Pobieraj dane o serialach TV z TheTVDB.com</summary>
     <summary lang="pt">Obtenha dados para séries TV de TVDB.com</summary>
-    <summary lang="pt_BR">Obtenha dados dos Seriados de TheTVDB.com</summary>
+    <summary lang="pt_BR">Obtenha dados dos seriados do TheTVDB.com</summary>
     <summary lang="ro">Obţineţi datele despre seriale de la TheTVDB.com</summary>
     <summary lang="ru">Загрузка информации о ТВ-шоу с TheTVDB.com</summary>
     <summary lang="se">Skrapa för TV-seriemetadata från TVDB.com</summary>
@@ -4881,11 +4997,12 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <summary lang="th">เรียกข้อมูลหลักของรายการทีวี จาก TheTVDB.com</summary>
     <summary lang="uk">Отримання відомостей про серіали із TheTVDB.com</summary>
     <summary lang="zh">从TheTVDB.com获取电视剧集信息</summary>
+    <summary lang="zh_TW">從 TheTVDB.com 取得電視節目資訊</summary>
     <description lang="af">TheTVDB.com is 'n TV Skraper. Die werf is 'n massiewe oop databasis wat deur enige iemand verander kan word en bevat vol meta data vir baie vertonings in verskillende tale. Alle inhoud en prente op die werf is bygedra deur sy gebruikers vir sy gebruikers en het 'n hoë standaard van kwaliteit. Die databasis skema en webruimte is oopbron onder die GPL.</description>
     <description lang="be">TheTVDB.com is a TV Scraper. The site is a massive open database that can be modified by anybody and contains full meta data for many shows in different languages. All content and images on the site have been contributed by their users for users and have a high standard or quality. The database schema and website are open source under the GPL.</description>
     <description lang="bg">TheTVDB.com предоставя информация за ТВ Сериали. Сайтът представлява една огромна, безплатна и отворена база от данни. Всеки може да редактира (наличната информация) или да добавя нова. Съдържа подробни данни за много сериали и на различни езици. Цялото съдържание на сайта и публикуваните изображения са предоставени от потребители за потребителите. Съдържанието на сайтът и базата от данни е с отворен код под лиценза GPL.</description>
     <description lang="cs">TheTVDB.com je zdroj metadat pro televizní pořady. Stránka je masivní otevřená databáze, kterou může kdokoliv upravovat a obsahuje veškerá metadata v různých jazycích k mnoha pořadům. Všechen obsah a obrázky jsou poskytnuty uživateli pro uživatele a mají vysokou kvalitu. Návrhový vzor databáze a webová stránka jsou svobodný software licencovaný pod GPL.</description>
-    <description lang="da">TheTVDB.com er en TV-scraper. Siden er en massiv åben database, som alle kan modificere, og den indeholder fyldestgørende metadata for mange serier på forskellige sprog. Alt indhold og billeder på siden er tilføjet af brugere og har en høj standard eller kvalitet. Databasens model og hjemmeside er open source under GPL.</description>
+    <description lang="da">TheTVDB.com er en TV-scraper. Siden er en massiv åben database, som alle kan modificere, og den indeholder fyldestgørende metadata for mange serier på forskellige sprog. Alt indhold og alle billeder på siden er tilføjet af brugere og har en høj standard eller kvalitet. Databasens model og webside er open source under GPL.</description>
     <description lang="de">TheTVDB.com ist ein Scraper für TV-Serien. Die Seite hat eine riesige offene Datenbank, welche von jedem geändert werden kann. Sie enthält weitreichende Meta-Daten für viele TV-Serien in verschiedenen Sprachen. Alle Inhalte und Bilder dieser Seite stammen von User für User und haben eine hohe Qualität. Das Datenbankschema und die Webseite sind OpenSource unter dem GPL-Recht</description>
     <description lang="el">Το TVDB.com είναι ένα Scraper Τηλεόρασης. Η ιστοσελίδα είναι μία τεράστια ανοικτή βάση δεδομένων η οποία μπορεί να τροποποιηθεί από τον καθένα και περιέχει πλήρη μετα-δεδομένα για πολλές σειρές σε διάφορες γλώσσες. Όλο το περιεχόμενο και οι εικόνες στην ιστοσελίδα προέρχονται από τους χρήστες του, και έχουν υψηλά πρότυπα ποιότητας. Το σχήμα της βάσης δεδομένων και της ιστοσελίδας είναι ανοικτού κώδικα υπό το GPL.</description>
     <description lang="en">TheTVDB.com is a TV Scraper. The site is a massive open database that can be modified by anybody and contains full meta data for many shows in different languages. All content and images on the site have been contributed by their users for users and have a high standard or quality. The database schema and website are open source under the GPL.</description>
@@ -4894,16 +5011,18 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
     <description lang="es_MX">TheTVDB.com es un scraper de series de TV. Este sitio es una base de datos masiva y abierta que puede ser modicada por cualquiera y contiene metadata completa para muchas series en diferentes lenguajes. Todo el contenido e imágenes del sitio han sido contribuidos por sus usuarios para usuarios, los cuales tienen un alto estándar de calidad. El esquema de la base de datos y el sitio web son de código abierto bajo GPL.</description>
     <description lang="fi">TheTVDB.com on TV-ohjelmatietojen lataaja. Sivusto on massiivinen avoin tietokanta, jonka tietoja kaikki pystyy muokkaamaan ja se sisältää täydet tiedot monista TV-ohjelmista usealla eri kielellä. Kaikki sivuston sisältö ja kuvat on korkealaatuisia ja käyttäjien lahjoittamia. Tietokanta ja sivusto ovat GPL-lisenssin alaisia.</description>
     <description lang="fr">TheTVDB.com est un collecteur TV. Le site est une immense base de données libre pouvant être modifiée par tout le monde et contenant toutes les informations de nombreuses séries en différentes langues. Les informations et images du site proviennent de contributions d'utilisateurs pour les usagers et sont d'excellentes qualités. Le schéma de la base de données et le site Web sont en open source sous licence GPL.</description>
+    <description lang="gl">TheTVDB.com é un Scraper de TV. O sitio é unha enorme base de datos aberta que calquera pode modificar e contén todos os metadatos de centos de series en diferentes idiomas. Todo o contido e imaxes do sitio foi proporcionado polos seus usuarios e amosa un grande estándar de calidade. O esquema da base de datos e o sitio web son de código aberto baixo licenza GPL.</description>
     <description lang="he">TheTVDB.com הוא סקרייפר עבור תוכניות טלוויזיה. אתר זה הוא מסד נתונים פתוח עצום אשר כל אחד יכול לערוך ומכיל פרטים מלאים להרבה תוכניות טלוויזיה בשפות שונות. כל התכנים והתמונות באתר נתרמו ע"י המשתמשים שלה עבור משתמשים וישנו סטנדרט גבוה או איכות גבוהה. תכנית המסד נתונית והאתר הם בקוד פתוח תחת ה-GPL.</description>
     <description lang="hu">A TheTVDB.com egy TV műsor leolvasó. Az oldal egy hatalmas adatbázis amit bárki szabadon módosíthat és rengeteg TV műsor adatait tartalmazza különböző nyelveken. A minőségi tartalom és képanyag ezen az oldalon felhasználóktól származik más felhasználók számára. Az adatbázisstruktúra és a weblap nyílt forráskódú a GPL licenc alatt.</description>
     <description lang="it">TheTVDB.com è uno scraper di programmi TV. Questo sito è un enorme database che può essere modificato da chiunque, e contiene tutte le informazioni di molti show in varie lingue. Tutti i contenuti e le immagini sul sito sono stati forniti dagli utenti, ed hanno un alto standard di qualità. Lo schema del database e il sito internet sono open source sotto licenza GPL.</description>
+    <description lang="ja">TheTVDB.com は TV スクレーパーです。本サイトは強力でオープンなデータベースで、誰もが追加修正可能です。テレビ番組のメタデータは多くの言語で提供されています。番組情報や画像データはユーザにより提供され、そのクオリティは非常に高いものです。データベーススキーマと web サイトは GPL ライセンスのオープンソースです。</description>
     <description lang="ko">TheTVDB.com 은 TV 자료수집기입니다. 위 사이트는 이용자가 직접 수정할 수 있으며 다양한 언어의 완전한 메타 데이터를 포함하는 방대한 오픈 데이터베이스입니다. 사이트의 모든 콘텐츠와 이미지들은 사이트 이용자들이 다른 이용자들을 위해 제공한 것이며 높은 품질을 가지고 있습니다. 웹사이트와 데이터베이스 스키마는 GLP 오픈소스입니다.</description>
     <description lang="lt">TheTVDB.com yra TV Scraper. Ši svetainė yra didžiulė atvira duomenų bazė, kuria gali pakeisti bet kas ir kurioje visa meta duomenis bazė daugelo šou įvairiomis kalbomis. Visas svetainės turinys atnaujinamas/papyldomasvartotojų ir turi aukštą kokybės standartą. Duomenų bazės ir svetainės yra atviro kodo pagal GPL standartą.</description>
     <description lang="mk">TheTVDB.com is a TV Scraper. The site is a massive open database that can be modified by anybody and contains full meta data for many shows in different languages. All content and images on the site have been contributed by their users for users and have a high standard or quality. The database schema and website are open source under the GPL.</description>
     <description lang="nl">TheTVDB.com is een seriescraper. De site is een gigantische open databank die iedereen kan aanpassen en uitbreiden, en biedt metadata aan voor TV-series in verschillende talen. Alle inhoud en afbeeldingen zijn afkomstig van gebruikers en moeten een grondige kwaliteitscontrole doorstaan. Het databankschema en de websitecode zijn vrijgegeven onder de open source GPL-licentie.</description>
-    <description lang="pl">TheTVDB.com jest scraperem TV. Ten serwis jest ogromną, wielojęzykową i otwartą bazą danych o serialach, którą może edytować każdy. Zawartość tego serwisu została dostarczona przez użytkowników, dla użytkowników. Dostępne materiały mają wysoki standard lub jakość.</description>
+    <description lang="pl">TheTVDB.com jest scraperem TV. Ten serwis jest ogromną, wielojęzykową i otwartą bazą danych o serialach, którą może edytować każdy. Zawartość tego serwisu została dostarczona przez użytkowników, dla użytkowników. Dostępne materiały są najwyższej jakości.</description>
     <description lang="pt">O TheTVDB.com é um scraper para séries TV. O site é uma gigantesca base de dados livre que pode ser alterada por qualquer pessoa e contém informação em várias línguas. Todos os conteúdos do site foram enviados por utilizadores e têm um elevado padrão de qualidade. A base de dados e o site funcionam sob uma licença GPL de software livre.</description>
-    <description lang="pt_BR">TheTVDB.com é um scraper de Seriados. O site é um enorme banco de dados aberto que pode ser modificado por qualquer pessoa e contém dados completos de muitos seriados em diferentes idiomas. Todos os conteúdos e imagens no site foram contribuições de usuários para usuários e têm um alto padrão de qualidade. O esquema do banco de dados e do site são de código aberto sob a licença GPL.</description>
+    <description lang="pt_BR">TheTVDB.com é um scraper de seriados. O site é um enorme banco de dados aberto que pode ser modificado por qualquer pessoa e contém metadados completos de muitos seriados em diferentes idiomas. Todos os conteúdos e imagens no site foram contribuições de usuários para usuários e têm um alto padrão de qualidade. O esquema do banco de dados e do site são de código aberto sob a licença GPL.</description>
     <description lang="ro">TheTVDB.com este un colectore TV. Site-ul este o bază de date masivă, deschisă, ce poate fi modificată de oricine şi conţine date complete despre multe seriale în diferite limbi. Tot conţinutul site-ului a fost contribuit de către utilizatori pentru utilizatori şi are un standard de caliate înalt. Schema bazei de date şi site-ul au sursele libere sub licenţă GPL.</description>
     <description lang="ru">TheTVDB.com — это инфоресурс для сериалов. Сайт представляет собой огромную открытую базу данных, в которую может вносить данные любой пользователь и которая содержит полные мета-данные для многих сериалов на различных языках. Всё содержимое и изображения на сайте были выложены его пользователями для других пользователей и имеют высокий уровень качества. Структура базы данных и веб-сайт созданы с открытым исходным кодом по лицензии GPL.</description>
     <description lang="se">TVDB.com är en TV-skrapa. Sajten är en massiv öppen databas som kan ändras av vem som helst och innehåller full metadata för mängder av serier på olika språk. Allt innehåll och bilder på sajten har bidragits av användare för användare och har en hög standard eller kvalitet. Databasschemat och webbsidan är licensierat som GPL.</description>
@@ -6787,23 +6906,22 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     </extension>
 </addon>
 
-<addon id='plugin.video.bliptv' version='0.7.0' name='BlipTV' provider-name='TheCollective'>
+<addon id="plugin.video.bliptv" name="BlipTV" provider-name="TheCollective" version="0.8.1">
   <requires>
-    <import addon='xbmc.python' version='2.0'/>
-    <import addon='script.common.plugin.cache' version='1.3.0'/>
-    <import addon='script.module.parsedom' version='1.3.0'/>
-    <import addon='script.module.simple.downloader' version='0.9.3'/>
+    <import addon="xbmc.python" version="2.0" />
+    <import addon="script.common.plugin.cache" version="1.5.0" />
+    <import addon="script.module.parsedom" version="1.5.1" />
+    <import addon="script.module.simple.downloader" version="0.9.4" />
   </requires>
-  <extension point='xbmc.python.pluginsource'
-            library='default.py'>
+  <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
   </extension>
-  <extension point='xbmc.addon.metadata'>
+  <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang='en'>Bliptv video plugin</summary>
-    <description lang='en'>Plugin that let's you browse and play videos from BlipTV!</description>
-    <summary lang='bg'>Видео добавка за Bliptv</summary>
-    <description lang='bg'>Добавката ви позволява да разглеждате и гледате видео клипове от BlipTV!</description>
+    <summary lang="en">Bliptv video plugin</summary>
+    <description lang="en">Plugin that let's you browse and play videos from BlipTV!</description>
+    <summary lang="bg">Видео добавка за Bliptv</summary>
+    <description lang="bg">Добавката ви позволява да разглеждате и гледате видео клипове от BlipTV!</description>
   </extension>
 </addon>
 
@@ -7387,7 +7505,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.album.universal"
        name="Universal Album Scraper"
-       version="1.6.2"
+       version="1.6.3"
        provider-name="Olympia, Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -7402,22 +7520,25 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
              language="en"
              library="albumuniversal.xml"/>
   <extension point="xbmc.addon.metadata">
+    <summary lang="af">Universele Skraper vir Albums</summary>
     <summary lang="be">Universal Scraper for Albums</summary>
     <summary lang="bg">Универсален източник за информация за албуми</summary>
     <summary lang="ca">Arreplegador universal per àlbums</summary>
     <summary lang="cs">Univerzální zdroj získávání dat pro alba</summary>
-    <summary lang="da">Universel scraper til albummer</summary>
+    <summary lang="da">Universel Scraper til Albummer</summary>
     <summary lang="de">Universeller Scraper für Alben</summary>
     <summary lang="el">Universal Scraper Άλμπουμ</summary>
     <summary lang="en">Universal Scraper for Albums</summary>
     <summary lang="es">Scraper universal para álbumes</summary>
     <summary lang="es_AR">Scraper Universal para Albumes</summary>
     <summary lang="es_MX">Scraper Universal para Álbumes</summary>
+    <summary lang="fi">Universaali tiedonhakija albumitiedoille</summary>
     <summary lang="fr">Scraper universel pour les Albums</summary>
     <summary lang="gl">Scraper universal para os álbumes</summary>
     <summary lang="he">סקרייפר אוניברסלי עבור אלבומים</summary>
     <summary lang="hu">Univerzális album leolvasó</summary>
     <summary lang="it">Ricercatore Universale per Albums</summary>
+    <summary lang="ja">汎用アルバムスクレーパー</summary>
     <summary lang="ko">Universal Scraper for Albums</summary>
     <summary lang="lt">Universalus Albumų Scrapers</summary>
     <summary lang="mk">Универзален превземач за Албуми</summary>
@@ -7426,27 +7547,31 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="pl">Universal Scraper dla albumów muzycznych</summary>
     <summary lang="pt">Scraper universal para álbuns</summary>
     <summary lang="pt_BR">Scraper Universal para Álbuns</summary>
+    <summary lang="ro"> Scraper universal pentru albume</summary>
     <summary lang="ru">Универсальный скрапер для альбомов</summary>
     <summary lang="sk">Univerzálny zdroj získavania dát pre albumy</summary>
     <summary lang="sl">Univerzalni ponudnik informacij o albumih</summary>
     <summary lang="sv">Universiell albumskrapa</summary>
     <summary lang="zh">通用音乐专辑信息刮削器</summary>
+    <description lang="af">Hierdie skraper kollekteer inligting vanaf die volgende ondersteunde werwe: MusicBrainz, last.fm, allmusic.com en amazon.de, terwyl kunswerke gegryp word vanaf: fanart.tv, last.fm en allmusic.com. Dit kan veld vir veld gestel word vanaf watter werf jy die spesifieke inligting wil hê.&#10;&#10;Die aanvaklike soektog word altyd op MusicBrainz gedoen. Ingeval skakels van allmusic en/of amazon.de nie bygevoeg is op die MusicBrainz werf, kan velde vanaf allmusic.com en/of amazon.de nie gaan haal word nie (egter baie maklik om daardie ontbrekende skakels by te voeg).</description>
     <description lang="be">This scraper collects information from the following supported sites: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
     <description lang="bg">Сваля информация от следните сайтове: MusicBrainz, last.fm, allmusic.com и amazon.de. Изобрания извлича от: fanart.tv, last.fm и allmusic.com. Можете да определите от кой сайт каква информация да се сваля.&#10;&#10;Първоначалното търсене винаги се прави в MusicBrainz. Когато не са налични препратки към allmusic и/или amazon.de на сайта на MusicBrainz извличането на информация от allmusic.com и/или amazon.de става невъзможно (добавянето им е много лесно).</description>
     <description lang="ca">Aquest arreplegador recull informació dels següents llocs: MusicBrainz, last.fm, allmusic.com i amazon.de, alhora que agafa art de: fanart.tv, last.fm i allmusic.com. Es pot configurar camp a camp des de quin lloc voleu aquella informació específica. &#10;&#10;La cerca inicial es realitza sempre a MusicBrainz. En el cas que els enllaços d'allmusic i amazon.de no s'afegeixin al lloc MusicBrainz els camps d'allmusic i amazon.de i/o amazon.com no es poden obtenir (tot i que són fàcils d'afegir aquests enllaços restants).</description>
     <description lang="cs">Tento zdroj získává data z následujících podporovaných stránek: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm a allmusic.com. Je možno podrobně nastavit, které informace si přejete získat ze kterých stránek.&#10;&#10;Prvotní vyhledání je vžy provedeno na MusicBrainz. V případě, že odkaz pro allmusic a nebo amazon.de není přidaný na stránku MusicBrainz, není možné údaje z allmusic.com a amazon.de stáhnout (avšak je velmi snadné tyto chybějící odkazy přidat).</description>
-    <description lang="da">Denne scraper samler information fra følgende sider: MusicBrainz, last.fm, allmusic.com og amazon.de, og henter illustrationer fra: fanart.tv, last.fm og allmusic.com. Den kan sættes felt for felt fra de sider du nu måtte ønske at få de pågældende informationer fra.&#10;&#10;Den første søgning er altid på MusicBrainz. Hvis ikke allmusic og/eller amazon.de linkene er tilføjet på MusicBrainz side, kan felter fra allmusic.com og/eller amazon.de ikke hentes (men det er helt enkelt at tilføje de manglende links).</description>
+    <description lang="da">Denne scraper samler information fra følgende sider: MusicBrainz, last.fm, allmusic.com og amazon.de og henter illustrationer fra: fanart.tv, last.fm og allmusic.com. Det kan vælges felt for felt, hvilke sider du ønsker, at få den pågældende information fra.&#10;&#10;Den første søgning er altid på MusicBrainz. Hvis ikke allmusic og/eller amazon.de linkene er tilføjet på MusicBrainz side, kan felter fra allmusic.com og/eller amazon.de ikke hentes (men det er helt enkelt at tilføje de manglende links).</description>
     <description lang="de">Dieser Scaper sammelt Informationen von den folgenden unterstützten Seiten: MusicBrainz, Last.fm, Allmusic.com und Amazon.de und lädt dabei Grafiken von: Fanart.tv, Last.fm und Allmusic.com. Es kann eingestellt werden, von welcher Seite die spezifischen Informationen stammen.⏎ ⏎ Die initialie Suche wird immer über MusicBrainz durchgeführt. Sollten keine Allmusic- und/oder Amazon.de-Links auf der MusicBrainz-Seite gesetzt worden sein, können Felder von Allmusic.com und/oder Amazon.de nicht geladen werden (fehlende Links können jedoch sehr einfach hinzugefügt werden).</description>
     <description lang="el">Αυτό το scraper συλλέγει πληροφορίες από τις ακόλουθες υποστηριζόμενες ιστοσελίδες: MusicBrainz, last.fm, allmusic.com και amazon.de, ενώ λαμβάνει εικόνες από τα: fanart.tv, last.fm και allmusic.com. Μπορεί να οριστεί πεδίο ανά πεδίο αναλόγως των πληροφοριών που επιθυμείτε από την εκάστοτε ιστοσελίδα.&#10;&#10;Η αρχική αναζήτηση γίνεται πάντα στο MusicBrainz. Σε περίπτωση που δεν έχουν προστεθεί σύνδεσμοι για το allmusic ή/και το amazon.de στο MusicBrainz, δε θα μπορούν να ληφθούν πεδία από το allmusic.com ή/και το amazon.de (ωστόσο είναι πολύ εύκολο να προστεθούν αυτοί οι ελλιπείς σύνδεσμοι).</description>
     <description lang="en">This scraper collects information from the following supported sites: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
     <description lang="es">Este scraper recolecta información de las siguientes webs: MusicBrainz, last.fm, allmusic.com y amazon.de, mientras obtiene las imágenes de fanart.tv, last.fm y allmusic.com. Permite especificar de qué web se quiere obtener la información para cada campo. ⏎ ⏎ La búsqueda inicial se realiza siempre en MusicBrainz. En caso de que los enlaces a allmusic y/o amazon.de no estén añadidos en la web de MusicBrainz, no se podrán obtener los campos de información de estos dos sitios (aunque es muy fácil añadir esos enlaces que faltan).</description>
     <description lang="es_AR">Este scraper recolecta información de las siguientes webs: MusicBrainz, last.fm, allmusic.com y amazon.de, mientras obtiene las imágenes de fanart.tv, last.fm y allmusic.com. Permite especificar de qué web se quiere obtener la información para cada campo. ⏎ ⏎ La búsqueda inicial se realiza siempre en MusicBrainz. En caso de que los enlaces a allmusic y/o amazon.de no estén añadidos en la web de MusicBrainz, no se podrán obtener los campos de información de estos dos sitios (aunque es muy fácil añadir esos enlaces que faltan).</description>
     <description lang="es_MX">Este scraper obtiene información de los siguientes sitios soportados: MusicBrainz, last.fm, allmusic.com y amazon.de, mientras obtiene artwork de: fanart.tv, last.fm y allmusic.com. Puede ser configurado campo por campo de que sitio quieres esa información específica.⏎ ⏎ La búsqueda inicial siempre es hecha en MusicBrainz. En el caso en que los enlaces de allmusic y/o amazon.de no son agregados en el sitio de  MusicBrainz, campos de allmusic.com y/o amazon.de no pueden ser obtenidos. (De cualquier manera es muy fácil agregar esos enlaces no encontrados).</description>
+    <description lang="fi">Tämä tiedonhakija käyttää tietolähteinään seuraavia sivustoja:MusicBrainz, last.fm, allmusic.com ja amazon.de. Kuvat ja grafiikat haetaan seuraavilta sivustoilta: fanart.tv, last.fm ja allmusic.com. Voit määrittää tarkasti, miltä sivustoilta mitäkin tietoa haetaan.&#10;&#10;Ensimmäinen haku tehdään aina lähteestä MusicBrainz. Mikäli allmusic- ja/tai amazon.de-linkkejä ei ole lisätty MusicBrainz-sivustolle, haku ei onnistu (mutta puuttuvien linkkien lisääminen on helppoa).</description>
     <description lang="fr">Ce collecteur utilise les informations des sites suivant : MusicBrainz, last.fm, allmusic.com et amazon.de et télécharge les artwork depuis : fanart.tv, last.fm et allmusic.com. Vous pouvez spécifier quel site utiliser pour chaque information à employer.&#10;&#10;Le premier résultat est toujours en provenance de MusicBrainz. Dans le cas où allmusic et/ou amazon.de ne sont pas ajoutés sur le site MusicBrainz, les champs de allmusic.com et/ou amazon.de ne peuvent pas être traités (il est toutefois très simple d'ajouter ces liens manquants).</description>
     <description lang="gl">Este scraper obtén a información dende os seguintes sitios soportados: MusicBrainz, last.fm, allmusic.com e amazon.de, mentres que as ilustracións as obtén dende: fanart.tv, last.fm e allmusic.com. Pódese definir dende que sitios se obterá a información específica de cada campo.&#10;&#10;A busca inicial faise sempre en MusicBrainz. No caso de non estar engadidas as ligazón de allmusic e/ou amazon.de no sitio de MusicBrainz, os campos de allmusic.com e/ou amazon.de non se poderán obter (aínda que é moi doado de engadir as ligazóns).</description>
-    <description lang="he">This scraper collects information from the following supported sites: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
+    <description lang="he">סקרייפר זה אוסף מידע מהתארים הנתמכים הבאים: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, בעוד שמשיכת גרפיקה נעשית דרך: fanart.tv, htbackdrops.com, last.fm and allmusic.com. יש אפשרות להגדיר את זאת שדה אחר שדה מאיזה אתר ברצונך למשוך את המידע הספציפי.⏎ ⏎ החיפוש הפנימי נעשה תמיד דרך MusicBrainz. במקרה שקישור allmusic לא התווסף באתר MusicBrainz, השדות מאת allmusic.com אינן יכולות להימשך (למרות שזה מאוד קל להוסיף את הקישורים הריקים).</description>
     <description lang="hu">A leolvasó szöveges infókat gyűjt a támogatott oldalakról: MusicBrainz, last.fm, allmusic.com and amazon.de, valamint képeket a : fanart.tv, last.fm and allmusic.com-ról. Beállítható hogy honnan, és milyen infót gyűjtsön. A keresés mindig a MusicBrainz-on folyik, de könnyen hozzáadhatjuk a hiányzó találatokat az allmusic.com, vagy az amazon.de-ről.</description>
     <description lang="it">Questo ricercatore prende informazioni dai seguenti siti: MusicBrainz, last.fm, allmusic.com e amazon.de, mentre prende grafica da: fanart.tv, last.fm e allmusic.com. Puoi impostare campo per campo cosa prendere e da dove.⏎ ⏎La ricerca iniziale viene sempre fatta su MusicBrainz. In caso i links a allmusic e/o amazon.de non sono stati messi su MusicBrainz, i campi da questi siti non possono essere recuperati (è molto facile aggiungere quei link, comunque).</description>
+    <description lang="ja">このスクレーパーは、以下のサイトから情報を取得します：MusicBrainz, last.fm, allmusic.com, amazon.de。アートワークは以下のサイトから取得します：fanart.tv, last.fm, allmusic.com。各フィールドごとに、どの情報をどのサイトから取得するか、個別に指定することもできます。&#10;&#10;最初は MusicBrainz を使って検索が行われます。MusicBrainz サイトに allmusic や amazon.de のリンクが追加されていない場合は、allmusic.com / amazon.de からのフィールドは取得できません (リンクを追加するのは簡単ですが)。</description>
     <description lang="ko">This scraper collects information from the following supported sites: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
     <description lang="lt">Šis Scrapers renka informaciją iš šių palaikomų svetainių: MusicBrainz, last.fm, allmusic.com ir/arba amazon.de, o scrap meno kūrinius iš: fanart.tv, last.fm ir/arba allmusic.com. Jis gali būti nustatytas srities lauke, iš kurio puslapio norite, kad konkrečią informaciją paimtu. Pradinė paieška visada atliekama remiantis MusicBrainz. Jei Allmusic ir/ar amazon.de nuorodos nėra įdėtos MusicBrainz svetainėje, laukuose allmusic.com ir/arba amazon.de negali būti realūs (nors įtraukti tas trūkstamas grandis labai lengva).</description>
     <description lang="mk">This scraper collects information from the following supported sites: MusicBrainz, last.fm, allmusic.com and amazon.de, while grabs artwork from: fanart.tv, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.⏎ ⏎ The initial search is always done on MusicBrainz. In case allmusic and/or amazon.de links are not added on the MusicBrainz site, fields from allmusic.com and/or amazon.de cannot be fetched (very easy to add those missing links though).</description>
@@ -7455,6 +7580,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <description lang="pl">Ten scraper zbiera informacje z następujących stron: MusicBrainz, last.fm, allmusic.com oraz amazon.de, a grafiki pobiera z: fanart.tv, last.fm i allmusic.com. Dla każdego pola z informacjami można wybrać osobną stronę.&#10;&#10;Początkowe wyszukiwanie jest zawsze wykonywane na MusicBrainz. Gdy linki do allmusic i/lub amazon.de nie są dodane na stronie MusicBrainz, nie można pobrać tych pól z allmusic.com i/lub amazon.de (pomimo to brakujące linki można bardzo łatwo dodać).</description>
     <description lang="pt">Este scraper recolhe informações dos seguintes sítios:&#10;MusicBrainz, last.fm, allmusic.com e amazon.de, enquanto obtém artwork de: fanart.tv, last.fm e allmusic.com. Pode definir em cada campo o sítio do qual quer obter as informações. A pesquisa inicial é sempre feita no MusicBrainz. Caso os links allmusic e/ou amazon.de não tenham sido adicionados no sítio MusicBrainz, os campos do allmusic.com e/ou amazon.de não serão obtidos (no entanto, é muito fácil adicionar os links em falta). </description>
     <description lang="pt_BR">Este scraper coleta informações nos seguintes sites:&#10;MusicBrainz, last.fm, allmusic.com e amazon.de, enquanto pega os artwork de: fanart.tv, last.fm and allmusic.com. O Mesmo pode ser configurara campo a campo em que site você quer obter informações específicas. A procura inicial é sempre feita no MusicBrainz. No caso allmusic e/ou amazon.de não terem sido adicionados no site MusicBrainz, campos de allmusic.com e/ou amazona.de não serão buscados (embora seja muito fácil adicionar os links faltantes). </description>
+    <description lang="ro">Acest scraper colectează informații de la următoarele site-uri suportate: MusicBrainz, last.fm, allmusic.com și amazon.de. Elementele de grafica sunt accesate din: fanart.tv, last.fm și allmusic.com. Acesta poate fi setat câmp cu câmp de pe care site doriți informațiile specifice sa fie colectate ⏎ ⏎ Căutarea inițială se face întotdeauna pe MusicBrainz. În cazul în care Allmusic și / sau link-ul amazon.de nu sunt adăugate pe MusicBrainz, câmpurile din allmusic.com și / sau amazon.de nu pot fi colectate (este foarte ușor însă de adăugat aceste legături lipsă).</description>
     <description lang="ru">Данный скрапер собирает информацию со следующих сайтов:&#10;MusicBrainz, last.fm, allmusic.com и amazon.de, при этом получая обложки из: fanart.tv, last.fm и allmusic.com. Каждое поле можно настроить так, чтобы оно получало желаемую информацию с определенного вами сайта.⏎ ⏎ Начальный поиск всегда проводится на  MusicBrainz. Для allmusic и/или amazon.de ссылки на сайт MusicBrainz отсутствуют, поля с allmusic.com и/или amazon.de не могут быть заполнены (добавить пропущенные ссылки очень просто).</description>
     <description lang="sk">Tento zdroj získavania dát zbiera informácie z nasledujúcich podporovaných stránok: MusicBrainz, last.fm, allmusic.com a amazon.de, zatiaľ čo umeleckú grafiku získava zo stránok: fanart.tv, last.fm a allmusic.com. Je možné podrobne nastaviť, z ktorej stránky chcete získať konkrétne informácie.&#10;&#10;Počiatočné hľadanie je vždy na stránke MusicBrainz. V prípade, že odkaz pre allmusic a/alebo amazon.de nie je pridaný na stránku MusicBrainz, nie je možné získať údaje zo stránky allmusic.com a/alebo amazon.de (je ale veľmi jednoduché tieto chýbajúce odkazy pridať).</description>
     <description lang="sl">Ta ponudnik združuje informacije s sledečih strani: MusicBrainz, last.fm, allmusic.com in amazon.de; grafike prenaša z: fanart.tv, last.fm in allmusic.com. Vsako informacijo lahko prenesete z različne strani.&#10;&#10;Začeno iskanje je vedn na MusicBrainz. V primeru, da na MusicBrainz ni povezave do allmusic.com in/ali amazon.de, informacij od tam ne morete prenesti (a to težavo hitro lahko odpravite).</description>
@@ -7466,7 +7592,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.albums.theaudiodb.com"
        name="TheAudioDb Album Scraper"
-       version="1.0.2"
+       version="1.0.3"
        provider-name="Olympia, Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -7492,6 +7618,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="he">TheAudioDb סקרייפר שלבומים</summary>
     <summary lang="hu">TheAudioDb album leolvasó</summary>
     <summary lang="it">Scraper degli album TheAudioDb</summary>
+    <summary lang="ja">TheAudioDb アルバムスクレーパー</summary>
     <summary lang="ko">TheAudioDb 앨범 자료수집기</summary>
     <summary lang="mk">TheAudioDb Album Scraper</summary>
     <summary lang="nl">TheAudioDb Album Scraper</summary>
@@ -7500,6 +7627,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="pt_BR">Scraper Álbum TheAudioDB</summary>
     <summary lang="ro">Catalog de albume TheAudioDb</summary>
     <summary lang="ru">Скрапер альбомов TheAudioDb</summary>
+    <summary lang="sk">Zdroj získavania dát o albumoch zo stránky TheAudioDb</summary>
     <summary lang="sl">Ponudnik informacij o albumih TheAudioDb</summary>
     <summary lang="sv">TheAudioDb Albumskrapa</summary>
     <summary lang="zh">TheAudioDb专辑资料</summary>
@@ -7513,10 +7641,13 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <description lang="en">TheAudioDB.com is a community driven database of audio releases. It is our aim to be the most simple, easy to use and accurate source for Music metadata on the web. We also provide an API to access our repository of data so it can be used in many popular HTPC and Mobile apps to give you the best possible audio experience without the hassle.</description>
     <description lang="es">TheAudioDB.com es una base de datos impulsada por la comunidad de los contenidos de audio. Nuestro objetivo es ser la fuente más simple, fácil de usar y precisa para los metadatos de música en la web. También proporcionamos una API para acceder a nuestro repositorio de datos para que pueda ser utilizado en los mas populares HTPC y aplicaciones móviles para darle la mejor experiencia de audio posible sin molestias.</description>
     <description lang="es_AR">TheAudioDb.com es una base de datos de publicaciones de audio manejada por la comunidad. Nuestro objetivo es ser la fuente de metadata de Música más simple, fácil de usar y precisa de internet. También tenemos una API para acceder a nuestro repositorio de datos para ser usada en cualquiera de los más famosos sistemas para HTPC o aplicaciones móviles para darte la mejor experiencia en audio.</description>
+    <description lang="fi">TheAudioDB.com on yhteisön ylläpitämä ja päivittämä tietokanta audiojulkaisuista. Tavoitteenamme on olla Internetin yksinkertaisin, helppokäyttöisin ja virheettömin tietolähde musiikin metadatalle. Tarjoamme myös rajapinnan datalle, jolloin sivustoa on helppo käyttää eri viihdekeskuksissa ja mobiilisovelluksissa.</description>
+    <description lang="fr">TheAudioDB.com est une communauté intégrant une base de données des sorties audio. Notre but est d'être la plus simple, la plus facile à utiliser et la plus efficace source de métadonnées musicale sur le web. Nous fournissons une bibliothèque de programmation permettant l'accès à nos données facilement afin de l'utiliser sur tous les supports d'applications mobile et HTPC pour garantir la meilleure expérience audio possible.</description>
     <description lang="gl">TheAudioDB.com e una base de datos de lanzamentos de audio impulsada por unha comunidade. O noso obxectivo é ser unha fonte de música o máis simple, doada de usar e exacta posíbel no web, tamén fornecemos dun API que poida ser usado para acceder ao noso repositorio de datos dende moitos dos máis populares HTPCs e aplicacións mobéis para ofrecerte a mellor experiencia sonora sen problemas.</description>
     <description lang="he">TheAudioDb היא קהילה אשר מכילה מסד נתונים עבור אודיו. המטרה שלנו להיות הכי פשוטים וקלים עבור שימוש והשגת מקור לנתוני מוזיקה ברשת. כמוכן אנחנו מעניקים API כדי לגשת למקור הנתונים כדי שניתן יהיה להשתמש במחשבי HTPC ואפליקציות ניידות כדי להעניק לך את חווית האודיו הכי טובה שיש ללא כל מאמץ.</description>
     <description lang="hu">A TheAudioDB.com webhely egy közösség által fejlesztett zenei adatbázis. A célunk, hogy a legegyszerűbb, könnyen használható és pontos forrás legyünk a zenével kapcsolatos adatok eléréséhez. Biztosítunk egy alkalmazási felületet (API) a tárhelyünkön található adatok elérésére, hogy számos HTPC és mobil alkalmazás elérhesse azt, ezáltal biztosítva a lehető legteljesebb zenei élményt.</description>
     <description lang="it">TheAudioDB.com è un database comunitario di uscite audio. Il nostro obiettivo è di essere la fonte più semplice, facile da usare e precisa per i metadati musica sul web. Forniamo anche una API per accedere al nostro archivio di dati in modo che possa essere utilizzato in molti HTPC popolari e applicazioni mobili per darvi la migliore esperienza audio possibile; senza fastidio.</description>
+    <description lang="ja">TheAudioDB.com はコミュニティベースで運営される音楽リリースのデータベースです。Web 上で最もシンプルで使いやすく、そして正確な音楽メタデータを目指しています。私たちのリポジトリにアクセスする API も公開しており、HTPC やモバイルアプリから簡単に利用できるようになっています。</description>
     <description lang="ko">TheAudioDB.com은 커뮤니티 지향의 오디오 데이터베이스입니다. 가장 단순하고, 사용하기 쉽고, 정확한 음악 메타데이터를 제공하는 것이 우리의 목표입니다. 우리는 또한 우리의 데이터 저장소에 접근할 수 있는 API를 제공해서 이를 이용하는 많은 HTPC와 모바일앱이 최선의 오디오 경험을 제공할 수 있도록 합니다.</description>
     <description lang="mk">TheAudioDB.com is a community driven database of audio releases. It is our aim to be the most simple, easy to use and accurate source for Music metadata on the web. We also provide an API to access our repository of data so it can be used in many popular HTPC and Mobile apps to give you the best possible audio experience without the hassle.</description>
     <description lang="nl">TheAudioDB.com is een gemeenschap gedreven database van audio releases. Het is ons doel om de meest eenvoudige, makkelijk te gebruiken en nauwkeurige bron voor muziek metadata op het web. We bieden ook een API om onze repository van toegang tot de gegevens, zodat het kan worden gebruikt in vele populaire HTPC en mobiele apps om u de best mogelijke audio-ervaring zonder het gedoe.</description>
@@ -7525,6 +7656,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <description lang="pt_BR">TheAudioDB.com é um banco de dados que orienta a comunidade dos lançamentos de áudio. O nosso objetivo é ser a fonte mais simples, fácil de usar e precisa de metadados de Músicas na web. Nós também fornecemos uma API para acessar nosso repositório de dados para que possa ser usado em muitos HTPC populares e aplicativos móveis para dar-lhe a melhor experiência de áudio possível sem ter incômodos.</description>
     <description lang="ro">TheAudioDB.com este o bază de date de lansări audio completată de către comunitate. Țelul nostru este fim sursa cea mai simplă, ușor de folosit și precisă pentru informații muzicale de pe web. De asemenea oferim și un API pentru accesul la depozitul nostru de date pentru a putea fi folosit în HTPC-urile și aplicațiile mobile populare pentru a vă oferi cea mai bună experiență audio posibilă fără prea mare efort.</description>
     <description lang="ru">TheAudioDb.com это публичная база аудио. Наша цель - быть самым простым, удобным и точным источником сетевых аудио метаданных. У нас имеется API для доступа к нашему хранилищу данных, которое можно использовать в популярных HTPC и мобильных приложениях для получения вами лучших аудио-впечатлений без каких-либо проблем.</description>
+    <description lang="sk">TheAudioDB.com je komunitná databáza vydaných audio nahrávok. Naším cieľom je byť tým najjednoduchším, jednoducho použiteľným a presným zdrojom metadát súvisiacich s hudbou na internete. Tiež poskytujeme API rozhranie na prístup do nášho repozitára s dátami, takže je možné ich využiť v mnohých populárnych HTPC a mobilných aplikáciách a dať vám tak najlepší možný audio zážitok bez zbytočného obťažovania.</description>
     <description lang="sl">TheAudioDB.com je glasbena baza, ki jo ureja skupnost. Naš cilj je postati najbolj preprost, lahkeh za uporabo in točen vir informacij o glasbi na spletu. Ponujamo API za dostop do podatkov za uporabo v priljubljenih aplikacijah za HTPC-je in mobilne naprave za kar najboljšo izkušnjo poslušanja glasbe.</description>
     <description lang="sv">TheAudioDB.com är en communitydriven databas över ljudutgivning. Vårt mål är att vara den enklaste, mest användarvänliga och mest korrekta källan för metadata på webben. Vi erbjuder även en API för tillgång till vår datakatalog, som kan användas i många populära HTPC och mobilapplikationer för att ge dig den bästa möjliga ljudupplevelsen utan krångel.</description>
     <description lang="zh">TheAudioDB.com是一个社区驱动的音乐资料库。我们的目标是简单、便利和精确的提供网络音乐元数据。我们提供访问数据库的API，以支持多种流行的HTPC和移动应用程序，为你提供无障碍的最佳音乐体验。</description>
@@ -7534,7 +7666,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.artists.theaudiodb.com"
        name="TheAudioDb Artist Scraper"
-       version="1.0.3"
+       version="1.0.4"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -7556,9 +7688,11 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="es">Scraper de Artistas de TheAudioDb</summary>
     <summary lang="es_AR">Scraper de Artistas TheAudioDb</summary>
     <summary lang="fr">Scraper Artiste TheAudioDb</summary>
+    <summary lang="gl">Scraper de artistas de TheAudioDb</summary>
     <summary lang="he">TheAudioDb סקרייפר אמנים</summary>
     <summary lang="hu">TheAudioDb előadó leolvasó</summary>
     <summary lang="it">Scraper artisti TheAudioDb</summary>
+    <summary lang="ja">TheAudioDb アーティストスクレーパー</summary>
     <summary lang="ko">TheAudioDb 아티스트 자료수집기</summary>
     <summary lang="mk">TheAudioDb Artist Scraper</summary>
     <summary lang="nl">TheAudioDb Artiesten Scraper</summary>
@@ -7567,6 +7701,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="pt_BR">Scraper Artista TheAudioDB</summary>
     <summary lang="ro">Informaţii artişti de la TheAudioDb</summary>
     <summary lang="ru">Скрапер исполнителей TheAudioDb</summary>
+    <summary lang="sk">Zdroj získavania dát o umelcoch zo stránky TheAudioDb</summary>
     <summary lang="sl">Ponudnik informacij o izvajalcih TheAudioDb</summary>
     <summary lang="sv">TheAudioDb artistskrapa</summary>
     <summary lang="zh">TheAudioDb艺人资料</summary>
@@ -7580,9 +7715,13 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <description lang="en">TheAudioDB.com is a community driven database of audio releases. It is our aim to be the most simple, easy to use and accurate source for Music metadata on the web. We also provide an API to access our repository of data so it can be used in many popular HTPC and Mobile apps to give you the best possible audio experience without the hassle.</description>
     <description lang="es">TheAudioDB.com es una base de datos impulsada por la comunidad de los contenidos de audio. Nuestro objetivo es ser la fuente más simple, fácil de usar y precisa para los metadatos de música en la web. También proporcionamos una API para acceder a nuestro repositorio de datos para que pueda ser utilizado en los mas populares HTPC y aplicaciones móviles para darle la mejor experiencia de audio posible sin molestias.</description>
     <description lang="es_AR">TheAudioDb.com es una base de datos de publicaciones de audio manejada por la comunidad. Nuestro objetivo es ser la fuente de metadata de Música más simple, fácil de usar y precisa de internet. También tenemos una API para acceder a nuestro repositorio de datos para ser usada en cualquiera de los más famosos sistemas para HTPC o aplicaciones móviles para darte la mejor experiencia en audio.</description>
+    <description lang="fi">TheAudioDB.com on yhteisön ylläpitämä ja päivittämä tietokanta audiojulkaisuista. Tavoitteenamme on olla Internetin yksinkertaisin, helppokäyttöisin ja virheettömin tietolähde musiikin metadatalle. Tarjoamme myös rajapinnan datalle, jolloin sivustoa on helppo käyttää eri viihdekeskuksissa ja mobiilisovelluksissa.</description>
+    <description lang="fr">TheAudioDB.com est une communauté intégrant une base de données des sorties audio. Notre but est d'être la plus simple, la plus facile à utiliser et la plus efficace source de métadonnées musicale sur le web. Nous fournissons une bibliothèque de programmation permettant l'accès à nos données facilement afin de l'utiliser sur tous les supports d'applications mobile et HTPC pour garantir la meilleure expérience audio possible.</description>
+    <description lang="gl">TheAudioDB.com é unha base de batos de lanzamentos musicais mantida pola comunidade. O noso obxectivo e facer a fonte de metadatos musicais mas simple, precisa e doada de usar da web. Tamén provemos dun API para o acceso ó noso repositorio de datos para que poda ser usado por os HTPCs máis populares e por aplicacións móbiles brindándolle a mellor experiencia sonora posíbel sen ningunha molestia.</description>
     <description lang="he">TheAudioDb היא קהילה אשר מכילה מסד נתונים עבור אודיו. המטרה שלנו להיות הכי פשוטים וקלים עבור שימוש והשגת מקור לנתוני מוזיקה ברשת. כמוכן אנחנו מעניקים API כדי לגשת למקור הנתונים כדי שניתן יהיה להשתמש במחשבי HTPC ואפליקציות ניידות כדי להעניק לך את חווית האודיו הכי טובה שיש ללא כל מאמץ.</description>
     <description lang="hu">A TheAudioDB.com webhely egy közösség által fejlesztett zenei adatbázis. A célunk, hogy a legegyszerűbb, könnyen használható és pontos forrás legyünk a zenével kapcsolatos adatok eléréséhez. Biztosítunk egy alkalmazási felületet (API) a tárhelyünkön található adatok elérésére, hogy számos HTPC és mobil alkalmazás elérhesse azt, ezáltal biztosítva a lehető legteljesebb zenei élményt.</description>
     <description lang="it">TheAudioDB.com è un database guidato dalla comunità di uscite audio. Il nostro obiettivo è di essere la fonte più semplice, facile da usare e accurata per i metadati musica sul web. Forniamo anche una API per accedere al nostro archivio dati in modo che possa essere utilizzato in molti HTPC e applicazioni mobili popolari per darvi la migliore esperienza audio possibile senza problemi.</description>
+    <description lang="ja">TheAudioDB.com はコミュニティベースで運営される音楽リリースのデータベースです。Web 上で最もシンプルで使いやすく、そして正確な音楽メタデータを目指しています。私たちのリポジトリにアクセスする API も公開しており、HTPC やモバイルアプリから簡単に利用できるようになっています。</description>
     <description lang="ko">TheAudioDB.com은 커뮤니티 지향의 오디오 데이터베이스입니다. 가장 단순하고, 사용하기 쉽고, 정확한 음악 메타데이터를 제공하는 것이 우리의 목표입니다. 우리는 또한 우리의 데이터 저장소에 접근할 수 있는 API를 제공해서 이를 이용하는 많은 HTPC와 모바일앱이 최선의 오디오 경험을 제공할 수 있도록 합니다.</description>
     <description lang="mk">TheAudioDB.com is a community driven database of audio releases. It is our aim to be the most simple, easy to use and accurate source for Music metadata on the web. We also provide an API to access our repository of data so it can be used in many popular HTPC and Mobile apps to give you the best possible audio experience without the hassle.</description>
     <description lang="nl">TheAudioDB.com is een gemeenschap gedreven database van audio releases. Het is ons doel om de meest eenvoudige, makkelijk te gebruiken en nauwkeurige bron voor muziek metadata op het web. We bieden ook een API om onze repository van toegang tot de gegevens, zodat het kan worden gebruikt in vele populaire HTPC en mobiele apps om u de best mogelijke audio-ervaring zonder het gedoe.</description>
@@ -7591,6 +7730,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <description lang="pt_BR">TheAudioDB.com é um banco de dados orientando a comunidade os lançamentos de áudio. O nosso objetivo é ser a fonte mais simples, fácil de usar e precisa de metadados de Música na web. Nós também fornecemos uma API para acessar nosso repositório de dados para que possa ser usado em muitos HTPC populares e aplicativos móveis para dar-lhe a melhor experiência de áudio possível sem incômodo.</description>
     <description lang="ro">TheAudioDb.com este o bază de date construită de către comunitate despre materiale audio. Dorim să devenim cea mai simplu de utilizat sursă corectă de informaţii despre muzică de pe web. De asemenea oferim acces prin API la aceste informaţii pentru a putea fi folosită în diverse aplicaţii populare HTPC şi mobile oferind astfel cea mai bună experienţă audio.</description>
     <description lang="ru">TheAudioDb.com это публичная база аудио. Наша цель - быть самым простым, удобным и точным источником сетевых аудио метаданных. У нас имеется API для доступа к нашему хранилищу данных, которое можно использовать в популярных HTPC и мобильных приложениях для получения вами лучших аудио-впечатлений без каких-либо проблем.</description>
+    <description lang="sk">TheAudioDB.com je komunitná databáza vydaných audio nahrávok. Naším cieľom je byť tým najjednoduchším, jednoducho použiteľným a presným zdrojom metadát súvisiacich s hudbou na internete. Tiež poskytujeme API rozhranie na prístup do nášho repozitára s dátami, takže je možné ich využiť v mnohých populárnych HTPC a mobilných aplikáciách a dať vám tak najlepší možný audio zážitok bez zbytočného obťažovania.</description>
     <description lang="sl">TheAudioDB.com je glasbena baza, ki jo ureja skupnost. Naš cilj je postati najbolj preprost, lahkeh za uporabo in točen vir informacij o glasbi na spletu. Ponujamo API za dostop do podatkov za uporabo v priljubljenih aplikacijah za HTPC-je in mobilne naprave za kar najboljšo izkušnjo poslušanja glasbe.</description>
     <description lang="sv">TheAudioDB.com är en gemenskapsdriven databas med musikutgivningar. Det är vårt mål att bli den enklaste att använda och mest korrekta källan för musikmetadata på webben. Vi erbjuder också ett API för att ansluta till vår datakälla så den kan användas i många populära HTPC och mobila appar för att ge dig den bästa ljudupplevelsen utan krångel.</description>
     <description lang="zh">TheAudioDB.com是一个社区驱动的音乐资料库。我们的目标是简单、便利和精确的提供网络音乐元数据。我们提供访问数据库的API，以支持多种流行的HTPC和移动应用程序，为你提供无障碍的最佳音乐体验。</description>
@@ -7600,7 +7740,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.artists.universal"
        name="Universal Artist Scraper"
-       version="2.4.1"
+       version="2.4.2"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -7615,21 +7755,25 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
              language="en"
              library="artistuniversal.xml"/>
   <extension point="xbmc.addon.metadata">
+    <summary lang="af">Universal Skraper vir Kunstenaars</summary>
     <summary lang="be">Universal Scraper for Artists</summary>
     <summary lang="bg">Универсален източник за информация за артисти</summary>
     <summary lang="ca">Arreplegador universal per artistes</summary>
     <summary lang="cs">Univerzální zdroj získávání dat pro umělce</summary>
-    <summary lang="da">Universel scraper til kunstnere</summary>
+    <summary lang="da">Universel Scraper til Kunstnere</summary>
     <summary lang="de">Universal Scraper für Interpreten</summary>
     <summary lang="el">Universal Scraper Καλλιτεχνών</summary>
     <summary lang="en">Universal Scraper for Artists</summary>
     <summary lang="es">Scraper universal para artistas</summary>
     <summary lang="es_AR">Scraper Universal para Artistas</summary>
     <summary lang="es_MX">Scraper Universal de Artistas</summary>
+    <summary lang="fi">Universaali artistien tiedonhakija</summary>
     <summary lang="fr">Collecteur universel d'artistes</summary>
+    <summary lang="gl">Scraper Universal para Artistas</summary>
     <summary lang="he">Universa סקרייפר אמנים</summary>
     <summary lang="hu">Univerzális előadó leolvasó</summary>
     <summary lang="it">Scraper universale degli artisti</summary>
+    <summary lang="ja">汎用アーティストスクレーパー</summary>
     <summary lang="ko">Universal Scraper for Artists</summary>
     <summary lang="lt">Universalus Artistų Scrapers</summary>
     <summary lang="mk">Universal Scraper for Artists</summary>
@@ -7637,25 +7781,31 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="pl">Universal Scraper dla Artystów muzycznych</summary>
     <summary lang="pt">Scraper universal para Artistas</summary>
     <summary lang="pt_BR">Scraper Universal para Artistas</summary>
+    <summary lang="ro">Scraper universal pentru artisti</summary>
     <summary lang="ru">Универсальный скрапер для исполнителей</summary>
     <summary lang="sk">Univerzálny zdroj získavania dát pre umelcov</summary>
     <summary lang="sl">Univerzalen ponudnik informacij o izvajalcih</summary>
     <summary lang="sv">Universiell artistskrapa</summary>
     <summary lang="zh">通用艺术家信息刮削器</summary>
+    <description lang="af">Hierdie skraper versamel informasie van die volgende ondersteunde werwe: TheAudioDb.com, MusicBrainz, last.fm, en allmusic.com, terwyl kunswerke gryp van: fanart.tv, htbackdrops.com, last.fm en allmusic.com. Dit kan veld vir veld gestel word vanaf watter werf jy die spesifike informasie wil hê.&#10;&#10;Die aanvanklike soektog word altyd op MusicBrainz gedoen. Ingeval die allmusic skakel nie bygevoeg is op die MusicBrainz werf, kan velde van allmusic.com nie gaan haal word nie (egter baie maklik om daardie ontbrekende skakels by te voeg).</description>
     <description lang="be">This scraper collects information from the following supported sites: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, while grabs artwork from: fanart.tv, htbackdrops.com, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic link is not added on the MusicBrainz site fields from allmusic.com cannot be fetched (very easy to add those missing links though).</description>
     <description lang="bg">Сваля информация от следните сайтове: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com. Изобрания извлича от: fanart.tv, htbackdrops.com, last.fm and allmusic.com. Можете да определите от кой сайт каква информация да се сваля.&#10;&#10;Първоначалното търсене винаги се прави в MusicBrainz. Когато не е налична препратка към allmusic.com на сайта на MusicBrainz извличането на информация от allmusic.com става невъзможно (добавянето на препратка е много лесно).</description>
     <description lang="ca">Aquest arreplegador recull informació dels següents llocs suportats</description>
     <description lang="cs">Tento zdroj dat získává informace z následujících podporovaných stránek: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, while grabs artwork from: fanart.tv, htbackdrops.com, last.fm a allmusic.com. Lze nastavit jakou informaci stahovat z jakých stránek.&#10;&#10;Základní hledání je vždy provedeno na MusicBrainz. V případě, že schází odkaz allmusic na stránce MusicBrains, nelze stáhnout informace z allmusic.com (avšak je velmi snadné chybějící odkazy přidat).</description>
-    <description lang="da">Denne scraper samler information fra følgende sider: TheAudioDb.com, MusicBrainz, last.fm, og allmusic.com, og henter illustrationer fra: fanart.tv, htbackdrops.com, last.fm og allmusic.com. Den kan sættes felt for felt fra de sider du nu måtte ønske at få de pågældende informationer fra.&#10;&#10;Den første søgning er altid på MusicBrainz. Hvis ikke allmusic linket er tilføjet på MusicBrainz side, kan felter fra allmusic.com ikke hentes (men det er helt enkelt at tilføje de manglende links).</description>
+    <description lang="da">Denne scraper samler information fra følgende sider: TheAudioDb.com, MusicBrainz, last.fm, og allmusic.com, og henter illustrationer fra: fanart.tv, htbackdrops.com, last.fm og allmusic.com. Det kan vælges felt for felt, fra hvilke sider du ønsker, at få de pågældende informationer fra.&#10;&#10;Den første søgning er altid på MusicBrainz. Hvis ikke allmusic linket er tilføjet på MusicBrainz side, kan felter fra allmusic.com ikke hentes (men det er helt enkelt at tilføje de manglende links).</description>
     <description lang="de">Dieser Scraper unterstützt das Sammeln von Informationen von den folgenden Seiten: TheAudioDb.com, MusicBrainz, last.fm, und allmusic.com, Grafiken werden geladen von: fanart.tv, htbackdrops.com, last.fm und allmusic.com. Es kann Feld für Feld festgelegt werden welche Information von welcher Seite geladen werden soll.&#10;&#10;Die erste Suche wird immer auf  MusicBrainz durchgeführt. Sollte der allmusic link auf der MusicBrainz Seite fehlen, können keine Informationen von allmusic geladen werden. (diese fehlenden links können sehr leicht nachgetragen werden).</description>
     <description lang="el">Αυτό το scraper συλλέγει πληροφορίες από τις ακόλουθες υποστηριζόμενες ιστοσελίδες: TheAudioDb.com, MusicBrainz, last.fm και allmusic.com, ενώ λαμβάνει εικόνες από τα: fanart.tv, htbackdrops.com, last.fm και allmusic.com. Μπορεί να οριστεί πεδίο ανά πεδίο αναλόγως των πληροφοριών που επιθυμείτε από την εκάστοτε ιστοσελίδα.&#10;&#10;Η αρχική αναζήτηση γίνεται πάντα στο MusicBrainz. Σε περίπτωση που δεν έχουν προστεθεί σύνδεσμοι για το allmusic στο MusicBrainz, δε θα μπορούν να ληφθούν πεδία από το allmusic.com (ωστόσο είναι πολύ εύκολο να προστεθούν αυτοί οι ελλιπείς σύνδεσμοι).</description>
     <description lang="en">This scraper collects information from the following supported sites: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, while grabs artwork from: fanart.tv, htbackdrops.com, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic link is not added on the MusicBrainz site fields from allmusic.com cannot be fetched (very easy to add those missing links though).</description>
     <description lang="es">Este scraper recopila información de las siguientes webs: TheAudioDb.com, MusicBrainz, last.fm y allmusic.com, mientras obtiene las imágenes de fanart.tv, htbackdrops.com, last.fm y allmusic.com. Permite especificar de qué web se quiere obtener la información específica. ⏎ ⏎ La búsqueda inicial se realiza siempre en MusicBrainz. En caso de que los enlaces a allmusic no estén añadidos en la web de MusicBrainz, no se podrán obtener los campos de información de este sitio (aunque es muy fácil añadir esos enlaces que faltan).</description>
     <description lang="es_AR">Este scraper recopila información de las siguientes webs: TheAudioDb.com, MusicBrainz, last.fm y allmusic.com, mientras que obtiene las imágenes de fanart.tv, htbackdrops.com, last.fm y allmusic.com. Permite especificar de qué web se quiere obtener la información específica. ⏎ ⏎ La búsqueda inicial se realiza siempre en MusicBrainz. En caso de que los enlaces a allmusic no estén añadidos en la web de MusicBrainz, no se podrán obtener los campos de información de este sitio (aunque es muy fácil añadir esos enlaces que faltan).</description>
     <description lang="es_MX">Este scraper obtiene información de los siguientes sitios soportados: TheAudioDb.com, MusicBrainz, last.fm y allmusic.com, mientras obtiene artwork de: fanart.tv, htbackdrops.com, last.fm y allmusic.com. Puede ser configurado campo por campo de que sitio quieres esa información específica.⏎ ⏎ La búsqueda inicial siempre es hecha en MusicBrainz. En el caso en que los enlaces de allmusic no son agregados en el sitio de  MusicBrainz, campos de allmusic.com no pueden ser obtenidos. (De cualquier manera es muy fácil agregar esos enlaces no encontrados).</description>
+    <description lang="fi">Tämä tiedonhakija käyttää tietolähteinään seuraavia sivustoja: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com. Kuvat ja grafiikat haetaan seuraavilta sivustoilta: fanart.tv, htbackdrops.com, last.fm and allmusic.com. Voit määrittää tarkasti, miltä sivustoilta mitäkin tietoa haetaan.&#10;&#10;Ensimmäinen haku tehdään aina lähteestä MusicBrainz. Mikäli allmusic-linkkiä ei ole lisätty MusicBrainz-sivustolle allmusic.com-osoitteessa, haku ei onnistu (mutta puuttuvien linkkien lisääminen on helppoa).</description>
     <description lang="fr">Ce collecteur répertorie les informations des sites suivants : TheAudioDb.com, MusicBrainz, Last.fm et allmusic.com tout en assemblant les illustrations depuis : fanart.tv, htbackdrops.com, last.fm et allmusic.com. Vous pouvez définir la source d'information pour chaque champ.&#10;&#10;La recherche initiale est toujours faite à partir de MusicBrainz. xxxxxxxx (en attente du retour de l'équipe xbmc) xxxxxxxxxxx</description>
+    <description lang="gl">Este scraper recolle información dos seguintes sitios:&#10;TheAudioDb.com, MusicBrainz, last.fm e allmusic.com, mentres que, obtén as imaxes de: fanart.tv, htbackdrops.com, last.fm e allmusic.com. Pode definir en cada campo o sitio de onde quere obter a información.&#10;&#10;A busca inicial é feita sempre no MusicBrainz, no caso de que a ligazón a allmusic non se teña engadido nos campos do sítio MusicBrainz dende allmusic.com, non se poderán obter (aínda que, é moi doado engadir as ligazóns que faltan).</description>
+    <description lang="he">סקרייפר זה אוסף מידע מהתארים הנתמכים הבאים: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, בעוד שמשיכת גרפיקה נעשית דרך: fanart.tv, htbackdrops.com, last.fm and allmusic.com. יש אפשרות להגדיר את זאת שדה אחר שדה מאיזה אתר ברצונך למשוך את המידע הספציפי.⏎ ⏎ החיפוש הפנימי נעשה תמיד דרך MusicBrainz. במקרה שקישור allmusic לא התווסף באתר MusicBrainz, השדות מאת allmusic.com אינן יכולות להימשך (למרות שזה מאוד קל להוסיף את הקישורים הריקים).</description>
     <description lang="hu">Ez a leolvasó a következő weboldalakról gyűjti be az adatokat:  TheAudioDb.com, MusicBrainz, last.fm és allmusic.com, míg képeket a következő oldalakról gyűjt: fanart.tv, htbackdrops.com, last.fm és allmusic.com. Egyenként beállítható, hogy az adott mezőt melyik weboldalról töltse fel⏎ ⏎ A kiinduló keresés mindig a MusicBrainz. Amennyiben az allmusic utalás nincs hozzáadva MusicBrainz oldalhoz, a mezők nem tölthetők le az allmusic.com oldalról (a hiányzó utalások hozzáadása azonban nagyon egyszerű).</description>
     <description lang="it">Lo scraper colleziona informazioni da questi siti supportati: TheAudioDb.com, MusicBrainz, last.fm, e allmusic.com, mentre ottiene le grafiche da: fanart.tv, htbackdrops.com, last.fm e allmusic.com. Può essere impostato campo per campo da quale sito vuoi la specifica informazione.&#10;&#10;La ricerca iniziale è sempre fatta su MusicBrainz. Nel caso che il link allmusic non è stato aggiunto al campo del sito MusicBrainz da allmusic.com; non possono essere ottenute (è comunque veramente facile aggiungere questi link mancanti).</description>
+    <description lang="ja">このスクレーパーは、以下のサイトから情報を取得します：TheAudioDb.com, MusicBrainz, last.fm, allmusic.com。アートワークは以下のサイトから取得します：fanart.tv, htbackdrops.com, last.fm, allmusic.com。各フィールドごとに、どの情報をどのサイトから取得するか、個別に指定することもできます。&#10;&#10;最初は MusicBrainz を使って検索が行われます。MusicBrainz サイトに allmusic のリンクが追加されていない場合は、allmusic.com からのフィールドは取得できません (リンクを追加するのは簡単ですが)。</description>
     <description lang="ko">This scraper collects information from the following supported sites: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, while grabs artwork from: fanart.tv, htbackdrops.com, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic link is not added on the MusicBrainz site fields from allmusic.com cannot be fetched (very easy to add those missing links though).</description>
     <description lang="lt">Šis Scrapers renka informaciją iš šių palaikomų svetainių: TheAudioDb.com, MusicBrainz, last.fm, ir allmusic.com, ir atsiunčia meno kūrinius iš: fanart.tv, htbackdrops.com, last.fm ir allmusic.com. Jis gali būti nustatyti lauko srityje, kurioje svetainėje norite, kad konkrečiu atveju pradinė informacijos pradinis paieška visada bus atlikta remiantis MusicBrainz. Allmusic nuoroda įdėta į MusicBrainz vietoje laukų allmusic.com negali būti (nors tas trūkstamas grandis labai lengva įtraukti).</description>
     <description lang="mk">This scraper collects information from the following supported sites: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, while grabs artwork from: fanart.tv, htbackdrops.com, last.fm and allmusic.com. It can be set field by field that from which site you want that specific information.&#10;&#10;The initial search is always done on MusicBrainz. In case allmusic link is not added on the MusicBrainz site fields from allmusic.com cannot be fetched (very easy to add those missing links though).</description>
@@ -7663,6 +7813,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <description lang="pl">Ten scraper zbiera informacje z następujących stron: TheAudioDb.com, MusicBrainz, last.fm, and allmusic.com, a grafiki pobiera z: </description>
     <description lang="pt">Este scraper recolhe informações dos seguintes sítios:&#10;TheAudioDb.com, MusicBrainz, last.fm e allmusic.com, enquanto obtém artwork de: fanart.tv, htbackdrops.com, last.fm e allmusic.com. Pode definir em cada campo o sítio de onde quer obter as informações.⏎ ⏎ A pesquisa inicial é sempre feita no MusicBrainz. Caso uma ligação allmusic não tenha sido adicionada no sítio MusicBrainz, os campos do allmusic.com não serão obtidos (no entanto, é muito fácil adicionar os links em falta).</description>
     <description lang="pt_BR">Este scraper coleta informações nos seguintes sites:&#10;MusicBrainz, last.fm, allmusic.com e amazon.de, enquanto pega os artwork de: fanart.tv, last.fm and allmusic.com. O Mesmo pode ser configurara campo a campo em que site você quer obter informações específicas. A procura inicial é sempre feita no MusicBrainz. No caso allmusic e/ou amazon.de não terem sido adicionados no site MusicBrainz, campos de allmusic.com e/ou amazona.de não serão buscados (embora seja muito fácil adicionar os links faltantes). </description>
+    <description lang="ro">Acest scraper colectează informații de la următoarele site-uri suportate: TheAudioDb.com, MusicBrainz, last.fm, și allmusic.com, și opere de artă de la: fanart.tv, htbackdrops.com, last.fm și allmusic.com. Poate fi setat câmp cu câmp de pe care site-ul doriți informații specifice ⏎ ⏎ căutarea inițială se face întotdeauna face pe MusicBrainz.. În cazul în care link-ul Allmusic nu este adăugat la MusicBrainz, allmusic.com nu poate fi folosit (însă este relativ ușor să adăugați aceste link-uri lipsă).</description>
     <description lang="ru">Этот скрапер собирает информацию со следующих сайтов: TheAudioDb.com, MusicBrainz, last.fm и allmusic.com, при этом получая обложки с: fanart.tv, htbackdrops.com, last.fm и allmusic.com. Каждое поле может быть настроено для получения определенной информации с желаемого вами сайта.⏎ ⏎ Первичный поиск всегда производится на MusicBrainz. Если линк для allmusic не добавлен на сайте MusicBrainz, то поля с allmusic.com не могут быть заполнены (добавить отсутствующие ссылки очень легко).</description>
     <description lang="sk">Tento zdroj získavania dát zbiera infomácie z nasledujúcich podporovaných stránok: TheAudioDb.com, MusicBrainz, last.fm a allmusic.com. Grafiku získava zo stránok: fanart.tv, htbackdrops.com, last.fm a allmusic.com. Je možné podrobne nastaviť, z ktorej stránky chcete získať konkrétne informácie.&#10;&#10;Počiatočné hľadanie je vždy na stránke MusicBrainz. V prípade, že odkaz pre allmusic nie je pridaný na stránku MusicBrainz, nie je možné získať údaje zo stránky allmusic.com (je ale veľmi jednoduché tieto chýbajúce odkazy pridať).</description>
     <description lang="sl">Ta ponudnik združuje informacije s sledečih strani: TheAudioDb.com, MusicBrainz, last.fm in allmusic.com; grafike prenaša z: fanart.tv, htbackdrops.com, last.fm in allmusic.com. Vsako informacijo lahko prenesete z različne strani.&#10;&#10;Začeno iskanje je vedn na MusicBrainz. V primeru, da na MusicBrainz ni povezave do allmusic.com, informacij od tam ne morete prenesti (a to težavo hitro lahko odpravite).</description>
@@ -7875,7 +8026,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.musicvideos.last.fm"
        name="Last.fm for Music Videos"
-       version="1.0.2"
+       version="1.0.3"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -7891,7 +8042,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="bg">Сваля инф. за музикални клипове от Last.fm</summary>
     <summary lang="ca">Arreplegador de videos musicals de Last.fm</summary>
     <summary lang="cs">Zdroj dat hudebních videí Last.fm</summary>
-    <summary lang="da">Last.fm musikvideo scraper</summary>
+    <summary lang="da">Last.fm Scraper til Musikvideor </summary>
     <summary lang="de">Last.fm Musik Video Scraper</summary>
     <summary lang="el">Scraper Μουσικών Βίντεο από Last.fm</summary>
     <summary lang="en">Last.fm Music Video Scraper</summary>
@@ -7900,16 +8051,18 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="es_MX">Scraper de Vídeos de Música de Last.fm</summary>
     <summary lang="fi">Last.fm musiikkivideotietojen lataaja</summary>
     <summary lang="fr">Collecter les clips vidéos Last.fm</summary>
+    <summary lang="gl">Scraper de música e vídeo de Last.fm</summary>
     <summary lang="he">Last.fm וידאו קליפ מוזיקה</summary>
     <summary lang="hu">Last.fm videóklip leolvasó</summary>
     <summary lang="it">Scaper Video Musicale di Last.fm</summary>
+    <summary lang="ja">Last.fm 音楽ビデオスクレーパー</summary>
     <summary lang="ko">Last.fm 뮤직 비디오 자료수집기</summary>
     <summary lang="lt">Last.fm vaizdo klipų Scraper</summary>
     <summary lang="mk">Last.fm Превземач на Музички видеа</summary>
     <summary lang="nl">Last.fm Muziek Video Scraper</summary>
     <summary lang="pl">Scraper teledysków Last.fm</summary>
     <summary lang="pt">Scraper de música Last.fm</summary>
-    <summary lang="pt_BR">Scraper de Concertos Last.FM</summary>
+    <summary lang="pt_BR">Scraper de Videoclipes do Last.fm</summary>
     <summary lang="ro">Informaţii Videoclipuri de la Last.fm</summary>
     <summary lang="ru">Инфоресурс видеоклипов Last.fm</summary>
     <summary lang="se">Skrapa för Last.fm musik</summary>
@@ -7919,11 +8072,12 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="th">ข้อมูลวิดีโอเพลงจาก Last.fm</summary>
     <summary lang="zh">Last.fm音乐电视刮削器</summary>
     <description lang="af">Laai Musiek Video inligting af</description>
+    <description lang="am">የሙዚቃ ቪዲዮ መረጃ ማውረጃ </description>
     <description lang="be">Зладаваць зьвесткі пра музычнае відэа</description>
     <description lang="bg">Сваля информация за музикални клипове</description>
     <description lang="ca">Baixa informació de videos musicals</description>
     <description lang="cs">Stáhnout informace o hudebním videu</description>
-    <description lang="da">Hent musikvideo information</description>
+    <description lang="da">Hent information til Musikvideoer</description>
     <description lang="de">Musik Video Information herunterladen</description>
     <description lang="el">Λήψη πληροφοριών Μουσικών Βίντεο</description>
     <description lang="en">Download Music Video information</description>
@@ -7932,16 +8086,18 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <description lang="es_MX">Descarga Información de Vídeos de Músca</description>
     <description lang="fi">Lataa musiikkivideoiden tiedot</description>
     <description lang="fr">Télécharger les informations des clips vidéos</description>
+    <description lang="gl">Descargar información da música e vídeo</description>
     <description lang="he">הורד מידע וידאו קליפ</description>
     <description lang="hu">Videóklip információk letöltése a Last.fm webhelyről</description>
     <description lang="it">Scarica informazioni Video Musicale</description>
+    <description lang="ja">音楽ビデオ情報をダウンロード</description>
     <description lang="ko">뮤직 비디오 정보 다운로드</description>
     <description lang="lt">Atsisiusti vaizdo klipų informaciją</description>
     <description lang="mk">Превземи информации за музичко видео</description>
     <description lang="nl">Muziek Video informatie downloaden</description>
     <description lang="pl">Pobieraj informacje o teledyskach z last.fm</description>
     <description lang="pt">Descarregar informação de vídeoclipe</description>
-    <description lang="pt_BR">Download de informação de Concertos</description>
+    <description lang="pt_BR">Baixar informações do videoclipe</description>
     <description lang="ro">Descărcare informaţii videoclipuri</description>
     <description lang="ru">Загружать сведения о видеоклипах</description>
     <description lang="se">Ladda ner musikvideoinformation från last.fm</description>
@@ -7955,7 +8111,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.musicvideos.theaudiodb.com"
        name="TheAudioDb.com for Music Videos"
-       version="1.0.2"
+       version="1.0.3"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -7981,6 +8137,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="he">theaudiodb.com סקרייפר וידאו קליפ</summary>
     <summary lang="hu">theaudiodb.com videóklip leolvasó</summary>
     <summary lang="it">Lo scraper di video musicali theaudiodb.com</summary>
+    <summary lang="ja">theaudiodb.com 音楽ビデオスクレーパー</summary>
     <summary lang="ko">야후! 뮤직 비디오 스크래퍼</summary>
     <summary lang="lt">theaudiodb.com vaizdo klipų Scraper</summary>
     <summary lang="mk">theaudiodb.com Music Video Scraper</summary>
@@ -7998,6 +8155,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="th">ตัวดึงข้อมูลวิดีโอเพลง theaudiodb.com</summary>
     <summary lang="zh">theaudiodb.com音乐电视刮削器</summary>
     <description lang="af">Laai Musiek Video informasie af</description>
+    <description lang="am">የሙዚቃ ቪዲዮ መረጃ ማውረጃ</description>
     <description lang="be">Download Music Video information</description>
     <description lang="bg">Сваля информация за музикални клипове</description>
     <description lang="ca">Baixa informació de videos musicals</description>
@@ -8015,6 +8173,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <description lang="he">הורד מידע וידאו קליפ</description>
     <description lang="hu">Videóklip információk letöltése a theaudiodb.com webhelyről</description>
     <description lang="it">Scarica informazioni Video Musicale</description>
+    <description lang="ja">音楽ビデオの情報をダウンロード</description>
     <description lang="ko">뮤직 비디오 정보 다운로드</description>
     <description lang="lt">Atsisiusti vaizdo klipų informaciją</description>
     <description lang="mk">Превземи информации за музичко видео</description>
@@ -8036,7 +8195,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.universal"
        name="Universal Scraper"
-       version="2.1.3"
+       version="2.1.4"
        provider-name="Olympia, Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -8055,6 +8214,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
              language="en"
              library="universal.xml"/>
   <extension point="xbmc.addon.metadata">
+    <summary lang="af">Universele Fliek Skraper</summary>
     <summary lang="be">Universal Movie Scraper</summary>
     <summary lang="bg">Универсален източник на инф. за филми</summary>
     <summary lang="cs">Univerzální zdroj dat k filmům</summary>
@@ -8065,9 +8225,11 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="es">Buscador Universal de Películas</summary>
     <summary lang="es_AR">Buscador Universal de Películas</summary>
     <summary lang="fr">Collecteur de films universel</summary>
+    <summary lang="gl">Scraper universal de filmes</summary>
     <summary lang="he">Universal סקרייפר סרטים</summary>
     <summary lang="hu">Univerzális film adat leolvasó</summary>
     <summary lang="it">Scraper universale di film</summary>
+    <summary lang="ja">万能映画スクレーパー</summary>
     <summary lang="ko">Universal 영화 자료수집기</summary>
     <summary lang="mk">Universal Movie Scraper</summary>
     <summary lang="nl">Universele filmscraper</summary>
@@ -8076,29 +8238,39 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <summary lang="pt_BR">Scraper de FIlmes Universal</summary>
     <summary lang="ro">Catalog de filme universal</summary>
     <summary lang="ru">Универсальный скрапер фильмов</summary>
+    <summary lang="sk">Univerzálny sťahovač pre filmy</summary>
     <summary lang="sl">Univerzalni ponudnik informacij o filmih</summary>
     <summary lang="sv">Universell filmskrapa</summary>
+    <summary lang="th">Universal Movie Scraper</summary>
     <summary lang="zh">通用电影刮削器</summary>
-    <description lang="be">This scraper collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Port.hu, Trakt.tv, OFDb.de. The scraper will use IMDb or TMDb search engine (according to your choice in the scraper settings), following that it can be set field by field that from which site you want that specific information.</description>
+    <description lang="af">Hierdie skraper kollekteer inligting van die volgende ondersteunde werwe: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Dit doen altyd die aanvanklike soektog op TMDb, maar daarna kan dit veld vir veld gestel word vanaf watter werf jy die spesifieke inligting wil hê.</description>
+    <description lang="be">This scraper collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. It always does the initial search on TMDb, but following that it can be set field by field that from which site you want that specific information.</description>
     <description lang="bg">Сваля информация от следните сайтове: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Можете да определите от кой сайт каква информация да се сваля.&#10;&#10;Първоначалното търсене винаги се прави в TMDb.</description>
     <description lang="cs">Tento zdroj dat získává informace z následujících podporovaných stránek: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Vždy provádí základní hledání na IMDb, ale pro následující hledání může být upraveno pro každou hodnotu, ze které stránky chcete specifickou informaci získat.</description>
     <description lang="da">Denne scraper indsamler information fra følgende understøttede sider: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Første søgning sker altid i TMDb, men efterfølgende kan der felt for felt vælges, hvilken side den specifikke infomation ønskes fra.</description>
     <description lang="de">Dieser Sammler sammelt Informationen von den folgenden, unterstützen Seiten: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Es fürt jedes mal die Anfangssuche auf TMDb aus, aber danach kann Feld für Feld ausgewählt werden, woher die Information geholt werden sollen.</description>
     <description lang="el">Αυτό το scraper συλλέγει πληροφορίες από τις ακόλουθες ιστοσελίδες: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Η αρχική αναζήτηση γίνεται πάντα στο TMDb, αλλά έπειτα μπορεί να ρυθμιστεί πεδίο ανά πεδίο από ποια σελίδα να λαμβάνονται πληροφορίες.</description>
     <description lang="en">This scraper collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. It always does the initial search on TMDb, but following that it can be set field by field that from which site you want that specific information.</description>
+    <description lang="es">Este buscador obtiene información de los siguientes sitios: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. La primera búsqueda siempre se realiza en TMDb, pero se puede elegir, campo por campo, de qué sitio se tiene que obtener la información.</description>
     <description lang="es_AR">Este buscador obtiene información de los siguientes sitios: IMDb, TMDb, Rotten tomatoes, Trakt.tv, OFDb.de. Realiza la búsqueda inicial en TMDb, pero a partir de allí se puede especificar desde que sitio se desea obtener cada campo.</description>
+    <description lang="fr">Ce scraper collecte les informations depuis les sites supportés suivants : IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. La recherche initiale est toujours effectuée depuis TMDb, mais vous pouvez indiquer les sites sources des champs un par un pour avoir une information plus spécifique.</description>
     <description lang="he">סקרייפר זה אוסף מידע מהתארים הנתמכים הבאים: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de זה תמיד עושה את החיפוש הפנימי ב-TMDb, אבל בהתאם לזאת ניתן להגדיר לכל שדה מאיזה אתר אתה רוצה לקבל את המידע.</description>
     <description lang="hu">Ez a leolvasó a következő helyekről gyűjt információkat: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. A kezdő keresést midig az IMDb-n végzi, de utána mezőnként beállítható, hogy melyik oldalakat használja az adott információ lekérésére.</description>
-    <description lang="ko">이 영화 자료수집기는 IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de에서 영화 정보를 가져옵니다. 항상 IMDb를 먼저 검색하지만 특정한 정보는 지정한 사이트에서 가져오도록 필드별 설정이 가능합니다.</description>
+    <description lang="it">Questo scraper collezione informazioni dai seguenti siti supportati: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Inizialmente esegue sempre la ricerca su TMDb ma dopo si può impostare campo per campo da quali siti si vuole ottenere le informazioni specifiche.</description>
+    <description lang="ja">このスクレーパーは、以下のサイトから情報を取得します。IMDb、TMDb、Rotten Tomatoes、Trakt.tv、OFDb.de。最初の検索は TMDb から行われますが、それに続く検索は各フィールドごとにどのサイトで検索するか設定できます。</description>
+    <description lang="ko">이 영화 자료수집기는 IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de에서 영화 정보를 가져옵니다. 초기 설정은 TMDb에서 검색하지만 특정 정보는 지정한 사이트에서 가져오도록 필드별 설정이 가능합니다.</description>
     <description lang="mk">This scraper collecting information from the following supported sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. It always does the initial search on TMDb, but following that it can be set field by field that from which site you want that specific information.</description>
     <description lang="nl">Deze scraper verzamelt informatie van de volgende ondersteunde sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Het start altijd de eerste zoektocht op TMDb, maar vervolgens kan veld voor veld informatie gekozen worden van de site waar jij de specifieke informatie van wilt.</description>
     <description lang="pl">Ten scraper zbiera informacje z następujących portali: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Najpierw szuka na TMDb, a następnie może być ustawiony by poszczególne pola były wypełnione informacjami z innych portali.</description>
     <description lang="pt">Este scraper recolhe informações dos seguintes sítios: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. A pesquisa inicial é sempre feita no TMDb, mas depois pode especificar para cada campo os sítios dos quais quer obter informação.</description>
     <description lang="pt_BR">Este scraper coleta informações dos seguintes sites: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. A busca inicial sempre se dá no TMDb, mas segue aquilo que estiver setado campo a campo  dos sites que você deseja informação específica.</description>
     <description lang="ro">Acest catalog este completat cu informații de la următoarele siteuri: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Căutarea inițială se face întotdeauna pe TMDb, dar după aceasta fiecare câmp poate fi setat să ia informația de pe un site specific.</description>
-    <description lang="ru">Этот модуль собирает информацию со следующих поддерживаемых сайтов: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Он всегда делает первоначальный поиск по TMDb, но может быть установлена последовательность, с какого сайта вы хотите получить конкретную информацию.</description>
+    <description lang="ru">Этот модуль собирает информацию со следующих поддерживаемых сайтов: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Он всегда делает начальный поиск по TMDb, хотя может быть установлена последовательность того, с какого сайта Вы хотите получить конкретную информацию.</description>
+    <description lang="sk">Tento sťahovač zbiera informácie z týchto stránok: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Počiatočné vyhľadávanie vždy robí pomocou TMDb, ale následne môžete pole po poli nastaviť z ktorej stránky má zbierať špecifické informácie. </description>
     <description lang="sl">Ta ponudnik združuje informacije s sledečih strani: IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Vedno opravi osnovno iskanje na TMDb, vendar lahko nastavite od kod se bo prenesla posamezna informacija.</description>
-    <description lang="zh">本刮削器从以下站点获取信息：IMDb、TMDb、Rotten Tomatoes、Trakt.tv、OFDb.de。初始结果总是先从TBDb获取，然后可以针对不同项目分别设置从不同站点获取信息。</description>
+    <description lang="sv">Denna skrapa samlar information från följande siter: IMDb, RMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. Sökning görs alltid först på TMDb, men den kan konfigureras att hämta efterföljande information - fält för fält - från valfri site.</description>
+    <description lang="th">การดึงข้อมูลภาพยนตร์ได้รับการสนับสนุนจากเว็บไซต์  IMDb, TMDb, Rotten Tomatoes, Trakt.tv, OFDb.de. โดยจะดึงข้อมูลจากเว็บ TMDB เป็นอันดับแรก แต่คุณสามารถตั้งค่าการรับข้อมูลจากเว็บไซต์ที่คุณต้องการได้</description>
+    <description lang="zh">本刮削器从以下站点获取信息：IMDb、TMDb、Rotten Tomatoes、Trakt.tv、OFDb.de。初始结果总是先从TMDb获取，然后可以针对不同项目分别设置从不同站点获取信息。</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -8187,17 +8359,17 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id='script.common.plugin.cache' version='1.4.0' name='Common plugin cache' provider-name='TheCollective'>
+<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="1.5.0">
   <requires>
-    <import addon='xbmc.python' version='2.0'/>
+    <import addon="xbmc.python" version="2.0" />
   </requires>
-  <extension point='xbmc.service' library='default.py' start='startup'>
+  <extension library="default.py" point="xbmc.service" start="startup">
   </extension>
-  <extension point='xbmc.addon.metadata'>
+  <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang='en'>Common caching api for xbmc plugins.</summary>
+    <summary lang="en">Common caching api for xbmc plugins.</summary>
   </extension>
-  <extension point='xbmc.python.module' library='lib' />
+  <extension library="lib" point="xbmc.python.module" />
 </addon>
 
 <addon id="script.facebook.media"
@@ -8338,15 +8510,15 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id='script.module.parsedom' version='1.5.0' name='Parsedom for xbmc plugins' provider-name='TheCollective'>
+<addon id="script.module.parsedom" name="Parsedom for xbmc plugins" provider-name="TheCollective" version="1.5.1">
   <requires>
-    <import addon='xbmc.python' version='2.0'/>
+    <import addon="xbmc.python" version="2.0" />
   </requires>
-  <extension point='xbmc.addon.metadata'>
+  <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang='en'>Parsedom for xbmc plugins.</summary>
+    <summary lang="en">Parsedom for xbmc plugins.</summary>
   </extension>
-  <extension point='xbmc.python.module' library='lib' />
+  <extension library="lib" point="xbmc.python.module" />
 </addon>
 
 <addon id="script.module.protobuf"
@@ -8402,18 +8574,18 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
   </extension>
 </addon>
 
-<addon id='script.module.simple.downloader' version='0.9.3' name='Simple Downloader for xbmc plugins' provider-name='TheCollective'>
+<addon id="script.module.simple.downloader" name="Simple Downloader for xbmc plugins" provider-name="TheCollective" version="0.9.4">
   <requires>
-    <import addon='xbmc.python' version='2.0'/>
-    <import addon='script.common.plugin.cache' version='1.0.0'/>
-    <import addon='script.module.parsedom' version='1.0.0'/>
+    <import addon="xbmc.python" version="2.0" />
+    <import addon="script.common.plugin.cache" version="1.5.0" />
+    <import addon="script.module.parsedom" version="1.5.1" />
   </requires>
-  <extension point='xbmc.service' library="default.py" />
-  <extension point='xbmc.addon.metadata'>
+  <extension library="default.py" point="xbmc.service" />
+  <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang='en'>Simple downloader for xbmc plugins.</summary>
+    <summary lang="en">Simple downloader for xbmc plugins.</summary>
   </extension>
-  <extension point='xbmc.python.module' library='lib' />
+  <extension library="lib" point="xbmc.python.module" />
 </addon>
 
 <addon id="script.module.validictory"
@@ -8705,7 +8877,7 @@ XBMC.RunScript(script.xbmc.blindplayer, "video")
   </extension>
 </addon>
 
-<addon id="weather.ozweather" name="Oz Weather" version="0.4.5" provider-name="Bossanova808">
+<addon id="weather.ozweather" name="Oz Weather" version="0.4.7" provider-name="Bossanova808">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.parsedom" version="1.2.0"/>
@@ -9106,7 +9278,7 @@ Watch all your favorite TV Shows and Movies streamed on constant repeat 24/7 fro
   </extension>
 </addon>
 
-<addon id="plugin.video.wdrrockpalast" name="WDR Rockpalast" version="1.1.0" provider-name="xycl">
+<addon id="plugin.video.wdrrockpalast" name="WDR Rockpalast" version="1.1.2" provider-name="xycl">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -9303,7 +9475,7 @@ Watch all your favorite TV Shows and Movies streamed on constant repeat 24/7 fro
 
 <addon id="plugin.video.sagetv"
        name="SageTV"
-       version="1.4.4"
+       version="1.4.6"
        provider-name="kricker,lehighbri,aaronb">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -9313,32 +9485,37 @@ Watch all your favorite TV Shows and Movies streamed on constant repeat 24/7 fro
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <language></language>
     <summary lang="ar">ستيج تي في: استعراض و إدارة البث المباشر و التسجيلات</summary>
     <summary lang="be">SageTV: Browse and manage airings and recordings</summary>
     <summary lang="bg">SageTV: Преглеждайте и управлявайте излъчвания и записи</summary>
+    <summary lang="da">SageTV: Gennemse og håndter udsendelser og optagelser</summary>
     <summary lang="de">SageTV: Verwalte und schaue Sendungen und Aufnahmen</summary>
     <summary lang="el">SageTV: Περιήγηση και διαχείριση εκπομπών και εγγραφών</summary>
     <summary lang="en">SageTV: Browse and manage airings and recordings</summary>
     <summary lang="es">SageTV: Examinar y administrar transmisiones y grabaciones</summary>
     <summary lang="fr">SageTV: Parcourir et gérer vos diffusions et enregistrements</summary>
+    <summary lang="hu">SageTV: Adások és felvételek böngészése és kezelése</summary>
     <summary lang="lt">SageTV: Naršyti ir valdyti rodymą ir įrašus</summary>
     <summary lang="pl">SageTV: przeglądaj i zarządzaj transmisjami oraz nagraniami</summary>
+    <summary lang="pt">SageTV: Navegar e gerir emissões e gravações</summary>
     <summary lang="pt_BR">SageTV:  Procurar e administrar transmissões e gravações</summary>
     <summary lang="sk">SageTV: prehliadajte a spravujte vysielania a nahrávky</summary>
     <summary lang="sv">SageTV: Bläddra och administrera sändningar och inspelningar</summary>
     <description lang="ar">يسمح لك الاتصال بمخدم ستيج تي في الخاص بك حيث تستطيع استعراض و عرض التسجيلات, عرض و إدارة تسجيلاتك القادمة, استعراض قوائم المحطات, و البحث عن البث المباشر و التسجيلات&#10;&#10;التبعات:&#10;مع ستيج تي في:&#10;Jetty Web Server 2.3.0.14  أو أحدث&#10; Sagex-api vs 7.1.9.12 أو أحدث&#10; Batch Metadata Tools 4.10.1&#10;xbmc.js (نسخxbmc.js من"plugin.video.sagetv\extras\sagex\services" إلى الخاص بك "SageTV\SageTV\sagex\services" )&#10;</description>
     <description lang="be">Allows you to connect to your SageTV server where you can browse and view recordings, view and manage your upcoming recordings, browse channel listings, and search for airings and recordings.&#10;&#10;Dependencies:&#10;SageTV with:&#10;    Jetty Web Server 2.3.0.14 or newer&#10;    Sagex-api vs 7.1.9.12 or newer&#10;    Batch Metadata Tools 4.10.1&#10;    xbmc.js (Copy xbmc.js from "plugin.video.sagetv\extras\sagex\services" to your "SageTV\SageTV\sagex\services" directory)&#10;&#10;</description>
     <description lang="bg">Позволява Ви да се свържете със SageTV сървър, от който можете да преглеждате и възпроизвеждате записани предавания, да настройвате автоматично записване на предавания, преглеждате списъка с канали и търсите излъчвани предавания/записи.&#10;&#10;Изисквания:&#10;SageTV с:&#10;    Jetty Web Server 2.3.0.14 или по-нов&#10;    Sagex-api vs 7.1.9.12 или по-нов&#10;    Batch Metadata Tools 4.10.1&#10;    xbmc.js (Копирайте xbmc.js от "plugin.video.sagetv\extras\sagex\services" във вашата "SageTV\SageTV\sagex\services" директория)&#10;</description>
+    <description lang="da">Lader dig forbinde til din SageTV server, hvorfra du kan udforske og se optagelser, se og håndtere kommende optagelser, gennemse kanalprogrammer og søge efter udsendelser og optagelser.&#10;&#10;Kræver:&#10;SageTV med:&#10;    Jetty Web Server 2.3.0.14 eller nyere&#10;    Sagex-api vs 7.1.9.12 eller nyere&#10;    Batch Metadata Tools 4.10.1&#10;    xbmc.js (Kopiér xbmc.js fra "plugin.video.sagetv\extras\sagex\services" til din "SageTV\SageTV\sagex\services" mappe)&#10;</description>
     <description lang="de">Erlaubt es Dir, dich zu einem SageTV-Server zu verbinden, aus dem du Aufnahmen durchsuchen und ansehen, kommende Aufnahmen verwalten und sehen, Kanallisten ansehen und nach Sendeterminen und Aufnahmen suchen kannst.&#10;&#10;Anforderungen:&#10;SageTV mit:&#10;Jetty Web Server 2.3.0.14 oder neuer&#10;Sagex-api vs 7.1.9.12 oder neuer&#10; Batch Metadata Tools 4.10.1&#10; xbmc.js (Kopiere xbmc.js aus "plugin.video.sagetv\extras\sagex\services" in den "SageTV\SageTV\sagex\services" Ordner)&#10;&#10;</description>
     <description lang="el">Σας δίνεται η δυνατότητα να συνδεθείτε με το διακομιστή σας SageTV όπου μπορείτε να περιηγηθείτε και να δείτε εγγραφές, να προβάλλετε και να διαχειριστείτε επερχόμενες εγγραφές, να ελέγξετε τις καταχωρίσεις καναλιών, και να κάνετε αναζητήσεις για εκπομπές και εγγραφές.&#10;&#10;Εξαρτήσεις:&#10;Το SageTV με:&#10;Jetty Web Server 2.3.0.14 ή νεώτερο&#10;Sagex-api έκδ. 7.1.9.12 ή νεώτερο&#10;Batch Metadata Tools 4.10.1&#10;Το xbmc.js (αντιγράψτε το xbmc.js από το φάκελο "plugin.video.sagetv\extras\sagex\services" στο φάκελό σας "SageTV\SageTV\sagex\services")&#10;&#10;</description>
     <description lang="en">Allows you to connect to your SageTV server where you can browse and view recordings, view and manage your upcoming recordings, browse channel listings, and search for airings and recordings.&#10;&#10;Dependencies:&#10;SageTV with:&#10;    Jetty Web Server 2.3.0.14 or newer&#10;    Sagex-api vs 7.1.9.12 or newer&#10;    Batch Metadata Tools 4.10.1&#10;    xbmc.js (Copy xbmc.js from "plugin.video.sagetv\extras\sagex\services" to your "SageTV\SageTV\sagex\services" directory)&#10;&#10;</description>
     <description lang="es">Permitir conexiones con el servidor SageTV, donde puedes examinar y ver grabaciones,  ver y administrar tus próximas grabaciones, examinar la lista de canales, y buscar transmisiones y grabaciones&#10;&#10;Dependencias:&#10;SageTV con:&#10;Servidor Web Jetty 2.3.0.14 o superior&#10;Sagex-api ver. 7.1.9.12 o superior&#10;Lote de Metadata Tools 4.10.1&#10;xbmc.js (Copiar xbmc.js desde "plugin.video.sagetv\extras\sagex\services" a tu directorio "SageTV\SageTV\sagex\services"&#10;&#10;</description>
     <description lang="lt">Leidžia jums prisijungti prie jūsų SageTV serverio, kur jūs galite naršyti ir peržiūrėti įrašus, peržiūrėti ir valdyti savo būsimą(-us) įrašus, naršyti kanalų sąrašus. Airings įrašų paieška.&#10;Priklausomybės:&#10;SageTV with:&#10;Jetty Web Server 2.3.0.14 or newer&#10;Sagex-api vs 7.1.9.12 or newer&#10;Batch Metadata Tools 4.10.1&#10;xbmc.js (Copy xbmc.js from "plugin.video.sagetv\extras\sagex\services" to your "SageTV\SageTV\sagex\services" directory)&#10;</description>
     <description lang="pl"> Pozwala połączyć się z serwerem SageTV gdzie można przeglądać i wyświetlać nagrania, przeglądać i zarządzać nadchodzącymi nagraniami, przeglądać dostępne kanały i szukać nagrań. Zależności: SageTV z: Jetty Web Server 2.3.0.14 lub nowszy, Sagex-api vs 7.1.9.12 lub nowszy, Batch Metadata Tools 4.10.1, xbmc.js ( skopiuj xbmc.js z "plugin.video.sagetv\extras\sagex\services" do twojego źródła "SageTV\SageTV\sagex\services")&#10;</description>
+    <description lang="pt">Permite-lhe ligar-se ao seu servidor SageTV, onde pode consultar e ver gravações, gerir as suas gravações futuras, navegar por listagens de canais, e procurar emissões e gravações.&#10;&#10;Dependências:&#10;SageTV com:&#10;    Jetty Web Server 2.3.0.14 ou mais recente&#10;    Sagex-api vs 7.1.9.12 ou mais recente&#10;    Batch Metadata Tools 4.10.1&#10;    xbmc.js (Copie o xbmc.js de "plugin.video.sagetv\extras\sagex\services" para a sua pasta "SageTV\SageTV\sagex\services")&#10;</description>
     <description lang="pt_BR">Permite que você se conectar ao servidor SageTV onde você pode navegar e ver gravações, visualizar e gerenciar suas gravações futuras, procure listagem de canais e busca de transmissões e gravações&#10;Dependências:&#10;SageTV com:&#10;    Jetty Web Server 2.3.0.14 ou mais recente&#10;    Sagex-api vs 7.1.9.12 ou mais recente&#10;    Batch Metadata Tools 4.10.1&#10;    xbmc.js (Copy xbmc.js from "plugin.video.sagetv\extras\sagex\services" to your "SageTV\SageTV\sagex\services" directory)&#10;&#10;</description>
     <description lang="sk">Umožní Vám pripojenie na Váš SageTV server, kde môžete prehliadať a pozerať nahrávky, pozerať a spravovať pripravované nahrávania, prehliadať zoznam kanálov a vyhľadávať vysielania a nahrávky.&#10;&#10;Závislosti SageTV:&#10;    Jetty Web Server 2.3.0.14 alebo novší&#10;    Sagex-api vs 7.1.9.12 alebo novší&#10;    Batch Metadata Tools 4.10.1&#10;    xbmc.js (Zkopírujte xbmc.js z "plugin.video.sagetv\extras\sagex\services" do Vášho "SageTV\SageTV\sagex\services" priečinku)&#10;&#10;</description>
     <description lang="sv">Gör det möjligt att ansluta till din SageTV server där du kan bläddra och se inspelningar, se och administrera kommande inspelningar, bläddra kanallistningar, och söka efter sändningar och inspelningar.&#10;&#10;Krav på ytterligare tillägg:&#10;SageTV med:&#10;    Jetty Web Server 2.3.0.14 eller nyare&#10;    Sagex-api vs 7.1.9.12 eller nyare&#10;    Batch Metadata Tools 4.10.1&#10;    xbmc.js (Kopiera xbmc.js från "plugin.video.sagetv\extras\sagex\services" till "SageTV\SageTV\sagex\services" katalogen)&#10;&#10;</description>
+    <language></language>
     <platform>all</platform>
   </extension>
 </addon>
