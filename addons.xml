@@ -536,7 +536,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="script.module.urlresolver"
 	     name="urlresolver"
-	     version="1.0.3"
+	     version="1.0.4"
 	     provider-name="XBMCHub.com">
   <requires>
     <import addon="xbmc.python" version="2.0" />
@@ -4952,7 +4952,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
 
 <addon id="metadata.tvdb.com"
        name="The TVDB"
-       version="1.4.4"
+       version="1.4.5"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -8195,7 +8195,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.universal"
        name="Universal Scraper"
-       version="2.1.4"
+       version="2.1.5"
        provider-name="Olympia, Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -10213,5 +10213,23 @@ provider-name="OK Fan">
         <platform>all</platform>
         <language>da</language>
     </extension>
+</addon>
+
+<addon id="metadata.thexem.de"
+       name="XEM"
+       version="1.0.3"
+       provider-name="XBMC Community">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.tvshows"
+             language="multi"
+             library="xem.xml"
+             cachepersistence="00:15"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Fetch metadata from TheTVDB.com and episode numbering from other sources</summary>
+    <description lang="en">TheXEM.de is a site that map episode numbering from multiple sources to their TheTVDB.com counterparts. This scraper let you choose between "scene", AniDB.net and TVRage.com, or the original TheTVDB.com order, as the source for the episode numbering; then fetch the correct data from TheTVDB.com. For more information please visit TheXEM.de</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 </addons>
