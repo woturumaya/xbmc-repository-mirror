@@ -9041,7 +9041,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.manoto"
        name="Manoto TV"
-       version="0.0.5"
+       version="0.0.6"
        provider-name="babak">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
