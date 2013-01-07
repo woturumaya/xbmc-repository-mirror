@@ -6959,7 +6959,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     </extension>
 </addon>
 
-<addon id="plugin.video.cinemassacre" name="cinemassacre" version="0.0.5" provider-name="dethfeet">
+<addon id="plugin.video.cinemassacre" name="cinemassacre" version="0.1.0" provider-name="dethfeet, Kr0nZ">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="xbmc.gui" version="2.11"/>
@@ -6970,10 +6970,10 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-  		<language>en</language>
-    	<summary>cinemassacre.com</summary>
-    	<description>Home of the Angry Video Game Nerd, Monster Madness, movie reviews, top 10's, and commentary, retro and classic video gaming and more.</description>
+    <summary lang="en">cinemassacre.com</summary>
+    <description lang="en">Home of the Angry Video Game Nerd, Monster Madness, movie reviews, top 10's, and commentary, retro and classic videos</description>
     <platform>all</platform>
+    <language>en</language>
   </extension>
 </addon>
 
@@ -8359,7 +8359,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="1.5.0">
+<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="1.5.1">
   <requires>
     <import addon="xbmc.python" version="2.0" />
   </requires>
