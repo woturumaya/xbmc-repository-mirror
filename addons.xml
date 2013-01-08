@@ -8195,7 +8195,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.universal"
        name="Universal Scraper"
-       version="2.1.5"
+       version="2.1.6"
        provider-name="Olympia, Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
