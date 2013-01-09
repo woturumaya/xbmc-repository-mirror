@@ -536,12 +536,12 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="script.module.urlresolver"
 	     name="urlresolver"
-	     version="1.0.4"
+	     version="1.0.5"
 	     provider-name="XBMCHub.com">
   <requires>
     <import addon="xbmc.python" version="2.0" />
     <import addon="script.module.t0mm0.common" version="1.0.0"/>
-    <import addon="plugin.video.youtube"/>
+    <import addon="plugin.video.youtube" version="3.3.0"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -7274,7 +7274,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="plugin.video.nba.video"
        name="NBA Video"
-       version="1.0.2"
+       version="1.0.3"
        provider-name="stacked">
   <requires>
 	<import addon="xbmc.python" version="2.0"/>
@@ -9236,7 +9236,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.tgun"
        name="The GiddyUp Network"
-       version="0.0.24"
+       version="0.0.25"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
