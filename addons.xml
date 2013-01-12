@@ -8013,7 +8013,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.common.trakt.tv"
        name="trakt-tv common scraper functions"
-       version="1.1.0"
+       version="1.1.1"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
