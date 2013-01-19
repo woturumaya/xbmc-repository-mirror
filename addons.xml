@@ -38,7 +38,7 @@
 
 <addon id="plugin.video.icefilms"
        name="Icefilms"
-       version="1.1.24"
+       version="1.1.25"
        provider-name="Eldorado (originator: anarchintosh)">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -9288,7 +9288,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
 
 <addon id="plugin.video.tgun"
        name="The GiddyUp Network"
-       version="0.0.26"
+       version="0.0.27"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
