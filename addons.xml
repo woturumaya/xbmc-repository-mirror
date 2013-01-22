@@ -2449,7 +2449,7 @@ Limitations:
 <addon
     id="plugin.video.the.trailers"
     name="The Trailers"
-    version="0.9.3"
+    version="0.9.4"
     provider-name="Martijn, Sphere">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -5800,21 +5800,20 @@ Merci d'envoyer vos commentaires et demandes à xbmame@otaku-realm.net
 
 <addon id="script.image.lastfm.slideshow"
        name="Last.FM - SlideShow"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
-	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
   </requires>
 
-  <extension point="xbmc.python.script"
-            library="default.py">
-        <provides>image</provides>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>image</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Plays a slide show of the currently playing artist.</summary>
     <description>While playing music, this addon will start a slideshow of images from Last.FM, of the current artist. Tip: Pressing "i" during a slideshow will show the music player info.</description>
-	<platform>all</platform>
+    <platform>all</platform>
   </extension>
 </addon>
 
