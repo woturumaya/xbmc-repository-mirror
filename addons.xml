@@ -749,22 +749,22 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.weather.channel"
        name="The Weather Channel"
-       version="0.0.4"
+       version="0.0.5"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
-	<import addon="script.module.beautifulsoup" version="3.0.8"/>
-	<import addon="script.module.simplejson"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.simplejson"/>
     <import addon="script.common.plugin.cache" version="0.9.2"/>
   </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>TheWeatherChannel.com</summary>
     <description>Videos and weather maps from The Weather Channel.com</description>
     <platform>all</platform>
+    <language>en</language>
   </extension>
 </addon>
 
