@@ -3824,7 +3824,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
 
 <addon id="metadata.albums.last.fm"
        name="Last.FM"
-       version="1.2.4"
+       version="1.2.5"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -3901,7 +3901,6 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <description lang="th">ดาวน์โหลดข้อมูลเพลง จาก www.last.fm</description>
     <description lang="zh">从www.last.fm下载音乐信息。</description>
     <platform>all</platform>
-    <broken>broken due to last.fm suspended XBMC API Account</broken>
   </extension>
 </addon>
 
@@ -4117,7 +4116,7 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
 
 <addon id="metadata.artists.last.fm"
        name="Last.FM"
-       version="1.3.5"
+       version="1.3.6"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -4194,7 +4193,6 @@ AMG的编辑和许多专业撰稿人（都是音乐狂热分子）共同把allmu
     <description lang="th">ดาวน์โหลดข้อมูลเพลง จาก www.last.fm</description>
     <description lang="zh">从www.last.fm下载音乐资料</description>
     <platform>all</platform>
-    <broken>broken due to last.fm suspended XBMC API Account</broken>
   </extension>
 </addon>
 
@@ -7067,7 +7065,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="plugin.video.espn.video"
        name="ESPN Video"
-       version="1.0.3"
+       version="1.0.4"
        provider-name="stacked">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8080,7 +8078,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.musicvideos.last.fm"
        name="Last.fm for Music Videos"
-       version="1.0.3"
+       version="1.0.4"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -8160,7 +8158,6 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     <description lang="sv">Ladda ner musikvideoinformation</description>
     <description lang="th">ดาวน์โหลดข้อมูลวิดีโอเพลง</description>
     <description lang="zh">从Last.fm下载音乐电视信息</description>
-    <broken>broken due to last.fm suspended XBMC API Account</broken>
   </extension>
 </addon>
 
