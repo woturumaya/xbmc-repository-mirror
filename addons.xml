@@ -537,7 +537,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="script.module.urlresolver"
 	     name="urlresolver"
-	     version="1.0.5"
+	     version="1.0.6"
 	     provider-name="XBMCHub.com">
   <requires>
     <import addon="xbmc.python" version="2.0" />
@@ -866,12 +866,14 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.projectfreetv"
        name="Project Free TV"
-       version="0.0.8"
+       version="1.0.1"
        provider-name="Eldorado">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
-    <import addon="script.module.urlresolver" version="0.0.1"/>
-    <import addon="script.module.t0mm0.common" version="0.0.3"/>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.urlresolver" version="1.0.0"/>
+    <import addon="script.module.metahandler" version="1.0.2"/>
+    <import addon="script.module.t0mm0.common" version="1.0.0"/>
+    <import addon="script.common.plugin.cache" version="0.9.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -4397,7 +4399,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.common.imdb.com"
        name="IMDB common scraper functions"
-       version="2.6.2"
+       version="2.7.0"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -5268,12 +5270,13 @@ With Gyroscope enabled devices and supported by it's browser, you can tap and ho
 
 <addon id="script.module.metahandler"
 	     name="metahandler"
-	     version="1.0.1"
+	     version="1.0.2"
 	     provider-name="Eldorado (inspired by anarchintosh, westcoast, daledude, t0mm0)">
   <requires>
     <import addon="xbmc.python" version="2.0" />
     <import addon="script.module.elementtree"/>
     <import addon="script.module.t0mm0.common" version="1.1.0"/>
+	<import addon="script.module.myconnpy" version="0.3.2"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -8744,7 +8747,7 @@ Il peut optionnellement gerer les playlistes pour filtrer les resultats.
 </addon>
 
 <addon id="script.speedfaninfo"
-    name="SpeedFan Information Display" version="0.3.5" provider-name="kylejohnson (pkscuot)">
+    name="SpeedFan Information Display" version="0.4.1" provider-name="kylejohnson (pkscuot)">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
   </requires>
@@ -8752,8 +8755,32 @@ Il peut optionnellement gerer les playlistes pour filtrer les resultats.
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <summary lang="be">Display information from your SpeedFan log.</summary>
+    <summary lang="da">Vis information fra din SpeedFan log.</summary>
+    <summary lang="de">Zeige Informationen aus deinem SpeedFan Log.</summary>
+    <summary lang="el">Προβολή πληροφοριών από το αρχείο καταγραφής του SpeedFan.</summary>
     <summary lang="en">Display information from your SpeedFan log.</summary>
+    <summary lang="es">Muestra información del log de SpeedFan</summary>
+    <summary lang="es_MX">Muestra información desde tu log de SpeedFan</summary>
+    <summary lang="he">הצג מיד עמ יומן רישום מהירות מאוורר</summary>
+    <summary lang="hu">Ventilátor-sebesség napló megjelenítése</summary>
+    <summary lang="pl">Wyświetla infromacje z dziennika SpeedFan</summary>
+    <summary lang="pt">Exibe informação do seu log do Speedfan.</summary>
+    <summary lang="pt_BR">Mostrar informações de seu log SpeedFan</summary>
+    <summary lang="sv">Visar information från din SpeedFan logg.</summary>
+    <description lang="be">Parses and displays information from the SpeedFan log. While this plugin works on any platform, SpeedFan only works on Windows, so it is optimally built for people using XBMC on Windows. Please see readme.txt for information on how to configure your SpeedFan log so that the plugin can parse it properly.</description>
+    <description lang="da">Henter og viser information fra SpeedFan log'en. Selvom dette plugin virker på alle platforme, fungerer SpeedFan kun i Windows, så det er skabt for folk, som kører XBMC på Windows. Se venligst readme.txt for information om hvordan du opsætter din SpeedFan log, så plugin'et kan læse den korrekt.</description>
+    <description lang="de">Analysiert und zeigt Informationen vom SpeedFan log. Während dieses Plugin auf allen Plattformen funktioniert, läuft SpeedFan nur unter Windows, also ist es optimal für, die, die XBMC unter Windows nutzen. Bitte ließ die readme.txt für Informationen, wie SpeedFan konfiguriert werden muss, dass das Plugin den Log korrekt analysieren kann.</description>
+    <description lang="el">Αναλύει και προβάλλει πληροφορίες από το αρχείο καταγραφής του SpeedFan. Ενώ αυτό το plugin δουλεύει σε οποιαδήποτε πλατφόρμα, το SpeedFan δουλεύει μόνο σε Windows, συνεπώς είναι φτιαγμένο για ανθρώπους που χρησιμοποιούν το XBMC σε Windows. Δείτε το readme.txt για πληροφορίες σχετικά με τη ρύθμιση του αρχείου καταγραφής του SpeedFan ούτως ώστε το plugin να μπορέσει να το αναλύσει σωστά.</description>
     <description lang="en">Parses and displays information from the SpeedFan log. While this plugin works on any platform, SpeedFan only works on Windows, so it is optimally built for people using XBMC on Windows. Please see readme.txt for information on how to configure your SpeedFan log so that the plugin can parse it properly.</description>
+    <description lang="es">Analiza y muestra información del log de SpeedFan. Aunque este complemento funciona en cualquier plataforma, Speedfan sólo funciona en Windows, por lo que está optimizado para el público que utiliza XBMC en Windows. Por favor, lea el fichero readme.txt para obtener información de cómo configurar el log de SpeedFan, de forma que el complemento la interprete correctamente.</description>
+    <description lang="es_MX">Parsea y muestra información desde el log de SpeedFan. Mientras este plugin funciona en cualquier plataforma, SpeedFan funciona solamente en Windows, así que está construido de manera óptima para personas que usan XBMC en Windows. Para información en como configurar el log de SpeedFan para que el plugin pueda parsearlo de manera adecuada, revisar readme.txt.</description>
+    <description lang="he">מעבד ומציג מידע מיומן רישום מאוורר. בזמן שתוסף זה עובד על כל פלטפורמה רישום מהירות מאוורר עובד רק על מערכות מבוססות וינדוס,כך שתוסף זה נבנה עבור מערכות XBMC מבוססות וינדוס, בבקשה קרא קובץ readme.txt למידע נוסף על כיצד להגדיר רישום מיהירות מאוורר כך שהתוסף יוכל לעבד את המידע נכונה.</description>
+    <description lang="hu">Feldolgozza és megjeleníti a ventilátor-sebesség napló adatait. Habár ez a plugin működik az összes platformon, a SpeedFan csak Windowson fut. Ezért ez a plugin elsősorban az XBMC-t Windowson futtató felhasználóknak készült. Annak érdekében, hogy az információkat megfelelően dolgozzuk fel, olvassa el a readme.txt fájlt, hogy SpeedFan naplót megfelelően beállíthassa.</description>
+    <description lang="pl">Analizuje i wyświetla informacje z dziennika SpeedFan. Podczas gdy ten plugin działa na każdej platformie, SpeedFan działa tylko na Windowsie, więc optymalne jest to by korzystać z niego tylko na tej platformie. Proszę zobaczyć readme.txt są tam informacje jak skonfigurować dziennik SpeedFan tak żeby wtyczka mogłą analizować go prawidłowo.</description>
+    <description lang="pt">Recolhe e exibe informação do log do Speedfan. Apesar deste plugin funcionar em qualquer plataforma, o Speedfan apenas funciona no Windows. Por favor verifique o readme.txt para obter informação sobre como configurar o seu log do Speedfan, para o plugin poder analisá-lo correctamente.</description>
+    <description lang="pt_BR">Analisa e apresenta a informação de log SpeedFan. Embora este plugin funciona em qualquer plataforma, SpeedFan só funciona no Windows, por isso é construído para as pessoas que utilizam o XBMC no Windows. Por favor, veja readme.txt para obter informações sobre como configurar o log SpeedFan para que o plugin possa analisá-lo corretamente.</description>
+    <description lang="sv">Analyserar och visar information från SpeedFan loggen. Trots att detta tillägg fungerar på alla plattformar, fungerar SpeedFan endast på Windows, så det är optimerat för folk som använder XBMC på Windows. Läs readme.txt för mer information hur du konfigurerar din SpeedFan logg så att tillägget kan analysera det riktigt.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -8929,7 +8956,7 @@ XBMC.RunScript(script.xbmc.blindplayer, "video")
   </extension>
 </addon>
 
-<addon id="weather.ozweather" name="Oz Weather" version="0.4.7" provider-name="Bossanova808">
+<addon id="weather.ozweather" name="Oz Weather" version="0.4.8" provider-name="Bossanova808">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.parsedom" version="1.2.0"/>
@@ -9653,7 +9680,7 @@ provider-name="OK Fan">
   </extension>
 </addon>
 
-<addon id="service.skin.widgets" name="Skin Widgets" version="0.0.19" provider-name="Martijn">
+<addon id="service.skin.widgets" name="Skin Widgets" version="0.0.20" provider-name="Martijn">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
         <import addon="xbmc.json" version="6.0.0"/>
@@ -9669,10 +9696,14 @@ provider-name="OK Fan">
         <summary lang="en">Skin widgets</summary>
         <summary lang="es">Skin widgets</summary>
         <summary lang="fr">Skin widgets</summary>
+        <summary lang="hr">Dodatci za Izgled</summary>
+        <summary lang="hu">Kinézet miniprogram</summary>
+        <summary lang="it">Skin widgets</summary>
         <summary lang="ko">스킨 위젯</summary>
         <summary lang="pl">Dodatki Skóry</summary>
         <summary lang="pt">Widgets para Skin</summary>
         <summary lang="pt_BR">Skin widgets</summary>
+        <summary lang="sk">Widgety Vzhľadov</summary>
         <summary lang="sv">Skal widgetar</summary>
         <summary lang="zh">皮肤微件</summary>
         <description lang="be">Skin widgets</description>
@@ -9682,10 +9713,14 @@ provider-name="OK Fan">
         <description lang="en">Skin widgets</description>
         <description lang="es">Skin widgets</description>
         <description lang="fr">Skin widgets</description>
+        <description lang="hr">Dodatci za Izgled</description>
+        <description lang="hu">Kinézet miniprogram</description>
+        <description lang="it">Skin widgets</description>
         <description lang="ko">스킨 위젯</description>
         <description lang="pl">Dodatki Skóry</description>
         <description lang="pt">Widgets para Skin</description>
         <description lang="pt_BR">Skin widgets</description>
+        <description lang="sk">Widgety Vzhľadov</description>
         <description lang="sv">Skal widgetar</description>
         <description lang="zh">皮肤微件</description>
         <platform>all</platform>
