@@ -845,7 +845,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.live.streams"
        name="LiveStreams"
-       version="1.0.9"
+       version="1.1.0"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -866,7 +866,7 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.projectfreetv"
        name="Project Free TV"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -1377,20 +1377,24 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.audio.internet.archive"
        name="Internet Archive"
-       version="1.1.1"
+       version="1.1.2"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.beautifulsoup" version="3.0.8"/>
     <import addon="script.module.simple.downloader" version="0.9.3"/>
   </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>audio video</provides>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>audio video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Internet Archive - archive.org</summary>
-    <description>This add-on covers both the audio and video sections of The Internet Archive. The Internet Archive is a 501(c)(3) non-profit that was founded to build an Internet library. Its purposes include offering permanent access for researchers, historians, scholars, people with disabilities, and the general public to historical collections that exist in digital format.</description>
+    <description>
+      This add-on covers both the audio and video sections of The Internet Archive.
+      The Internet Archive is a 501(c)(3) non-profit that was founded to build an Internet library.
+      Its purposes include offering permanent access for researchers, historians, scholars,
+      people with disabilities, and the general public to historical collections that exist in digital format.
+    </description>
     <platform>all</platform>
     <language>en</language>
   </extension>
