@@ -38,7 +38,7 @@
 
 <addon id="plugin.video.icefilms"
        name="Icefilms"
-       version="1.1.25"
+       version="1.1.26"
        provider-name="Eldorado (originator: anarchintosh)">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
@@ -6687,7 +6687,7 @@ What it doesn't do:
 
 <addon id="plugin.video.nolife"
        name="Nolife Online"
-       version="1.15.1"
+       version="1.16.1"
        provider-name="gormux">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -8254,13 +8254,13 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
 
 <addon id="metadata.universal"
        name="Universal Scraper"
-       version="2.1.6"
+       version="2.1.8"
        provider-name="Olympia, Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
     <import addon="metadata.common.themoviedb.org" version="2.9.0"/>
     <import addon="metadata.common.movieposterdb.com" version="1.0.5"/>
-    <import addon="metadata.common.imdb.com" version="2.2.3"/>
+    <import addon="metadata.common.imdb.com" version="2.7.0"/>
     <import addon="metadata.common.impa.com" version="1.0.3"/>
     <import addon="metadata.common.hdtrailers.net" version="1.0.7"/>
     <import addon="metadata.common.youtubetrailers" version="1.0.4"/>
@@ -10110,7 +10110,7 @@ provider-name="OK Fan">
   </extension>
 </addon>
 
-<addon id="plugin.video.m6groupe" name="M6 groupe" version="1.0.3" provider-name="beenje">
+<addon id="plugin.video.m6groupe" name="M6 groupe" version="1.0.4" provider-name="beenje">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.xbmcswift2" version="1.3"/>
