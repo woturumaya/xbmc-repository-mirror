@@ -6927,7 +6927,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
   </extension>
 </addon>
 
-<addon id="plugin.video.atv_at" name="ATV.at" version="1.0.0" provider-name="AddonScriptorDE">
+<addon id="plugin.video.atv_at" name="ATV.at" version="1.0.1" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -6946,7 +6946,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     </extension>
 </addon>
 
-<addon id="plugin.video.bestofyoutube_com" name="BestOfYoutube.com" version="1.0.6" provider-name="AddonScriptorDE">
+<addon id="plugin.video.bestofyoutube_com" name="BestOfYoutube.com" version="1.0.7" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
         <import addon="plugin.video.youtube" version="3.0.0"/>
@@ -7000,7 +7000,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     </extension>
 </addon>
 
-<addon id="plugin.video.chefkoch_de" name="Chefkoch.de" version="1.0.0" provider-name="AddonScriptorDE">
+<addon id="plugin.video.chefkoch_de" name="Chefkoch.de" version="1.0.1" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -7054,7 +7054,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
   </extension>
 </addon>
 
-<addon id="plugin.video.ebaumsworld_com" name="eBaumsWorld.com" version="1.0.1" provider-name="AddonScriptorDE">
+<addon id="plugin.video.ebaumsworld_com" name="eBaumsWorld.com" version="1.0.2" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -7433,7 +7433,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     </extension>
 </addon>
 
-<addon id="plugin.video.sueddeutsche_de" name="Sueddeutsche.de" version="1.0.1" provider-name="AddonScriptorDE">
+<addon id="plugin.video.sueddeutsche_de" name="Sueddeutsche.de" version="1.0.2" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -9284,7 +9284,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
     </extension>
 </addon>
 
-<addon id="plugin.video.theonion_com" name="TheOnion.com" version="1.0.0" provider-name="AddonScriptorDE">
+<addon id="plugin.video.theonion_com" name="TheOnion.com" version="1.0.1" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -9300,7 +9300,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
     </extension>
 </addon>
 
-<addon id="plugin.video.vidstatsx_com" name="VidStatsX.com" version="1.0.1" provider-name="AddonScriptorDE">
+<addon id="plugin.video.vidstatsx_com" name="VidStatsX.com" version="1.0.2" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
         <import addon="plugin.video.youtube" version="3.0.0"/>
@@ -10403,6 +10403,25 @@ provider-name="OK Fan">
         <summary lang="fr">TV5MONDE médiathèque (FR)</summary>
         <description lang="fr">Ce plugin permet de regarder TV5MONDE médiathèque qui se trouve sur le site web de TV5MONDE+ (FR)</description>
         <language>fr</language>
+    </extension>
+</addon>
+
+<addon id="plugin.video.ardmediathek_de" name="ARD Mediathek" version="1.0.2" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="de">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR und BR Alpha Mediathek</summary>
+        <summary lang="en">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR und BR Alpha Media Library</summary>
+        <language>de</language>
+        <description lang="de">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR und BR Alpha Mediathek</description>
+        <description lang="en">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR und BR Alpha Media Library</description>
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <platform>all</platform>
     </extension>
 </addon>
 </addons>
