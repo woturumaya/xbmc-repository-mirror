@@ -537,7 +537,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="script.module.urlresolver"
 	     name="urlresolver"
-	     version="1.0.6"
+	     version="1.0.7"
 	     provider-name="XBMCHub.com">
   <requires>
     <import addon="xbmc.python" version="2.0" />
@@ -4658,7 +4658,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.filmaffinity.com"
        name="FilmAffinity"
-       version="1.5.2"
+       version="1.5.3"
        provider-name="hectorZiN + MaDDoGo + agjacome + pancheto">
 <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -6334,12 +6334,12 @@ Special thanks to the trakt utilities team! This plugin is essentially their cod
   </extension>
 </addon>
 
-<addon id="script.tvguide" name="TV Guide" version="1.3.5" provider-name="twinther [tommy@winther.nu]">
+<addon id="script.tvguide" name="TV Guide" version="1.4.0" provider-name="twinther [tommy@winther.nu]">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
         <import addon="script.module.simplejson" version="2.0.10"/>
         <import addon="script.module.elementtree" version="1.2.7"/>
-        <import addon="script.module.buggalo" version="1.0.1"/>
+        <import addon="script.module.buggalo" version="1.1.2"/>
     </requires>
     <extension point="xbmc.python.script" library="addon.py"/>
     <extension point="xbmc.service" library="service.py" start="login" />
@@ -8946,7 +8946,7 @@ XBMC.RunScript(script.xbmc.blindplayer, "video")
 
 <addon id="service.watchdog"
        name="Library watchdog"
-       version="0.6.3"
+       version="0.6.4"
        provider-name="takoi">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -10423,5 +10423,24 @@ provider-name="OK Fan">
         <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
     <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="script.xbmc.lcdproc" name="XBMC LCDproc" version="1.2.0" provider-name="Team XBMC: Memphiz, Daniel 'herrnst' Scheller">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="xbmc.gui" version="3.0"/>
+    <import addon="xbmc.addon" version="11.0"/>
+  </requires>
+  <extension point="xbmc.service" library="lcdmain.py" start="login"></extension>
+  <extension point="xbmc.addon.metadata">
+    <language></language>
+    <summary>XBMC LCDproc</summary>
+    <description>Displays configurable information e.g. about playing media or XBMC status on any LC/VF-display driven by LCDproc, and acts as direct drop-in replacement to the LCD/VFD-feature previously available in XBMC's core. Supports additional display elements (icons, bars) on SoundGraph iMON LCD and Targa/Futaba mdm166a VFD hardware. Requires a properly configured and running LCDd either locally or somewhere on the network.</description>
+    <description lang="de">Zeigt konfigurierbare Informationen z.B. über aktuelle Wiedergabe oder XBMC Stati auf beliebigen von LCDproc angesteuerten LC/VF-Displays, ersetzt die zuvor im XBMC-Kern enthaltene LCD/VFD-Funktion. Unterstützt zusätzliche Elemente (Icons, Balken) von SoundGraph iMON LCD und Targa/Futaba mdm166a VFD Hardware. Benötigt einen konfigurierten, laufenden LCDd auf dem lokalen System oder im Netzwerk.</description>
+    <disclaimer>Works with LCDproc only. Other LCD services like LCD4Linux or iMON Manager on Win32 are not supported. No liability taken for damaged hardware and/or software caused by this addon.</disclaimer>
+    <disclaimer lang="de">Funktioniert ausschliesslich mit LCDproc. Andere LCD-Dienste wie LCD4Linux, iMON Manager unter Win32 u.a. sind nicht unterstützt. Keine Haftung für durch dieses Addon beschädigte Hard-/Software.</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
 </addon>
 </addons>
