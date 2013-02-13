@@ -419,13 +419,13 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
   </extension>
 </addon>
 
-<addon id="service.playit" name="PlayIt" version="0.1.3"
+<addon id="service.playit" name="PlayIt" version="0.1.4"
 	provider-name="AJ">
 	<requires>
 		<import addon="xbmc.python" version="2.0" />
 		<import addon="script.module.simplejson" version="2.0.10" />
 		<import addon="script.module.beautifulsoup" version="3.2.0" />
-		<import addon="script.module.turtle" version="1.1.8" />
+		<import addon="script.module.turtle" version="1.2.3" />
 	</requires>
 	<extension point="xbmc.service" library="TurtleMain.py"
 		start="login">
@@ -472,7 +472,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
   </extension>
 </addon>
 
-<addon id="script.module.turtle" name="Turtle" version="1.2.2"
+<addon id="script.module.turtle" name="Turtle" version="1.2.3"
 	provider-name="AJ">
 	<requires>
 		<import addon="xbmc.python" version="2.0" />
@@ -3380,7 +3380,7 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
 
 <addon id="plugin.video.trailer.addict"
        name="Trailer Addict"
-       version="1.0.7"
+       version="1.0.8"
        provider-name="stacked">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
