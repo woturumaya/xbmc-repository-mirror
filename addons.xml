@@ -808,19 +808,21 @@ http://channel9.msdn.com/</description>
 
 <addon id="plugin.video.steam"
        name="Steam"
-       version="0.0.1"
+       version="0.0.2"
        provider-name="divingmule">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.0"/>
+    <import addon="script.common.plugin.cache" version="1.5.1"/>
   </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Game videos from Steam</summary>
     <description>Videos from SteamPowered.com</description>
     <platform>all</platform>
+    <language>en</language>
   </extension>
 </addon>
 
