@@ -135,7 +135,7 @@ Turns your XBMC into an instant free on-demand media-center. Stream and download
 
 <addon id="plugin.video.free.cable"
        name="Free Cable"
-       version="0.5.6"
+       version="0.5.9"
        provider-name="BlueCop">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -4429,7 +4429,7 @@ Továbbá egy olyan rendszert nyújt melyben a felhasználók bátorítva vannak
 
 <addon id="metadata.common.imdb.com"
        name="IMDB Scraper Library"
-       version="2.7.4"
+       version="2.7.6"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
@@ -10381,7 +10381,7 @@ provider-name="OK Fan">
 
 <addon id="plugin.video.synopsi"
        name="SynopsiTV"
-       version="0.5.0"
+       version="0.5.1"
        provider-name="Synopsi.TV">
 	<requires>
 		<import addon="xbmc.python" version="2.0"/>
