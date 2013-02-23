@@ -6953,7 +6953,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
   </extension>
 </addon>
 
-<addon id="plugin.video.atv_at" name="ATV.at" version="1.0.1" provider-name="AddonScriptorDE">
+<addon id="plugin.video.atv_at" name="ATV.at" version="1.0.2" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -6967,7 +6967,6 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
         <language>de</language>
         <description lang="de">ATV.at Mediathek</description>
         <description lang="en">ATV.at media library</description>
-        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
     <platform>all</platform>
     </extension>
 </addon>
@@ -7318,7 +7317,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     </extension>
 </addon>
 
-<addon id="plugin.video.mtv_de" name="MTV.de" version="2.1.0" provider-name="AddonScriptorDE">
+<addon id="plugin.video.mtv_de" name="MTV.de" version="2.1.1" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -9310,7 +9309,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
     </extension>
 </addon>
 
-<addon id="plugin.video.theonion_com" name="TheOnion.com" version="1.0.1" provider-name="AddonScriptorDE">
+<addon id="plugin.video.theonion_com" name="TheOnion.com" version="1.0.2" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -9326,7 +9325,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
     </extension>
 </addon>
 
-<addon id="plugin.video.vidstatsx_com" name="VidStatsX.com" version="1.0.2" provider-name="AddonScriptorDE">
+<addon id="plugin.video.vidstatsx_com" name="VidStatsX.com" version="1.0.3" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
         <import addon="plugin.video.youtube" version="3.0.0"/>
@@ -9336,9 +9335,9 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary lang="en">Various YouTube Channel and Video Charts</summary>
+        <summary lang="en">View various YouTube channel and video charts (for example by category/country) from VidStatsX.com and organize your own favourite channels</summary>
         <language></language>
-        <description lang="en">Various YouTube Channel and Video Charts</description>
+        <description lang="en">View various YouTube channel and video charts (for example by category/country) from VidStatsX.com and organize your own favourite channels</description>
     <platform>all</platform>
     </extension>
 </addon>
@@ -10219,7 +10218,7 @@ provider-name="OK Fan">
     </extension>
 </addon>
 
-<addon id="plugin.video.vgtv" name="VGTV" version="1.0.4" provider-name="Espen Hovlandsdal">
+<addon id="plugin.video.vgtv" name="VGTV" version="1.0.5" provider-name="Espen Hovlandsdal">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.xbmcswift2" version="1.1.1"/>
@@ -10436,7 +10435,7 @@ provider-name="OK Fan">
     </extension>
 </addon>
 
-<addon id="plugin.video.ardmediathek_de" name="ARD Mediathek" version="1.0.2" provider-name="AddonScriptorDE">
+<addon id="plugin.video.ardmediathek_de" name="ARD Mediathek" version="1.0.3" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -10445,11 +10444,11 @@ provider-name="OK Fan">
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary lang="de">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR und BR Alpha Mediathek</summary>
-        <summary lang="en">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR und BR Alpha Media Library</summary>
+        <summary lang="de">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR, ... Mediathek</summary>
+        <summary lang="en">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR, ... Media Library</summary>
         <language>de</language>
-        <description lang="de">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR und BR Alpha Mediathek</description>
-        <description lang="en">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR und BR Alpha Media Library</description>
+        <description lang="de">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR, ... Mediathek</description>
+        <description lang="en">Das Erste, Einsfestival, EinsPlus, Phoenix, WDR, SWR, HR, MDR, NDR, RBB, BR, ... Media Library</description>
         <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
     <platform>all</platform>
     </extension>
@@ -10547,5 +10546,74 @@ provider-name="OK Fan">
     <license>BSD</license>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.break_com" name="Break.com" version="1.0.1" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+        <import addon="plugin.video.youtube" version="3.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Watch videos from Break.com</summary>
+        <language></language>
+        <description lang="en">Watch videos from Break.com</description>
+    <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.dailymotion_com" name="DailyMotion.com" version="1.0.4" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Movies, TV, Music, User-Clips, 3D and Livestreams</summary>
+        <language></language>
+        <description lang="en">Movies, TV, Music, User-Clips, 3D and Livestreams</description>
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.euronews_com" name="euronews.com" version="1.0.0" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Livestream and latest news videos from euronews.com | Available languages: English, Greek, French, German, Italian, Spanish, Portuguese, Polish, Russian, Ukrainian, Turkish, Arabic and Persian</summary>
+        <language></language>
+        <description lang="en">Livestream and latest news videos from euronews.com | Available languages: English, Greek, French, German, Italian, Spanish, Portuguese, Polish, Russian, Ukrainian, Turkish, Arabic and Persian</description>
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.topdocumentaryfilms_com" name="TopDocumentaryFilms.com" version="1.0.0" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+        <import addon="plugin.video.youtube" version="3.0.0"/>
+        <import addon="plugin.video.vimeo" version="2.3.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Watch documentaries from TopDocumentaryFilms.com</summary>
+        <language>en</language>
+        <description lang="en">Watch documentaries from TopDocumentaryFilms.com</description>
+    <platform>all</platform>
+    </extension>
 </addon>
 </addons>
