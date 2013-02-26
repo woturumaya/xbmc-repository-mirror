@@ -3422,7 +3422,7 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
 
 <addon id="plugin.video.twit"
        name="TWiT"
-       version="1.1.1"
+       version="1.1.2"
        provider-name="divingmule,thanks to Adam B.">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -9868,6 +9868,7 @@ provider-name="OK Fan">
     <language>en de fr es it ru</language>
     <description lang="en">FilmOn.com is an internet based television provider owned by FilmOn.TV Networks Inc. FilmOn.TV Networks was founded by Alki David in 2006.FilmOn.com subscription packages include access to over 120 streaming TV channels in addition to premium FilmOn.com Movie channels and pay-per-view channels</description>
     <platform>all</platform>
+    <broken>Addon is no longer available through the xbmc.org repo</broken>
   </extension>
 </addon>
 
@@ -10340,7 +10341,7 @@ provider-name="OK Fan">
 	</extension>
 </addon>
 
-<addon id="plugin.video.bilmagasinettv.dk" version="1.0.0" name="Bil Magasinet TV" provider-name="twinther [tommy@winther.nu]">
+<addon id="plugin.video.bilmagasinettv.dk" version="1.0.1" name="Bil Magasinet TV" provider-name="twinther [tommy@winther.nu]">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
         <import addon="script.module.simplejson" version="2.0.10"/>
@@ -10357,6 +10358,7 @@ provider-name="OK Fan">
         <license>GPL 2.0</license>
         <platform>all</platform>
         <language>da</language>
+        <broken>broken due to site changes</broken>
     </extension>
 </addon>
 
@@ -10565,7 +10567,7 @@ provider-name="OK Fan">
     </extension>
 </addon>
 
-<addon id="plugin.video.dailymotion_com" name="DailyMotion.com" version="1.0.4" provider-name="AddonScriptorDE">
+<addon id="plugin.video.dailymotion_com" name="DailyMotion.com" version="1.0.5" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -10578,7 +10580,6 @@ provider-name="OK Fan">
         <language></language>
         <description lang="en">Movies, TV, Music, User-Clips, 3D and Livestreams</description>
         <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
-    <platform>all</platform>
     </extension>
 </addon>
 
