@@ -2986,7 +2986,7 @@ http://www.gfqlive.tv</description>
 
 <addon id="plugin.video.pbs"
        name="PBS"
-       version="2.0.10"
+       version="2.0.11"
        provider-name="stacked">
   <requires>
 	<import addon="xbmc.python" version="2.0"/>
@@ -8970,7 +8970,7 @@ XBMC.RunScript(script.xbmc.blindplayer, "video")
 
 <addon id="service.watchdog"
        name="Library watchdog"
-       version="0.6.5"
+       version="0.6.6"
        provider-name="takoi">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -9935,7 +9935,7 @@ provider-name="OK Fan">
     </extension>
 </addon>
 
-<addon id="plugin.video.neterratv" name="Neterra.TV" version="0.0.6" provider-name="mr.olix@gmail.com">
+<addon id="plugin.video.neterratv" name="Neterra.TV" version="0.0.7" provider-name="mr.olix@gmail.com">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.xbmcswift" version="0.2.0"/>
@@ -10417,7 +10417,7 @@ provider-name="OK Fan">
   </extension>
 </addon>
 
-<addon id="plugin.video.tv5monde" name="tv5monde" version="1.0.3" provider-name="jamontes">
+<addon id="plugin.video.tv5monde" name="tv5monde" version="1.0.4" provider-name="jamontes">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -10426,12 +10426,12 @@ provider-name="OK Fan">
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary lang="en">TV5MONDE videos (EN)</summary>
-        <description lang="en">This plugin allows you to watch the TV5MONDE videos provided by TV5MONDE+ web site, selected by category and ordered by date of apearance (EN)</description>
-        <summary lang="es">TV5MONDE vídeos (ES)</summary>
-        <description lang="es">Este plugin permite ver los vídeos de TV5MONDE contenidos en la página web de TV5MONDE+, seleccionados por categoría y ordenados por fecha de emisión (ES)</description>
-        <summary lang="fr">TV5MONDE médiathèque (FR)</summary>
-        <description lang="fr">Ce plugin permet de regarder TV5MONDE médiathèque qui se trouve sur le site web de TV5MONDE+ (FR)</description>
+        <summary lang="en">TV5MONDE videos</summary>
+        <description lang="en">This plugin allows you to watch the TV5MONDE videos provided by TV5MONDE+ web site, selected by category and ordered by date of apearance</description>
+        <summary lang="es">TV5MONDE vídeos</summary>
+        <description lang="es">Este plugin permite ver los vídeos de TV5MONDE contenidos en la página web de TV5MONDE+, seleccionados por categoría y ordenados por fecha de emisión</description>
+        <summary lang="fr">TV5MONDE médiathèque</summary>
+        <description lang="fr">Ce plugin permet de regarder TV5MONDE médiathèque qui se trouve sur le site web de TV5MONDE+</description>
         <language>fr</language>
     </extension>
 </addon>
