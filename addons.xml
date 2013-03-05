@@ -2884,20 +2884,22 @@ http://www.gfqlive.tv</description>
 </addon>
 
 <addon id="plugin.video.nascar"
-       name="NascarX"
-       version="1.0.0"
+       name="Nascar.com"
+       version="1.0.1"
        provider-name="divingmule">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.pyamf" version="0.6.1"/>
+    <import addon="script.module.beautifulsoup" version="3.2.0"/>
   </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Nascar Videos</summary>
     <description>Videos from nascar.com</description>
     <platform>all</platform>
+    <language>en</language>
   </extension>
 </addon>
 
