@@ -5266,7 +5266,7 @@ With Gyroscope enabled devices and supported by it's browser, you can tap and ho
 
 <addon
   id="plugin.video.SportsDevil"
-  version="1.8.5.3"
+  version="1.8.5.4"
   name="SportsDevil"
   provider-name="MaxMustermann">
   <requires>
