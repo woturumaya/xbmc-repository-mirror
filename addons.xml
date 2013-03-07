@@ -3574,7 +3574,7 @@ Tips From The Top Floor (http://www.tipsfromthetopfloor.com/)
     </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" provider-name="TheCollective" version="3.4.2">
+<addon id="plugin.video.youtube" name="YouTube" provider-name="TheCollective" version="3.4.3">
   <requires>
     <import addon="xbmc.python" version="2.0" />
     <import addon="script.module.simplejson" version="2.0.10" />
@@ -6993,10 +6993,10 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
     </extension>
 </addon>
 
-<addon id="plugin.video.bliptv" name="BlipTV" provider-name="TheCollective" version="0.8.1">
+<addon id="plugin.video.bliptv" name="BlipTV" provider-name="TheCollective" version="0.8.2">
   <requires>
     <import addon="xbmc.python" version="2.0" />
-    <import addon="script.common.plugin.cache" version="1.5.0" />
+    <import addon="script.common.plugin.cache" version="1.5.1" />
     <import addon="script.module.parsedom" version="1.5.1" />
     <import addon="script.module.simple.downloader" version="0.9.4" />
   </requires>
@@ -7005,6 +7005,7 @@ Any question ? Ask julien@gormotte.info, or see http://bugs.gormotte.info
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+    <language />
     <summary lang="en">Bliptv video plugin</summary>
     <description lang="en">Plugin that let's you browse and play videos from BlipTV!</description>
     <summary lang="bg">Видео добавка за Bliptv</summary>
