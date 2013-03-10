@@ -5015,7 +5015,7 @@ Internet Movie Database (IMDb) är en STOR samling av filminformation. Dom förs
 
 <addon id="metadata.tvdb.com"
        name="The TVDB"
-       version="1.4.5"
+       version="1.5.2"
        provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.metadata" version="1.0"/>
