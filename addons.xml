@@ -3035,11 +3035,12 @@ http://www.gfqlive.tv</description>
 
 <addon id="plugin.video.pennyarcadetv"
        name="Penny Arcade TV"
-       version="2.0.3"
+       version="2.0.4"
        provider-name="jorsoban, ErwinJunge">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="plugin.video.youtube" version="3.4.3"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -9294,7 +9295,7 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
     </extension>
 </addon>
 
-<addon id="plugin.video.myspass_de" name="MySpass.de" version="1.0.0" provider-name="AddonScriptorDE">
+<addon id="plugin.video.myspass_de" name="MySpass.de" version="1.0.1" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
@@ -9308,7 +9309,6 @@ Wskazówka: Po instalacji / aktualizacji, przed uruchomieniem AWX może być kon
         <language>de</language>
         <description lang="de">Schlag den Raab/Star, TV total, Elton vs. Simon, Pastewka, Dr. Psycho, Stromberg, South Park, Spongebob und vieles mehr...</description>
         <description lang="en">Schlag den Raab/Star, TV total, Elton vs. Simon, Pastewka, Dr. Psycho, Stromberg, South Park, Spongebob and much more...</description>
-    <platform>all</platform>
     </extension>
 </addon>
 
@@ -10459,7 +10459,7 @@ provider-name="OK Fan">
     </extension>
 </addon>
 
-<addon id="script.xbmc.lcdproc" name="XBMC LCDproc" version="1.2.0" provider-name="Team XBMC: Memphiz, Daniel 'herrnst' Scheller">
+<addon id="script.xbmc.lcdproc" name="XBMC LCDproc" version="1.2.1" provider-name="Team XBMC: Memphiz, Daniel 'herrnst' Scheller">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="xbmc.gui" version="3.0"/>
@@ -10553,7 +10553,7 @@ provider-name="OK Fan">
   </extension>
 </addon>
 
-<addon id="plugin.video.break_com" name="Break.com" version="1.0.1" provider-name="AddonScriptorDE">
+<addon id="plugin.video.break_com" name="Break.com" version="1.0.2" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
         <import addon="plugin.video.youtube" version="3.1.0"/>
@@ -10566,11 +10566,10 @@ provider-name="OK Fan">
         <summary lang="en">Watch videos from Break.com</summary>
         <language></language>
         <description lang="en">Watch videos from Break.com</description>
-    <platform>all</platform>
     </extension>
 </addon>
 
-<addon id="plugin.video.dailymotion_com" name="DailyMotion.com" version="1.0.6" provider-name="AddonScriptorDE">
+<addon id="plugin.video.dailymotion_com" name="DailyMotion.com" version="1.0.7" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
