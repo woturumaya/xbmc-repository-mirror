@@ -9049,7 +9049,7 @@ XBMC.RunScript(script.xbmc.blindplayer, "video")
 
 <addon
 	id="skin.metropolis"
-	version="2.0.0"
+	version="2.0.2"
 	name="Metropolis"
 	provider-name="Amra">
 	<requires>
