@@ -10,7 +10,7 @@
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<summary>XBMC add-on framework</summary>
-		<description>XBMC add-on provides a simplest way to configure action
+		<description>XBMC add-on provides a simplest way to configure actions
 			to be performed for each add-on request using XML.</description>
 		<disclaimer>This addon makes no warranties, expressed or implied, and
 			hereby disclaims and negates all other warranties, including without
